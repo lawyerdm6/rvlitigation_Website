@@ -82,6 +82,8 @@ ul {
 .splash-content {
     text-align: center;
     animation: fadeInUp 1s ease forwards;
+   padding-left: 15px;
+   padding-right: 15px;
 }
 
 .splash-logo {
