@@ -245,7 +245,7 @@ ul {
    Hero Section
    ============================================ */
 .hero {
-    margin-top: 70px;
+    margin-top: 50px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -1082,6 +1082,7 @@ ul {
     .hero-image video {
         object-fit: cover;
         object-position: center center;
+       height: 100vh;
     }
 
     .hero-title {
