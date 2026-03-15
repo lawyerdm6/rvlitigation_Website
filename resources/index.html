@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Legal resources from RV Litigation Group PC — Bay Area court links, jail and inmate lookup information, bail guides, California Penal Code references, and government resources for San Jose, Santa Clara County, and the Bay Area.">
+    <meta name="keywords" content="Santa Clara County court, Bay Area jail information, California bail schedule, penal code reference, San Jose legal resources, inmate lookup Santa Clara">
+    <meta name="author" content="RV Litigation Group PC">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rvlitigation.com/resources/">
+    <meta property="og:title" content="Legal Resources — Court Links, Bail Info &amp; California Law References | RV Litigation Group PC">
+    <meta property="og:description" content="Bay Area court links, jail information, bail guides, and California Penal Code references from RV Litigation Group PC.">
+    <meta property="og:image" content="https://rvlitigation.com/images/Logos/RV_logo_center.png">
+    <link rel="canonical" href="https://rvlitigation.com/resources/">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>Legal Resources &mdash; Court Links, Bail Info &amp; California Law References | RV Litigation Group PC</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Montserrat', sans-serif;
+            --color-gold: #c9a96e;
+        }
+        .resources-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 25px 80px;
+        }
+        .resource-section {
+            margin-bottom: 70px;
+        }
+        .resource-section-header {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--color-gold);
+        }
+        .resource-section-header p {
+            font-family: var(--font-sans);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: var(--color-gold);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .resource-section-header h2 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            font-weight: 500;
+            color: #fff;
+        }
+        .resource-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .resource-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 30px 25px;
+            transition: all 0.3s;
+        }
+        .resource-card:hover {
+            border-color: rgba(201,169,110,0.3);
+            background: rgba(255,255,255,0.04);
+        }
+        .resource-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+        .resource-card p {
+            color: #888;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 6px;
+        }
+        .resource-card .resource-detail {
+            color: #aaa;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin-bottom: 4px;
+        }
+        .resource-card .resource-label {
+            color: var(--color-gold);
+            font-family: var(--font-sans);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 12px;
+            margin-bottom: 4px;
+        }
+        .resource-card .resource-url {
+            color: #666;
+            font-size: 0.8rem;
+            word-break: break-all;
+        }
+        .penal-code-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .penal-code-card {
+            display: block;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 25px 20px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .penal-code-card:hover {
+            border-color: var(--color-gold);
+            transform: translateY(-2px);
+            background: rgba(255,255,255,0.05);
+        }
+        .penal-code-card .pc-number {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--color-gold);
+            margin-bottom: 8px;
+        }
+        .penal-code-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .penal-code-card p {
+            color: #888;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+        .bail-info-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .bail-info-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 30px 25px;
+        }
+        .bail-info-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+        .bail-info-card p {
+            color: #888;
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+        @media (max-width: 768px) {
+            .resource-cards,
+            .penal-code-grid,
+            .bail-info-list {
+                grid-template-columns: 1fr;
+            }
+            .resource-section-header h2 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="https://rvlitigation.com/" class="logo">
+                <img src="/images/Logos/RV_logo_long.png" alt="RV Litigation Group PC">
+            </a>
+            <ul class="nav-links">
+                <li><a href="https://rvlitigation.com/professionals">PROFESSIONALS</a></li>
+                <li><a href="https://rvlitigation.com/our-practice">OUR PRACTICE</a></li>
+                <li><a href="https://rvlitigation.com/about">ABOUT US</a></li>
+                <li><a href="https://rvlitigation.com/reviews">REVIEWS</a></li>
+                <li class="mobile-call"><a href="tel:+14157977591">CALL US</a></li>
+                <li class="mobile-inquire"><a href="https://rvlitigation.com/contact">INQUIRE</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="tel:+14157977591" class="nav-phone" aria-label="Call us">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span>CALL US</span>
+                </a>
+                <a href="https://rvlitigation.com/contact" class="btn-inquire">INQUIRE</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>LEGAL RESOURCES</h1>
+            <p>Court Links, Bail Information &amp; California Law References</p>
+        </div>
+    </section>
+
+    <div class="resources-container">
+
+        <!-- Court Links -->
+        <div class="resource-section">
+            <div class="resource-section-header">
+                <p>BAY AREA COURTS</p>
+                <h2>Court Links &amp; Locations</h2>
+            </div>
+            <div class="resource-cards">
+                <div class="resource-card">
+                    <h3>Santa Clara County Superior Court</h3>
+                    <p class="resource-detail">191 North First Street, San Jose, CA 95113</p>
+                    <p class="resource-detail">The primary courthouse for criminal, civil, family, and probate matters in Santa Clara County. Multiple courthouses serve different case types across the county.</p>
+                    <p class="resource-label">Website</p>
+                    <p class="resource-url">www.scscourt.org</p>
+                </div>
+                <div class="resource-card">
+                    <h3>Alameda County Superior Court</h3>
+                    <p class="resource-detail">1225 Fallon Street, Oakland, CA 94612</p>
+                    <p class="resource-detail">Serves Alameda County including Oakland, Fremont, Hayward, Berkeley, and surrounding cities. Handles criminal, civil, family law, and probate cases.</p>
+                    <p class="resource-label">Website</p>
+                    <p class="resource-url">www.alameda.courts.ca.gov</p>
+                </div>
+                <div class="resource-card">
+                    <h3>San Mateo County Superior Court</h3>
+                    <p class="resource-detail">400 County Center, Redwood City, CA 94063</p>
+                    <p class="resource-detail">Serves San Mateo County including Redwood City, Daly City, San Mateo, and the Peninsula communities. Handles all case types.</p>
+                    <p class="resource-label">Website</p>
+                    <p class="resource-url">www.sanmateocourt.org</p>
+                </div>
+                <div class="resource-card">
+                    <h3>San Francisco Superior Court</h3>
+                    <p class="resource-detail">400 McAllister Street, San Francisco, CA 94102</p>
+                    <p class="resource-detail">The primary courthouse for criminal and civil matters in the City and County of San Francisco. The Hall of Justice at 850 Bryant Street handles criminal arraignments.</p>
+                    <p class="resource-label">Website</p>
+                    <p class="resource-url">www.sfsuperiorcourt.org</p>
+                </div>
+                <div class="resource-card">
+                    <h3>Monterey County Superior Court</h3>
+                    <p class="resource-detail">240 Church Street, Salinas, CA 93901</p>
+                    <p class="resource-detail">Serves Monterey County including Salinas, Monterey, Seaside, and Marina. Multiple courthouses handle different case types across the county.</p>
+                    <p class="resource-label">Website</p>
+                    <p class="resource-url">www.monterey.courts.ca.gov</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Inmate / Booking Lookup -->
+        <div class="resource-section">
+            <div class="resource-section-header">
+                <p>DETENTION FACILITIES</p>
+                <h2>Inmate &amp; Booking Lookup</h2>
+            </div>
+            <div class="resource-cards">
+                <div class="resource-card">
+                    <h3>Santa Clara County Main Jail</h3>
+                    <p class="resource-detail">150 West Hedding Street, San Jose, CA 95110</p>
+                    <p class="resource-label">Phone</p>
+                    <p class="resource-detail">(408) 808-3600</p>
+                    <p style="color: #666; font-size: 0.85rem; margin-top: 10px;">The primary booking and detention facility for Santa Clara County. Inmate information is available through the Santa Clara County Department of Correction.</p>
+                </div>
+                <div class="resource-card">
+                    <h3>Elmwood Correctional Facility</h3>
+                    <p class="resource-detail">701 South Abel Street, Milpitas, CA 95035</p>
+                    <p class="resource-label">Phone</p>
+                    <p class="resource-detail">(408) 957-5100</p>
+                    <p style="color: #666; font-size: 0.85rem; margin-top: 10px;">A medium-security facility in Santa Clara County. Houses both male and female inmates and provides various rehabilitation programs.</p>
+                </div>
+                <div class="resource-card">
+                    <h3>Santa Rita Jail</h3>
+                    <p class="resource-detail">5325 Broder Boulevard, Dublin, CA 94568</p>
+                    <p class="resource-label">Phone</p>
+                    <p class="resource-detail">(925) 551-6500</p>
+                    <p style="color: #666; font-size: 0.85rem; margin-top: 10px;">The primary detention facility for Alameda County. One of the largest jails in the Bay Area, serving Oakland, Fremont, Hayward, and surrounding communities.</p>
+                </div>
+                <div class="resource-card">
+                    <h3>San Francisco County Jail</h3>
+                    <p class="resource-detail">425 7th Street, San Francisco, CA 94103</p>
+                    <p class="resource-label">Phone</p>
+                    <p class="resource-detail">(415) 553-1430</p>
+                    <p style="color: #666; font-size: 0.85rem; margin-top: 10px;">Operated by the San Francisco Sheriff's Department. Booking and intake for individuals arrested in the City and County of San Francisco.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bail Information -->
+        <div class="resource-section">
+            <div class="resource-section-header">
+                <p>UNDERSTANDING BAIL</p>
+                <h2>Bail Information</h2>
+            </div>
+            <div class="bail-info-list">
+                <div class="bail-info-card">
+                    <h3>How Bail Works in California</h3>
+                    <p>Bail is a monetary amount set by the court that serves as a guarantee the defendant will appear at all future court dates. Bail can be posted in cash, through a bail bondsman, or waived through an OR (own recognizance) release. The amount is determined by the county's bail schedule and the judge's discretion based on the severity of charges, criminal history, and flight risk.</p>
+                </div>
+                <div class="bail-info-card">
+                    <h3>County Bail Schedules</h3>
+                    <p>Each California county maintains a bail schedule that sets presumptive bail amounts for specific offenses. Judges may deviate from the schedule based on individual circumstances. Santa Clara County, Alameda County, and San Francisco each maintain their own bail schedules. Your attorney can request a bail reduction hearing if the amount is beyond your means.</p>
+                </div>
+                <div class="bail-info-card">
+                    <h3>Own Recognizance (OR) Release</h3>
+                    <p>OR release allows a defendant to be released from custody without posting bail, based on their promise to appear in court. OR release is more common for non-violent misdemeanors and for defendants with strong community ties, steady employment, and no prior failures to appear. Your attorney can argue for OR release at your arraignment or at a separate hearing.</p>
+                </div>
+                <div class="bail-info-card">
+                    <h3>Bail Bonds</h3>
+                    <p>A bail bond is posted by a licensed bail bondsman on your behalf. The standard premium in California is 10% of the total bail amount, which is non-refundable. For example, on a $50,000 bail, you would pay the bondsman $5,000. The bondsman then guarantees the full amount to the court. If the defendant fails to appear, the bondsman may employ a recovery agent and the co-signer becomes liable for the full bail amount.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- California Penal Code Quick Reference -->
+        <div class="resource-section">
+            <div class="resource-section-header">
+                <p>QUICK REFERENCE</p>
+                <h2>California Penal Code Reference</h2>
+            </div>
+            <div class="penal-code-grid">
+                <a href="/criminal-defense/assault-defense" class="penal-code-card">
+                    <p class="pc-number">PC 240 / PC 242</p>
+                    <h3>Assault &amp; Battery</h3>
+                    <p>Simple assault (attempt to commit violent injury) and battery (unlawful use of force). Misdemeanors carrying up to 6 months (assault) or 6 months (battery) in county jail.</p>
+                </a>
+                <a href="/criminal-defense/assault-defense" class="penal-code-card">
+                    <p class="pc-number">PC 245(a)(1)</p>
+                    <h3>Assault with a Deadly Weapon</h3>
+                    <p>Assault committed with a deadly weapon or by means likely to produce great bodily injury. A wobbler offense carrying up to 4 years in state prison as a felony.</p>
+                </a>
+                <a href="/criminal-defense/theft-crimes" class="penal-code-card">
+                    <p class="pc-number">PC 211</p>
+                    <h3>Robbery</h3>
+                    <p>Taking personal property from another person by force or fear. Always a felony. First-degree robbery carries 3-9 years; second-degree carries 2-5 years in state prison.</p>
+                </a>
+                <a href="/criminal-defense/theft-crimes" class="penal-code-card">
+                    <p class="pc-number">PC 459</p>
+                    <h3>Burglary</h3>
+                    <p>Entering a structure with intent to commit theft or a felony. First-degree (residential) is always a felony; second-degree (commercial) is a wobbler.</p>
+                </a>
+                <a href="/criminal-defense/domestic-violence" class="penal-code-card">
+                    <p class="pc-number">PC 273.5</p>
+                    <h3>Domestic Violence &mdash; Corporal Injury</h3>
+                    <p>Willfully inflicting corporal injury on a spouse, cohabitant, or co-parent resulting in a traumatic condition. A wobbler with up to 4 years in prison as a felony.</p>
+                </a>
+                <a href="/criminal-defense/domestic-violence" class="penal-code-card">
+                    <p class="pc-number">PC 243(e)(1)</p>
+                    <h3>Domestic Battery</h3>
+                    <p>Battery committed against a spouse, cohabitant, or dating partner. A misdemeanor carrying up to 1 year in county jail and fines up to $2,000.</p>
+                </a>
+                <a href="/criminal-defense/drug-crimes" class="penal-code-card">
+                    <p class="pc-number">HS 11350 / HS 11377</p>
+                    <h3>Drug Possession</h3>
+                    <p>Simple possession of controlled substances. Generally misdemeanors under Prop 47, carrying up to 1 year in county jail. Drug diversion programs may be available.</p>
+                </a>
+                <a href="/criminal-defense/dui-defense" class="penal-code-card">
+                    <p class="pc-number">VC 23152</p>
+                    <h3>DUI / DWI</h3>
+                    <p>Driving under the influence of alcohol or drugs. A first offense is typically a misdemeanor. Penalties increase significantly with prior offenses or aggravating factors.</p>
+                </a>
+                <a href="/criminal-defense/vandalism" class="penal-code-card">
+                    <p class="pc-number">PC 594</p>
+                    <h3>Vandalism</h3>
+                    <p>Maliciously damaging, destroying, or defacing another person's property. A wobbler when damage exceeds $400; misdemeanor when damage is $400 or less.</p>
+                </a>
+                <a href="/criminal-defense/fraud-defense" class="penal-code-card">
+                    <p class="pc-number">PC 470</p>
+                    <h3>Forgery</h3>
+                    <p>Falsifying, altering, or counterfeiting documents with intent to defraud. A wobbler offense. Felony forgery carries up to 3 years in state prison.</p>
+                </a>
+                <a href="/criminal-defense/weapons-charges" class="penal-code-card">
+                    <p class="pc-number">PC 25400</p>
+                    <h3>Carrying a Concealed Weapon</h3>
+                    <p>Carrying a concealed firearm on your person or in a vehicle without a valid permit. A wobbler offense with up to 3 years in prison as a felony.</p>
+                </a>
+                <a href="/criminal-defense/hit-and-run" class="penal-code-card">
+                    <p class="pc-number">VC 20002 / VC 20001</p>
+                    <h3>Hit and Run</h3>
+                    <p>Leaving the scene of an accident. Property damage only (VC 20002) is a misdemeanor; hit and run with injury (VC 20001) is a wobbler with up to 4 years in prison.</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Useful Government Resources -->
+        <div class="resource-section">
+            <div class="resource-section-header">
+                <p>GOVERNMENT AGENCIES</p>
+                <h2>Useful Government Resources</h2>
+            </div>
+            <div class="resource-cards">
+                <div class="resource-card">
+                    <h3>California Department of Motor Vehicles (DMV)</h3>
+                    <p class="resource-detail">Handles driver's license matters, vehicle registration, and administrative DUI hearings. DMV hearings are separate from criminal court proceedings and have strict 10-day request deadlines after a DUI arrest.</p>
+                    <p class="resource-label">Website</p>
+                    <p class="resource-url">www.dmv.ca.gov</p>
+                </div>
+                <div class="resource-card">
+                    <h3>State Bar of California</h3>
+                    <p class="resource-detail">The licensing body for all attorneys practicing in California. Use their website to verify attorney credentials, check disciplinary records, and find certified lawyer referral services in the Bay Area.</p>
+                    <p class="resource-label">Website</p>
+                    <p class="resource-url">www.calbar.ca.gov</p>
+                </div>
+                <div class="resource-card">
+                    <h3>California Courts Self-Help Center</h3>
+                    <p class="resource-detail">Provides free legal information, court forms, and self-help resources for individuals navigating the California court system. Covers topics including small claims, family law, traffic, and name changes.</p>
+                    <p class="resource-label">Website</p>
+                    <p class="resource-url">www.courts.ca.gov/selfhelp.htm</p>
+                </div>
+                <div class="resource-card">
+                    <h3>California Legislative Information</h3>
+                    <p class="resource-detail">The official source for California statutes, including the Penal Code, Vehicle Code, Health and Safety Code, and Code of Civil Procedure. Search and read the full text of any California law.</p>
+                    <p class="resource-label">Website</p>
+                    <p class="resource-url">leginfo.legislature.ca.gov</p>
+                </div>
+                <div class="resource-card">
+                    <h3>California Victim Compensation Board</h3>
+                    <p class="resource-detail">Provides financial assistance to victims of violent crime for expenses including medical treatment, mental health counseling, lost wages, and funeral costs. Available to eligible victims throughout California.</p>
+                    <p class="resource-label">Website</p>
+                    <p class="resource-url">victims.ca.gov</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CTA Section -->
+    <section class="content-section" style="text-align: center; background: linear-gradient(180deg, #000 0%, #1a1a1a 100%);">
+        <div class="content-wrapper">
+            <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 400; margin-bottom: 20px;">Need Legal Help?</h2>
+            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Our attorneys serve clients throughout San Jose, Santa Clara County, and the Bay Area. Contact us today for a consultation about your legal matter.</p>
+            <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <img src="/images/Logos/RV_logo_center.png" alt="RV Litigation Group PC" class="footer-logo">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/rvlitigation/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@rvlitigation" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/rvlitigation" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                </a>
+                <a href="https://www.tiktok.com/@rvlitigation" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                </a>
+            </div>
+            <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> RV Litigation Group PC. All Rights Reserved.</p>
+            <p class="disclaimer">Attorney Advertising. Prior results do not guarantee a similar outcome.</p>
+            <p style="margin-top: 15px;"><a href="https://rvlitigation.com/privacy-policy" style="color: #888; font-size: 0.8rem;">Privacy Policy</a></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

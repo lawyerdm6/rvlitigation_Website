@@ -1,0 +1,24 @@
+# robots.txt for RV Litigation Group PC
+# https://rvlitigation.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://rvlitigation.com/sitemap.xml
+
+# Disallow thank-you page from indexing
+Disallow: /thank-you
+
+# Allow all major search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
