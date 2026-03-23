@@ -480,14 +480,14 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    <!-- Personal Injury Hub -->
+    <!-- PI REMOVED START -->
+    <!--
     <url>
         <loc>https://rvlitigation.com/personal-injury/</loc>
         <lastmod>2026-03-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-    <!-- Personal Injury Sub-Pages -->
     <url>
         <loc>https://rvlitigation.com/personal-injury/car-accidents</loc>
         <lastmod>2026-03-14</lastmod>
@@ -548,6 +548,8 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    -->
+    <!-- PI REMOVED END -->
     <!-- Blog -->
     <url>
         <loc>https://rvlitigation.com/blog/</loc>
