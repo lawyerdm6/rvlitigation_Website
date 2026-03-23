@@ -181,6 +181,52 @@ ul {
     width: 100%;
 }
 
+/* Nav Dropdown */
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-black);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    min-width: 200px;
+    z-index: 1001;
+    margin-top: 10px;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: var(--color-white);
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a::after {
+    display: none !important;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
 .btn-inquire {
     padding: 12px 30px;
     border: 1px solid var(--color-white);
@@ -886,6 +932,10 @@ ul {
     width: 100%;
 }
 
+.btn-view-services .btn-short {
+    display: none;
+}
+
 /* Practice Area Cards (detailed) */
 .practice-detail-cards {
     display: grid;
@@ -1110,6 +1160,36 @@ ul {
         text-align: center;
         padding: 30px 20px;
         gap: 25px;
+    }
+
+    /* Mobile dropdown — inline expand */
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        border: none;
+        min-width: 0;
+        margin-top: 0;
+        padding: 8px 0 0;
+        background: transparent;
+    }
+
+    .nav-dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    .nav-dropdown.open .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        padding: 8px 20px;
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .dropdown-menu a:hover {
+        background-color: transparent;
+        color: var(--color-white);
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
@@ -1178,7 +1258,7 @@ ul {
     }
 
     .contact-image img {
-        max-width: 200px;
+        max-width: 50vw;
     }
 
     .hero {
@@ -1269,6 +1349,78 @@ ul {
 
     .attorney-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Contact section — fluid, centered, scales with viewport, min 285px */
+    .contact-container {
+        text-align: center;
+        justify-items: center;
+    }
+
+    .contact-image img {
+        width: clamp(180px, 50vw, 350px);
+        max-width: none;
+    }
+
+    .contact-form-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-form-wrapper .form-title {
+        font-size: clamp(1rem, 4.5vw, 1.5rem);
+    }
+
+    .contact-form-wrapper > div[style] {
+        gap: clamp(8px, 2.5vw, 20px) !important;
+        width: clamp(285px, 75vw, 450px);
+    }
+
+    /* Practice cards — square, fluid sizing */
+    .contact-form-wrapper .practice-card {
+        aspect-ratio: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: clamp(8px, 2vw, 15px);
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .contact-form-wrapper .practice-card img {
+        width: clamp(35px, 10vw, 70px);
+        height: clamp(35px, 10vw, 70px);
+        margin-bottom: clamp(6px, 2vw, 15px);
+    }
+
+    .contact-form-wrapper .practice-card h3 {
+        font-size: clamp(0.55rem, 1.8vw, 0.85rem);
+        letter-spacing: clamp(0.5px, 0.3vw, 2px);
+    }
+
+    /* Content section buttons — single line, consistent height, centered */
+    .btn-view-services {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        padding: 0 20px !important;
+        font-size: 0.65rem !important;
+        letter-spacing: 1.5px !important;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .btn-view-services .btn-full {
+        display: none;
+    }
+
+    .btn-view-services .btn-short {
+        display: inline;
     }
 }
 
