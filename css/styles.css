@@ -197,7 +197,8 @@ ul {
     padding: 10px 0;
     min-width: 200px;
     z-index: 1001;
-    margin-top: 10px;
+    padding-top: 20px;
+    margin-top: 0;
 }
 
 .nav-dropdown:hover .dropdown-menu {
