@@ -606,13 +606,29 @@
                 update();
             });
 
-            // Mobile touch swipe
-            var startX = 0;
-            track.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; });
+            // Mobile touch swipe with drag feedback
+            var startX = 0, isDragging = false, currentX = 0;
+            track.addEventListener('touchstart', function(e) {
+                startX = e.touches[0].clientX;
+                isDragging = true;
+                track.style.transition = 'none';
+            });
+            track.addEventListener('touchmove', function(e) {
+                if (!isDragging) return;
+                currentX = e.touches[0].clientX;
+                var diff = startX - currentX;
+                var slide = slides[0];
+                var gap = 20;
+                var base = idx * (slide.offsetWidth + gap);
+                track.style.transform = 'translateX(-' + (base + diff) + 'px)';
+            });
             track.addEventListener('touchend', function(e) {
+                isDragging = false;
+                track.style.transition = 'transform 0.5s ease';
                 var diff = startX - e.changedTouches[0].clientX;
-                if (diff > 50) { idx = Math.min(maxIdx, idx + 1); update(); }
-                else if (diff < -50) { idx = Math.max(0, idx - 1); update(); }
+                if (diff > 30) { idx = Math.min(maxIdx, idx + 1); }
+                else if (diff < -30) { idx = Math.max(0, idx - 1); }
+                update();
             });
 
             // Hover styles for buttons
