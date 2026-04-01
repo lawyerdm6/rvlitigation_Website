@@ -1532,6 +1532,11 @@ ul {
     border-radius: 8px;
     padding: 18px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.review-text-sm {
+    flex: 1;
 }
 .review-stars-row {
     display: flex;
