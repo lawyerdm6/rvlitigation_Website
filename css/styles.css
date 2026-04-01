@@ -1517,6 +1517,9 @@ ul {
 }
 
 /* Review Carousel - responsive slides */
+.review-carousel {
+    overflow: hidden;
+}
 @media (max-width: 900px) {
     .review-slide {
         min-width: calc(50% - 13px) !important;
@@ -1524,7 +1527,12 @@ ul {
 }
 @media (max-width: 600px) {
     .review-slide {
-        min-width: 100% !important;
+        min-width: calc(100vw - 80px) !important;
+        padding: 18px !important;
+    }
+    .review-carousel {
+        margin: 0 -40px;
+        padding: 0 40px;
     }
 }
 
