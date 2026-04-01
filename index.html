@@ -595,29 +595,41 @@
             });
 
             // Mobile touch swipe with drag feedback
-            var startX = 0, isDragging = false, currentX = 0;
-            track.addEventListener('touchstart', function(e) {
+            var startX = 0, startY = 0, isDragging = false, isHorizontal = null;
+            var carousel = document.querySelector('.review-carousel');
+            carousel.addEventListener('touchstart', function(e) {
                 startX = e.touches[0].clientX;
+                startY = e.touches[0].clientY;
                 isDragging = true;
+                isHorizontal = null;
                 track.style.transition = 'none';
-            });
-            track.addEventListener('touchmove', function(e) {
+            }, {passive: true});
+            carousel.addEventListener('touchmove', function(e) {
                 if (!isDragging) return;
-                currentX = e.touches[0].clientX;
-                var diff = startX - currentX;
+                var dx = e.touches[0].clientX - startX;
+                var dy = e.touches[0].clientY - startY;
+                if (isHorizontal === null) {
+                    isHorizontal = Math.abs(dx) > Math.abs(dy);
+                }
+                if (!isHorizontal) return;
+                e.preventDefault();
                 var slide = slides[0];
                 var gap = 20;
                 var base = idx * (slide.offsetWidth + gap);
-                track.style.transform = 'translateX(-' + (base + diff) + 'px)';
-            });
-            track.addEventListener('touchend', function(e) {
+                track.style.transform = 'translateX(-' + (base - dx) + 'px)';
+            }, {passive: false});
+            carousel.addEventListener('touchend', function(e) {
+                if (!isDragging) return;
                 isDragging = false;
                 track.style.transition = 'transform 0.5s ease';
-                var diff = startX - e.changedTouches[0].clientX;
-                if (diff > 30) { idx = Math.min(maxIdx, idx + 1); }
-                else if (diff < -30) { idx = Math.max(0, idx - 1); }
+                if (isHorizontal) {
+                    var diff = startX - e.changedTouches[0].clientX;
+                    if (diff > 30) { idx = Math.min(maxIdx, idx + 1); }
+                    else if (diff < -30) { idx = Math.max(0, idx - 1); }
+                }
+                isHorizontal = null;
                 update();
-            });
+            }, {passive: true});
 
             // Hover styles for buttons
             [prev, next].forEach(function(btn) {
