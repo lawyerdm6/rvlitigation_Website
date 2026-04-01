@@ -55,11 +55,14 @@
 - **Phone**: (415) 797-7591
 - **Fonts**: Cormorant Garamond (serif headings) + Montserrat (sans body)
 
+## Recent Changes (March 23, 2026)
+- Fixed nav dropdown disappearing on hover — replaced `margin-top` gap with `padding-top` on `.dropdown-menu`
+- Fixed squished contact form on mobile — removed `white-space: nowrap` from `.form-title`, ensured form wrapper/form take full width
+
 ## What to Work on Next
 See `promptdocs/implementation_plan.md` → "Next Steps" section for prioritized backlog.
 
 **Quick summary of high-value next items:**
 1. QA pass — visual review of V2 pages in browser, fix any formatting issues
-2. Navigation dropdowns — add practice area dropdowns under "OUR PRACTICE"
-3. Restore PI when ready — search `PI REMOVED START`, unwrap comments, re-add JSON-LD entries
-4. Blog/resources expansion
+2. Restore PI when ready — search `PI REMOVED START`, unwrap comments, re-add JSON-LD entries
+3. Blog/resources expansion

@@ -637,6 +637,12 @@ ul {
     outline: 3px solid transparent;
     outline-offset: 3px;
     transition: border-color 0.4s ease, outline-color 0.4s ease, transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .practice-card:hover {
@@ -1384,27 +1390,40 @@ ul {
         width: clamp(285px, 75vw, 450px);
     }
 
-    /* Practice cards — square, fluid sizing */
-    .contact-form-wrapper .practice-card {
-        aspect-ratio: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: clamp(8px, 2vw, 15px);
-        min-width: 0;
-        box-sizing: border-box;
+    /* Services grid — stack on small screens */
+    .services-grid {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .services-grid .practice-card {
+        width: 100% !important;
+        aspect-ratio: auto;
+        padding: 40px 25px;
+    }
+    .services-grid .practice-card img {
+        width: 100px;
+        height: 100px;
+    }
+    .services-grid .practice-card h3 {
+        font-size: 1.1rem;
     }
 
-    .contact-form-wrapper .practice-card img {
-        width: clamp(35px, 10vw, 70px);
-        height: clamp(35px, 10vw, 70px);
-        margin-bottom: clamp(6px, 2vw, 15px);
+    /* Practice cards in services grid — large on mobile */
+    .contact-form-wrapper .services-grid .practice-card {
+        aspect-ratio: auto;
+        padding: 40px 25px;
+        width: 100% !important;
     }
 
-    .contact-form-wrapper .practice-card h3 {
-        font-size: clamp(0.55rem, 1.8vw, 0.85rem);
-        letter-spacing: clamp(0.5px, 0.3vw, 2px);
+    .contact-form-wrapper .services-grid .practice-card img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 20px;
+    }
+
+    .contact-form-wrapper .services-grid .practice-card h3 {
+        font-size: 1rem;
+        letter-spacing: 2px;
     }
 
     /* Content section buttons — single line, consistent height, centered */
@@ -1439,7 +1458,7 @@ ul {
     }
 
     .splash-title {
-        font-size: 1.2rem;
+        font-size: 1rem;
         letter-spacing: 2px;
     }
 
@@ -1464,12 +1483,36 @@ ul {
     }
 
     .practice-card {
-        padding: 30px 20px;
+        padding: 40px 25px;
     }
 
     .practice-card img {
-        width: 60px;
-        height: 60px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .practice-card h3 {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    /* Homepage + our-practice cards — stack full width on mobile */
+    .practice-cards {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .practice-cards .practice-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 35px 25px;
+    }
+    .practice-cards .practice-card img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 20px;
+    }
+    .practice-cards .practice-card h3 {
+        font-size: 1rem;
     }
 }
 
