@@ -1561,8 +1561,13 @@ ul {
     .review-carousel {
         padding: 0 20px !important;
     }
-    .carousel-btn:hover {
+    .carousel-btn:hover,
+    .carousel-btn:active,
+    .carousel-btn:focus {
         border-color: rgba(255,255,255,0.2) !important;
+        background: none !important;
+        color: #fff !important;
+        outline: none;
     }
 }
 
