@@ -1516,6 +1516,18 @@ ul {
     }
 }
 
+/* Review Carousel - responsive slides */
+@media (max-width: 900px) {
+    .review-slide {
+        min-width: calc(50% - 13px) !important;
+    }
+}
+@media (max-width: 600px) {
+    .review-slide {
+        min-width: 100% !important;
+    }
+}
+
 /* ============================================
    Social Media Icons
    ============================================ */
