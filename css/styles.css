@@ -1598,7 +1598,6 @@ ul {
 
 .social-icons a:hover {
     color: var(--color-white);
-    transform: translateY(-3px);
 }
 
 .social-icons svg {
