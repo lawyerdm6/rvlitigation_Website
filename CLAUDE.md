@@ -3,10 +3,14 @@
 ## Project Path
 `/home/codebox/Desktop/work/rvlitigation_Website-main/`
 
-## Current State (March 23, 2026)
-- **All 30 practice area sub-pages** are on V2 template (16 criminal + 12 civil + 2 hub pages)
+## Current State (June 23, 2026)
+- **Practice areas: Criminal Defense + Civil Litigation ONLY.** Firm no longer does Personal Injury or contingency-fee work.
 - **V2 template** = long-form "Shouse-style" article layout with sticky TOC, FAQ accordion, JSON-LD schemas, statute blockquotes, penalty tables, real-world examples, floating CTA
-- **Personal Injury HIDDEN** — All PI links, cards, and sections commented out across 21 files (homepage, our-practice, professionals, FAQ, sitemap, 16 location pages). PI pages at `/personal-injury/` are intact but unlinked. All changes wrapped in `<!-- PI REMOVED START -->` / `<!-- PI REMOVED END -->` markers. To restore: search for `PI REMOVED START` and unwrap comments.
+- **Personal Injury PERMANENTLY REMOVED (June 23, 2026)** — The old `PI REMOVED START/END` comment markers were fully stripped (not just hidden). All 11 `/personal-injury/*.html` pages are now `noindex` redirect stubs → `/our-practice`. Every PI link, card, keyword, schema offer, and prose reference removed site-wide. All "contingency / no fee unless we win" language removed too.
+- **5 Civil services REMOVED (June 23, 2026)** — `ada-compliance`, `consumer-protection`, `debt-collection`, `intellectual-property`, `fraud-claims` (civil fraud). Pages are now `noindex` redirect stubs → `/civil-litigation/`. Removed from the civil hub (now 23 cards), sibling "Related Practice Areas" blocks, and sitemap. Criminal `fraud-defense.html` is unaffected (kept).
+- **Intentionally LEFT (factual/accurate, not service marketing):** generic "consumer protection statute" references describing the UCL/Song-Beverly law on `unfair-business-practices.html` + `breach-of-warranty.html`; "California Civil Rights Department (CRD)" — the actual state agency for FEHA filings — on `employment-disputes.html`.
+- **Location pages** — 10 city pages + 5 county pages + hub page live at `/locations/`
+- **Hub pages unified** — Both criminal & civil hub cards use `.practice-detail-card` class with cream bg + gold hover (`#f5f0e0`)
 - **Location pages** — 10 city pages + 5 county pages + hub page live at `/locations/`
 - **Hub pages unified** — Both criminal & civil hub cards use `.practice-detail-card` class with cream bg + gold hover (`#f5f0e0`)
 
