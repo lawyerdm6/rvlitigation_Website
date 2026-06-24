@@ -694,7 +694,7 @@ ul {
     font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 2px;
-    margin-bottom: 30px;
+    margin-bottom: 14px;
     transition: var(--transition-smooth);
 }
 
@@ -708,25 +708,13 @@ ul {
     color: #888;
     font-size: 0.85rem;
     letter-spacing: 1px;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
 }
 
-.btn-call-footer {
-    display: inline-block;
-    padding: 15px 60px;
-    background-color: transparent;
-    color: var(--color-white);
-    border: 1px solid var(--color-white);
-    font-size: 0.9rem;
-    font-weight: 500;
-    letter-spacing: 2px;
-    transition: var(--transition-smooth);
-}
-
-.btn-call-footer:hover {
-    background-color: var(--color-white);
-    color: var(--color-black);
-    border-color: var(--color-white);
+/* Footer CTA "Call Us" — same as the nav-bar phone link, centered */
+.cta-call-footer {
+    display: inline-flex;
+    justify-content: center;
 }
 
 .copyright {
