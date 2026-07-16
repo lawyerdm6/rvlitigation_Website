@@ -466,6 +466,7 @@ ul {
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
     width: 100%;
     padding: 15px 20px;
