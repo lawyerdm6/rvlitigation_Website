@@ -923,6 +923,10 @@ ul {
     color: var(--color-gray-light);
 }
 
+.column-content .section-tagline {
+    color: var(--color-gold);
+}
+
 .content-section.light .column-content p {
     color: var(--color-gray-medium);
 }
@@ -1174,7 +1178,7 @@ ul {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1286px) {
     .navbar {
         padding: 15px 20px;
     }
@@ -1225,6 +1229,7 @@ ul {
 
     .nav-links.active {
         display: flex;
+        min-height: 100vh;
     }
 
     .nav-buttons {
@@ -1278,7 +1283,9 @@ ul {
     .mobile-inquire a::after {
         display: none;
     }
+}
 
+@media (max-width: 768px) {
     .contact-section {
         padding: 25px 20px;
     }

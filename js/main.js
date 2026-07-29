@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navDropdowns.forEach(function(navDropdown) {
             var dropdownToggle = navDropdown.querySelector(':scope > a');
             dropdownToggle.addEventListener('click', function(e) {
-                if (window.innerWidth <= 768) {
+                if (window.innerWidth <= 1286) {
                     e.preventDefault();
                     navDropdown.classList.toggle('open');
                 }
