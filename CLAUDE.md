@@ -3,7 +3,7 @@
 ## Project Path
 `/home/codebox/Desktop/work/rvlitigation_Website-main/`
 
-## Current State (July 28, 2026 — late evening session, not yet pushed)
+## Current State (July 28, 2026 — late evening session, commit `a14be9c`, live on origin/main)
 - **WHY CHOOSE US tagline gold-color bug fixed** — on the homepage it rendered gray because `.column-content p` (specificity 0,1,1) beat `.section-tagline`'s (0,1,0). Added `.column-content .section-tagline { color: var(--color-gold); }` in `css/styles.css`. This also fixes the same latent bug for any other `.section-tagline` sitting inside `.column-content` (e.g. attorney taglines like "FOUNDING PARTNER" on professionals.html), not just the one instance that was reported.
 - **Nav hamburger breakpoint moved from 768px to 1286px** — the nav-specific rules (`.navbar`, `.nav-links`, `.dropdown-menu` mobile behavior, `.mobile-menu-btn`, `.nav-buttons`, `.mobile-call`/`.mobile-inquire`) were split out of the old `@media (max-width: 768px)` block into their own `@media (max-width: 1286px)` block in `css/styles.css`, leaving the rest of that 768px block (typography/spacing rules unrelated to nav) untouched. `js/main.js` line ~34 (`window.innerWidth <= 768` gate on dropdown click-to-expand vs hover) updated to match `1286`. If the nav ever needs further breakpoint tuning, both places must move together.
 - **Mobile nav dropdown now `min-height: 100vh` when `.nav-links.active`** — background now always covers full viewport height while open, not just wraps link-list content height.
