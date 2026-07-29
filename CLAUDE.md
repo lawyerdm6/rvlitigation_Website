@@ -3,7 +3,21 @@
 ## Project Path
 `/home/codebox/Desktop/work/rvlitigation_Website-main/`
 
-## Current State (July 16, 2026)
+## Current State (July 28, 2026 — evening session, not yet pushed)
+- **Chelsie Liberty added to professionals.html** as Associate Attorney, positioned after Ryan Murphy (Of Counsel). Uses `images/Photos/chelsiel.png`/`.webp` (regenerated to match site convention: png downsized to 800x1111, webp kept at source 1080x1500).
+- **Cristy Smith photo updated** — `cristy_smith.png` was overwritten with a new photo (same filename); `cristy_smith.webp` regenerated from it to match.
+- **"About Us" removed from the top nav sitewide** (94 files) and added instead as a button ("LEARN MORE ABOUT US") under the "8 Superior Service Commitments" section on the homepage. The `about.html` page itself is unchanged/still live, just no longer in nav.
+- **Homepage hero copy changed** to "Serious Business Disputes Require Serious Litigation Counsel. We Fight to Protect the Interests of Businesses and Individuals in Court."
+- **Homepage practice-area cards**: added an "OUR PRACTICE AREAS" tagline above them; added `.home-practice-cards` class + mobile CSS (`@media max-width: 768px`) so the two cards stack vertically instead of squishing side-by-side on phones. (The site already had a similarly-named `.practice-cards` mobile rule scoped to `max-width: 480px` only, and pointed at a class no HTML file actually used — dead CSS, left in place.)
+- **Corporate law (`/civil-litigation/`) and criminal defense (`/criminal-defense/`) hub pages**: (1) trimmed the large gap between `.page-header` and the first `.content-section` by adding `padding-top: 20px` inline override on those two pages only (was ~130px combined, now ~70px) — global `.page-header`/`.content-section` CSS untouched. (2) Reordered sections: the "two-column reverse" narrative block (photo + long-form practice description) now sits *after* the Practice Areas card grid instead of before it — user confirmed this ordering explicitly when asked.
+- Not yet committed/pushed as of this memory update — confirm with user before pushing (this repo's pushes are treated as live-site publishes, see [[rvlitigation-website]] memory).
+
+## Prior State (July 28, 2026, morning — commit `f6aac24`)
+- **"Civil Litigation" renamed to "Corporate & Commercial Law" sitewide** (nav, hub page, breadcrumbs, location pages, schema/meta, key paragraphs) — the `/civil-litigation/` URL path was deliberately kept unchanged. Commit `f6aac24`.
+- **Homepage refined**: "Why Choose Us" copy replaced with a firm-pedigree quote (old Firm Quote section removed as redundant); hero subhead simplified to "We help individuals and businesses win in court"; reviews section moved higher with a "100+ 5-star Google reviews" callout (also added to reviews page); "Our Practice Areas" links folded into the homepage intro section.
+- Live at commit `f6aac24` on `origin/main` as of July 28, 2026. (A same-day follow-up commit `5948bdf` added an image via GitHub's web upload UI, not through this repo workflow.)
+
+## Prior State (July 16, 2026)
 - **Site is now civil-litigation-first.** Per `promptdocs/RVLG_Website_Repositioning_Claude_Prompt_Pack.docx` (see `promptdocs/implementation_plan.md` → "Civil-Litigation-First Repositioning" for full detail), the site now leads with Civil Litigation / Business Disputes everywhere — homepage title/meta/hero, top nav order, CTA copy. Criminal Defense is **partially demoted**: still in the top nav (reordered after Civil Litigation) but page content/charge-grid untouched — this was a deliberate lighter-touch choice vs. the source doc's "move to footer only" recommendation.
 - **Employment Disputes & Wage/Hour Claims pages removed** (July 16, 2026) — converted to noindex redirect stubs, same pattern as the June 23 removals. Note: these two were *deliberately kept* in the June 23 pass; this later doc reversed that call.
 - **Business Litigation / Commercial Lease Disputes / Real Estate Litigation still live under `/civil-litigation/...`** — NOT promoted to top-level URLs (`/business-litigation/` etc.) despite the repositioning doc suggesting it for PPC landing pages. Explicitly deferred — revisit only if dedicated PPC campaigns are planned.
