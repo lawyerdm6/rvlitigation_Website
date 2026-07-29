@@ -3,7 +3,7 @@
 ## Project Path
 `/home/codebox/Desktop/work/rvlitigation_Website-main/`
 
-## Current State (July 29, 2026 — fifth session, not yet pushed)
+## Current State (July 29, 2026 — fifth session, commit `d160d7c`, live on origin/main)
 - **SEO content added to both practice hub pages** (`civil-litigation/index.html`, `criminal-defense/index.html`), inspired by the structure of a competitor page (`wadelitigation.com/civil-litigation/`) but fully rewritten in original language — no copied text, and deliberately no awards/accolades language since the firm doesn't have any to cite (competitor page leaned heavily on "2022 Civil Litigation Lawyer of the Year" etc.).
 - Scope was explicitly narrowed after asking the user: **no ADR subsection, no cost-structure/attorney-role sections** (the competitor page has both) — just the intro rewrite, stages of the process, and 4 key takeaways, per the user's direct request.
 - On both pages, the **`two-column reverse` section content was replaced** (not just supplemented) — old marketing-forward copy ("Defense for Businesses and Individuals...") swapped for an educational "What Is Civil Litigation in California?" / "What Happens in a California Criminal Case?" framing that leads into the new process content below it. The retainer/no-contingency filtering language was preserved and folded into the new copy rather than dropped.
