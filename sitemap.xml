@@ -439,12 +439,6 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/civil-lawsuit-defense</loc>
-        <lastmod>2026-07-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://rvlitigation.com/civil-litigation/urgent-injunctions-tros</loc>
         <lastmod>2026-07-28</lastmod>
         <changefreq>monthly</changefreq>
@@ -453,6 +447,98 @@
     <url>
         <loc>https://rvlitigation.com/civil-litigation/outside-litigation-counsel</loc>
         <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- Private Civil Matters Hub -->
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Private Civil Matters Sub-Pages -->
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/civil-lawsuit-defense</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/personal-guarantee-loan-default</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/property-line-boundary-disputes</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/hoa-disputes</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/defamation-slander-libel</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/debt-collection-defense</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/civil-harassment-claims</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/easement-right-of-way-disputes</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/judgment-enforcement-debtor-exam</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/nuisance-claims</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/vehicle-property-damage-claims</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/wrongful-eviction-defense</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/elder-financial-abuse</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rvlitigation.com/private-civil-matters/small-claims-appeals</loc>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>

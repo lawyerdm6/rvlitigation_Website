@@ -279,7 +279,8 @@ ul {
 }
 
 .mobile-inquire,
-.mobile-call {
+.mobile-call,
+.mobile-private-civil {
     display: none;
 }
 
@@ -1314,7 +1315,8 @@ ul {
     }
 
     .mobile-inquire,
-    .mobile-call {
+    .mobile-call,
+    .mobile-private-civil {
         display: block;
     }
 
