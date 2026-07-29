@@ -173,6 +173,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Floating CTA — acts as a call button on mobile, same as the CALL US button
+    const floatingCta = document.querySelector('.floating-cta');
+
+    if (floatingCta) {
+        const fabText = floatingCta.querySelector('span');
+        const desktopHref = 'https://rvlitigation.com/contact';
+        const desktopLabel = 'CONTACT A LAWYER';
+        const mobileHref = 'tel:+14157977591';
+        const mobileLabel = 'CALL US';
+
+        const updateFloatingCta = function() {
+            const isMobile = window.innerWidth <= 1286;
+            floatingCta.setAttribute('href', isMobile ? mobileHref : desktopHref);
+            floatingCta.setAttribute('aria-label', isMobile ? 'Call us' : 'Contact a lawyer');
+            if (fabText) fabText.textContent = isMobile ? mobileLabel : desktopLabel;
+        };
+
+        updateFloatingCta();
+        window.addEventListener('resize', updateFloatingCta);
+    }
+
     // Intersection Observer for animations
     const observerOptions = {
         threshold: 0.1,

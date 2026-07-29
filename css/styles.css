@@ -795,6 +795,39 @@ ul {
     border-top-color: var(--color-gold);
 }
 
+/* Floating CTA (mobile-only unless a page overrides it) */
+.floating-cta {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 900;
+    background: var(--color-gold);
+    color: #000;
+    padding: 14px 24px;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    transition: all 0.3s;
+    align-items: center;
+    gap: 8px;
+}
+
+.floating-cta:hover {
+    background: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.5);
+}
+
+.floating-cta svg {
+    width: 16px;
+    height: 16px;
+}
+
 /* ============================================
    Page Headers (for inner pages)
    ============================================ */
@@ -1179,6 +1212,10 @@ ul {
 }
 
 @media (max-width: 1286px) {
+    .floating-cta {
+        display: flex;
+    }
+
     .navbar {
         padding: 15px 20px;
     }
@@ -1494,6 +1531,15 @@ ul {
 }
 
 @media (max-width: 480px) {
+    .floating-cta span {
+        display: none;
+    }
+
+    .floating-cta {
+        padding: 14px;
+        border-radius: 50%;
+    }
+
     .navbar {
         padding: 12px 15px;
     }
