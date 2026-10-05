@@ -1,0 +1,6 @@
+# GitHub Pages serves the checked-in HTML; authoring files are not public pages.
+exclude:
+  - content
+  - scripts
+  - CLAUDE.md
+  - README.md
