@@ -1,9 +1,37 @@
 # RV Litigation Group PC — Website Project
 
+## Required AI Documentation Workflow
+- User instruction (October 5, 2026): Always update the repository's AI documentation when making changes to this website, including branch/backup setup, implementation, verification, and deployment.
+- Read this file before working. Verify the current code and branch state; dated history below is not authoritative for current files.
+- Before finishing a task, record what changed, why, affected areas, checks performed, deployment status, and outstanding decisions. Keep documentation with the implementation on its working branch and include it in the merge.
+- Preserve backup branches without adding commits or moving their refs. Record rollback checkpoints here.
+- Do not merge or deploy the upcoming rebuild until the user authorizes publication.
+
+## Current Status (October 5, 2026)
+### Repository and hosting
+- Repository: `lawyerdm6/rvlitigation_Website`; default/live source branch: `main`; hosting: GitHub Pages at https://rvlitigation.com/.
+- September 24 favicon update: PR #1 was merged and verified live. Homepage declares the existing 192 × 192 PNG favicon and links the web manifest. Manifest icon paths were corrected to `/images/Favicon/...`.
+- `CLAUDE.md` is the only Markdown documentation currently tracked. Earlier references to `promptdocs/implementation_plan.md`, `promptdocs/subpage_emplate.md`, and the repositioning DOCX refer to files not present in the current repository.
+
+### Pre-rebuild rollback checkpoint
+- Backup branch: `backup/pre-rebuild-2026-10-05`.
+- Exact preserved commit: `68ee25edd8b0ceebda15f235ef52f03b1c506fbf`.
+- This is a backup branch, not a tag. Both it and the rebuild branch were created from that exact `main` commit and verified.
+- Keep this backup unchanged. If rollback is requested, restore its website file state through a new commit on `main` and redeploy; preserve subsequent work/history rather than resetting or force-pushing `main`.
+- This checkpoint covers repository files, not DNS, email, or external service configuration.
+
+### Upcoming rebuild — awaiting full requirements
+- Working branch: `rebuild/business-tax-white-collar`.
+- User's initial scope: rebuild around Business Litigation, Business Transactions, Tax Law, and White-Collar Defense; retain selected criminal matters through a restrained secondary path; replace the private-matters menu slot with Tax Law; remove “civil” from public-facing content and active URLs.
+- The user will upload a full requirements document in subsequent prompts. No rebuild implementation or URL migration has begun.
+- Plan page retention/removal, navigation, homepage content, metadata, internal links, sitemap, and redirects after reviewing that document. Do not treat the short scope above as the complete specification.
+- The October 5 setup/documentation changes do not alter the public website's content or navigation.
+
+
 ## Project Path
 `/home/codebox/Desktop/work/rvlitigation_Website-main/`
 
-## Current State (July 29, 2026 — commit `0f616d6`, live on origin/main)
+## Historical State (July 29, 2026 — commit `0f616d6`, live on origin/main)
 - **New top-level section: `/private-civil-matters/`** — a third practice-area hub, parallel to `/civil-litigation/` and `/criminal-defense/`. Built after asking the user two scoping questions: (1) whether overlapping topics should get duplicate pages or link to existing civil-litigation pages — user chose **link to existing** to avoid duplicate/competing SEO content; (2) whether the hub should be a new top-level folder or nested under civil-litigation — user chose **new top-level folder**.
 - **`civil-litigation/civil-lawsuit-defense.html` moved** to `private-civil-matters/civil-lawsuit-defense.html` via `git mv` (relative asset paths `../css/`, `../js/` unaffected — same folder depth). Canonical URL, og:url, and BreadcrumbList schema updated to the new path and parent ("Private Civil Matters" instead of "Corporate & Commercial Law"). Its card was removed from the civil-litigation hub grid (now lives only in the new hub) and both homepage links updated (practice card → hub root, "Have You Been Sued?" section CTA → the specific subpage at its new URL).
 - **13 brand-new full V2-template pages** added to `private-civil-matters/` (schema, sticky TOC, statute blocks, examples, at-stake table, how-we-help, FAQ, related-areas, CTA) — personal-guarantee-loan-default, property-line-boundary-disputes, hoa-disputes, defamation-slander-libel, debt-collection-defense, civil-harassment-claims, easement-right-of-way-disputes, judgment-enforcement-debtor-exam, nuisance-claims, vehicle-property-damage-claims, wrongful-eviction-defense, elder-financial-abuse, small-claims-appeals. **Wrote the first one by hand, then switched to a Python generator** (`gen_pages.py` + a `pages_content.json` data file, both in scratchpad — not committed to the repo) for the remaining 12, feeding structured content (title/meta/statutes/examples/FAQ/etc.) through the same HTML template — far more reliable than hand-writing 12 near-identical ~600-line pages, and it's how the boilerplate stayed byte-identical across all of them.
