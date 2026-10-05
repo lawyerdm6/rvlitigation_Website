@@ -20,12 +20,23 @@
 - Keep this backup unchanged. If rollback is requested, restore its website file state through a new commit on `main` and redeploy; preserve subsequent work/history rather than resetting or force-pushing `main`.
 - This checkpoint covers repository files, not DNS, email, or external service configuration.
 
-### Upcoming rebuild — awaiting full requirements
-- Working branch: `rebuild/business-tax-white-collar`.
-- User's initial scope: rebuild around Business Litigation, Business Transactions, Tax Law, and White-Collar Defense; retain selected criminal matters through a restrained secondary path; replace the private-matters menu slot with Tax Law; remove “civil” from public-facing content and active URLs.
-- The user will upload a full requirements document in subsequent prompts. No rebuild implementation or URL migration has begun.
-- Plan page retention/removal, navigation, homepage content, metadata, internal links, sitemap, and redirects after reviewing that document. Do not treat the short scope above as the complete specification.
-- The October 5 setup/documentation changes do not alter the public website's content or navigation.
+### Upcoming rebuild — brief reviewed; decisions confirmed October 5
+- Working branch: `rebuild/business-tax-white-collar`. The 17-page `RV_Litigation_Website_Repositioning_Developer_Brief.pdf` (October 2, 2026) was uploaded and reviewed. Later user decisions below override conflicting recommendations in that brief.
+- Primary areas: Business Litigation, Business Transactions, Tax Law, and White-Collar Defense. User confirmed the proposed new tax and transaction scopes and confirmed Matt is Matthew Williams already listed. Do not invent credentials, experience, specialist status, or fee terms.
+- Keep criminal defense available through a secondary path; retire general-crime detail pages for now, while migrating relevant white-collar content.
+- Keep small claims available (existing small-claims-appeals content must be reviewed for accurate scope). User said the other private-matter offerings discussed can go. Do not automatically preserve the former private-matters library.
+- Remove probate, residential/neighborhood and other unrelated marketing. Keep employer-side employment representation, clearly described as services for businesses/employers rather than employees.
+- Keep the published 28 Geary St address. Domain registrar is GoDaddy; hosting remains GitHub Pages.
+- Main positioning goal: reduce unwanted civil-rights inquiries. Reduce “civil” in public wording as much as possible, accurately describing retained services. Do not distort legal terms or promise that word removal alone will eliminate these inquiries.
+
+### Approved URL migration method
+- Explicit user decision: use immediate HTML redirects and keep the current hosting setup. No GoDaddy DNS change or hosting move is required for this approach.
+- Use zero-second `meta refresh` in each moved source page's head, a canonical link to the final destination, and a visible fallback link. These are HTML redirects, not HTTP 301 responses; this is an approved exception to the brief's literal 301 requirement.
+- Map each retained old URL directly to its relevant replacement. Account for existing extensionless/.html and trailing-slash variants, and test actual GitHub Pages behavior rather than assuming all variants resolve.
+- Deploy redirects together with working replacement pages; do not activate redirects pointing at nonexistent destinations.
+- Retired pages without a relevant replacement should return genuine 404 responses and be removed from internal navigation and the sitemap. Do not redirect unrelated pages to Tax Law or the homepage.
+- Update internal links, canonicals, structured data, and sitemap to the new URLs. Keep old redirect aliases crawlable and preserve them for at least one year, preferably longer.
+- Verification for this planning update: documentation was read from the working branch and updated there. No website implementation, redirects, DNS changes, merge, or deployment has occurred. Next: prepare the complete page/URL map and implement the approved rebuild on the working branch for review.
 
 
 ## Project Path
