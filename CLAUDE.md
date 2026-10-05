@@ -7,7 +7,7 @@
 - The business/transactions/tax/white-collar content plan must be revisited with the user after restoration. Do not reapply the rejected rebuild automatically.
 - User requires AI documentation to be updated with every website change, including checks and deployment status.
 - Rejected rebuild remains in Git history and on `rebuild/business-tax-white-collar`; it is not the live source to use for future content edits.
-- Verification: rollback tree uses the exact backup tree as its base with only CLAUDE.md updated. Publication was requested; live deployment verification follows the rollback commit.
+- Verification: rollback tree uses the exact backup tree as its base with only CLAUDE.md updated. GitHub Pages deployment for rollback commit `64d452a051f05df846f6363dfe7b516fcfa86025` succeeded. The refreshed live homepage was verified: original `.main-header`, original firm-name H1s and original Corporate & Commercial Law title are present; the redesign `.rv-header` is absent. All repository website blobs match the backup exactly.
 
 ---
 
