@@ -10,6 +10,15 @@
 - Preserve the FormSubmit recipient and address: 28 Geary St, Suite 650, San Francisco, CA 94108. Do not submit real test inquiries, invent qualifications/results, promise free consultations, or reintroduce the retainer checkbox.
 - Draft implementation and verification are complete. Review PR #3: https://github.com/lawyerdm6/rvlitigation_Website/pull/3 . It is a draft, has not been merged, and has no deployment. Publication approval is still required.
 
+## Centered practice service cards — October 5, 2026
+
+Kris requested centered service-card rows on every practice hub. The shared `.practice-detail-cards` component now uses wrapping flex with centered rows and consistent card widths, including incomplete final rows. Existing three-column desktop, two-column tablet and one-column phone breakpoints, spacing, colors, typography, content and links are preserved. This applies to Business Litigation, Business Transactions, Tax Law, White-Collar Defense, Corporate & Commercial Law, Criminal Defense and Private Matters; homepage and Our Practice directory components are separate.
+
+- Browser measurements passed for all seven hubs at 320, 390, 768, 1024 and 1366px: centered final rows, consistent card widths, centered content and no horizontal document overflow. Tax Law's final row was visually inspected.
+- Full source validation: 145 HTML files, 120 canonical sitemap URLs, zero introduced errors or warnings; `git diff --check` passes.
+- User separately asked whether statewide California SEO needs more location references and required an answer before implementation. No geographic wording, metadata, schema, location pages or URLs were changed. Recommended reconciling older Bay Area-only statements with truthful statewide availability, preserving the actual San Francisco office and useful local content, rather than inserting city lists.
+- Saved on the existing draft branch and PR #3 only. Main and the immutable backup remain unchanged; no merge or deployment is authorized.
+
 ## Our Practice page refinement — October 5, 2026
 
 Kris explicitly requested two new `two-column reverse` sections on `/our-practice`, appropriate imagery for those sections and Corporate & Commercial Law, and uniform centered directory cards.
