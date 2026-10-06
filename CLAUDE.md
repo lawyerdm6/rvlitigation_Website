@@ -8,7 +8,13 @@
 - Remove named services only: probate, personal guarantees, debt defense, defamation, HOA/boundary matters, residential eviction and elder abuse. Preserve commercial leases, employer-side employment, small-claims advice/appeals, and private services not individually approved for removal.
 - Reduce "civil" in marketing text while retaining accurate legal terms. Keep existing service URLs where no actual content move is needed. Moved content needs a direct immediate HTML redirect and destination canonical; unrelated removals should return 404. Never redirect private services indiscriminately to tax or small claims.
 - Preserve the FormSubmit recipient and address: 28 Geary St, Suite 650, San Francisco, CA 94108. Do not submit real test inquiries, invent qualifications/results, promise free consultations, or reintroduce the retainer checkbox.
-- Draft implementation and verification are complete. Review PR #3: https://github.com/lawyerdm6/rvlitigation_Website/pull/3 . It is a draft, has not been merged, and has no deployment. Publication approval is still required.
+- Kris explicitly approved publication of the complete reviewed draft after adding FAQ after Reviews in the navbar and changing David’s displayed title to PRESIDENT. This authorization supersedes the historical pending-publication notes below. Preserve the immutable backup and verify the live deployment after merging PR #3.
+
+## Final navigation edits and publication authorization — October 5, 2026
+
+- Added FAQ immediately after Reviews in all 122 navigation menus, linking to the existing homepage questions at `https://rvlitigation.com/#faq`. Added the section anchor and fixed-header scroll spacing; retained the standalone FAQ page and its URL.
+- Changed David’s visible Professionals-page title from RV LITIGATION PRESIDENT to PRESIDENT, preserving his biography, portrait and other labels.
+- Kris explicitly instructed: “after that publish everything.” Complete the remaining verification, save these changes to the existing draft, merge the full reviewed draft and verify production. No additional publication approval is needed for this release.
 
 ## Statewide SEO and qualified inquiries — October 5, 2026
 
