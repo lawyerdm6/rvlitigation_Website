@@ -10,6 +10,18 @@
 - Preserve the FormSubmit recipient and address: 28 Geary St, Suite 650, San Francisco, CA 94108. Do not submit real test inquiries, invent qualifications/results, promise free consultations, or reintroduce the retainer checkbox.
 - Draft implementation and verification are complete. Review PR #3: https://github.com/lawyerdm6/rvlitigation_Website/pull/3 . It is a draft, has not been merged, and has no deployment. Publication approval is still required.
 
+## Requested refinement — October 5, 2026 evening review
+
+Kris reviewed the local draft and requested uniform centered homepage cards, the selected icons, more services in the new practices, and working dropdown links. These refinements remain on the same separate unpublished draft and PR #3; no publication approval has been given.
+
+- Homepage cards now use a centered wrapping flex layout with consistent 240px square cards. Wide screens show the four priority cards above the three retained cards; narrower rows remain centered. Introductory text retains its prior 820px width. Existing card colors, type, borders and hover styling remain.
+- Installed four selected transparent 256px PNG assets: `images/Icons/business-litigation.png` (briefcase/gavel), `business-transactions.png` (contract/pen), `tax-law.png` (tax document/scales), and `white-collar-defense.png` (suit/shield). Homepage, practice directory, business overview and the four primary hubs use the appropriate icons. Original category icons remain for the three retained homepage practices.
+- Fixed desktop dropdown focus CSS. The previous focus rule replaced horizontal centering with a vertical transform, moving the menu under the pointer during clicks. Desktop focus now reveals the menu without changing its position; mobile behavior is unchanged. No JavaScript change was needed.
+- Added nine service pages using the existing V2 format and unique service-focused content: Commercial Lease Agreements; Confidentiality & Nondisclosure Agreements; Business Buyouts & Owner Exits; Tax Penalty Relief; Tax Liens, Levies & Collection Appeals; Payroll Tax Disputes; Grand Jury Subpoenas & Testimony; Wire & Mail Fraud Defense; False Statements & Obstruction Defense. Three hubs and six existing parent articles link the additions. Litigation retains its existing 19 services; transactions has six service cards, tax seven, and white-collar seven including the shared criminal-tax page. There are now four new hubs and nineteen new service pages in the full draft.
+- Static validation: 145 HTML files, 120 unique canonical sitemap URLs, zero introduced errors or warnings. New pages retain the original V2 CSS, each has one H1/canonical and matching visible FAQ/schema content. Prior baseline issues remain separately recorded; no exhaustive inherited legal-content audit is claimed.
+- Browser checks: all seven homepage cards are uniform and centered at 320/390/768/1366px with no horizontal overflow. Desktop pointer and keyboard dropdown navigation and mobile submenu links resolve correctly. Selected icons load; the new Payroll Tax Disputes link opens a 390px page with no horizontal overflow. The longer Tax Liens, Levies & Collection Appeals title and layout were visually checked at 320px, and its FAQ button expanded correctly.
+- Preserve main, the immutable backup, existing redirect mappings, form recipients and publication gate. Do not merge or deploy without Kris's explicit approval of the revised preview.
+
 ## Draft implementation checkpoint — October 5, 2026
 
 This checkpoint records the approved implementation on the separate draft branch. It does **not** record a merge, publication, or live deployment. Final visual review, presentation to Kris, and publication approval are still pending.
