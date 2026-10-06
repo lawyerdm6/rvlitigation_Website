@@ -8,7 +8,7 @@
 - Remove named services only: probate, personal guarantees, debt defense, defamation, HOA/boundary matters, residential eviction and elder abuse. Preserve commercial leases, employer-side employment, small-claims advice/appeals, and private services not individually approved for removal.
 - Reduce "civil" in marketing text while retaining accurate legal terms. Keep existing service URLs where no actual content move is needed. Moved content needs a direct immediate HTML redirect and destination canonical; unrelated removals should return 404. Never redirect private services indiscriminately to tax or small claims.
 - Preserve the FormSubmit recipient and address: 28 Geary St, Suite 650, San Francisco, CA 94108. Do not submit real test inquiries, invent qualifications/results, promise free consultations, or reintroduce the retainer checkbox.
-- Draft implementation and verification are in progress; main/live publication has not occurred. Update this record with final checks and exact deployment state before handing off.
+- Draft implementation and verification are complete. Review PR #3: https://github.com/lawyerdm6/rvlitigation_Website/pull/3 . It is a draft, has not been merged, and has no deployment. Publication approval is still required.
 
 ## Draft implementation checkpoint — October 5, 2026
 
@@ -59,7 +59,7 @@ These 11 files were removed so unrelated retired routes return genuine not-found
 - The seven revised business/tax FAQ answers match their visible text and FAQ structured data. All four new aliases have matching destinations, canonicals, and fallback links, without `noindex`.
 - `git diff --check` passes. Chrome visual checks passed for the seven homepage cards at 320px/390px and desktop, mobile navigation, Tax Law hub, IRS service page, sticky desktop contents panel and FAQ interactions. Original hero, reviews, existing images and form endpoints are unchanged. Source validation found no introduced errors or warnings; inherited legal content has not received an exhaustive audit. No forms were submitted.
 - Preview routing supports the existing extensionless HTML paths. Production response codes and trailing-slash behavior must be checked after an approved deployment; a local server is not evidence of GitHub Pages behavior. Destinations and aliases must ship together. Keep aliases for at least one year.
-- Changes are being copied to the separate draft branch. Main/live deployment remains unmodified. Final review and explicit approval are still required before publication.
+- All 208 repository files at draft source checkpoint `d25d032ab1451968f2fe057603ab5f4bf97edb38` were verified byte-for-byte against the tested local draft. This subsequent documentation-only update records completion and PR #3. Main remains `9f28afa1be945ebeb4ec7ede1d0decdf7bac799c`; the backup remains `68ee25edd8b0ceebda15f235ef52f03b1c506fbf`. Final review and explicit approval are still required before publication.
 - The immutable backup and live `main` must remain untouched until Kris approves publication after reviewing the final preview. Keep destination pages and aliases together if later reverting presentation changes; do not blindly restore an old sitemap after new URLs have been indexed.
 
 ## Previous restoration checkpoint
