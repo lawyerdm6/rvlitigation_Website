@@ -1,4 +1,16 @@
-# Current instruction — rollback on October 5, 2026
+# Current instruction — approved surgical draft, October 5, 2026
+
+- Kris is supervising and explicitly authorized implementation in this conversation. Future discussions with David alone do not authorize website changes. Ask for Kris's confirmation when a new session starts or the person supervising changes. If Kris leaves, pause website work.
+- If the user sends `looch` as an override command, record its activation time and allow work without Kris for 24 hours. Merely quoting or defining the command does not activate it. No override is active as of this draft.
+- Work only on `draft/practice-areas-2026-10-05`, based on restored main `9f28afa1be945ebeb4ec7ede1d0decdf7bac799c`. Keep `backup/pre-rebuild-2026-10-05` immutable. Do not publish or merge without a final preview and explicit approval from Kris (or an active override).
+- Latest user instructions supersede the attached handoff where they differ: PREPEND Business Litigation, Business Transactions, Tax Law and White-Collar Defense cards; RETAIN Corporate & Commercial Law, Criminal Defense and Private Matters cards and their retained services. Do not retire the general criminal library or reduce private services to small claims alone.
+- Preserve the hero/video, photos, portraits, reviews, typography, colors and existing components. Use original hub and V2 service templates. One Practice Areas dropdown links the four priority hubs and View All Practice Areas. Outside practice pages, only targeted text/link/intake-choice updates are authorized.
+- Remove named services only: probate, personal guarantees, debt defense, defamation, HOA/boundary matters, residential eviction and elder abuse. Preserve commercial leases, employer-side employment, small-claims advice/appeals, and private services not individually approved for removal.
+- Reduce "civil" in marketing text while retaining accurate legal terms. Keep existing service URLs where no actual content move is needed. Moved content needs a direct immediate HTML redirect and destination canonical; unrelated removals should return 404. Never redirect private services indiscriminately to tax or small claims.
+- Preserve the FormSubmit recipient and address: 28 Geary St, Suite 650, San Francisco, CA 94108. Do not submit real test inquiries, invent qualifications/results, promise free consultations, or reintroduce the retainer checkbox.
+- Draft implementation and verification are in progress; main/live publication has not occurred. Update this record with final checks and exact deployment state before handing off.
+
+## Previous restoration checkpoint
 
 - User rejected the full redesign and explicitly requested restoration of the pre-rebuild backup.
 - Website files restored exactly from backup commit `68ee25edd8b0ceebda15f235ef52f03b1c506fbf` (branch `backup/pre-rebuild-2026-10-05`). Only this AI documentation differs from the backup.
