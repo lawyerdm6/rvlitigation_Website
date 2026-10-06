@@ -1007,12 +1007,16 @@ ul {
 
 /* Practice Area Cards (detailed) */
 .practice-detail-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
     gap: 40px;
 }
 
 .practice-detail-card {
+    flex: 0 1 calc((100% - 80px) / 3);
+    min-width: 0;
     background-color: #fff;
     padding: 50px 30px;
     text-align: center;
@@ -1238,9 +1242,12 @@ ul {
         margin: 0 auto;
     }
 
-    .practice-cards,
-    .practice-detail-cards {
+    .practice-cards {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .practice-detail-card {
+        flex-basis: calc((100% - 40px) / 2);
     }
 
     .values-list {
@@ -1440,9 +1447,12 @@ ul {
         font-size: 1.5rem;
     }
 
-    .practice-cards,
-    .practice-detail-cards {
+    .practice-cards {
         grid-template-columns: 1fr;
+    }
+
+    .practice-detail-card {
+        flex-basis: 100%;
     }
 
     .contact-section,
