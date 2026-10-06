@@ -2055,3 +2055,8 @@ ul {
 @media (max-width: 480px) {
     .practice-directory-cards .practice-card { flex-basis: 100%; max-width: 320px; }
 }
+
+/* Keep the homepage FAQ anchor below the fixed navigation. */
+#faq {
+    scroll-margin-top: 110px;
+}
