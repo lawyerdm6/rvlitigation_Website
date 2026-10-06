@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Oakland business litigation, transactions, tax law and defense lawyers. RV Litigation Group PC serves Downtown Oakland, Jack London Square, Temescal, Rockridge, and all of Alameda County. Call (415) 797-7591.">
-    <meta name="keywords" content="Oakland lawyer, Oakland criminal defense attorney, Oakland civil litigation, Alameda County attorney, RV Litigation Group">
+    <meta name="description" content="Business litigation, transactions, tax and white-collar defense for Oakland clients. Based in San Francisco, serving California.">
     <meta name="author" content="RV Litigation Group PC">
     <meta name="robots" content="index, follow">
-    <meta name="geo.region" content="US-CA">
-    <meta name="geo.placename" content="Oakland, California">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rvlitigation.com/locations/oakland">
-    <meta property="og:title" content="Oakland Lawyer — Business, Tax & Defense | RV Litigation Group PC">
-    <meta property="og:description" content="Oakland business litigation, transactions, tax law and defense lawyers. Serving Downtown Oakland, Jack London Square, Temescal, Rockridge, and all of Alameda County.">
+    <meta property="og:title" content="Oakland Business &amp; Tax Lawyers | RV Litigation Group PC">
+    <meta property="og:description" content="Business litigation, transactions, tax and white-collar defense for Oakland clients. Based in San Francisco, serving California.">
     <meta property="og:image" content="https://rvlitigation.com/images/Logos/RV_logo_center.png">
 
     <!-- Canonical URL -->
@@ -26,64 +23,70 @@
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "LegalService",
-    "name": "RV Litigation Group PC",
-    "description": "business litigation, transactions, tax law and defense lawyers serving Oakland, California.",
-    "url": "https://rvlitigation.com/locations/oakland",
-    "logo": "https://rvlitigation.com/images/Logos/RV_logo_center.png",
-    "telephone": "+1-415-797-7591",
-    "email": "David@RVLitigation.com",
-    "priceRange": "$$",
-    "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "28 Geary St, Suite 650",
-        "addressLocality": "San Francisco",
-        "addressRegion": "CA",
-        "postalCode": "94108",
-        "addressCountry": "US"
-    },
-    "areaServed": {
-        "@type": "City",
-        "name": "Oakland",
-        "containedInPlace": {
-            "@type": "AdministrativeArea",
-            "name": "Alameda County"
-        }
-    },
-    "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Legal Services",
-        "itemListElement": [
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Criminal Defense",
-                    "url": "https://rvlitigation.com/criminal-defense/"
-                }
+    "@graph": [
+        {
+            "@type": "LegalService",
+            "@id": "https://rvlitigation.com/#firm",
+            "name": "RV Litigation Group PC",
+            "url": "https://rvlitigation.com/",
+            "telephone": "+1-415-797-7591",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "28 Geary St, Suite 650",
+                "addressLocality": "San Francisco",
+                "addressRegion": "CA",
+                "postalCode": "94108",
+                "addressCountry": "US"
             },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Corporate & Commercial Law",
-                    "url": "https://rvlitigation.com/civil-litigation/"
-                }
+            "areaServed": {
+                "@type": "State",
+                "name": "California"
             }
-        ]
-    },
-    "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
-    }
+        },
+        {
+            "@type": "Service",
+            "@id": "https://rvlitigation.com/locations/oakland#service",
+            "name": "Legal services for Oakland clients",
+            "description": "Business litigation, transactions, tax and white-collar defense for Oakland clients. Based in San Francisco, serving California.",
+            "url": "https://rvlitigation.com/locations/oakland",
+            "provider": {
+                "@id": "https://rvlitigation.com/#firm"
+            },
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Oakland"
+                },
+                {
+                    "@type": "State",
+                    "name": "California"
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://rvlitigation.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Areas We Serve",
+                    "item": "https://rvlitigation.com/locations/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Oakland",
+                    "item": "https://rvlitigation.com/locations/oakland"
+                }
+            ]
+        }
+    ]
 }
     </script>
 
@@ -91,7 +94,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
     <link rel="shortcut icon" href="/favicon.ico">
-    <title>Oakland Lawyer — Business, Tax & Defense | RV Litigation Group PC</title>
+    <title>Oakland Business &amp; Tax Lawyers | RV Litigation Group PC</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -289,22 +292,22 @@
 
     <section class="location-hero">
         <p class="subtitle">Serving Oakland, California</p>
-        <h1>Business, Tax & Defense Lawyer in Oakland</h1>
-        <p class="intro">RV Litigation Group PC provides powerful legal representation to individuals and businesses across Oakland and Alameda County. Oakland faces some of the most serious criminal enforcement in the Bay Area, and its residents deserve lawyers who will stand up to aggressive prosecution. From violent crime defense at the Rene C. Davidson Courthouse to business and property disputes across the city, our attorneys bring the preparation and courtroom toughness your case demands.</p>
+        <h1>Business, Tax &amp; Defense Lawyers Serving Oakland</h1>
+        <p class="intro">An Oakland company facing a business dispute or investigation needs to understand both the immediate deadlines and the larger effect on its operations. RV Litigation Group PC represents businesses, executives and individuals in litigation, transactions, tax controversies and defense matters, including general criminal defense and selected private disputes. Our office is at 28 Geary St, Suite 650, San Francisco, CA 94108; we serve clients throughout California.</p>
     </section>
 
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Our Practice Areas in Oakland</h2>
-            <p>Whether you are facing serious criminal charges or locked in a business dispute, our Oakland attorneys are ready to go to work for you.</p>
+            <p>Our <a href="/business-litigation/">business litigation</a>, <a href="/business-transactions/">business transactions</a>, <a href="/tax-law/">tax law</a> and <a href="/white-collar-defense/">white-collar defense</a> practices serve Oakland clients. Explore the service pages for the matters we handle, or review our <a href="/private-civil-matters/">selected private matters</a>.</p>
             <div class="practice-links">
-                <a href="/criminal-defense/" class="practice-link-card">
-                    <h3>Criminal Defense</h3>
-                    <p>Defense in financial investigations, fraud and embezzlement matters, as well as DUI, drug offenses, assault, and other criminal charges. White-collar services are also available through our practice-area directory.</p>
-                </a>
                 <a href="/our-practice" class="practice-link-card">
                     <h3>Business &amp; Tax Law</h3>
                     <p>Business disputes, contracts and ownership agreements, business purchases and sales, and individual and business tax controversies. Explore our current practice areas.</p>
+                </a>
+                <a href="/criminal-defense/" class="practice-link-card">
+                    <h3>Criminal Defense</h3>
+                    <p>Representation in DUI, drug, assault and other criminal cases. Our general criminal defense services remain available alongside our white-collar practice.</p>
                 </a>
             </div>
         </div>
@@ -313,27 +316,27 @@
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Oakland Courts & Local Resources</h2>
-            <p>If you have been arrested or need to appear in court in Oakland, here is what you need to know about the local court system.</p>
+            <p>Use these official resources to check current locations and contact information. Your court notice and the court’s instructions determine where and how to appear; a client’s city does not by itself identify the assigned courthouse.</p>
             <div class="court-info-grid">
                 <div class="court-info-box">
-                    <h3>Rene C. Davidson Courthouse</h3>
+                    <h3>René C. Davidson Courthouse</h3>
                     <p>1225 Fallon Street, Oakland, CA 94612</p>
-                    <p>Main courthouse for Alameda County Superior Court. Handles felony criminal trials, civil unlimited cases, family law, and probate matters. Located in downtown Oakland near Lake Merritt.</p>
+                    <p>Confirm the assigned location and department using your notice and the official directory. <a href="https://www.alameda.courts.ca.gov/locations" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
                     <h3>Wiley W. Manuel Courthouse</h3>
                     <p>661 Washington Street, Oakland, CA 94607</p>
-                    <p>Handles criminal arraignments, misdemeanor cases, preliminary hearings, and traffic matters for the Oakland area. Also processes restraining orders and small claims cases.</p>
+                    <p>See the court’s directory for current contact and location information. <a href="https://www.alameda.courts.ca.gov/locations" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
-                    <h3>Santa Rita Jail</h3>
-                    <p>5325 Broder Boulevard, Dublin, CA 94568</p>
-                    <p>Alameda County's primary detention facility, located in Dublin. One of the largest jails in Northern California. If a family member has been booked at Santa Rita, call us immediately for bail and defense assistance.</p>
+                    <h3>Alameda County Custody Information</h3>
+                    <p>Alameda County Sheriff’s Office</p>
+                    <p>Consult the Sheriff’s Office for current custody, facility and visiting information. <a href="https://www.alamedasheriff.gov/" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
-                    <h3>Glenn Dyer Jail</h3>
-                    <p>550 6th Street, Oakland, CA 94607</p>
-                    <p>Downtown Oakland detention facility used for initial booking and short-term holding after Oakland arrests. Located near the Wiley W. Manuel Courthouse.</p>
+                    <h3>East County Hall of Justice</h3>
+                    <p>5151 Gleason Drive, Dublin, CA 94568</p>
+                    <p>The court’s directory lists this location and current contact information. <a href="https://www.alameda.courts.ca.gov/locations" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
             </div>
         </div>
@@ -342,7 +345,7 @@
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Neighborhoods We Serve in Oakland</h2>
-            <p>Our attorneys represent clients from every part of Oakland and the surrounding Alameda County communities, including:</p>
+            <p>Our service area includes the following communities. These are areas we serve, rather than additional office locations.</p>
             <div class="neighborhoods-list">
                 <span>Downtown Oakland</span>
                 <span>Jack London Square</span>
@@ -361,29 +364,27 @@
 
     <section class="location-section">
         <div class="location-wrapper">
-            <h2>Common Legal Issues in Oakland</h2>
-            <p>Oakland's size, economic diversity, and enforcement environment create a distinct set of legal challenges. Some of the most common matters we handle for Oakland clients include:</p>
+            <h2>Legal Services for Oakland Clients</h2>
+            <p>The right starting point depends on your role, the agreement or notice involved, and the outcome you need to evaluate. Our services include:</p>
             <ul>
-                <li><strong>Gun and weapons charges</strong> — Oakland PD and Alameda County law enforcement aggressively pursue firearms cases, including possession by a felon, carrying a concealed weapon, and assault with a firearm</li>
-                <li><strong>Robbery and carjacking</strong> — These violent felonies carry severe prison sentences under California law, and Alameda County prosecutors seek maximum penalties in Oakland cases</li>
-                <li><strong>DUI on I-880 and I-580</strong> — CHP and Oakland PD patrol these high-traffic corridors heavily; DUI arrests on Oakland freeways are among the most common in Alameda County</li>
-                <li><strong>Sideshow-related offenses</strong> — Oakland has intensified enforcement against illegal sideshows, leading to charges for reckless driving, exhibition of speed, vehicle impoundment, and even felony assault if spectators are injured</li>
-                <li><strong>Landlord-tenant disputes</strong> — Oakland's Just Cause for Eviction Ordinance and Rent Adjustment Program create complex legal obligations for both landlords and tenants, leading to frequent litigation</li>
-                <li><strong>Construction disputes</strong> — Oakland's ongoing development boom generates contractor payment disputes, construction defect claims, and mechanic's lien litigation at a high rate</li>
+                <li><strong><a href="/civil-litigation/contract-disputes">Contract disputes</a></strong> — Claims involving commercial agreements, performance and payment.</li>
+                <li><strong><a href="/civil-litigation/commercial-lease-disputes">Commercial leases</a></strong> — Disputes over business premises and the parties’ lease obligations.</li>
+                <li><strong><a href="/business-transactions/">Business agreements</a></strong> — Contracts, ownership agreements, purchases and sales.</li>
+                <li><strong><a href="/white-collar-defense/investigations-subpoenas">Investigations and subpoenas</a></strong> — Counsel for individuals and businesses responding to a financial investigation.</li>
             </ul>
         </div>
     </section>
 
     <section class="location-section">
         <div class="location-wrapper">
-            <h2>Why Choose RV Litigation Group PC for Your Oakland Case?</h2>
-            <p>We understand the realities of practicing in Alameda County. Our attorneys have defended clients at the Rene C. Davidson Courthouse and the Wiley W. Manuel Courthouse, negotiated with Alameda County prosecutors, and tried cases before Alameda County judges. Oakland cases require lawyers who will not be intimidated by tough charges or aggressive prosecution — and that is exactly what we deliver.</p>
+            <h2>Discuss Your Oakland Matter</h2>
+            <p>For an Oakland commercial dispute, tell us what has happened, who is involved and whether a lawsuit has been filed. Contracts, demands and any court papers help distinguish an emerging disagreement from an active case.</p>
             <ul>
-                <li>Experienced in Alameda County Superior Court procedures, local rules, and judicial preferences</li>
-                <li>Familiar with Alameda County District Attorney charging patterns and plea negotiation practices</li>
-                <li>Aggressive trial lawyers who have handled serious felony and high-stakes civil cases</li>
-                <li>Available 24/7 for emergency arrests at Santa Rita Jail and Glenn Dyer Jail</li>
-                <li>Free initial consultation — call <a href="tel:+14157977591">(415) 797-7591</a></li>
+                <li>The names of the people and businesses involved, including your role.</li>
+                <li>The type of matter and any hearing, response or transaction dates.</li>
+                <li>A brief description of your objectives and the key documents available.</li>
+                <li>Our <a href="/professionals">attorney biographies</a> and <a href="/our-practice">practice directory</a> can help you evaluate whether the firm fits your needs.</li>
+                <li><a href="/contact">Request a consultation</a> to discuss the matter and the terms of a potential engagement.</li>
             </ul>
         </div>
     </section>
@@ -392,7 +393,7 @@
     <section class="location-cta">
         <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
         <h2>Need a Lawyer in Oakland?</h2>
-        <p>Schedule a consultation with our experienced legal team. We are here to listen, advise, and fight for you.</p>
+        <p>Contact our San Francisco office to discuss your Oakland matter, relevant deadlines and whether our services fit your needs. We represent clients throughout California.</p>
         <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
         <div class="cta-or">or</div>
         <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>

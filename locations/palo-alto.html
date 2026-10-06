@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Palo Alto business litigation, transactions, tax law and defense lawyers. RV Litigation Group PC serves Downtown Palo Alto, Stanford area, Old Palo Alto, Barron Park, and all of Santa Clara County. Call (415) 797-7591.">
-    <meta name="keywords" content="Palo Alto lawyer, Palo Alto criminal defense attorney, Palo Alto civil litigation, Stanford area attorney, venture capital dispute lawyer, RV Litigation Group">
+    <meta name="description" content="Business litigation, transactions, tax and white-collar defense for Palo Alto clients. Based in San Francisco, serving California.">
     <meta name="author" content="RV Litigation Group PC">
     <meta name="robots" content="index, follow">
-    <meta name="geo.region" content="US-CA">
-    <meta name="geo.placename" content="Palo Alto, California">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rvlitigation.com/locations/palo-alto">
-    <meta property="og:title" content="Palo Alto Lawyer — Business, Tax & Defense | RV Litigation Group PC">
-    <meta property="og:description" content="Palo Alto business litigation, transactions, tax law and defense lawyers. Serving Downtown Palo Alto, Stanford area, Old Palo Alto, Barron Park, and all of Santa Clara County.">
+    <meta property="og:title" content="Palo Alto Business &amp; Tax Lawyers | RV Litigation Group PC">
+    <meta property="og:description" content="Business litigation, transactions, tax and white-collar defense for Palo Alto clients. Based in San Francisco, serving California.">
     <meta property="og:image" content="https://rvlitigation.com/images/Logos/RV_logo_center.png">
 
     <!-- Canonical URL -->
@@ -26,64 +23,70 @@
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "LegalService",
-    "name": "RV Litigation Group PC",
-    "description": "business litigation, transactions, tax law and defense lawyers serving Palo Alto, California.",
-    "url": "https://rvlitigation.com/locations/palo-alto",
-    "logo": "https://rvlitigation.com/images/Logos/RV_logo_center.png",
-    "telephone": "+1-415-797-7591",
-    "email": "David@RVLitigation.com",
-    "priceRange": "$$",
-    "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "28 Geary St, Suite 650",
-        "addressLocality": "San Francisco",
-        "addressRegion": "CA",
-        "postalCode": "94108",
-        "addressCountry": "US"
-    },
-    "areaServed": {
-        "@type": "City",
-        "name": "Palo Alto",
-        "containedInPlace": {
-            "@type": "AdministrativeArea",
-            "name": "Santa Clara County"
-        }
-    },
-    "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Legal Services",
-        "itemListElement": [
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Criminal Defense",
-                    "url": "https://rvlitigation.com/criminal-defense/"
-                }
+    "@graph": [
+        {
+            "@type": "LegalService",
+            "@id": "https://rvlitigation.com/#firm",
+            "name": "RV Litigation Group PC",
+            "url": "https://rvlitigation.com/",
+            "telephone": "+1-415-797-7591",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "28 Geary St, Suite 650",
+                "addressLocality": "San Francisco",
+                "addressRegion": "CA",
+                "postalCode": "94108",
+                "addressCountry": "US"
             },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Corporate & Commercial Law",
-                    "url": "https://rvlitigation.com/civil-litigation/"
-                }
+            "areaServed": {
+                "@type": "State",
+                "name": "California"
             }
-        ]
-    },
-    "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
-    }
+        },
+        {
+            "@type": "Service",
+            "@id": "https://rvlitigation.com/locations/palo-alto#service",
+            "name": "Legal services for Palo Alto clients",
+            "description": "Business litigation, transactions, tax and white-collar defense for Palo Alto clients. Based in San Francisco, serving California.",
+            "url": "https://rvlitigation.com/locations/palo-alto",
+            "provider": {
+                "@id": "https://rvlitigation.com/#firm"
+            },
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Palo Alto"
+                },
+                {
+                    "@type": "State",
+                    "name": "California"
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://rvlitigation.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Areas We Serve",
+                    "item": "https://rvlitigation.com/locations/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Palo Alto",
+                    "item": "https://rvlitigation.com/locations/palo-alto"
+                }
+            ]
+        }
+    ]
 }
     </script>
 
@@ -91,7 +94,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
     <link rel="shortcut icon" href="/favicon.ico">
-    <title>Palo Alto Lawyer — Business, Tax & Defense | RV Litigation Group PC</title>
+    <title>Palo Alto Business &amp; Tax Lawyers | RV Litigation Group PC</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -289,22 +292,22 @@
 
     <section class="location-hero">
         <p class="subtitle">Serving Palo Alto, California</p>
-        <h1>Business, Tax & Defense Lawyer in Palo Alto</h1>
-        <p class="intro">RV Litigation Group PC provides sophisticated legal representation to individuals and businesses throughout Palo Alto and the surrounding Peninsula. As the intellectual and financial epicenter of Silicon Valley — home to Stanford University, Sand Hill Road venture capital firms, and countless tech startups — Palo Alto generates high-stakes legal matters that demand experienced counsel. From white collar fraud defense and VC partnership disputes to high-value real estate litigation, our attorneys deliver the strategic depth your case requires.</p>
+        <h1>Business, Tax &amp; Defense Lawyers Serving Palo Alto</h1>
+        <p class="intro">For a Palo Alto founder, executive or closely held company, a dispute can affect both business control and personal interests. RV Litigation Group PC helps clients address ownership conflicts, commercial agreements, tax controversies and financial investigations, while continuing to handle criminal defense and selected private matters. Our office is at 28 Geary St, Suite 650, San Francisco, CA 94108; we serve clients throughout California.</p>
     </section>
 
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Our Practice Areas in Palo Alto</h2>
-            <p>Whether you are facing criminal charges or embroiled in a complex business dispute, our Palo Alto attorneys bring the skill and preparation needed to protect what matters most.</p>
+            <p>Our <a href="/business-litigation/">business litigation</a>, <a href="/business-transactions/">business transactions</a>, <a href="/tax-law/">tax law</a> and <a href="/white-collar-defense/">white-collar defense</a> practices serve Palo Alto clients. Explore the service pages for the matters we handle, or review our <a href="/private-civil-matters/">selected private matters</a>.</p>
             <div class="practice-links">
-                <a href="/criminal-defense/" class="practice-link-card">
-                    <h3>Criminal Defense</h3>
-                    <p>Defense in financial investigations, fraud and embezzlement matters, as well as DUI, drug offenses, assault, and other criminal charges. White-collar services are also available through our practice-area directory.</p>
-                </a>
                 <a href="/our-practice" class="practice-link-card">
                     <h3>Business &amp; Tax Law</h3>
                     <p>Business disputes, contracts and ownership agreements, business purchases and sales, and individual and business tax controversies. Explore our current practice areas.</p>
+                </a>
+                <a href="/criminal-defense/" class="practice-link-card">
+                    <h3>Criminal Defense</h3>
+                    <p>Representation in DUI, drug, assault and other criminal cases. Our general criminal defense services remain available alongside our white-collar practice.</p>
                 </a>
             </div>
         </div>
@@ -313,28 +316,27 @@
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Palo Alto Courts & Local Resources</h2>
-            <p>If you have been arrested or need to appear in court in Palo Alto, here is what you need to know.</p>
+            <p>Use these official resources to check current locations and contact information. Your court notice and the court’s instructions determine where and how to appear; a client’s city does not by itself identify the assigned courthouse.</p>
             <div class="court-info-grid">
                 <div class="court-info-box">
-                    <h3>Santa Clara County Superior Court</h3>
-                    <p><strong>Downtown Superior Court</strong></p>
+                    <h3>Downtown Superior Court</h3>
                     <p>191 N. First Street, San Jose, CA 95113</p>
-                    <p>Most Palo Alto felony criminal cases, civil unlimited matters, and family law cases are heard at the main courthouse in San Jose.</p>
+                    <p>Check the court’s directory and your notice for the correct location and department. <a href="https://santaclara.courts.ca.gov/general-information/locations-contact-info/santa-clara-county-courthouse-locations" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
                     <h3>Palo Alto Courthouse</h3>
                     <p>270 Grant Avenue, Palo Alto, CA 94306</p>
-                    <p>Handles a limited calendar including traffic matters and some misdemeanor cases. Not all case types are heard here — check your notice of hearing for the correct location.</p>
+                    <p>Confirm the assigned courthouse and department on your court notice. <a href="https://santaclara.courts.ca.gov/general-information/locations-contact-info/santa-clara-county-courthouse-locations" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
                     <h3>Santa Clara County Main Jail</h3>
                     <p>150 W. Hedding Street, San Jose, CA 95110</p>
-                    <p>Primary booking facility for Palo Alto arrests. If someone you know has been arrested by Palo Alto PD, contact us immediately for bail and defense assistance.</p>
+                    <p>The Sheriff’s Office provides current custody and visiting information. <a href="https://sheriff.santaclaracounty.gov/main-jail-complex" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
-                    <h3>U.S. District Court — Northern District</h3>
-                    <p>280 S. 1st Street, San Jose, CA 95113</p>
-                    <p>Federal cases involving Palo Alto residents and companies — including securities fraud and federal criminal matters — are heard at the San Jose federal courthouse.</p>
+                    <h3>Santa Clara County Court Locations</h3>
+                    <p>Superior Court of California, County of Santa Clara</p>
+                    <p>For a state-court matter, consult the directory and your notice to confirm the assigned courthouse. <a href="https://santaclara.courts.ca.gov/general-information/locations-contact-info/santa-clara-county-courthouse-locations" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
             </div>
         </div>
@@ -343,7 +345,7 @@
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Neighborhoods & Areas We Serve in Palo Alto</h2>
-            <p>Our attorneys represent clients from every neighborhood in Palo Alto, including:</p>
+            <p>Our service area includes the following communities. These are areas we serve, rather than additional office locations.</p>
             <div class="neighborhoods-list">
                 <span>Downtown Palo Alto</span>
                 <span>University Avenue</span>
@@ -365,29 +367,27 @@
 
     <section class="location-section">
         <div class="location-wrapper">
-            <h2>Common Legal Issues in Palo Alto</h2>
-            <p>Palo Alto's unique combination of world-class institutions, extreme wealth, and high-stakes business activity creates a distinct legal landscape. Some of the most common matters we handle for Palo Alto clients include:</p>
+            <h2>Legal Services for Palo Alto Clients</h2>
+            <p>The right starting point depends on your role, the agreement or notice involved, and the outcome you need to evaluate. Our services include:</p>
             <ul>
-                <li><strong>White collar fraud and financial crimes</strong> — Federal and state investigators actively pursue securities fraud, wire fraud, embezzlement, and insider trading cases connected to Palo Alto's financial ecosystem</li>
-                <li><strong>VC and startup partnership disputes</strong> — Disagreements between co-founders, investors, and board members over equity, control, fiduciary duties, and company direction are a staple of Palo Alto litigation</li>
-                <li><strong>DUI on Page Mill Road and Sand Hill Road</strong> — Palo Alto PD and CHP conduct regular enforcement on these corridors, particularly during evening hours near restaurants and event venues</li>
-                <li><strong>High-value real estate litigation</strong> — With median home prices among the highest in the nation, purchase disputes, boundary conflicts, disclosure failures, and construction defect claims carry enormous financial stakes</li>
-                <li><strong>Stanford-area incidents</strong> — Alcohol offenses, drug charges, sexual assault allegations, and Title IX matters involving Stanford students or occurring near campus require careful, discreet legal handling</li>
+                <li><strong><a href="/civil-litigation/partnership-disputes">Founder and partner disputes</a></strong> — Disagreements about management, contributions and the future of a business.</li>
+                <li><strong><a href="/business-transactions/business-buyouts-owner-exits">Business buyouts</a></strong> — Agreements for an owner’s departure or a negotiated change in control.</li>
+                <li><strong><a href="/white-collar-defense/investigations-subpoenas">Financial investigations</a></strong> — Counsel when an executive or company receives an inquiry or subpoena.</li>
+                <li><strong><a href="/tax-law/">Business tax disputes</a></strong> — IRS and California tax controversies affecting business or personal finances.</li>
             </ul>
         </div>
     </section>
 
     <section class="location-section">
         <div class="location-wrapper">
-            <h2>Why Choose RV Litigation Group PC for Your Palo Alto Case?</h2>
-            <p>Palo Alto legal matters often involve higher stakes, more sophisticated opposing counsel, and greater public scrutiny than typical cases. Our attorneys are prepared for that level of complexity. We have handled cases at the Palo Alto Courthouse, Santa Clara County Superior Court, and the Northern District of California federal court. Whether you are a Stanford professor, a startup founder, or a longtime resident, we bring the same intensity and preparation to every case.</p>
+            <h2>Discuss Your Palo Alto Matter</h2>
+            <p>A founder dispute and an individual investigation raise different representation questions. Tell us which company and individuals are involved, your role, and whether anyone has already retained separate counsel.</p>
             <ul>
-                <li>Experienced in Santa Clara County Superior Court and the Palo Alto Courthouse</li>
-                <li>Skilled in white collar defense and complex financial litigation</li>
-                <li>Familiar with Palo Alto PD investigation methods and local prosecution strategies</li>
-                <li>Proven ability to handle high-profile matters with discretion</li>
-                <li>Available 24/7 for emergency arrests and time-sensitive legal matters</li>
-                <li>Free initial consultation — call <a href="tel:+14157977591">(415) 797-7591</a></li>
+                <li>The names of the people and businesses involved, including your role.</li>
+                <li>The type of matter and any hearing, response or transaction dates.</li>
+                <li>A brief description of your objectives and the key documents available.</li>
+                <li>Our <a href="/professionals">attorney biographies</a> and <a href="/our-practice">practice directory</a> can help you evaluate whether the firm fits your needs.</li>
+                <li><a href="/contact">Request a consultation</a> to discuss the matter and the terms of a potential engagement.</li>
             </ul>
         </div>
     </section>
@@ -396,7 +396,7 @@
     <section class="location-cta">
         <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
         <h2>Need a Lawyer in Palo Alto?</h2>
-        <p>Schedule a consultation with our experienced legal team. We are here to listen, advise, and fight for you.</p>
+        <p>Contact our San Francisco office to discuss your Palo Alto matter, relevant deadlines and whether our services fit your needs. We represent clients throughout California.</p>
         <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
         <div class="cta-or">or</div>
         <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>

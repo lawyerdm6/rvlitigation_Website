@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="San Francisco business litigation, transactions, tax law and defense lawyers. RV Litigation Group PC serves all neighborhoods in the City and County of San Francisco. Call (415) 797-7591.">
-    <meta name="keywords" content="San Francisco lawyer, San Francisco criminal defense attorney, San Francisco civil litigation, San Francisco County attorney, RV Litigation Group">
+    <meta name="description" content="Business, tax and defense services for the City and County of San Francisco. RV Litigation Group PC serves clients throughout California from its San Francisco office.">
     <meta name="author" content="RV Litigation Group PC">
     <meta name="robots" content="index, follow">
-    <meta name="geo.region" content="US-CA">
-    <meta name="geo.placename" content="San Francisco, California">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rvlitigation.com/locations/san-francisco-county">
-    <meta property="og:title" content="San Francisco Lawyers — Business, Tax & Defense | RV Litigation Group PC">
-    <meta property="og:description" content="San Francisco business litigation, transactions, tax law and defense lawyers. Serving every neighborhood in the City and County of San Francisco.">
+    <meta property="og:title" content="San Francisco County Legal Services | RV Litigation Group PC">
+    <meta property="og:description" content="Business, tax and defense services for the City and County of San Francisco. RV Litigation Group PC serves clients throughout California from its San Francisco office.">
     <meta property="og:image" content="https://rvlitigation.com/images/Logos/RV_logo_center.png">
 
     <!-- Canonical URL -->
@@ -26,64 +23,70 @@
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "LegalService",
-    "name": "RV Litigation Group PC",
-    "description": "business litigation, transactions, tax law and defense lawyers serving the City and County of San Francisco, California.",
-    "url": "https://rvlitigation.com/locations/san-francisco-county",
-    "logo": "https://rvlitigation.com/images/Logos/RV_logo_center.png",
-    "telephone": "+1-415-797-7591",
-    "email": "David@RVLitigation.com",
-    "priceRange": "$$",
-    "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "28 Geary St, Suite 650",
-        "addressLocality": "San Francisco",
-        "addressRegion": "CA",
-        "postalCode": "94108",
-        "addressCountry": "US"
-    },
-    "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": "City and County of San Francisco",
-        "containedInPlace": {
-            "@type": "State",
-            "name": "California"
-        }
-    },
-    "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Legal Services",
-        "itemListElement": [
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Criminal Defense",
-                    "url": "https://rvlitigation.com/criminal-defense/"
-                }
+    "@graph": [
+        {
+            "@type": "LegalService",
+            "@id": "https://rvlitigation.com/#firm",
+            "name": "RV Litigation Group PC",
+            "url": "https://rvlitigation.com/",
+            "telephone": "+1-415-797-7591",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "28 Geary St, Suite 650",
+                "addressLocality": "San Francisco",
+                "addressRegion": "CA",
+                "postalCode": "94108",
+                "addressCountry": "US"
             },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Corporate & Commercial Law",
-                    "url": "https://rvlitigation.com/civil-litigation/"
-                }
+            "areaServed": {
+                "@type": "State",
+                "name": "California"
             }
-        ]
-    },
-    "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
-    }
+        },
+        {
+            "@type": "Service",
+            "@id": "https://rvlitigation.com/locations/san-francisco-county#service",
+            "name": "Legal services for San Francisco County clients",
+            "description": "Business, tax and defense services for the City and County of San Francisco. RV Litigation Group PC serves clients throughout California from its San Francisco office.",
+            "url": "https://rvlitigation.com/locations/san-francisco-county",
+            "provider": {
+                "@id": "https://rvlitigation.com/#firm"
+            },
+            "areaServed": [
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "San Francisco County"
+                },
+                {
+                    "@type": "State",
+                    "name": "California"
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://rvlitigation.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Areas We Serve",
+                    "item": "https://rvlitigation.com/locations/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "San Francisco County",
+                    "item": "https://rvlitigation.com/locations/san-francisco-county"
+                }
+            ]
+        }
+    ]
 }
     </script>
 
@@ -91,7 +94,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
     <link rel="shortcut icon" href="/favicon.ico">
-    <title>San Francisco Lawyers — Business, Tax & Defense | RV Litigation Group PC</title>
+    <title>San Francisco County Legal Services | RV Litigation Group PC</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -289,22 +292,22 @@
 
     <section class="location-hero">
         <p class="subtitle">Serving the City & County of San Francisco</p>
-        <h1>Business, Tax & Defense Lawyers in San Francisco</h1>
-        <p class="intro">RV Litigation Group PC provides tenacious legal representation throughout the City and County of San Francisco. Unlike any other jurisdiction in California, San Francisco functions as both a city and a county — meaning a single set of courts, a single DA's office, and a single jail system handle all matters for the entire 47-square-mile jurisdiction. From drug possession charges in the Tenderloin to multi-million-dollar business disputes in the Financial District, our attorneys bring the courtroom experience and legal strategy needed to navigate San Francisco's distinctive legal landscape.</p>
+        <h1>Business, Tax &amp; Defense Lawyers Serving San Francisco</h1>
+        <p class="intro">The City and County of San Francisco is RV Litigation Group PC’s home base for a statewide California practice. We represent businesses, owners, executives and individuals in commercial disputes, transactions, tax controversies and defense matters, while continuing to handle general criminal defense and selected private disputes. Our office is at 28 Geary St, Suite 650, San Francisco, CA 94108; we serve clients throughout California.</p>
     </section>
 
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Our Practice Areas in San Francisco</h2>
-            <p>Whether you are facing felony charges at the Hall of Justice or litigating a rent control dispute before the SF Rent Board, our San Francisco attorneys are prepared to take on your case.</p>
+            <p>Our <a href="/business-litigation/">business litigation</a>, <a href="/business-transactions/">business transactions</a>, <a href="/tax-law/">tax law</a> and <a href="/white-collar-defense/">white-collar defense</a> practices serve San Francisco clients. Explore the service pages for the matters we handle, or review our <a href="/private-civil-matters/">selected private matters</a>.</p>
             <div class="practice-links">
-                <a href="/criminal-defense/" class="practice-link-card">
-                    <h3>Criminal Defense</h3>
-                    <p>Defense in financial investigations, fraud and embezzlement matters, as well as DUI, drug offenses, assault, and other criminal charges. White-collar services are also available through our practice-area directory.</p>
-                </a>
                 <a href="/our-practice" class="practice-link-card">
                     <h3>Business &amp; Tax Law</h3>
                     <p>Business disputes, contracts and ownership agreements, business purchases and sales, and individual and business tax controversies. Explore our current practice areas.</p>
+                </a>
+                <a href="/criminal-defense/" class="practice-link-card">
+                    <h3>Criminal Defense</h3>
+                    <p>Representation in DUI, drug, assault and other criminal cases. Our general criminal defense services remain available alongside our white-collar practice.</p>
                 </a>
             </div>
         </div>
@@ -313,27 +316,27 @@
     <section class="location-section">
         <div class="location-wrapper">
             <h2>San Francisco Courts & Facilities</h2>
-            <p>As a combined city and county, San Francisco operates a consolidated court system. If you have been arrested or must appear in court, here is what you need to know.</p>
+            <p>Use these official resources to check current locations and contact information. Your court notice and the court’s instructions determine where and how to appear; a client’s city does not by itself identify the assigned courthouse.</p>
             <div class="court-info-grid">
                 <div class="court-info-box">
                     <h3>San Francisco Superior Court — Civic Center</h3>
                     <p>400 McAllister Street, San Francisco, CA 94102</p>
-                    <p>The main courthouse for the City and County of San Francisco. Handles civil unlimited and limited cases, family law, probate, and complex litigation. Located in the Civic Center district near City Hall.</p>
+                    <p>See the official directory and your case notice for court location and contact information. <a href="https://sf.courts.ca.gov/general-information/locations-contact-information" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
                     <h3>Hall of Justice</h3>
                     <p>850 Bryant Street, San Francisco, CA 94103</p>
-                    <p>Handles all criminal matters for San Francisco, including felony and misdemeanor arraignments, preliminary hearings, and trials. Also houses the San Francisco District Attorney's Office, the SFPD Southern Station, and a county jail facility.</p>
+                    <p>Use the official directory and your notice to confirm the assigned courthouse and department. <a href="https://sf.courts.ca.gov/general-information/locations-contact-information" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
-                    <h3>San Francisco County Jail — 425 7th Street</h3>
-                    <p>425 7th Street, San Francisco, CA 94103</p>
-                    <p>One of the primary booking and detention facilities in San Francisco. If a family member has been arrested in SF, they may be booked here or at the Hall of Justice. Contact us immediately for bail and defense assistance.</p>
+                    <h3>San Francisco Jail Services</h3>
+                    <p>San Francisco Sheriff’s Department</p>
+                    <p>The Sheriff’s Department provides current information about custody and jail services. <a href="https://www.sfsheriff.com/services/jail-services" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
-                    <h3>San Francisco County Jail — Hall of Justice</h3>
-                    <p>850 Bryant Street, San Francisco, CA 94103</p>
-                    <p>Detention facility located within the Hall of Justice complex. Used for booking, short-term holds, and housing detainees with upcoming court appearances.</p>
+                    <h3>Court Locations & Contacts</h3>
+                    <p>Superior Court of California, County of San Francisco</p>
+                    <p>Consult the official directory for court locations and current contact information. <a href="https://sf.courts.ca.gov/general-information/locations-contact-information" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
             </div>
         </div>
@@ -342,7 +345,7 @@
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Neighborhoods We Serve in San Francisco</h2>
-            <p>San Francisco is a single city and county — we represent clients from every neighborhood across the entire jurisdiction:</p>
+            <p>Our San Francisco office serves clients across the city and county, including these neighborhoods:</p>
             <div class="neighborhoods-list">
                 <span>Financial District</span>
                 <span>SoMa</span>
@@ -370,29 +373,27 @@
 
     <section class="location-section">
         <div class="location-wrapper">
-            <h2>Common Legal Issues in San Francisco</h2>
-            <p>San Francisco's unique status as a combined city and county, its dense urban environment, and its progressive political landscape create a distinctive set of legal challenges. Some of the most common matters we handle include:</p>
+            <h2>Legal Services for San Francisco Clients</h2>
+            <p>The right starting point depends on your role, the agreement or notice involved, and the outcome you need to evaluate. Our services include:</p>
             <ul>
-                <li><strong>Drug possession and fentanyl charges</strong> — San Francisco has seen a dramatic increase in drug-related prosecutions, particularly involving fentanyl. The DA's office has shifted toward tougher enforcement in the Tenderloin and SoMa</li>
-                <li><strong>Property crime and retail theft</strong> — Theft, burglary, and organized retail theft have been heavily prosecuted in recent years, with enhanced penalties for repeat offenders</li>
-                <li><strong>Rent control disputes</strong> — San Francisco's rent control ordinance, administered by the SF Rent Board, generates constant litigation over just-cause evictions, illegal rent increases, buyout agreements, and tenant harassment claims</li>
-                <li><strong>Tech employee disputes</strong> — Wrongful termination, stock option disputes, non-compete enforcement, and discrimination claims are frequent in San Francisco's tech sector</li>
-                <li><strong>Tourist-area robbery and assault</strong> — Fisherman's Wharf, Union Square, and other tourist-heavy areas see elevated rates of robbery and assault charges, often involving visitors and local business owners</li>
+                <li><strong><a href="/business-litigation/">Company disputes</a></strong> — Contract and ownership conflicts that affect a business and its principals.</li>
+                <li><strong><a href="/business-transactions/business-buyouts-owner-exits">Ownership changes</a></strong> — Legal agreements for a buyout or an owner’s departure.</li>
+                <li><strong><a href="/tax-law/">Tax notices</a></strong> — IRS and California tax controversies involving businesses or individuals.</li>
+                <li><strong><a href="/white-collar-defense/">Financial defense</a></strong> — Representation in investigations, subpoena matters and related charges.</li>
             </ul>
         </div>
     </section>
 
     <section class="location-section">
         <div class="location-wrapper">
-            <h2>Why Choose RV Litigation Group PC for Your San Francisco Case?</h2>
-            <p>We have direct experience in San Francisco's courtrooms — both the Hall of Justice on Bryant Street and the Civic Center courthouse on McAllister. We understand how the San Francisco DA's office prosecutes cases, how local judges manage their calendars, and what strategies work in this jurisdiction. San Francisco's legal system operates differently from its neighboring counties, and that local knowledge matters.</p>
+            <h2>Discuss Your San Francisco Matter</h2>
+            <p>Court and agency notices identify the proceeding, the parties and any stated dates. Bring those details to the initial discussion of a San Francisco matter, along with the business objective or personal concern that prompted your inquiry.</p>
             <ul>
-                <li>Experienced at the Hall of Justice and San Francisco Superior Court — Civic Center</li>
-                <li>Deep understanding of the San Francisco DA's current prosecution priorities and policies</li>
-                <li>Knowledgeable about SF-specific legal issues such as rent control and tenant litigation</li>
-                <li>Aggressive representation in both state and federal court in the Northern District of California</li>
-                <li>Available 24/7 for emergency arrests at San Francisco County Jail</li>
-                <li>Free initial consultation — call <a href="tel:+14157977591">(415) 797-7591</a></li>
+                <li>The names of the people and businesses involved, including your role.</li>
+                <li>The type of matter and any hearing, response or transaction dates.</li>
+                <li>A brief description of your objectives and the key documents available.</li>
+                <li>Our <a href="/professionals">attorney biographies</a> and <a href="/our-practice">practice directory</a> can help you evaluate whether the firm fits your needs.</li>
+                <li><a href="/contact">Request a consultation</a> to discuss the matter and the terms of a potential engagement.</li>
             </ul>
         </div>
     </section>
@@ -401,7 +402,7 @@
     <section class="location-cta">
         <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
         <h2>Need a Lawyer in San Francisco?</h2>
-        <p>Schedule a consultation with our experienced legal team. We represent clients in every neighborhood across the City and County of San Francisco.</p>
+        <p>Contact our San Francisco office to discuss your San Francisco matter, relevant deadlines and whether our services fit your needs. We represent clients throughout California.</p>
         <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
         <div class="cta-or">or</div>
         <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>

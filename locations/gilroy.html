@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Gilroy business litigation, transactions, tax law and defense lawyers. RV Litigation Group PC serves downtown Gilroy, Hecker Pass, and all of South Santa Clara County. Call (415) 797-7591.">
-    <meta name="keywords" content="Gilroy lawyer, Gilroy criminal defense attorney, Gilroy civil litigation, South Santa Clara County attorney, RV Litigation Group">
+    <meta name="description" content="Business litigation, transactions, tax and white-collar defense for Gilroy clients. Based in San Francisco, serving California.">
     <meta name="author" content="RV Litigation Group PC">
     <meta name="robots" content="index, follow">
-    <meta name="geo.region" content="US-CA">
-    <meta name="geo.placename" content="Gilroy, California">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rvlitigation.com/locations/gilroy">
-    <meta property="og:title" content="Gilroy Lawyer — Business, Tax & Defense | RV Litigation Group PC">
-    <meta property="og:description" content="Gilroy business litigation, transactions, tax law and defense lawyers. Serving downtown Gilroy, Hecker Pass, and all of South Santa Clara County.">
+    <meta property="og:title" content="Gilroy Business &amp; Tax Lawyers | RV Litigation Group PC">
+    <meta property="og:description" content="Business litigation, transactions, tax and white-collar defense for Gilroy clients. Based in San Francisco, serving California.">
     <meta property="og:image" content="https://rvlitigation.com/images/Logos/RV_logo_center.png">
 
     <!-- Canonical URL -->
@@ -26,64 +23,70 @@
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "LegalService",
-    "name": "RV Litigation Group PC",
-    "description": "business litigation, transactions, tax law and defense lawyers serving Gilroy, California.",
-    "url": "https://rvlitigation.com/locations/gilroy",
-    "logo": "https://rvlitigation.com/images/Logos/RV_logo_center.png",
-    "telephone": "+1-415-797-7591",
-    "email": "David@RVLitigation.com",
-    "priceRange": "$$",
-    "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "28 Geary St, Suite 650",
-        "addressLocality": "San Francisco",
-        "addressRegion": "CA",
-        "postalCode": "94108",
-        "addressCountry": "US"
-    },
-    "areaServed": {
-        "@type": "City",
-        "name": "Gilroy",
-        "containedInPlace": {
-            "@type": "AdministrativeArea",
-            "name": "Santa Clara County"
-        }
-    },
-    "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Legal Services",
-        "itemListElement": [
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Criminal Defense",
-                    "url": "https://rvlitigation.com/criminal-defense/"
-                }
+    "@graph": [
+        {
+            "@type": "LegalService",
+            "@id": "https://rvlitigation.com/#firm",
+            "name": "RV Litigation Group PC",
+            "url": "https://rvlitigation.com/",
+            "telephone": "+1-415-797-7591",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "28 Geary St, Suite 650",
+                "addressLocality": "San Francisco",
+                "addressRegion": "CA",
+                "postalCode": "94108",
+                "addressCountry": "US"
             },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Corporate & Commercial Law",
-                    "url": "https://rvlitigation.com/civil-litigation/"
-                }
+            "areaServed": {
+                "@type": "State",
+                "name": "California"
             }
-        ]
-    },
-    "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
-    }
+        },
+        {
+            "@type": "Service",
+            "@id": "https://rvlitigation.com/locations/gilroy#service",
+            "name": "Legal services for Gilroy clients",
+            "description": "Business litigation, transactions, tax and white-collar defense for Gilroy clients. Based in San Francisco, serving California.",
+            "url": "https://rvlitigation.com/locations/gilroy",
+            "provider": {
+                "@id": "https://rvlitigation.com/#firm"
+            },
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Gilroy"
+                },
+                {
+                    "@type": "State",
+                    "name": "California"
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://rvlitigation.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Areas We Serve",
+                    "item": "https://rvlitigation.com/locations/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Gilroy",
+                    "item": "https://rvlitigation.com/locations/gilroy"
+                }
+            ]
+        }
+    ]
 }
     </script>
 
@@ -91,7 +94,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
     <link rel="shortcut icon" href="/favicon.ico">
-    <title>Gilroy Lawyer — Business, Tax & Defense | RV Litigation Group PC</title>
+    <title>Gilroy Business &amp; Tax Lawyers | RV Litigation Group PC</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -289,22 +292,22 @@
 
     <section class="location-hero">
         <p class="subtitle">Serving Gilroy, California</p>
-        <h1>Business, Tax & Defense Lawyer in Gilroy</h1>
-        <p class="intro">RV Litigation Group PC provides dedicated legal representation to individuals and businesses in Gilroy and South Santa Clara County. As a close-knit agricultural community at the southern edge of Silicon Valley, Gilroy residents face legal challenges that range from DUI arrests on Highway 101 to farm worker disputes and rural property conflicts. Our attorneys understand the local landscape and bring big-firm skill to every case — without the big-firm price tag.</p>
+        <h1>Business, Tax &amp; Defense Lawyers Serving Gilroy</h1>
+        <p class="intro">RV Litigation Group PC serves Gilroy business owners and individuals who need help with a commercial dispute, an ownership change, a tax controversy or a criminal defense matter. We also handle selected private disputes, including easement and right-of-way matters, within our listed practice areas. Our office is at 28 Geary St, Suite 650, San Francisco, CA 94108; we serve clients throughout California.</p>
     </section>
 
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Our Practice Areas in Gilroy</h2>
-            <p>Whether you are dealing with criminal charges or a dispute over property or business, our attorneys are prepared to represent you with the same intensity we bring to every case in the county.</p>
+            <p>Our <a href="/business-litigation/">business litigation</a>, <a href="/business-transactions/">business transactions</a>, <a href="/tax-law/">tax law</a> and <a href="/white-collar-defense/">white-collar defense</a> practices serve Gilroy clients. Explore the service pages for the matters we handle, or review our <a href="/private-civil-matters/">selected private matters</a>.</p>
             <div class="practice-links">
-                <a href="/criminal-defense/" class="practice-link-card">
-                    <h3>Criminal Defense</h3>
-                    <p>Defense in financial investigations, fraud and embezzlement matters, as well as DUI, drug offenses, assault, and other criminal charges. White-collar services are also available through our practice-area directory.</p>
-                </a>
                 <a href="/our-practice" class="practice-link-card">
                     <h3>Business &amp; Tax Law</h3>
                     <p>Business disputes, contracts and ownership agreements, business purchases and sales, and individual and business tax controversies. Explore our current practice areas.</p>
+                </a>
+                <a href="/criminal-defense/" class="practice-link-card">
+                    <h3>Criminal Defense</h3>
+                    <p>Representation in DUI, drug, assault and other criminal cases. Our general criminal defense services remain available alongside our white-collar practice.</p>
                 </a>
             </div>
         </div>
@@ -313,18 +316,17 @@
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Gilroy Courts & Local Resources</h2>
-            <p>If you have been arrested or need to appear in court for a Gilroy matter, here is what you need to know about the court system serving South Santa Clara County.</p>
+            <p>Use these official resources to check current locations and contact information. Your court notice and the court’s instructions determine where and how to appear; a client’s city does not by itself identify the assigned courthouse.</p>
             <div class="court-info-grid">
                 <div class="court-info-box">
-                    <h3>Santa Clara County Superior Court</h3>
-                    <p><strong>South County Cases</strong></p>
-                    <p>Gilroy criminal and civil cases are generally handled at the Santa Clara County courthouses in San Jose, including the Downtown Superior Court (191 N. First Street) and the Hall of Justice (200 W. Hedding Street).</p>
-                    <p>Some matters may be processed at the Morgan Hill courthouse annex depending on case type and availability.</p>
+                    <h3>South County Morgan Hill Courthouse</h3>
+                    <p>301 Diana Avenue, Morgan Hill, CA 95037</p>
+                    <p>Check the official directory and your notice before traveling to court. <a href="https://santaclara.courts.ca.gov/general-information/locations-contact-info/santa-clara-county-courthouse-locations" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
                     <h3>Santa Clara County Main Jail</h3>
                     <p>150 W. Hedding Street, San Jose, CA 95110</p>
-                    <p>Primary booking facility for arrests in Gilroy and all of Santa Clara County. If a family member has been arrested by Gilroy PD, they will typically be transported to this facility. Call us immediately for bail and defense help.</p>
+                    <p>The Sheriff’s Office provides current custody and visiting information. <a href="https://sheriff.santaclaracounty.gov/main-jail-complex" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
             </div>
         </div>
@@ -333,7 +335,7 @@
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Areas We Serve in Gilroy</h2>
-            <p>Our attorneys represent clients throughout Gilroy and the surrounding South County communities, including:</p>
+            <p>Our service area includes the following communities. These are areas we serve, rather than additional office locations.</p>
             <div class="neighborhoods-list">
                 <span>Downtown Gilroy</span>
                 <span>Gilroy Gardens Area</span>
@@ -349,29 +351,27 @@
 
     <section class="location-section">
         <div class="location-wrapper">
-            <h2>Common Legal Issues in Gilroy</h2>
-            <p>Gilroy's mix of agricultural roots, growing residential development, and major highway corridors creates a distinct set of legal challenges. Some of the most common matters we handle for Gilroy clients include:</p>
+            <h2>Legal Services for Gilroy Clients</h2>
+            <p>The right starting point depends on your role, the agreement or notice involved, and the outcome you need to evaluate. Our services include:</p>
             <ul>
-                <li><strong>DUI arrests on Highway 101 and 152</strong> — CHP heavily patrols the 101 corridor through Gilroy and the notoriously dangerous Highway 152 to the coast; DUI checkpoints are common on weekends and around the Garlic Festival season</li>
-                <li><strong>Domestic violence charges</strong> — Gilroy PD and the Santa Clara County Sheriff respond to domestic calls throughout South County; arrests are often made even when the facts are disputed, and a conviction carries lifelong consequences</li>
-                <li><strong>Farm worker and agricultural disputes</strong> — Wage theft, unsafe working conditions, and employer-employee conflicts in Gilroy's agricultural sector require attorneys who understand both employment law and the local community</li>
-                <li><strong>Rural property disputes</strong> — Boundary conflicts, easement disputes, water rights, and land use disagreements are common in Gilroy's rural and semi-rural areas where property lines are less defined than in urban communities</li>
-                <li><strong>Small business litigation</strong> — Gilroy's growing commercial district generates contract disputes, partnership disagreements, and landlord-tenant conflicts among local business owners</li>
-                <li><strong>Drug charges</strong> — Methamphetamine and marijuana-related offenses remain heavily prosecuted in South County, and a drug conviction can impact employment opportunities in a community where word travels fast</li>
+                <li><strong><a href="/business-transactions/business-contracts">Business contracts</a></strong> — Agreements with vendors, customers and other businesses.</li>
+                <li><strong><a href="/civil-litigation/commercial-lease-disputes">Commercial lease disputes</a></strong> — Disagreements concerning business premises and commercial lease obligations.</li>
+                <li><strong><a href="/private-civil-matters/easement-right-of-way-disputes">Easements and access</a></strong> — Selected private matters concerning easements and rights of way.</li>
+                <li><strong><a href="/tax-law/">Tax controversies</a></strong> — Business and individual tax disputes, audits and collection issues.</li>
             </ul>
         </div>
     </section>
 
     <section class="location-section">
         <div class="location-wrapper">
-            <h2>Why Choose RV Litigation Group PC for Your Gilroy Case?</h2>
-            <p>Gilroy residents should not have to travel to San Jose or San Francisco just to find a lawyer who will take their case seriously. Our attorneys handle cases throughout Santa Clara County and understand the specific dynamics of South County — from the way local law enforcement operates to how prosecutors handle cases originating in Gilroy. You get a team that treats your case with the seriousness it deserves, no matter what size the charge or claim.</p>
+            <h2>Discuss Your Gilroy Matter</h2>
+            <p>When a Gilroy matter involves a business and its property, separate the operating agreement, commercial lease and any access agreement. Each may address a different part of the dispute.</p>
             <ul>
-                <li>Experienced in Santa Clara County Superior Court where Gilroy cases are heard</li>
-                <li>Understanding of South County law enforcement practices and local dynamics</li>
-                <li>Aggressive advocacy in both business litigation, transactions, tax law and defense</li>
-                <li>Available 24/7 for emergency arrests and time-sensitive legal matters</li>
-                <li>Free initial consultation — call <a href="tel:+14157977591">(415) 797-7591</a></li>
+                <li>The names of the people and businesses involved, including your role.</li>
+                <li>The type of matter and any hearing, response or transaction dates.</li>
+                <li>A brief description of your objectives and the key documents available.</li>
+                <li>Our <a href="/professionals">attorney biographies</a> and <a href="/our-practice">practice directory</a> can help you evaluate whether the firm fits your needs.</li>
+                <li><a href="/contact">Request a consultation</a> to discuss the matter and the terms of a potential engagement.</li>
             </ul>
         </div>
     </section>
@@ -380,7 +380,7 @@
     <section class="location-cta">
         <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
         <h2>Need a Lawyer in Gilroy?</h2>
-        <p>Schedule a consultation with our experienced legal team. We are here to listen, advise, and fight for you.</p>
+        <p>Contact our San Francisco office to discuss your Gilroy matter, relevant deadlines and whether our services fit your needs. We represent clients throughout California.</p>
         <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
         <div class="cta-or">or</div>
         <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>
