@@ -2006,11 +2006,41 @@ ul {
     font-size: 0.9rem;
     line-height: 1.6;
 }
-.practice-directory-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-.practice-directory-cards .practice-card { margin: 0; width: 100%; }
+.practice-directory-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+}
+.practice-directory-cards .practice-card {
+    flex: 0 1 calc((100% - 20px) / 2);
+    min-width: 0;
+    min-height: 280px;
+    margin: 0;
+    padding: 30px 20px;
+}
+.practice-directory-cards .practice-card img {
+    width: 90px;
+    height: 90px;
+    flex: 0 0 auto;
+    margin: 0 auto 20px;
+}
+.practice-directory-cards .practice-card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4.8em;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
 @media (min-width: 1287px) {
     .nav-dropdown:focus-within .dropdown-menu { display: block; }
 }
 @media (max-width: 480px) {
-    .practice-directory-cards { grid-template-columns: minmax(0, 1fr); }
+    .practice-directory-cards .practice-card { flex-basis: 100%; max-width: 320px; }
 }
