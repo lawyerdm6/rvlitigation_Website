@@ -452,6 +452,7 @@ ul {
 }
 
 .contact-form-wrapper {
+    min-width: 0;
     padding: 20px;
 }
 
