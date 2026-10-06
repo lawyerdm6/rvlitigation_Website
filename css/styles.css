@@ -1985,3 +1985,25 @@ ul {
         padding: 10px 12px;
     }
 }
+
+/* Approved practice-card additions: reuse the original card appearance. */
+.home-practice-cards {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    justify-items: center;
+    gap: 30px 20px;
+    margin-top: 15px;
+}
+.home-practice-cards .practice-card { max-width: 260px; margin: 0; }
+.home-practice-cards .priority-practice { grid-column: span 3; }
+.home-practice-cards .secondary-practice { grid-column: span 2; }
+.practice-directory-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.practice-directory-cards .practice-card { margin: 0; width: 100%; }
+.nav-dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+@media (max-width: 768px) {
+    .home-practice-cards { grid-template-columns: minmax(0, 1fr); }
+    .home-practice-cards .practice-card { grid-column: auto; }
+}
+@media (max-width: 480px) {
+    .practice-directory-cards { grid-template-columns: minmax(0, 1fr); }
+}
