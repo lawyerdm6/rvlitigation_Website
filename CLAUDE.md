@@ -10,6 +10,58 @@
 - Preserve the FormSubmit recipient and address: 28 Geary St, Suite 650, San Francisco, CA 94108. Do not submit real test inquiries, invent qualifications/results, promise free consultations, or reintroduce the retainer checkbox.
 - Draft implementation and verification are in progress; main/live publication has not occurred. Update this record with final checks and exact deployment state before handing off.
 
+## Draft implementation checkpoint — October 5, 2026
+
+This checkpoint records the approved implementation on the separate draft branch. It does **not** record a merge, publication, or live deployment. Final visual review, presentation to Kris, and publication approval are still pending.
+
+### Scope implemented
+
+- Homepage: four priority practice cards precede all three retained cards. Original hero/video, photos, portraits, reviews, typography, and design components remain. A scoped responsive grid accommodates the additional cards; new cards use the temporary `images/Icons/practice-placeholder.svg` asset.
+- Navigation: the original menu components now contain one Practice Areas dropdown with Business Litigation, Business Transactions, Tax Law, White-Collar Defense, and View All Practice Areas. Professionals, Reviews, mobile call/inquire entries, and existing navbar buttons remain. The obsolete separate mobile Private Matters entry is removed.
+- Four primary hub pages and ten service pages were added using existing hub and V2 service-page templates. Business Litigation links to retained commercial service pages at their established URLs. Corporate & Commercial Law remains at `/civil-litigation/` as the two-practice business overview. Criminal Defense and Private Matters remain available through the retained homepage cards and practice directory.
+- Business Transactions includes business contracts, ownership/operating agreements, and business purchases/sales. Tax Law includes IRS audits/appeals, California tax disputes, tax litigation/appeals, and criminal tax defense. White-Collar Defense includes investigations/subpoenas, financial fraud, and embezzlement, and links to the single criminal-tax page under Tax Law.
+- Private Matters retains lawsuit defense, harassment restraining-order proceedings, easement/right-of-way disputes, judgment enforcement/debtor exams, nuisance, vehicle/property damage, small-claims advice/appeals, and relevant shared services. The retained fraud-claims page is active and linked; old historical notes below saying it was retired do not describe the current restored source.
+- Named exclusions were removed from cards, related links, and marketing in mixed pages without retiring their unrelated services. Business/employer employment scope remains explicit. Accurate legal terms such as Code of Civil Procedure remain; broad public labels use Private Matters or Lawsuit Defense.
+- Targeted text/link/intake-choice changes cover the homepage, practice directory, contact form, FAQs, and location pages. The FormSubmit recipient remains unchanged, and no real inquiry has been sent. Schema office addresses were corrected to 28 Geary St, Suite 650, San Francisco, CA 94108; unverified old coordinates were removed.
+- Small-claims preparation advice explicitly excludes attorney representation at the initial hearing. The inherited appeal-deadline text was corrected to run from delivery/mailing of the Notice of Entry of Judgment, consistent with California Courts: https://selfhelp.courts.ca.gov/small-claims/after-trial/appeal-pay . Existing mixed service pages have not received an exhaustive audit of all inherited legal assertions.
+
+### URL moves and retirements
+
+The following four aliases remain crawlable, each with an immediate zero-second HTML refresh, matching destination canonical, and visible fallback link. They are not HTTP 301 responses. All active internal links point directly to their final destinations:
+
+| Old URL | Destination |
+| --- | --- |
+| `/civil-litigation/business-litigation` | `/business-litigation/` |
+| `/criminal-defense/white-collar-crimes` | `/white-collar-defense/` |
+| `/criminal-defense/fraud-defense` | `/white-collar-defense/financial-fraud` |
+| `/criminal-defense/embezzlement` | `/white-collar-defense/embezzlement` |
+
+These 11 files were removed so unrelated retired routes return genuine not-found responses on GitHub Pages. They have no replacement redirects:
+
+- `civil-litigation/probate-trust-litigation.html`
+- `civil-litigation/hoa-disputes.html`
+- `civil-litigation/wrongful-eviction.html`
+- `civil-litigation/landlord-tenant.html` (residential eviction/habitability/rent-control marketing; commercial lease disputes remain)
+- `private-civil-matters/personal-guarantee-loan-default.html`
+- `private-civil-matters/debt-collection-defense.html`
+- `private-civil-matters/defamation-slander-libel.html`
+- `private-civil-matters/hoa-disputes.html`
+- `private-civil-matters/property-line-boundary-disputes.html`
+- `private-civil-matters/wrongful-eviction-defense.html`
+- `private-civil-matters/elder-financial-abuse.html`
+
+### Draft verification completed; release approval pending
+
+- 136 HTML files parse with balanced element nesting; all JSON-LD blocks parse as JSON.
+- 111 active indexable pages have exactly 111 matching canonical sitemap entries; no duplicate, missing, redirect, noncanonical, or noindex sitemap entries. Fourteen new canonical URLs were added; thirteen moved/retired entries present in the previous sitemap were removed. Existing `lastmod` values were preserved for navigation-only changes and updated for substantive page changes.
+- All internal page links, referenced assets, and linked anchors resolve in the local source. Four inherited broken criminal related-service links were repaired to the existing DUI page or migrated financial-fraud page.
+- All 113 full pages share one navigation variant. No active links point to the four new redirect aliases or the 11 retired routes.
+- The seven revised business/tax FAQ answers match their visible text and FAQ structured data. All four new aliases have matching destinations, canonicals, and fallback links, without `noindex`.
+- `git diff --check` passes. Chrome visual checks passed for the seven homepage cards at 320px/390px and desktop, mobile navigation, Tax Law hub, IRS service page, sticky desktop contents panel and FAQ interactions. Original hero, reviews, existing images and form endpoints are unchanged. Source validation found no introduced errors or warnings; inherited legal content has not received an exhaustive audit. No forms were submitted.
+- Preview routing supports the existing extensionless HTML paths. Production response codes and trailing-slash behavior must be checked after an approved deployment; a local server is not evidence of GitHub Pages behavior. Destinations and aliases must ship together. Keep aliases for at least one year.
+- Changes are being copied to the separate draft branch. Main/live deployment remains unmodified. Final review and explicit approval are still required before publication.
+- The immutable backup and live `main` must remain untouched until Kris approves publication after reviewing the final preview. Keep destination pages and aliases together if later reverting presentation changes; do not blindly restore an old sitemap after new URLs have been indexed.
+
 ## Previous restoration checkpoint
 
 - User rejected the full redesign and explicitly requested restoration of the pre-rebuild backup.
