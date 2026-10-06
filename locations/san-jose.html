@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="San Jose criminal defense and civil litigation lawyers. RV Litigation Group PC serves downtown San Jose, Willow Glen, Almaden, Evergreen, and all of Santa Clara County. Call (415) 797-7591.">
-    <meta name="keywords" content="San Jose lawyer, San Jose criminal defense attorney, San Jose civil litigation, Santa Clara County attorney, RV Litigation Group">
+    <meta name="description" content="Business litigation, transactions, tax and white-collar defense for San Jose clients. Based in San Francisco, serving California.">
     <meta name="author" content="RV Litigation Group PC">
     <meta name="robots" content="index, follow">
-    <meta name="geo.region" content="US-CA">
-    <meta name="geo.placename" content="San Jose, California">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rvlitigation.com/locations/san-jose">
-    <meta property="og:title" content="San Jose Lawyer — Criminal Defense & Corporate Law | RV Litigation Group PC">
-    <meta property="og:description" content="San Jose criminal defense and civil litigation lawyers. Serving downtown San Jose, Willow Glen, Almaden, Evergreen, and all of Santa Clara County.">
+    <meta property="og:title" content="San Jose Business &amp; Tax Lawyers | RV Litigation Group PC">
+    <meta property="og:description" content="Business litigation, transactions, tax and white-collar defense for San Jose clients. Based in San Francisco, serving California.">
     <meta property="og:image" content="https://rvlitigation.com/images/Logos/RV_logo_center.png">
 
     <!-- Canonical URL -->
@@ -24,67 +21,80 @@
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LegalService",
-        "name": "RV Litigation Group PC — San Jose",
-        "description": "criminal defense and civil litigation lawyers serving San Jose, California.",
-        "url": "https://rvlitigation.com/locations/san-jose",
-        "logo": "https://rvlitigation.com/images/Logos/RV_logo_center.png",
-        "telephone": "+1-415-797-7591",
-        "email": "David@RVLitigation.com",
-        "priceRange": "$$",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "San Jose",
-            "addressRegion": "CA",
-            "postalCode": "95113",
-            "addressCountry": "US"
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "San Jose",
-            "containedInPlace": {
-                "@type": "AdministrativeArea",
-                "name": "Santa Clara County"
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "LegalService",
+            "@id": "https://rvlitigation.com/#firm",
+            "name": "RV Litigation Group PC",
+            "url": "https://rvlitigation.com/",
+            "telephone": "+1-415-797-7591",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "28 Geary St, Suite 650",
+                "addressLocality": "San Francisco",
+                "addressRegion": "CA",
+                "postalCode": "94108",
+                "addressCountry": "US"
+            },
+            "areaServed": {
+                "@type": "State",
+                "name": "California"
             }
         },
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Legal Services",
-            "itemListElement": [
+        {
+            "@type": "Service",
+            "@id": "https://rvlitigation.com/locations/san-jose#service",
+            "name": "Legal services for San Jose clients",
+            "description": "Business litigation, transactions, tax and white-collar defense for San Jose clients. Based in San Francisco, serving California.",
+            "url": "https://rvlitigation.com/locations/san-jose",
+            "provider": {
+                "@id": "https://rvlitigation.com/#firm"
+            },
+            "areaServed": [
                 {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Criminal Defense",
-                        "url": "https://rvlitigation.com/criminal-defense/"
-                    }
+                    "@type": "City",
+                    "name": "San Jose"
                 },
                 {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Corporate & Commercial Law",
-                        "url": "https://rvlitigation.com/civil-litigation/"
-                    }
+                    "@type": "State",
+                    "name": "California"
                 }
             ]
         },
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "09:00",
-            "closes": "18:00"
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://rvlitigation.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Areas We Serve",
+                    "item": "https://rvlitigation.com/locations/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "San Jose",
+                    "item": "https://rvlitigation.com/locations/san-jose"
+                }
+            ]
         }
-    }
+    ]
+}
     </script>
 
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
     <link rel="shortcut icon" href="/favicon.ico">
-    <title>San Jose Lawyer — Criminal Defense & Corporate Law | RV Litigation Group PC</title>
+    <title>San Jose Business &amp; Tax Lawyers | RV Litigation Group PC</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -260,9 +270,9 @@
             </a>
             <ul class="nav-links">
                 <li><a href="https://rvlitigation.com/professionals">PROFESSIONALS</a></li>
-                <li class="nav-dropdown"><a href="https://rvlitigation.com/civil-litigation/">CORPORATE &amp; COMMERCIAL LAW</a><ul class="dropdown-menu"><li><a href="https://rvlitigation.com/civil-litigation/business-litigation">Business Litigation</a></li><li><a href="https://rvlitigation.com/civil-litigation/probate-trust-litigation">Probate &amp; Trust Litigation</a></li><li><a href="https://rvlitigation.com/civil-litigation/contract-disputes">Contract Disputes</a></li><li><a href="https://rvlitigation.com/civil-litigation/real-estate-disputes">Real Estate Disputes</a></li><li><a href="https://rvlitigation.com/civil-litigation/commercial-lease-disputes">Commercial Lease Disputes</a></li><li><a href="https://rvlitigation.com/civil-litigation/construction-defects">Construction Defects</a></li><li><a href="https://rvlitigation.com/civil-litigation/">View All Corporate &amp; Commercial Law &rarr;</a></li></ul></li><li class="nav-dropdown"><a href="https://rvlitigation.com/criminal-defense/">CRIMINAL DEFENSE</a><ul class="dropdown-menu"><li><a href="https://rvlitigation.com/criminal-defense/dui-defense">DUI / DWI Defense</a></li><li><a href="https://rvlitigation.com/criminal-defense/assault-defense">Assault &amp; Battery Defense</a></li><li><a href="https://rvlitigation.com/criminal-defense/white-collar-crimes">White-Collar Crime</a></li><li><a href="https://rvlitigation.com/criminal-defense/weapons-charges">Weapons Charges</a></li><li><a href="https://rvlitigation.com/criminal-defense/juvenile-crimes">Juvenile Crime Defense</a></li><li><a href="https://rvlitigation.com/criminal-defense/restraining-orders">Restraining Orders</a></li><li><a href="https://rvlitigation.com/criminal-defense/">View All Criminal Defense &rarr;</a></li></ul></li>
-                <li class="mobile-private-civil"><a href="https://rvlitigation.com/private-civil-matters/">PRIVATE CIVIL MATTERS</a></li>
+                <li class="nav-dropdown"><a href="https://rvlitigation.com/our-practice">PRACTICE AREAS</a><ul class="dropdown-menu"><li><a href="https://rvlitigation.com/business-litigation/">Business Litigation</a></li><li><a href="https://rvlitigation.com/business-transactions/">Business Transactions</a></li><li><a href="https://rvlitigation.com/tax-law/">Tax Law</a></li><li><a href="https://rvlitigation.com/white-collar-defense/">White-Collar Defense</a></li><li><a href="https://rvlitigation.com/our-practice">View All Practice Areas &rarr;</a></li></ul></li>
                 <li><a href="https://rvlitigation.com/reviews">REVIEWS</a></li>
+                <li><a href="https://rvlitigation.com/#faq">FAQ</a></li>
                 <li class="mobile-call"><a href="tel:+14157977591">CALL US</a></li>
                 <li class="mobile-inquire"><a href="https://rvlitigation.com/contact">INQUIRE</a></li>
             </ul>
@@ -283,22 +293,22 @@
 
     <section class="location-hero">
         <p class="subtitle">Serving San Jose, California</p>
-        <h1>Criminal Defense & Corporate Law Lawyer in San Jose</h1>
-        <p class="intro">RV Litigation Group PC provides aggressive legal representation to individuals and businesses throughout San Jose and Santa Clara County. As the largest city in the Bay Area, San Jose has its own set of legal challenges — from Silicon Valley employment disputes to criminal charges in Santa Clara County Superior Court. Our attorneys bring the preparation, strategy, and courtroom skill needed to protect your rights and your future.</p>
+        <h1>Business, Tax &amp; Defense Lawyers Serving San Jose</h1>
+        <p class="intro">Business owners in San Jose may need counsel for a contract dispute, an ownership disagreement, or a tax notice that affects the company. RV Litigation Group PC represents businesses, executives and individuals in these matters, as well as criminal defense and selected private disputes. Our office is at 28 Geary St, Suite 650, San Francisco, CA 94108; we serve clients throughout California.</p>
     </section>
 
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Our Practice Areas in San Jose</h2>
-            <p>Whether you are facing criminal charges or involved in a business dispute, our San Jose attorneys are prepared to fight for you.</p>
+            <p>Our <a href="/business-litigation/">business litigation</a>, <a href="/business-transactions/">business transactions</a>, <a href="/tax-law/">tax law</a> and <a href="/white-collar-defense/">white-collar defense</a> practices serve San Jose clients. Explore the service pages for the matters we handle, or review our <a href="/private-civil-matters/">selected private matters</a>.</p>
             <div class="practice-links">
+                <a href="/our-practice" class="practice-link-card">
+                    <h3>Business &amp; Tax Law</h3>
+                    <p>Business disputes, contracts and ownership agreements, business purchases and sales, and individual and business tax controversies. Explore our current practice areas.</p>
+                </a>
                 <a href="/criminal-defense/" class="practice-link-card">
                     <h3>Criminal Defense</h3>
-                    <p>Arrested or charged with a crime in San Jose? We defend clients against DUI, drug crimes, assault, theft, domestic violence, weapons charges, and all felony and misdemeanor offenses in Santa Clara County Superior Court.</p>
-                </a>
-                <a href="/civil-litigation/" class="practice-link-card">
-                    <h3>Corporate &amp; Commercial Law</h3>
-                    <p>From Silicon Valley contract disputes and tech startup partnership breakups to landlord-tenant conflicts and real estate litigation, we represent San Jose clients in state and federal court.</p>
+                    <p>Representation in DUI, drug, assault and other criminal cases. Our general criminal defense services remain available alongside our white-collar practice.</p>
                 </a>
             </div>
         </div>
@@ -307,28 +317,27 @@
     <section class="location-section">
         <div class="location-wrapper">
             <h2>San Jose Courts & Local Resources</h2>
-            <p>If you have been arrested or need to appear in court in San Jose, here is what you need to know.</p>
+            <p>Use these official resources to check current locations and contact information. Your court notice and the court’s instructions determine where and how to appear; a client’s city does not by itself identify the assigned courthouse.</p>
             <div class="court-info-grid">
                 <div class="court-info-box">
-                    <h3>Santa Clara County Superior Court</h3>
-                    <p><strong>Downtown Superior Court</strong></p>
+                    <h3>Downtown Superior Court</h3>
                     <p>191 N. First Street, San Jose, CA 95113</p>
-                    <p>Handles felony criminal cases, civil unlimited cases, and family law matters for the San Jose area.</p>
+                    <p>Check the court’s directory and your notice for the correct location and department. <a href="https://santaclara.courts.ca.gov/general-information/locations-contact-info/santa-clara-county-courthouse-locations" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
                     <h3>Hall of Justice</h3>
-                    <p>200 W. Hedding Street, San Jose, CA 95110</p>
-                    <p>Criminal arraignments, preliminary hearings, and misdemeanor cases. Also houses the Santa Clara County District Attorney's Office.</p>
+                    <p>190 W. Hedding Street, San Jose, CA 95110</p>
+                    <p>Use the official directory to confirm current courthouse information. <a href="https://santaclara.courts.ca.gov/general-information/locations-contact-info/santa-clara-county-courthouse-locations" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
                     <h3>Santa Clara County Main Jail</h3>
                     <p>150 W. Hedding Street, San Jose, CA 95110</p>
-                    <p>Primary booking facility for San Jose arrests. If a family member has been arrested, call us immediately for bail and defense assistance.</p>
+                    <p>The Sheriff’s Office provides current custody and visiting information. <a href="https://sheriff.santaclaracounty.gov/main-jail-complex" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
                     <h3>Elmwood Correctional Facility</h3>
-                    <p>701 S. Abel Street, Milpitas, CA 95035</p>
-                    <p>Medium-security facility serving Santa Clara County. Houses both pre-trial and sentenced inmates.</p>
+                    <p>Milpitas, California</p>
+                    <p>Confirm the appropriate visiting entrance and instructions with the Sheriff’s Office. <a href="https://sheriff.santaclaracounty.gov/bureaus/custody-bureau/elmwood-complex-mens-facility/visiting-inmate-elmwood-men-complex" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
             </div>
         </div>
@@ -337,7 +346,7 @@
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Neighborhoods We Serve in San Jose</h2>
-            <p>Our attorneys represent clients from every corner of San Jose, including:</p>
+            <p>Our service area includes the following communities. These are areas we serve, rather than additional office locations.</p>
             <div class="neighborhoods-list">
                 <span>Downtown San Jose</span>
                 <span>Willow Glen</span>
@@ -362,29 +371,27 @@
 
     <section class="location-section">
         <div class="location-wrapper">
-            <h2>Common Legal Issues in San Jose</h2>
-            <p>San Jose's size and diversity mean residents face a wide range of legal challenges. Some of the most common matters we handle for San Jose clients include:</p>
+            <h2>Legal Services for San Jose Clients</h2>
+            <p>The right starting point depends on your role, the agreement or notice involved, and the outcome you need to evaluate. Our services include:</p>
             <ul>
-                <li><strong>DUI arrests</strong> — San Jose PD and CHP conduct regular DUI checkpoints along Santa Clara Street, Story Road, and major freeway on-ramps</li>
-                <li><strong>Drug charges</strong> — Possession and sales cases are frequently prosecuted in Santa Clara County, particularly in East San Jose and downtown</li>
-                <li><strong>Tech industry employment disputes</strong> — Non-compete violations, trade secret theft, and wrongful termination claims are common in Silicon Valley</li>
-                <li><strong>Landlord-tenant disputes</strong> — San Jose's rent control ordinance (Apartment Rent Ordinance) generates significant litigation between landlords and tenants</li>
-                <li><strong>Domestic violence charges</strong> — SJPD responds to thousands of domestic calls annually; many result in arrests even when the facts are unclear</li>
-                <li><strong>Real estate disputes</strong> — With median home prices above $1.3 million, property transaction disputes and boundary conflicts are high-stakes matters</li>
+                <li><strong><a href="/business-litigation/">Business disputes</a></strong> — Contract enforcement, ownership conflicts and commercial litigation involving a San Jose business.</li>
+                <li><strong><a href="/business-transactions/ownership-operating-agreements">Ownership agreements</a></strong> — Review of the written arrangements governing contributions, control and an owner’s exit.</li>
+                <li><strong><a href="/tax-law/irs-audits-appeals">Tax notices</a></strong> — Representation for businesses and individuals facing an IRS audit or appeal.</li>
+                <li><strong><a href="/criminal-defense/">Criminal defense</a></strong> — Defense against charges including DUI, drug offenses and assault.</li>
             </ul>
         </div>
     </section>
 
     <section class="location-section">
         <div class="location-wrapper">
-            <h2>Why Choose RV Litigation Group PC for Your San Jose Case?</h2>
-            <p>We are familiar with Santa Clara County courts, local prosecutors, and the specific legal landscape of San Jose. Our attorneys have handled cases at the Downtown Superior Court, the Hall of Justice, and in federal court in the Northern District of California. When you hire RV Litigation Group PC, you get a legal team that knows the system and fights to win.</p>
+            <h2>Discuss Your San Jose Matter</h2>
+            <p>An ownership disagreement can affect access to records, decision-making and day-to-day operations. When discussing a San Jose business matter, identify the parties, the agreements involved and any upcoming deadlines.</p>
             <ul>
-                <li>Experienced in Santa Clara County Superior Court procedures and local rules</li>
-                <li>Familiar with San Jose prosecutors and their approach to plea negotiations</li>
-                <li>Aggressive representation at trial when negotiation is not enough</li>
-                <li>Available 24/7 for emergency arrests and time-sensitive legal matters</li>
-                <li>Free initial consultation — call <a href="tel:+14157977591">(415) 797-7591</a></li>
+                <li>The names of the people and businesses involved, including your role.</li>
+                <li>The type of matter and any hearing, response or transaction dates.</li>
+                <li>A brief description of your objectives and the key documents available.</li>
+                <li>Our <a href="/professionals">attorney biographies</a> and <a href="/our-practice">practice directory</a> can help you evaluate whether the firm fits your needs.</li>
+                <li><a href="/contact">Request a consultation</a> to discuss the matter and the terms of a potential engagement.</li>
             </ul>
         </div>
     </section>
@@ -393,7 +400,7 @@
     <section class="location-cta">
         <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
         <h2>Need a Lawyer in San Jose?</h2>
-        <p>Schedule a consultation with our experienced legal team. We are here to listen, advise, and fight for you.</p>
+        <p>Contact our San Francisco office to discuss your San Jose matter, relevant deadlines and whether our services fit your needs. We represent clients throughout California.</p>
         <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
         <div class="cta-or">or</div>
         <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>

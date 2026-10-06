@@ -1,4 +1,122 @@
-# Current instruction — rollback on October 5, 2026
+# Current instruction — approved surgical draft, October 5, 2026
+
+- Kris is supervising and explicitly authorized implementation in this conversation. Future discussions with David alone do not authorize website changes. Ask for Kris's confirmation when a new session starts or the person supervising changes. If Kris leaves, pause website work.
+- If the user sends `looch` as an override command, record its activation time and allow work without Kris for 24 hours. Merely quoting or defining the command does not activate it. No override is active as of this draft.
+- Work only on `draft/practice-areas-2026-10-05`, based on restored main `9f28afa1be945ebeb4ec7ede1d0decdf7bac799c`. Keep `backup/pre-rebuild-2026-10-05` immutable. Do not publish or merge without a final preview and explicit approval from Kris (or an active override).
+- Latest user instructions supersede the attached handoff where they differ: PREPEND Business Litigation, Business Transactions, Tax Law and White-Collar Defense cards; RETAIN Corporate & Commercial Law, Criminal Defense and Private Matters cards and their retained services. Do not retire the general criminal library or reduce private services to small claims alone.
+- Preserve the hero/video, photos, portraits, reviews, typography, colors and existing components. Use original hub and V2 service templates. One Practice Areas dropdown links the four priority hubs and View All Practice Areas. Outside practice pages, only targeted text/link/intake-choice updates are authorized.
+- Remove named services only: probate, personal guarantees, debt defense, defamation, HOA/boundary matters, residential eviction and elder abuse. Preserve commercial leases, employer-side employment, small-claims advice/appeals, and private services not individually approved for removal.
+- Reduce "civil" in marketing text while retaining accurate legal terms. Keep existing service URLs where no actual content move is needed. Moved content needs a direct immediate HTML redirect and destination canonical; unrelated removals should return 404. Never redirect private services indiscriminately to tax or small claims.
+- Preserve the FormSubmit recipient and address: 28 Geary St, Suite 650, San Francisco, CA 94108. Do not submit real test inquiries, invent qualifications/results, promise free consultations, or reintroduce the retainer checkbox.
+- Kris explicitly approved publication of the complete reviewed draft after adding FAQ after Reviews in the navbar and changing David’s displayed title to PRESIDENT. This authorization supersedes the historical pending-publication notes below. Preserve the immutable backup and verify the live deployment after merging PR #3.
+
+## Final navigation edits and publication authorization — October 5, 2026
+
+- Added FAQ immediately after Reviews in all 122 navigation menus, linking to the existing homepage questions at `https://rvlitigation.com/#faq`. Added the section anchor and fixed-header scroll spacing; retained the standalone FAQ page and its URL.
+- Changed David’s visible Professionals-page title from RV LITIGATION PRESIDENT to PRESIDENT, preserving his biography, portrait and other labels.
+- Kris explicitly instructed: “after that publish everything.” Complete the remaining verification, save these changes to the existing draft, merge the full reviewed draft and verify production. No additional publication approval is needed for this release.
+
+## Statewide SEO and qualified inquiries — October 5, 2026
+
+Kris authorized implementing the statewide SEO recommendation and additional targeted SEO improvements for higher-value clients. These changes remain a separate unpublished draft; prior instructions to preserve design and require publication approval still apply.
+
+- Reconciled local-only titles, descriptions and firm introductions across active practice/service pages with California service coverage and the actual San Francisco office. Preserved local examples and court-specific discussion. Existing service and location URLs, canonicals and sitemap membership are unchanged; substantive edits received the actual October 5 lastmod date.
+- Reworked all 16 existing location pages within their original layouts. The hub describes statewide service and links the original city/county resources. Local pages distinguish service areas from the single real office, prioritize business/transactions/tax/white-collar links, retain appropriate criminal/private services, and use official court directories for location resources. Removed inherited free-consultation, 24/7, unsupported local-experience and retired-service promises.
+- Improved business-service descriptions, cross-links between related disputes and transactions, and inquiry prompts for client role, parties, business issue and deadlines. Contact links to the service-area hub and FAQs; homepage and About copy link to statewide coverage. About no longer advertises personal injury. Employer-side employment copy consistently excludes individual employee representation, including executives as employees; employer-side executive-agreement disputes remain.
+- Consolidated homepage firm structured data under `https://rvlitigation.com/#firm`, with its actual San Francisco address and California service area. Service pages reference that provider rather than implying separate offices. Replaced the incorrect business-type schema for David with Person and a link to his actual biography; linked his verified State Bar profile (Bar No. 338954) from the existing admission line. No credentials, review labels, results, offices or specialty certifications were invented.
+- Aligned existing FAQ structured answers with the visible text, resolving 23 inherited mismatches. This is consistency maintenance, not an FAQ-rich-result promise. Google discontinued FAQ rich results in May 2026. The remaining inherited substantive legal content has not received an exhaustive attorney audit.
+- Made robots rules consistent so crawlers can retrieve the thank-you page's existing noindex directive. Added the existing Contact title as its H1 with the same class/style. A single min-width rule prevents the form wrapper from overflowing at 320px.
+- Added a lossless WebP alternative for the existing below-fold on-site photograph, with lazy loading and dimensions. Decoded pixels and dimensions are identical; bytes decrease from 1,528,336 to 941,012 (38.43%). Original PNG remains. Homepage hero/video and general visual design are unchanged.
+- Verification: 145 HTML files and 120 canonical indexable URLs; no introduced errors/warnings, 16 inherited low-priority notices remain. No duplicate/empty active titles or descriptions; all Service provider references and local firm addresses are consistent. Representative 12-page browser checks at 320/390/1366px confirmed images and responsive content; the Contact overflow was corrected. About's inherited Instagram placeholder embeds still need real post URLs or the user's choice to retain only the profile link; their small-phone overflow is not claimed fixed.
+- Search Console availability has been requested, so no search-performance baseline or ranking/lead improvements are claimed. No analytics vendor, account settings, new city pages, live deployment, merge or paid promotion was added. The user was also asked which real Instagram posts to feature or whether to keep only the existing profile link.
+
+Sources: Google Search Essentials; title-link and LocalBusiness documentation; Google noindex guidance; Schema.org Service/Attorney definitions; https://apps.calbar.ca.gov/attorney/Licensee/Detail/338954 . Business-litigation state-court process wording references official California Courts guidance linked in the page. Location resource URLs come from the relevant official court directories. Draft PR #3 remains the review/publishing boundary.
+
+## Centered practice service cards — October 5, 2026
+
+Kris requested centered service-card rows on every practice hub. The shared `.practice-detail-cards` component now uses wrapping flex with centered rows and consistent card widths, including incomplete final rows. Existing three-column desktop, two-column tablet and one-column phone breakpoints, spacing, colors, typography, content and links are preserved. This applies to Business Litigation, Business Transactions, Tax Law, White-Collar Defense, Corporate & Commercial Law, Criminal Defense and Private Matters; homepage and Our Practice directory components are separate.
+
+- Browser measurements passed for all seven hubs at 320, 390, 768, 1024 and 1366px: centered final rows, consistent card widths, centered content and no horizontal document overflow. Tax Law's final row was visually inspected.
+- Full source validation: 145 HTML files, 120 canonical sitemap URLs, zero introduced errors or warnings; `git diff --check` passes.
+- User separately asked whether statewide California SEO needs more location references and required an answer before implementation. No geographic wording, metadata, schema, location pages or URLs were changed. Recommended reconciling older Bay Area-only statements with truthful statewide availability, preserving the actual San Francisco office and useful local content, rather than inserting city lists.
+- Saved on the existing draft branch and PR #3 only. Main and the immutable backup remain unchanged; no merge or deployment is authorized.
+
+## Our Practice page refinement — October 5, 2026
+
+Kris explicitly requested two new `two-column reverse` sections on `/our-practice`, appropriate imagery for those sections and Corporate & Commercial Law, and uniform centered directory cards.
+
+- Added Business Litigation and White-Collar Defense sections before the existing Criminal Defense section, using the same reverse two-column component, typography and service-link buttons. Their blurbs describe already-listed services and link directly to the respective hubs.
+- Added three optimized, illustrative photographs: `images/Photos/practice-business-litigation.webp` (courthouse architecture), `practice-white-collar-defense.webp` (financial-records review), and `practice-corporate-law.webp` (agreement in a conference setting), each with a JPEG fallback. They were generated with the built-in image tool and do not depict the firm's real offices, personnel, clients or case documents. Original images remain in the repository; the corporate section's chess image reference was replaced only on this page. Each new image has descriptive alternative text, intrinsic dimensions and lazy loading.
+- The seven Our Practice directory cards now use wrapping flex, equal 280px minimum heights and a shared title area, with the last card centered. The page's obsolete `services-grid` class was removed so its mobile overrides do not conflict with the scoped directory layout. Homepage card styling is unchanged.
+- Shortened the existing corporate button's mobile label to `CORPORATE LAW SERVICES` to prevent overflow at 320px; its destination and desktop label are unchanged.
+- Validation: full source checker passes with 145 HTML files, 120 canonical sitemap URLs and zero introduced errors/warnings. Browser checks at 320/390/768/1024/1366px show equal card heights and centered final row. All three section photos load, mobile layouts stack image before text, and the three practice-section buttons reach their intended hubs. At 320px the document has no horizontal overflow. URLs, canonicals and sitemap membership are unchanged; the current Our Practice `lastmod` already equals the edit date.
+- These changes remain in draft PR #3. Main, backup, homepage hero, existing portraits, navigation and form destinations remain unchanged. No merge or deployment is authorized or performed.
+
+## Requested refinement — October 5, 2026 evening review
+
+Kris reviewed the local draft and requested uniform centered homepage cards, the selected icons, more services in the new practices, and working dropdown links. These refinements remain on the same separate unpublished draft and PR #3; no publication approval has been given.
+
+- Homepage cards now use a centered wrapping flex layout with consistent 240px square cards. Wide screens show the four priority cards above the three retained cards; narrower rows remain centered. Introductory text retains its prior 820px width. Existing card colors, type, borders and hover styling remain.
+- Installed four selected transparent 256px PNG assets: `images/Icons/business-litigation.png` (briefcase/gavel), `business-transactions.png` (contract/pen), `tax-law.png` (tax document/scales), and `white-collar-defense.png` (suit/shield). Homepage, practice directory, business overview and the four primary hubs use the appropriate icons. Original category icons remain for the three retained homepage practices.
+- Fixed desktop dropdown focus CSS. The previous focus rule replaced horizontal centering with a vertical transform, moving the menu under the pointer during clicks. Desktop focus now reveals the menu without changing its position; mobile behavior is unchanged. No JavaScript change was needed.
+- Added nine service pages using the existing V2 format and unique service-focused content: Commercial Lease Agreements; Confidentiality & Nondisclosure Agreements; Business Buyouts & Owner Exits; Tax Penalty Relief; Tax Liens, Levies & Collection Appeals; Payroll Tax Disputes; Grand Jury Subpoenas & Testimony; Wire & Mail Fraud Defense; False Statements & Obstruction Defense. Three hubs and six existing parent articles link the additions. Litigation retains its existing 19 services; transactions has six service cards, tax seven, and white-collar seven including the shared criminal-tax page. There are now four new hubs and nineteen new service pages in the full draft.
+- Static validation: 145 HTML files, 120 unique canonical sitemap URLs, zero introduced errors or warnings. New pages retain the original V2 CSS, each has one H1/canonical and matching visible FAQ/schema content. Prior baseline issues remain separately recorded; no exhaustive inherited legal-content audit is claimed.
+- Browser checks: all seven homepage cards are uniform and centered at 320/390/768/1366px with no horizontal overflow. Desktop pointer and keyboard dropdown navigation and mobile submenu links resolve correctly. Selected icons load; the new Payroll Tax Disputes link opens a 390px page with no horizontal overflow. The longer Tax Liens, Levies & Collection Appeals title and layout were visually checked at 320px, and its FAQ button expanded correctly.
+- Preserve main, the immutable backup, existing redirect mappings, form recipients and publication gate. Do not merge or deploy without Kris's explicit approval of the revised preview.
+
+## Draft implementation checkpoint — October 5, 2026
+
+This checkpoint records the approved implementation on the separate draft branch. It does **not** record a merge, publication, or live deployment. Final visual review, presentation to Kris, and publication approval are still pending.
+
+### Scope implemented
+
+- Homepage: four priority practice cards precede all three retained cards. Original hero/video, photos, portraits, reviews, typography, and design components remain. A scoped responsive grid accommodates the additional cards; new cards use the temporary `images/Icons/practice-placeholder.svg` asset.
+- Navigation: the original menu components now contain one Practice Areas dropdown with Business Litigation, Business Transactions, Tax Law, White-Collar Defense, and View All Practice Areas. Professionals, Reviews, mobile call/inquire entries, and existing navbar buttons remain. The obsolete separate mobile Private Matters entry is removed.
+- Four primary hub pages and ten service pages were added using existing hub and V2 service-page templates. Business Litigation links to retained commercial service pages at their established URLs. Corporate & Commercial Law remains at `/civil-litigation/` as the two-practice business overview. Criminal Defense and Private Matters remain available through the retained homepage cards and practice directory.
+- Business Transactions includes business contracts, ownership/operating agreements, and business purchases/sales. Tax Law includes IRS audits/appeals, California tax disputes, tax litigation/appeals, and criminal tax defense. White-Collar Defense includes investigations/subpoenas, financial fraud, and embezzlement, and links to the single criminal-tax page under Tax Law.
+- Private Matters retains lawsuit defense, harassment restraining-order proceedings, easement/right-of-way disputes, judgment enforcement/debtor exams, nuisance, vehicle/property damage, small-claims advice/appeals, and relevant shared services. The retained fraud-claims page is active and linked; old historical notes below saying it was retired do not describe the current restored source.
+- Named exclusions were removed from cards, related links, and marketing in mixed pages without retiring their unrelated services. Business/employer employment scope remains explicit. Accurate legal terms such as Code of Civil Procedure remain; broad public labels use Private Matters or Lawsuit Defense.
+- Targeted text/link/intake-choice changes cover the homepage, practice directory, contact form, FAQs, and location pages. The FormSubmit recipient remains unchanged, and no real inquiry has been sent. Schema office addresses were corrected to 28 Geary St, Suite 650, San Francisco, CA 94108; unverified old coordinates were removed.
+- Small-claims preparation advice explicitly excludes attorney representation at the initial hearing. The inherited appeal-deadline text was corrected to run from delivery/mailing of the Notice of Entry of Judgment, consistent with California Courts: https://selfhelp.courts.ca.gov/small-claims/after-trial/appeal-pay . Existing mixed service pages have not received an exhaustive audit of all inherited legal assertions.
+
+### URL moves and retirements
+
+The following four aliases remain crawlable, each with an immediate zero-second HTML refresh, matching destination canonical, and visible fallback link. They are not HTTP 301 responses. All active internal links point directly to their final destinations:
+
+| Old URL | Destination |
+| --- | --- |
+| `/civil-litigation/business-litigation` | `/business-litigation/` |
+| `/criminal-defense/white-collar-crimes` | `/white-collar-defense/` |
+| `/criminal-defense/fraud-defense` | `/white-collar-defense/financial-fraud` |
+| `/criminal-defense/embezzlement` | `/white-collar-defense/embezzlement` |
+
+These 11 files were removed so unrelated retired routes return genuine not-found responses on GitHub Pages. They have no replacement redirects:
+
+- `civil-litigation/probate-trust-litigation.html`
+- `civil-litigation/hoa-disputes.html`
+- `civil-litigation/wrongful-eviction.html`
+- `civil-litigation/landlord-tenant.html` (residential eviction/habitability/rent-control marketing; commercial lease disputes remain)
+- `private-civil-matters/personal-guarantee-loan-default.html`
+- `private-civil-matters/debt-collection-defense.html`
+- `private-civil-matters/defamation-slander-libel.html`
+- `private-civil-matters/hoa-disputes.html`
+- `private-civil-matters/property-line-boundary-disputes.html`
+- `private-civil-matters/wrongful-eviction-defense.html`
+- `private-civil-matters/elder-financial-abuse.html`
+
+### Draft verification completed; release approval pending
+
+- 136 HTML files parse with balanced element nesting; all JSON-LD blocks parse as JSON.
+- 111 active indexable pages have exactly 111 matching canonical sitemap entries; no duplicate, missing, redirect, noncanonical, or noindex sitemap entries. Fourteen new canonical URLs were added; thirteen moved/retired entries present in the previous sitemap were removed. Existing `lastmod` values were preserved for navigation-only changes and updated for substantive page changes.
+- All internal page links, referenced assets, and linked anchors resolve in the local source. Four inherited broken criminal related-service links were repaired to the existing DUI page or migrated financial-fraud page.
+- All 113 full pages share one navigation variant. No active links point to the four new redirect aliases or the 11 retired routes.
+- The seven revised business/tax FAQ answers match their visible text and FAQ structured data. All four new aliases have matching destinations, canonicals, and fallback links, without `noindex`.
+- `git diff --check` passes. Chrome visual checks passed for the seven homepage cards at 320px/390px and desktop, mobile navigation, Tax Law hub, IRS service page, sticky desktop contents panel and FAQ interactions. Original hero, reviews, existing images and form endpoints are unchanged. Source validation found no introduced errors or warnings; inherited legal content has not received an exhaustive audit. No forms were submitted.
+- Preview routing supports the existing extensionless HTML paths. Production response codes and trailing-slash behavior must be checked after an approved deployment; a local server is not evidence of GitHub Pages behavior. Destinations and aliases must ship together. Keep aliases for at least one year.
+- All 208 repository files at draft source checkpoint `d25d032ab1451968f2fe057603ab5f4bf97edb38` were verified byte-for-byte against the tested local draft. This subsequent documentation-only update records completion and PR #3. Main remains `9f28afa1be945ebeb4ec7ede1d0decdf7bac799c`; the backup remains `68ee25edd8b0ceebda15f235ef52f03b1c506fbf`. Final review and explicit approval are still required before publication.
+- The immutable backup and live `main` must remain untouched until Kris approves publication after reviewing the final preview. Keep destination pages and aliases together if later reverting presentation changes; do not blindly restore an old sitemap after new URLs have been indexed.
+
+## Previous restoration checkpoint
 
 - User rejected the full redesign and explicitly requested restoration of the pre-rebuild backup.
 - Website files restored exactly from backup commit `68ee25edd8b0ceebda15f235ef52f03b1c506fbf` (branch `backup/pre-rebuild-2026-10-05`). Only this AI documentation differs from the backup.

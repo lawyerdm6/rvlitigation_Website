@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Monterey County criminal defense and civil litigation lawyers. RV Litigation Group PC serves Salinas, Monterey, Seaside, Marina, King City, and all of Monterey County. Call (415) 797-7591.">
-    <meta name="keywords" content="Monterey County lawyer, Monterey County criminal defense attorney, Salinas lawyer, Monterey civil litigation attorney, Monterey County civil litigation, RV Litigation Group">
+    <meta name="description" content="Business litigation, transactions, tax and white-collar defense for Monterey County clients. Based in San Francisco, serving California.">
     <meta name="author" content="RV Litigation Group PC">
     <meta name="robots" content="index, follow">
-    <meta name="geo.region" content="US-CA">
-    <meta name="geo.placename" content="Monterey County, California">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rvlitigation.com/locations/monterey-county">
-    <meta property="og:title" content="Monterey County Lawyers — Criminal Defense & Corporate Law | RV Litigation Group PC">
-    <meta property="og:description" content="Monterey County criminal defense and civil litigation lawyers. Serving Salinas, Monterey, Seaside, Marina, King City, and all communities in Monterey County.">
+    <meta property="og:title" content="Monterey County Business &amp; Tax Lawyers | RV Litigation Group PC">
+    <meta property="og:description" content="Business litigation, transactions, tax and white-collar defense for Monterey County clients. Based in San Francisco, serving California.">
     <meta property="og:image" content="https://rvlitigation.com/images/Logos/RV_logo_center.png">
 
     <!-- Canonical URL -->
@@ -24,67 +21,80 @@
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LegalService",
-        "name": "RV Litigation Group PC — Monterey County",
-        "description": "criminal defense and civil litigation lawyers serving Monterey County, California.",
-        "url": "https://rvlitigation.com/locations/monterey-county",
-        "logo": "https://rvlitigation.com/images/Logos/RV_logo_center.png",
-        "telephone": "+1-415-797-7591",
-        "email": "David@RVLitigation.com",
-        "priceRange": "$$",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Salinas",
-            "addressRegion": "CA",
-            "postalCode": "93901",
-            "addressCountry": "US"
-        },
-        "areaServed": {
-            "@type": "AdministrativeArea",
-            "name": "Monterey County",
-            "containedInPlace": {
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "LegalService",
+            "@id": "https://rvlitigation.com/#firm",
+            "name": "RV Litigation Group PC",
+            "url": "https://rvlitigation.com/",
+            "telephone": "+1-415-797-7591",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "28 Geary St, Suite 650",
+                "addressLocality": "San Francisco",
+                "addressRegion": "CA",
+                "postalCode": "94108",
+                "addressCountry": "US"
+            },
+            "areaServed": {
                 "@type": "State",
                 "name": "California"
             }
         },
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Legal Services",
-            "itemListElement": [
+        {
+            "@type": "Service",
+            "@id": "https://rvlitigation.com/locations/monterey-county#service",
+            "name": "Legal services for Monterey County clients",
+            "description": "Business litigation, transactions, tax and white-collar defense for Monterey County clients. Based in San Francisco, serving California.",
+            "url": "https://rvlitigation.com/locations/monterey-county",
+            "provider": {
+                "@id": "https://rvlitigation.com/#firm"
+            },
+            "areaServed": [
                 {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Criminal Defense",
-                        "url": "https://rvlitigation.com/criminal-defense/"
-                    }
+                    "@type": "AdministrativeArea",
+                    "name": "Monterey County"
                 },
                 {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Corporate & Commercial Law",
-                        "url": "https://rvlitigation.com/civil-litigation/"
-                    }
+                    "@type": "State",
+                    "name": "California"
                 }
             ]
         },
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "09:00",
-            "closes": "18:00"
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://rvlitigation.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Areas We Serve",
+                    "item": "https://rvlitigation.com/locations/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Monterey County",
+                    "item": "https://rvlitigation.com/locations/monterey-county"
+                }
+            ]
         }
-    }
+    ]
+}
     </script>
 
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
     <link rel="shortcut icon" href="/favicon.ico">
-    <title>Monterey County Lawyers — Criminal Defense & Corporate Law | RV Litigation Group PC</title>
+    <title>Monterey County Business &amp; Tax Lawyers | RV Litigation Group PC</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -260,9 +270,9 @@
             </a>
             <ul class="nav-links">
                 <li><a href="https://rvlitigation.com/professionals">PROFESSIONALS</a></li>
-                <li class="nav-dropdown"><a href="https://rvlitigation.com/civil-litigation/">CORPORATE &amp; COMMERCIAL LAW</a><ul class="dropdown-menu"><li><a href="https://rvlitigation.com/civil-litigation/business-litigation">Business Litigation</a></li><li><a href="https://rvlitigation.com/civil-litigation/probate-trust-litigation">Probate &amp; Trust Litigation</a></li><li><a href="https://rvlitigation.com/civil-litigation/contract-disputes">Contract Disputes</a></li><li><a href="https://rvlitigation.com/civil-litigation/real-estate-disputes">Real Estate Disputes</a></li><li><a href="https://rvlitigation.com/civil-litigation/commercial-lease-disputes">Commercial Lease Disputes</a></li><li><a href="https://rvlitigation.com/civil-litigation/construction-defects">Construction Defects</a></li><li><a href="https://rvlitigation.com/civil-litigation/">View All Corporate &amp; Commercial Law &rarr;</a></li></ul></li><li class="nav-dropdown"><a href="https://rvlitigation.com/criminal-defense/">CRIMINAL DEFENSE</a><ul class="dropdown-menu"><li><a href="https://rvlitigation.com/criminal-defense/dui-defense">DUI / DWI Defense</a></li><li><a href="https://rvlitigation.com/criminal-defense/assault-defense">Assault &amp; Battery Defense</a></li><li><a href="https://rvlitigation.com/criminal-defense/white-collar-crimes">White-Collar Crime</a></li><li><a href="https://rvlitigation.com/criminal-defense/weapons-charges">Weapons Charges</a></li><li><a href="https://rvlitigation.com/criminal-defense/juvenile-crimes">Juvenile Crime Defense</a></li><li><a href="https://rvlitigation.com/criminal-defense/restraining-orders">Restraining Orders</a></li><li><a href="https://rvlitigation.com/criminal-defense/">View All Criminal Defense &rarr;</a></li></ul></li>
-                <li class="mobile-private-civil"><a href="https://rvlitigation.com/private-civil-matters/">PRIVATE CIVIL MATTERS</a></li>
+                <li class="nav-dropdown"><a href="https://rvlitigation.com/our-practice">PRACTICE AREAS</a><ul class="dropdown-menu"><li><a href="https://rvlitigation.com/business-litigation/">Business Litigation</a></li><li><a href="https://rvlitigation.com/business-transactions/">Business Transactions</a></li><li><a href="https://rvlitigation.com/tax-law/">Tax Law</a></li><li><a href="https://rvlitigation.com/white-collar-defense/">White-Collar Defense</a></li><li><a href="https://rvlitigation.com/our-practice">View All Practice Areas &rarr;</a></li></ul></li>
                 <li><a href="https://rvlitigation.com/reviews">REVIEWS</a></li>
+                <li><a href="https://rvlitigation.com/#faq">FAQ</a></li>
                 <li class="mobile-call"><a href="tel:+14157977591">CALL US</a></li>
                 <li class="mobile-inquire"><a href="https://rvlitigation.com/contact">INQUIRE</a></li>
             </ul>
@@ -283,22 +293,22 @@
 
     <section class="location-hero">
         <p class="subtitle">Serving All of Monterey County, California</p>
-        <h1>Criminal Defense & Corporate Law Lawyers in Monterey County</h1>
-        <p class="intro">RV Litigation Group PC provides dedicated legal representation throughout Monterey County — from the agricultural heartland of the Salinas Valley to the coastal communities of Monterey, Carmel, and Seaside. Monterey County's legal landscape is shaped by its dual identity: a world-renowned tourist destination and one of California's most productive agricultural regions. Whether you face criminal charges in Salinas or need to resolve an agricultural employment dispute, our attorneys deliver the preparation and courtroom skill your case demands.</p>
+        <h1>Business, Tax &amp; Defense Lawyers Serving Monterey County</h1>
+        <p class="intro">RV Litigation Group PC serves Monterey County businesses and individuals as part of its statewide California practice. We handle commercial disputes, business agreements, tax controversies and defense matters, including general criminal defense and selected private disputes. Our office is at 28 Geary St, Suite 650, San Francisco, CA 94108; we serve clients throughout California.</p>
     </section>
 
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Our Practice Areas in Monterey County</h2>
-            <p>Whether you are defending against felony charges in Salinas or litigating an agricultural business dispute, our Monterey County attorneys bring experienced and aggressive representation to every case.</p>
+            <p>Our <a href="/business-litigation/">business litigation</a>, <a href="/business-transactions/">business transactions</a>, <a href="/tax-law/">tax law</a> and <a href="/white-collar-defense/">white-collar defense</a> practices serve Monterey County clients. Explore the service pages for the matters we handle, or review our <a href="/private-civil-matters/">selected private matters</a>.</p>
             <div class="practice-links">
+                <a href="/our-practice" class="practice-link-card">
+                    <h3>Business &amp; Tax Law</h3>
+                    <p>Business disputes, contracts and ownership agreements, business purchases and sales, and individual and business tax controversies. Explore our current practice areas.</p>
+                </a>
                 <a href="/criminal-defense/" class="practice-link-card">
                     <h3>Criminal Defense</h3>
-                    <p>Facing criminal charges in Monterey County? We defend clients against DUI, drug trafficking, gang-related charges, assault, theft, domestic violence, and all felony and misdemeanor offenses. Salinas has some of the most aggressive gang prosecution in the state, and the Monterey County DA does not take a light approach to drug and violent crime cases.</p>
-                </a>
-                <a href="/civil-litigation/" class="practice-link-card">
-                    <h3>Corporate &amp; Commercial Law</h3>
-                    <p>From agricultural employment disputes and water rights conflicts to rural property boundary claims, commercial lease disputes in Monterey and Carmel, and construction defect litigation, we handle the range of civil matters that arise in Monterey County's diverse economy.</p>
+                    <p>Representation in DUI, drug, assault and other criminal cases. Our general criminal defense services remain available alongside our white-collar practice.</p>
                 </a>
             </div>
         </div>
@@ -307,22 +317,22 @@
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Monterey County Courts & Facilities</h2>
-            <p>Monterey County operates courthouses in both Salinas and Monterey. If you have been arrested or must appear in court, here is what you need to know.</p>
+            <p>Use these official resources to check current locations and contact information. Your court notice and the court’s instructions determine where and how to appear; a client’s city does not by itself identify the assigned courthouse.</p>
             <div class="court-info-grid">
                 <div class="court-info-box">
-                    <h3>Monterey County Superior Court — Salinas</h3>
+                    <h3>Salinas Courthouse</h3>
                     <p>240 Church Street, Salinas, CA 93901</p>
-                    <p>The main courthouse for Monterey County, located in the county seat of Salinas. Handles felony and misdemeanor criminal cases, civil unlimited and limited cases, family law, and probate for the entire county.</p>
+                    <p>Confirm the court location and department on your notice and in the official directory. <a href="https://www.monterey.courts.ca.gov/locations" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
                     <h3>Monterey Courthouse</h3>
                     <p>1200 Aguajito Road, Monterey, CA 93940</p>
-                    <p>Handles select criminal, traffic, and civil matters for the Monterey Peninsula area. Provides a closer option for residents of Monterey, Pacific Grove, Carmel, and Seaside.</p>
+                    <p>Use the official directory for current court location and contact details. <a href="https://www.monterey.courts.ca.gov/locations" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
                 <div class="court-info-box">
-                    <h3>Monterey County Jail</h3>
-                    <p>1414 Natividad Road, Salinas, CA 93906</p>
-                    <p>The primary detention and booking facility for Monterey County. If a family member has been arrested anywhere in the county, they will likely be transported here. Contact us immediately for bail and defense assistance.</p>
+                    <h3>Monterey County Court Locations</h3>
+                    <p>Superior Court of California, County of Monterey</p>
+                    <p>The directory lists courthouses throughout the county; consult your notice for the assigned location. <a href="https://www.monterey.courts.ca.gov/locations" target="_blank" rel="noopener noreferrer">Official information</a>.</p>
                 </div>
             </div>
         </div>
@@ -331,7 +341,7 @@
     <section class="location-section">
         <div class="location-wrapper">
             <h2>Cities We Serve in Monterey County</h2>
-            <p>Our attorneys represent clients in every city and community across Monterey County and the surrounding region:</p>
+            <p>We serve communities across Monterey County and the surrounding region from our San Francisco office, including:</p>
             <div class="neighborhoods-list">
                 <span>Salinas</span>
                 <span>Monterey</span>
@@ -355,28 +365,27 @@
 
     <section class="location-section">
         <div class="location-wrapper">
-            <h2>Common Legal Issues in Monterey County</h2>
-            <p>Monterey County's combination of agriculture, tourism, and rural communities creates a legal landscape unlike anywhere else in the Bay Area region. Some of the most common issues we handle include:</p>
+            <h2>Legal Services for Monterey County Clients</h2>
+            <p>The right starting point depends on your role, the agreement or notice involved, and the outcome you need to evaluate. Our services include:</p>
             <ul>
-                <li><strong>DUI in tourist areas</strong> — Monterey, Carmel, and Pacific Grove attract millions of visitors annually, and DUI enforcement is heavy along Cannery Row, Alvarado Street, and Highway 1, especially on weekends and during events like the AT&T Pebble Beach Pro-Am and Monterey Car Week</li>
-                <li><strong>Drug trafficking charges</strong> — Highway 101 is a major drug transportation corridor, and law enforcement conducts aggressive interdiction operations along the Salinas Valley, leading to serious trafficking charges with severe federal and state penalties</li>
-                <li><strong>Gang-related charges</strong> — Salinas has faced significant gang activity, and the Monterey County DA's office uses gang enhancements aggressively, which can add years to a sentence even for relatively minor underlying offenses</li>
-                <li><strong>Agricultural employment disputes</strong> — Wage theft, overtime violations, meal and rest break violations, and wrongful termination claims are common in the agricultural sector, affecting thousands of workers across the Salinas Valley</li>
-                <li><strong>Rural property disputes</strong> — Water rights conflicts, easement disputes, boundary claims, and agricultural land use disagreements are frequent in the county's rural areas, often involving significant acreage and property values</li>
+                <li><strong><a href="/business-transactions/business-contracts">Commercial agreements</a></strong> — Contracts with suppliers, customers and business partners.</li>
+                <li><strong><a href="/business-litigation/">Business disputes</a></strong> — Litigation over commercial obligations and ownership interests.</li>
+                <li><strong><a href="/civil-litigation/employment-workplace-litigation">Employer representation</a></strong> — Employer-side representation in workplace disputes.</li>
+                <li><strong><a href="/tax-law/">Tax controversies</a></strong> — Audits, appeals and tax collection disputes affecting business or individual finances.</li>
             </ul>
         </div>
     </section>
 
     <section class="location-section">
         <div class="location-wrapper">
-            <h2>Why Choose RV Litigation Group PC for Your Monterey County Case?</h2>
-            <p>We understand the Monterey County court system and the specific legal challenges that arise in this region. From the Salinas courthouse to the Monterey Peninsula branch, our attorneys have the courtroom experience and local knowledge needed to handle your case effectively. Monterey County cases often involve issues — gang enhancements, Highway 101 drug interdiction, agricultural employment disputes — that require attorneys who understand the local context.</p>
+            <h2>Discuss Your Monterey County Matter</h2>
+            <p>For a Monterey County business matter, explain the business relationship at issue and the outcome you need to evaluate. A contract dispute, proposed sale and tax notice call for different records and next steps.</p>
             <ul>
-                <li>Experience in both the Salinas and Monterey courthouses and their local procedures</li>
-                <li>Understanding of the Monterey County DA's prosecution priorities, including gang and drug enforcement</li>
-                <li>Knowledge of agricultural industry legal issues, from wage and hour claims to employment disputes</li>
-                <li>Available 24/7 for emergency arrests at Monterey County Jail</li>
-                <li>Free initial consultation — call <a href="tel:+14157977591">(415) 797-7591</a></li>
+                <li>The names of the people and businesses involved, including your role.</li>
+                <li>The type of matter and any hearing, response or transaction dates.</li>
+                <li>A brief description of your objectives and the key documents available.</li>
+                <li>Our <a href="/professionals">attorney biographies</a> and <a href="/our-practice">practice directory</a> can help you evaluate whether the firm fits your needs.</li>
+                <li><a href="/contact">Request a consultation</a> to discuss the matter and the terms of a potential engagement.</li>
             </ul>
         </div>
     </section>
@@ -385,7 +394,7 @@
     <section class="location-cta">
         <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
         <h2>Need a Lawyer in Monterey County?</h2>
-        <p>Schedule a consultation with our experienced legal team. We serve Salinas, Monterey, and every community across Monterey County.</p>
+        <p>Contact our San Francisco office to discuss your Monterey County matter, relevant deadlines and whether our services fit your needs. We represent clients throughout California.</p>
         <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
         <div class="cta-or">or</div>
         <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>
