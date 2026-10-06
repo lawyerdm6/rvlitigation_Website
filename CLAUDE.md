@@ -10,6 +10,17 @@
 - Preserve the FormSubmit recipient and address: 28 Geary St, Suite 650, San Francisco, CA 94108. Do not submit real test inquiries, invent qualifications/results, promise free consultations, or reintroduce the retainer checkbox.
 - Draft implementation and verification are complete. Review PR #3: https://github.com/lawyerdm6/rvlitigation_Website/pull/3 . It is a draft, has not been merged, and has no deployment. Publication approval is still required.
 
+## Our Practice page refinement — October 5, 2026
+
+Kris explicitly requested two new `two-column reverse` sections on `/our-practice`, appropriate imagery for those sections and Corporate & Commercial Law, and uniform centered directory cards.
+
+- Added Business Litigation and White-Collar Defense sections before the existing Criminal Defense section, using the same reverse two-column component, typography and service-link buttons. Their blurbs describe already-listed services and link directly to the respective hubs.
+- Added three optimized, illustrative photographs: `images/Photos/practice-business-litigation.webp` (courthouse architecture), `practice-white-collar-defense.webp` (financial-records review), and `practice-corporate-law.webp` (agreement in a conference setting), each with a JPEG fallback. They were generated with the built-in image tool and do not depict the firm's real offices, personnel, clients or case documents. Original images remain in the repository; the corporate section's chess image reference was replaced only on this page. Each new image has descriptive alternative text, intrinsic dimensions and lazy loading.
+- The seven Our Practice directory cards now use wrapping flex, equal 280px minimum heights and a shared title area, with the last card centered. The page's obsolete `services-grid` class was removed so its mobile overrides do not conflict with the scoped directory layout. Homepage card styling is unchanged.
+- Shortened the existing corporate button's mobile label to `CORPORATE LAW SERVICES` to prevent overflow at 320px; its destination and desktop label are unchanged.
+- Validation: full source checker passes with 145 HTML files, 120 canonical sitemap URLs and zero introduced errors/warnings. Browser checks at 320/390/768/1024/1366px show equal card heights and centered final row. All three section photos load, mobile layouts stack image before text, and the three practice-section buttons reach their intended hubs. At 320px the document has no horizontal overflow. URLs, canonicals and sitemap membership are unchanged; the current Our Practice `lastmod` already equals the edit date.
+- These changes remain in draft PR #3. Main, backup, homepage hero, existing portraits, navigation and form destinations remain unchanged. No merge or deployment is authorized or performed.
+
 ## Requested refinement — October 5, 2026 evening review
 
 Kris reviewed the local draft and requested uniform centered homepage cards, the selected icons, more services in the new practices, and working dropdown links. These refinements remain on the same separate unpublished draft and PR #3; no publication approval has been given.
