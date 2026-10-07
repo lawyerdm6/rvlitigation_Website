@@ -23,54 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- JSON-LD FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Do you represent employees in wrongful termination or discrimination cases?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No. RV Litigation Group PC represents employers and business owners in employment and workplace disputes. We do not represent employees in claims against their employers, whether on a retainer or contingency basis, or plaintiffs pursuing PAGA or class action claims against employers."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How quickly should an employer respond to a DFEH or EEOC complaint?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Immediately. California's Civil Rights Department (formerly DFEH) and the EEOC impose strict response deadlines, and a company's position statement often shapes the entire course of the investigation. Employers typically have a limited window to respond once a complaint is served, and failing to respond thoroughly and on time can significantly weaken the employer's defense."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can a former employee be stopped from soliciting our clients or employees?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "California generally voids non-compete agreements under Business and Professions Code 16600, but that does not mean former employees have unlimited freedom. Trade secret protections under the California Uniform Trade Secrets Act, along with properly drafted non-solicitation and confidentiality provisions, can still restrict a former employee's use of your confidential information and, in some circumstances, their solicitation of your clients or staff. The enforceability depends heavily on how the agreement was drafted and what information is actually at issue."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Are independent contractor misclassification disputes common in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. California applies the ABC test under Labor Code 2775 (codifying Dynamex and AB 5) to determine whether a worker is properly classified as an independent contractor. Misclassification exposes a business to claims for unpaid overtime, meal and rest break premiums, expense reimbursement, and penalties. We help employers assess classification decisions and defend against misclassification claims when they arise."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do you conduct workplace investigations?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We advise employers on structuring legally sound workplace investigations into harassment, discrimination, and misconduct complaints, and we can serve as outside counsel overseeing an investigation to help preserve attorney-client privilege where appropriate. A properly documented investigation is often the single most important factor in defending a subsequent claim."
-                }
-            }
-        ]
-    }
-    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do you represent employees with workplace claims?", "acceptedAnswer": {"@type": "Answer", "text": "No. The employment practice is employer-side. The firm does not represent individual employees, including executives seeking personal employment claims."}}, {"@type": "Question", "name": "Does a contractor agreement protect us from wage claims?", "acceptedAnswer": {"@type": "Answer", "text": "The agreement is relevant but not decisive. Actual work and the applicable classification test control; statutory exceptions have their own conditions."}}, {"@type": "Question", "name": "Should we interview everyone immediately?", "acceptedAnswer": {"@type": "Answer", "text": "Preserve records promptly and obtain advice on the investigation plan. The scope, interviewer, communications and handling of witnesses can affect the evidence, privilege and retaliation concerns."}}, {"@type": "Question", "name": "Does an arbitration agreement end the court case?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically. Counsel must review enforceability, covered claims, applicable law and procedural timing. Some claims or issues may remain in court even when others proceed in arbitration."}}]}</script>
 
     <!-- JSON-LD LegalService Schema -->
     <script type="application/ld+json">
@@ -212,6 +165,30 @@
             .faq-icon { display: none; }
         }
     </style>
+<style id="business-content-refinement">
+.article-layout > * { min-width: 0; }
+.article-body a, .business-expansion a { color: var(--color-gold); text-underline-offset: 3px; }
+.article-body h2[id], .business-expansion h2[id] { scroll-margin-top: 110px; }
+.article-body ul { padding-left: 22px; color: #999; line-height: 1.85; }
+.article-body li { margin-bottom: 10px; }
+.article-body .example-card h3 { margin: 0 0 10px; }
+.business-sources { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); }
+.article-body .business-sources h2 { font-size: 1.4rem; margin-top: 0; }
+.article-body .business-sources p, .business-sources li { font-size: .84rem; line-height: 1.7; }
+.business-sources a { overflow-wrap: anywhere; }
+.business-expansion { max-width: 1000px; margin: 0 auto; }
+.business-expansion h2 { font-family: var(--font-serif); font-size: 2.3rem; font-weight: 400; margin: 0 0 22px; }
+.business-expansion h3 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; margin: 0 0 12px; }
+.business-expansion p, .business-expansion li { color: #999; line-height: 1.85; margin-bottom: 16px; }
+.business-expansion ul { padding-left: 22px; }
+.business-expansion .business-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin: 24px 0; }
+.business-expansion .business-card { padding: 25px; border: 1px solid rgba(255,255,255,.12); border-radius: 6px; }
+.business-expansion .example-label { font-size: .7rem; color: var(--color-gold); letter-spacing: 1.5px; margin-bottom: 10px; text-transform: uppercase; }
+.business-expansion .business-sources h2 { font-size: 1.5rem; }
+.page-header h1 { overflow-wrap: break-word; }
+@media(max-width:700px) { .business-expansion .business-grid { grid-template-columns: 1fr; } .business-expansion h2 { font-size: 1.8rem; } .business-expansion .business-card { padding: 20px; } }
+@media(prefers-reduced-motion:reduce) { .article-body .faq-answer, .article-body .faq-icon, .business-expansion * { transition: none; animation: none; } }
+</style>
 </head>
 <body>
     <!-- Header / Navigation -->
@@ -277,234 +254,66 @@
         <div class="article-layout">
 
             <!-- Article Body -->
-            <div class="article-body">
-
-                <!-- Intro -->
-                <h2 id="overview">Employer-Side Employment Litigation and Executive Disputes</h2>
-                <div class="two-column reverse" style="gap: 40px; margin-bottom: 30px;">
-                    <div class="column-content" style="padding: 0;">
-                        <p>A single employment claim — whether a discrimination charge, a wage dispute, or a departing executive walking out with confidential information — can consume a company's time, resources, and attention for months or years. California's employment laws are among the most protective in the country, and employers who are unprepared or poorly represented often find themselves at a significant disadvantage from the first demand letter onward.</p>
-                        <p>RV Litigation Group PC is based in San Francisco and represents clients throughout California. We represent employers and business owners facing workplace disputes and wage claims. Our employment practice provides employer-side representation only.</p>
-                    </div>
-                    <div class="column-image">
+            <div class="article-body"><span id="at-stake" aria-hidden="true"></span><span id="services" aria-hidden="true"></span><span id="the-law" aria-hidden="true"></span><h2 id="overview">Employer-Side Employment Litigation and Executive Disputes</h2>
+<div class="two-column reverse" style="gap:40px;margin-bottom:30px"><div class="column-content" style="padding:0"><p>An employee demand, administrative complaint or workplace lawsuit requires a response grounded in the employer’s records and actual decision-making. The first priorities are identifying the proceeding, preserving relevant information and avoiding actions that could create a separate retaliation issue.</p>
+<p>RV Litigation Group PC represents California employers and business owners in workplace disputes, including wage allegations, discrimination or retaliation claims and employer-side executive-agreement disputes. The firm does not represent individual employees, including executives acting in their capacity as employees.</p>
+</div><div class="column-image">
                         <picture><source srcset="/images/Photos/Civil Litigation.webp" type="image/webp"><img src="/images/Photos/Civil Litigation.png" alt="Gold knight on a chessboard" style="border-radius: 5px;"></picture>
-                    </div>
-                </div>
-
-                <!-- Filtering Statement -->
-                <div class="filter-banner">
-                    <p><strong>Matter Fit:</strong> Our employment practice represents employers only. Matters are accepted on an hourly and retainer basis; we do not represent employees in claims against their employers.</p>
-                </div>
-
-                <p>Our employment litigation practice is built specifically around the needs of the party paying the bills — the employer. We do not carry the conflicts, incentives, or caseload pressures that come with a plaintiff's contingency practice. Every matter we take on is staffed and billed the same way: as a business decision made in partnership with the client, with clear communication about cost, exposure, and strategy from day one.</p>
-
-                <!-- What We Handle -->
-                <h2 id="services">What We Handle</h2>
-                <p>We advise and defend employers in workplace disputes, including:</p>
-                <ul class="plain-list">
-                    <li>Defense of discrimination, harassment, retaliation, and wrongful-termination claims</li>
-                    <li>Wage, hour, commission, bonus, and expense-reimbursement disputes</li>
-                    <li>Employee and independent-contractor classification disputes</li>
-                    <li>Employer-side executive employment agreements and severance disputes</li>
-                    <li>Confidentiality, trade-secret, and proprietary-information disputes</li>
-                    <li>Employee solicitation, customer solicitation, and employee-raiding claims</li>
-                    <li>Workplace investigations and pre-litigation demands</li>
-                    <li>Employment-related arbitration and court proceedings</li>
-                    <li>Defense of administrative employment claims before the Civil Rights Department and the EEOC</li>
-                    <li>Drafting and enforcement of settlement and separation agreements</li>
-                </ul>
-
-                <!-- The Law -->
-                <h2 id="the-law">What the Law Says</h2>
-
-                <h3>Government Code 12940 — FEHA</h3>
-                <blockquote class="statute-block">
-                    "It is an unlawful employment practice... for an employer, because of the race, religious creed, color, national origin, ancestry, physical disability, mental disability, medical condition, genetic information, marital status, sex, gender, gender identity, gender expression, age, sexual orientation, or veteran or military status of any person... to discriminate against the person..."
-                    <cite>— California Government Code Section 12940(a)</cite>
-                </blockquote>
-                <p>California's Fair Employment and Housing Act (FEHA) is broader than its federal counterpart, Title VII, in both the categories it protects and the employers it covers — FEHA applies to employers with as few as five employees. Claims typically proceed through the Civil Rights Department (formerly DFEH) before a lawsuit can be filed, and the employer's response at the administrative stage often shapes the trajectory of the entire dispute.</p>
-
-                <h3>Business &amp; Professions Code 16600 — Restraint of Trade</h3>
-                <blockquote class="statute-block">
-                    "Except as provided in this chapter, every contract by which anyone is restrained from engaging in a lawful profession, trade, or business of any kind is to that extent void."
-                    <cite>— California Business &amp; Professions Code Section 16600</cite>
-                </blockquote>
-                <p>California is famously hostile to non-compete agreements, and courts will generally not enforce a provision that restrains a former employee from working for a competitor. This does not mean employers are without protection — trade secret law, properly scoped confidentiality agreements, and, in narrow circumstances, non-solicitation provisions can still restrict what a departing employee may do with your company's confidential information and relationships. Getting this distinction right at the drafting stage is often what determines whether a company has any real recourse when an employee leaves for a competitor.</p>
-
-                <h3>Labor Code 2775 — Independent Contractor Classification</h3>
-                <p>California applies the "ABC test" to determine whether a worker is properly classified as an independent contractor rather than an employee. Under this test, a worker is presumed to be an employee unless the hiring entity establishes that the worker is (A) free from the control and direction of the hiring entity, (B) performing work outside the usual course of the hiring entity's business, and (C) customarily engaged in an independently established trade of the same nature. Misclassification exposes a business to claims for unpaid overtime, missed meal and rest breaks, unreimbursed expenses, and statutory penalties — often going back several years.</p>
-
-                <!-- Examples -->
-                <h2 id="examples">Illustrative Scenarios</h2>
-                <p>These scenarios illustrate the kinds of employer-side disputes we regularly handle:</p>
-
-                <div class="example-card">
-                    <div class="example-label">Example 1 — Departing Executive in San Francisco</div>
-                    <p>A senior sales executive at a San Francisco company resigns and immediately begins working for a direct competitor. Before leaving, she forwarded client contact lists, pricing sheets, and pipeline data to her personal email. The company retains RV Litigation Group PC to evaluate confidentiality and trade secret claims, negotiate the return of company information, and, if necessary, seek injunctive relief to prevent further use of the misappropriated data.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 2 — Wage Claim in San Jose</div>
-                    <p>A former employee files a claim alleging unpaid overtime and missed meal breaks spanning two years of employment, along with waiting-time penalties under Labor Code 203. The employer engages counsel to audit its timekeeping records, evaluate potential exposure, and negotiate a resolution before the matter proceeds to a Labor Commissioner hearing or civil litigation.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 3 — Discrimination Charge in Oakland</div>
-                    <p>An Oakland employer terminates an underperforming employee following a documented series of performance issues. The former employee files a charge with the Civil Rights Department alleging the termination was retaliatory. The employer's counsel prepares a detailed position statement supported by performance records, disciplinary history, and witness statements, resulting in a right-to-sue determination without further administrative action.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 4 — Independent Contractor Audit in Palo Alto</div>
-                    <p>A Palo Alto startup that has classified its delivery drivers as independent contractors receives a demand letter alleging misclassification under the ABC test. Counsel reviews the company's operational structure, advises on near-term remediation, and negotiates a resolution that limits the company's exposure while the business transitions its workforce model.</p>
-                </div>
-
-                <!-- What's at Stake -->
-                <h2 id="at-stake">What's at Stake</h2>
-                <p>Employment disputes carry financial exposure that goes well beyond a single employee's claim — they can include statutory penalties, attorney fees for the opposing side, and reputational risk. Here is an overview of common claim types.</p>
-
-                <div class="table-scroll-wrapper">
-                <table class="penalties-table">
-                    <thead>
-                        <tr>
-                            <th>Claim Type</th>
-                            <th>Governing Law</th>
-                            <th>Potential Exposure</th>
-                            <th>Timeline</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Discrimination / Harassment / Retaliation</strong></td>
-                            <td>Gov. Code 12940 (FEHA)</td>
-                            <td>Back pay, emotional distress damages, punitive damages, attorney fees</td>
-                            <td>Admin. exhaustion required; 3-year filing window (Gov. Code 12960)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Wage &amp; Hour Violations</strong></td>
-                            <td>Labor Code 200-1198.5</td>
-                            <td>Unpaid wages, waiting-time penalties, PAGA penalties, attorney fees</td>
-                            <td>3-year SOL (4 years for UCL-based claims)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Misclassification</strong></td>
-                            <td>Labor Code 2775 (ABC test)</td>
-                            <td>Back wages, overtime, benefits, penalties</td>
-                            <td>3-4 year lookback typical</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Trade Secret / Confidentiality Breach</strong></td>
-                            <td>Civil Code 3426 (CUTSA)</td>
-                            <td>Injunctive relief, actual damages, exemplary damages up to 2x</td>
-                            <td>3-year SOL (CC 3426.6)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Wrongful Termination</strong></td>
-                            <td>Common law / Labor Code 1102.5</td>
-                            <td>Lost wages, emotional distress, punitive damages</td>
-                            <td>2-year SOL (tort-based)</td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div><!-- /table-scroll-wrapper -->
-
-                <!-- How We Help -->
-                <h2 id="how-we-help">How We Help</h2>
-                <p>At RV Litigation Group PC, we work with employers proactively and reactively — helping prevent disputes where possible, and defending vigorously when litigation is unavoidable.</p>
-
-                <div class="defense-item">
-                    <h3>1. Pre-Litigation Strategy</h3>
-                    <p>Many employment disputes can be resolved — or their exposure significantly reduced — before a lawsuit is ever filed. We help employers respond to demand letters, administrative complaints, and departing-employee issues with a clear-eyed assessment of risk and a strategy designed to protect the company's interests.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>2. Workplace Investigations</h3>
-                    <p>A properly conducted investigation is often the single strongest piece of evidence in defending a later claim. We advise on structuring investigations into harassment, discrimination, and misconduct complaints, and can serve as outside counsel overseeing the process to help preserve privilege where appropriate.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>3. Executive Agreements and Separations</h3>
-                    <p>We advise employers on executive employment agreements and severance and separation packages, and represent companies in disputes over compensation, equity, and post-employment obligations.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>4. Confidential Information Protection</h3>
-                    <p>When a departing employee takes confidential information, client relationships, or key staff members with them, we move quickly to assess trade secret and contractual claims, send cease-and-desist correspondence, and pursue injunctive relief when the situation calls for it.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>5. Administrative Claim Defense</h3>
-                    <p>We represent employers before the Civil Rights Department, the EEOC, and the Labor Commissioner's office, preparing position statements and supporting documentation designed to resolve claims at the earliest possible stage.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>6. Litigation and Arbitration</h3>
-                    <p>When a dispute cannot be resolved short of litigation, we defend employers in state and federal court and before arbitration panels, building the strongest possible factual and legal record at every stage of the case.</p>
-                </div>
-
-                <!-- FAQ -->
-                <h2 id="faq">Frequently Asked Questions</h2>
-                <div class="faq-section">
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Do you represent employees in wrongful termination or discrimination cases?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>No. RV Litigation Group PC represents employers and business owners in employment and workplace disputes. We do not represent employees in claims against their employers, whether on a retainer or contingency basis, or plaintiffs pursuing PAGA or class action claims against employers.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            How quickly should an employer respond to a DFEH or EEOC complaint?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Immediately. California's Civil Rights Department (formerly DFEH) and the EEOC impose strict response deadlines, and a company's position statement often shapes the entire course of the investigation. Employers typically have a limited window to respond once a complaint is served, and failing to respond thoroughly and on time can significantly weaken the employer's defense.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Can a former employee be stopped from soliciting our clients or employees?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>California generally voids non-compete agreements under Business and Professions Code 16600, but that does not mean former employees have unlimited freedom. Trade secret protections under the California Uniform Trade Secrets Act, along with properly drafted non-solicitation and confidentiality provisions, can still restrict a former employee's use of your confidential information and, in some circumstances, their solicitation of your clients or staff. The enforceability depends heavily on how the agreement was drafted and what information is actually at issue.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Are independent contractor misclassification disputes common in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes. California applies the ABC test under Labor Code 2775 (codifying Dynamex and AB 5) to determine whether a worker is properly classified as an independent contractor. Misclassification exposes a business to claims for unpaid overtime, meal and rest break premiums, expense reimbursement, and penalties. We help employers assess classification decisions and defend against misclassification claims when they arise.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Do you conduct workplace investigations?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>We advise employers on structuring legally sound workplace investigations into harassment, discrimination, and misconduct complaints, and we can serve as outside counsel overseeing an investigation to help preserve attorney-client privilege where appropriate. A properly documented investigation is often the single most important factor in defending a subsequent claim.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Related Practice Areas -->
-                <h2 id="related">Related Practice Areas</h2>
+                    </div></div>
+<h2 id="law">The Legal Framework</h2>
+<div class="defense-item"><h3>Different claims follow different paths</h3><p>A wage claim before the Labor Commissioner, a Civil Rights Department complaint and a court lawsuit have different procedures. FEHA discrimination and harassment claims, whistleblower allegations and contract claims also require different elements and defenses. Do not assume that one response, right-to-sue notice or deadline applies to all allegations.</p>
+</div>
+<div class="defense-item"><h3>Classification requires facts, not labels</h3><p>California Labor Code section 2775 generally uses the ABC test for employee status, with statutory exceptions and other applicable tests for particular relationships. Where an exception applies, the analysis may turn to the Borello factors or another standard. A 1099, an LLC or a contract calling someone independent does not resolve classification. Exempt-from-overtime status is a separate issue that requires review of duties and other requirements.</p>
+</div>
+<div class="defense-item"><h3>Arbitration and representative allegations need separate review</h3><p>An arbitration clause does not mean every allegation disappears from court. Enforceability, scope and the type of claim matter. Under Adolph, arbitration of an individual PAGA claim does not by itself eliminate standing to pursue nonindividual claims; a stay and later findings may matter. PAGA’s amended notice, cure and early-evaluation procedures depend on timing and eligibility. A notice mentioning PAGA should be reviewed promptly to identify the required response and appropriate representation; this page does not offer a separate class-action or PAGA practice.</p>
+</div>
+<h2 id="documents">Facts &amp; Records to Prepare</h2>
+<ul>
+<li>The demand, agency notice or complaint, envelopes and delivery information.</li>
+<li>Applicable policies, signed agreements, job duties, payroll and time records for the relevant period.</li>
+<li>Contemporaneous performance documentation, complaints, investigation materials and decision communications.</li>
+<li>Leave or accommodation communications, comparator information where relevant, and insurance policies.</li>
+</ul>
+<h2 id="how-we-help">How We Approach the Matter</h2>
+<div class="defense-item"><h3>Preserve without rewriting the record</h3><p>Identify custodians and systems, including workplace messages and scheduling tools. Retain the original records and explain any later correction transparently. Counsel can structure interviews and legal analysis; copying a lawyer does not automatically make a business investigation privileged.</p>
+</div>
+<div class="defense-item"><h3>Evaluate the employer’s explanation</h3><p>Compare the alleged conduct with policies and what happened in practice. A written policy may not answer whether breaks were permitted, a complaint was investigated or a decision was applied consistently. The analysis should address adverse evidence as well as documents supporting the employer.</p>
+</div>
+<div class="defense-item"><h3>Respond and reduce continuing exposure</h3><p>Options may include an agency response, defense in litigation, a properly supported arbitration request, corrective measures or a negotiated resolution. Prospective compliance work and the defense of past allegations should be coordinated without promising that a policy change eliminates liability.</p>
+</div>
+<h2 id="examples">Fictional California Examples</h2>
+<p>These fictional examples illustrate questions counsel may evaluate. They are not firm cases or results. A county is a factual setting, not a statement about venue, local rules or a firm office.</p>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>Santa Clara County — contractor classification</h3><p>A company receives a wage demand from a long-term consultant. Counsel would examine the services, actual control, usual business operations and any statutory exception before deciding which classification test applies.</p>
+</div>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>San Diego County — a termination allegation</h3><p>A former employee alleges that a termination followed a complaint about pay. Counsel would review the timing, decision-makers, prior performance records and handling of the complaint, then evaluate the employer’s response and any insurance notice.</p>
+</div>
+<h2 id="faq">Frequently Asked Questions</h2>
+<div class="faq-section">
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-0">Do you represent employees with workplace claims?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-0"><p>No. The employment practice is employer-side. The firm does not represent individual employees, including executives seeking personal employment claims.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-1">Does a contractor agreement protect us from wage claims?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-1"><p>The agreement is relevant but not decisive. Actual work and the applicable classification test control; statutory exceptions have their own conditions.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-2">Should we interview everyone immediately?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-2"><p>Preserve records promptly and obtain advice on the investigation plan. The scope, interviewer, communications and handling of witnesses can affect the evidence, privilege and retaliation concerns.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-3">Does an arbitration agreement end the court case?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-3"><p>Not automatically. Counsel must review enforceability, covered claims, applicable law and procedural timing. Some claims or issues may remain in court even when others proceed in arbitration.</p>
+</div></div>
+</div>
+<aside class="business-sources" aria-label="Sources and legal information"><h2 id="legal-sources">Sources &amp; Legal Information</h2>
+<p>This page provides general California legal information, not advice for a particular matter. Legal rules, deadlines and available remedies depend on the facts and applicable law. Contacting the firm does not create an attorney-client relationship.</p>
+<ul><li><a href="https://www.dir.ca.gov/dlse/faq_independentcontractor.htm" target="_blank" rel="noopener noreferrer">California DIR: independent-contractor classification</a></li><li><a href="https://www.courts.ca.gov/opinions/archive/S274671.PDF" target="_blank" rel="noopener noreferrer">Adolph v. Uber Technologies, Inc. (2023)</a></li><li><a href="https://www.labor.ca.gov/resources/paga/paga-faqs/" target="_blank" rel="noopener noreferrer">California LWDA: PAGA procedures</a></li><li><a href="https://calcivilrights.ca.gov/employment/" target="_blank" rel="noopener noreferrer">California Civil Rights Department: employment procedures</a></li></ul></aside>
+<h2 id="related">Related Practice Areas</h2>
                 <div class="related-offenses-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
                     <a href="/civil-litigation/trade-secret-litigation" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Trade Secret Litigation</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">CC 3426 — Protecting proprietary information from misappropriation by departing employees and competitors.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Protecting proprietary information from misappropriation by departing employees and competitors.</p>
                     </a>
                     <a href="/civil-litigation/non-compete-disputes" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Non-Compete Disputes</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">B&amp;P 16600 — Enforcement and defense of restrictive covenants and non-solicitation agreements.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Business advice on restrictive covenants and California limits on employment restraints.</p>
                     </a>
                     <a href="/civil-litigation/urgent-injunctions-tros" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Urgent Injunctions &amp; TROs</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">CCP 527 — Emergency relief when a departing employee is misusing company information right now.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Emergency relief when a departing employee is misusing company information right now.</p>
                     </a>
                 </div>
 
@@ -514,16 +323,7 @@
             <div class="page-toc-wrapper">
                 <nav class="page-toc">
                     <h4>On This Page</h4>
-                    <ul>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#services">What We Handle</a></li>
-                        <li><a href="#the-law">The Law</a></li>
-                        <li><a href="#examples">Examples</a></li>
-                        <li><a href="#at-stake">What's at Stake</a></li>
-                        <li><a href="#how-we-help">How We Help</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#related">Related Areas</a></li>
-                    </ul>
+                    <ul><li><a href="#overview">Overview</a></li><li><a href="#law">Legal Framework</a></li><li><a href="#documents">Facts & Records</a></li><li><a href="#how-we-help">Response Options</a></li><li><a href="#examples">Fictional Examples</a></li><li><a href="#faq">Questions</a></li><li><a href="#legal-sources">Sources</a></li><li><a href="#related">Related Practice Areas</a></li></ul>
                 </nav>
             </div>
 
@@ -535,7 +335,7 @@
         <div class="content-wrapper">
             <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 400; margin-bottom: 20px;">Facing an Employment Dispute?</h2>
-            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Employment matters are accepted on an hourly and retainer basis. Contact RV Litigation Group PC to discuss your company's situation.</p>
+            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Share the key documents, your role and any notice, hearing or transaction deadline so the firm can assess the appropriate scope of representation.</p>
             <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
             <div class="cta-or">or</div>
             <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>
@@ -585,7 +385,7 @@
             btn.addEventListener('click', function() {
                 var item = this.parentElement;
                 var isOpen = item.classList.contains('open');
-                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); var question = i.querySelector('.faq-question'); if (question) question.setAttribute('aria-expanded', 'false'); });
                 if (!isOpen) item.classList.add('open');
                 this.setAttribute('aria-expanded', !isOpen);
             });

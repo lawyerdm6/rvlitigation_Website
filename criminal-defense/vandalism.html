@@ -24,53 +24,37 @@
 
     <!-- JSON-LD FAQ Schema -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Can graffiti lead to felony charges in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. If the damage caused by graffiti is valued at $400 or more, the offense can be charged as a felony under Penal Code 594. Additionally, PC 594.1 specifically addresses graffiti-related vandalism and can carry enhanced penalties, including mandatory community service and driver's license suspension for minors."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Will I have to pay restitution for vandalism?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "In most cases, yes. California courts routinely order defendants convicted of vandalism to pay restitution to cover the cost of repairing or replacing the damaged property. Restitution is separate from any criminal fines and can be substantial depending on the extent of the damage."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What happens if a juvenile is charged with vandalism?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Juvenile vandalism cases are handled in juvenile court under Welfare and Institutions Code 602. The court focuses on rehabilitation rather than punishment. Consequences may include probation, community service, counseling, and restitution. Parents may also be held civilly liable for up to $25,000 in damages caused by their minor child."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can a vandalism conviction be expunged in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. Both misdemeanor and felony vandalism convictions may be eligible for expungement under Penal Code 1203.4 once you have completed probation and met all conditions of your sentence. A felony conviction may also be reduced to a misdemeanor under PC 17(b) before expungement if the offense was a wobbler."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can I face civil liability in addition to criminal charges for vandalism?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. The property owner can file a separate civil lawsuit seeking damages for the cost of repair or replacement, loss of use, and potentially punitive damages. Civil liability exists independently of the criminal case, meaning you could face financial consequences even if the criminal charges are reduced or dismissed."
-                }
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Can jointly owned property be involved?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Another person\u2019s ownership interest can be relevant even when the accused also has an interest."
             }
-        ]
-    }
-    </script>
+        },
+        {
+            "@type": "Question",
+            "name": "Is accidental damage automatically vandalism?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. The prosecution must establish the applicable malicious-conduct requirement."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is one estimate enough to settle the damage amount?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The estimate should be evaluated against the condition, necessary work, and other valuation evidence."
+            }
+        }
+    ]
+}
+</script>
 
     <!-- JSON-LD LegalService Schema -->
     <script type="application/ld+json">
@@ -150,7 +134,8 @@
         @media (max-width: 768px) { .content-section { padding-left: 20px; padding-right: 20px; } .content-wrapper, .article-layout, .article-body { max-width: 100%; overflow-x: hidden; } .article-body p, .article-body li, .defense-item p, .faq-answer p, .example-card p { font-size: 0.93rem; line-height: 1.75; word-wrap: break-word; overflow-wrap: break-word; } .table-scroll-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 20px -5px; padding: 0 5px; } .penalties-table { min-width: 540px; } .penalties-table th, .penalties-table td { padding: 10px 10px; font-size: 0.8rem; } .penalties-table th { font-size: 0.65rem; } .statute-block { padding: 18px 18px; font-size: 0.9rem; margin: 20px 0; } .example-card { padding: 16px 18px; } .two-column, .two-column.reverse { grid-template-columns: 1fr !important; gap: 25px !important; direction: ltr !important; } .two-column.reverse .column-image { order: -1; } .column-image img { max-width: 300px; margin: 0 auto; } .penalty-glance { grid-template-columns: repeat(2, 1fr); gap: 10px; } .penalty-glance-item { padding: 15px 10px; } .penalty-glance-item .pg-value { font-size: 1.2rem; } .penalty-glance-item .pg-label { font-size: 0.6rem; letter-spacing: 1px; } .breadcrumb { padding: 12px 20px; } .page-header h1 { font-size: 1.5rem; letter-spacing: 2px; } .related-offenses-grid { grid-template-columns: 1fr !important; } .faq-question { font-size: 0.9rem; padding: 16px 0; } .defense-item { margin-bottom: 25px; padding-bottom: 25px; } .defense-item h3 { font-size: 1.15rem; } }
         @media (max-width: 480px) { .content-section { padding-left: 15px; padding-right: 15px; } .penalty-glance { grid-template-columns: 1fr 1fr; gap: 8px; } .penalty-glance-item .pg-value { font-size: 1.1rem; } .article-body h2 { font-size: 1.4rem; } .article-body p, .defense-item p, .faq-answer p, .example-card p { font-size: 0.88rem; } .statute-block { padding: 15px 14px; font-size: 0.85rem; } .floating-cta span { display: none; } .floating-cta { padding: 14px; border-radius: 50%; } }
         @media print { .main-header, .main-footer, .floating-cta, .page-toc-wrapper, .related-section, .cta-section { display: none !important; } body { background: #fff; color: #000; } .article-layout { grid-template-columns: 1fr; } .article-body p, .article-body li, .faq-answer p { color: #333; } .article-body h2, .article-body h3, .defense-item h3 { color: #000; } .statute-block { background: #f5f5f5; border-left-color: #999; color: #333; } .example-card { background: #f9f9f9; border-left-color: #ccc; } .example-card p { color: #333; } .penalties-table th { color: #000; } .penalties-table td { color: #333; } .page-header { background: #fff; } .page-header h1, .page-header p { color: #000; } .breadcrumb { background: #fff; } .breadcrumb-content, .breadcrumb-content a { color: #333; } .faq-answer { max-height: none !important; padding-bottom: 15px !important; } .faq-icon { display: none; } }
-    </style>
+    .article-body { min-width: 0; } .article-body h2[id] { scroll-margin-top: 110px; } .article-body p a, .article-body li a { color: var(--color-gold); text-underline-offset: 3px; } .article-body ul.plain-list { padding-left: 22px; color: #999; line-height: 1.8; } .article-body a:focus-visible, .faq-question:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 4px; } @media (prefers-reduced-motion: reduce) { .faq-answer, .faq-icon { transition: none; } }
+</style>
 </head>
 <body>
     <!-- Header / Navigation -->
@@ -196,24 +181,7 @@
     <!-- Penalties at a Glance -->
     <section class="content-section" style="padding-top: 40px; padding-bottom: 0;">
         <div class="content-wrapper">
-            <div class="penalty-glance">
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Under $400</div>
-                    <div class="pg-value">Up to 1 yr</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">$400+</div>
-                    <div class="pg-value">Up to 3 yrs</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">$10,000+</div>
-                    <div class="pg-value">Up to 3 yrs</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Graffiti (PC 594.1)</div>
-                    <div class="pg-value strike">Enhanced</div>
-                </div>
-            </div>
+            <div class="penalty-glance" aria-label="Issues for case review"><div class="penalty-glance-item"><div class="pg-label">Review focus</div><div class="pg-value">Alleged damage</div></div><div class="penalty-glance-item"><div class="pg-label">Review focus</div><div class="pg-value">Mental state</div></div><div class="penalty-glance-item"><div class="pg-label">Review focus</div><div class="pg-value">Ownership</div></div><div class="penalty-glance-item"><div class="pg-label">Review focus</div><div class="pg-value">Repair evidence</div></div></div>
         </div>
     </section>
 
@@ -223,206 +191,53 @@
 
             <!-- Article Body -->
             <div class="article-body">
-
-                <!-- Overview -->
-                <h2 id="overview">What Is Vandalism Under California Law?</h2>
-                <div class="two-column reverse" style="gap: 40px; margin-bottom: 30px;">
-                    <div class="column-content" style="padding: 0;">
-                        <p>Vandalism in California is defined as the <strong>malicious</strong> defacing, damaging, or destroying of property belonging to another person. Under <strong>Penal Code 594</strong>, the charge applies broadly — from spray-painting a wall to keying a car to breaking windows. What distinguishes vandalism from accidental damage is the element of intent: the prosecution must prove that you acted willfully and maliciously, meaning you intended to do a wrongful act or to annoy or injure someone else.</p>
-                        <p>RV Litigation Group PC provides vandalism defense representation throughout California. We review the damage evidence, repair estimates, identification and the circumstances of the alleged act.</p>
-                    </div>
-                    <div class="column-image">
+<h2 id="overview">Property Damage and Malicious Conduct</h2>
+<div class="two-column reverse" style="gap: 40px; margin-bottom: 30px;"><div class="column-content" style="padding: 0;"><p>Vandalism allegations require proof of the charged damage or defacement and the required mental state. An accident and malicious damage present different legal questions.</p>
+<p>RV Litigation Group PC is based in San Francisco and represents clients throughout California. The review begins with the actual papers, the procedural stage, and the evidence relevant to the issue.</p>
+</div><div class="column-image">
                         <picture><source srcset="/images/Photos/Criminal Defense.webp" type="image/webp"><img src="/images/Photos/Criminal Defense.png" alt="Handcuffed person seated across a desk" style="border-radius: 5px;"></picture>
-                    </div>
-                </div>
-                <p>Vandalism is a <strong>wobbler offense</strong> in California when the damage is valued at $400 or more, meaning the prosecutor can file it as either a misdemeanor or a felony. The classification depends on the extent of the damage, your criminal history, and the circumstances of the case. Even misdemeanor vandalism can carry significant consequences, including up to one year in county jail and thousands of dollars in fines and restitution.</p>
-                <p>California law also contains specific statutes targeting <strong>graffiti vandalism</strong> under PC 594.1 and PC 594.2, which address the possession of graffiti implements with intent to commit vandalism. These statutes reflect the state's aggressive approach to combating property crimes and can result in additional charges layered on top of the underlying vandalism offense.</p>
-
-                <!-- What the Law Says -->
-                <h2 id="the-law">What the Law Says</h2>
-
-                <h3>Penal Code 594 — Vandalism / Malicious Mischief</h3>
-                <blockquote class="statute-block">
-                    "Every person who maliciously commits any of the following acts with respect to any real or personal property not his or her own, in cases other than those specified by state law, is guilty of vandalism: (1) Defaces with graffiti or other inscribed material. (2) Damages. (3) Destroys."
-                    <cite>— California Penal Code Section 594(a)</cite>
-                </blockquote>
-                <p>The statute covers three categories of conduct: <strong>defacing</strong> (altering the surface appearance), <strong>damaging</strong> (impairing the value or usefulness), and <strong>destroying</strong> (rendering the property useless). The key element is that the act must be done <strong>maliciously</strong> — that is, with the intent to do a wrongful act, or with the unlawful intent to annoy or injure someone. Accidental damage, no matter how costly, does not constitute vandalism under California law.</p>
-                <p>When the damage is valued at <strong>less than $400</strong>, vandalism is charged as a misdemeanor. When the damage reaches <strong>$400 or more</strong>, the offense becomes a wobbler. If the damage exceeds <strong>$10,000</strong>, the potential fine increases dramatically — up to $50,000 for a felony conviction, or even $100,000 if the amount exceeds $10,000 in total.</p>
-
-                <h3>Penal Code 594.1 — Graffiti Implements</h3>
-                <p>Under PC 594.1, it is a misdemeanor to possess a <strong>graffiti implement</strong> — such as a felt-tip marker with a tip greater than one inch, aerosol paint containers, or glass-etching tools — while on or within 100 feet of a public facility, with the intent to commit vandalism. This statute is frequently used by law enforcement in cities like <strong>Berkeley</strong> and <strong>San Jose</strong> to bring additional charges against individuals suspected of graffiti-related offenses.</p>
-
-                <!-- Examples -->
-                <h2 id="examples">Real-World Examples</h2>
-                <p>These scenarios illustrate how vandalism charges commonly arise throughout the Bay Area:</p>
-
-                <div class="example-card">
-                    <div class="example-label">Example 1 — Keying a Vehicle</div>
-                    <p>After an argument with a neighbor in <strong>San Jose</strong>, a man scratches a key along the length of his neighbor's car, causing $2,500 in paint damage. Because the damage exceeds $400, the district attorney files <strong>felony vandalism under PC 594</strong>. The defendant faces up to three years in state prison, a fine of up to $10,000, and full restitution for the repair costs.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 2 — Graffiti on a Public Building</div>
-                    <p>A teenager in <strong>Berkeley</strong> is caught spray-painting a mural on the exterior wall of a public library. The cleanup cost is estimated at $350. Because the damage is under $400, the charge is filed as a <strong>misdemeanor</strong>, but additional charges under <strong>PC 594.1</strong> are added for possession of the aerosol paint can near a public facility.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 3 — Drunken Property Destruction</div>
-                    <p>During a night out in <strong>Concord</strong>, an intoxicated individual smashes the front window of a storefront, causing $5,000 in damage. Police arrest him at the scene. Because the damage exceeds $400, the prosecutor has discretion to charge this as either a misdemeanor or felony. The defendant's lack of prior record may favor misdemeanor treatment, but <strong>restitution for the full repair cost</strong> is virtually guaranteed.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 4 — Mistaken Identity</div>
-                    <p>A woman in <strong>Santa Cruz</strong> is accused of slashing the tires on her ex-boyfriend's car. She was in a different city at the time of the incident. Despite the accusation, the prosecution has no surveillance footage or physical evidence connecting her to the scene. Her attorney presents alibi evidence and phone records to demonstrate <strong>mistaken identity</strong>, and the charges are ultimately dismissed.</p>
-                </div>
-
-                <!-- Penalties -->
-                <h2 id="penalties">Penalties</h2>
-                <p>Vandalism penalties in California are primarily determined by the <strong>dollar value of the damage</strong>. The higher the damage amount, the more serious the potential consequences.</p>
-
-                <div class="table-scroll-wrapper">
-                <table class="penalties-table">
-                    <thead>
-                        <tr>
-                            <th>Charge</th>
-                            <th>Classification</th>
-                            <th>Jail / Prison</th>
-                            <th>Fine</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Misdemeanor Vandalism</strong> (under $400)</td>
-                            <td>Misdemeanor</td>
-                            <td>Up to 1 year county jail</td>
-                            <td>Up to $1,000 (or $5,000 with priors)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Felony Vandalism</strong> ($400+)</td>
-                            <td>Wobbler</td>
-                            <td>Up to 3 years state prison (felony)</td>
-                            <td>Up to $10,000</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Felony Vandalism</strong> ($10,000+)</td>
-                            <td>Wobbler</td>
-                            <td>Up to 3 years state prison (felony)</td>
-                            <td>Up to $50,000 (or $100,000)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Graffiti Vandalism</strong> (PC 594.1)</td>
-                            <td>Misdemeanor</td>
-                            <td>Up to 1 year county jail</td>
-                            <td>Up to $1,000 + community service</td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div>
-
-                <p><strong>Additional consequences:</strong> Courts routinely order <strong>restitution</strong> to the property owner for the full cost of repair or replacement. Convicted individuals may also be required to perform <strong>community service</strong>, often involving graffiti removal or cleanup. A felony vandalism conviction results in loss of firearm rights, can affect employment and housing applications, and may have immigration consequences for non-citizens. For juveniles, a vandalism conviction can lead to <strong>driver's license suspension</strong> and parents may be held civilly liable for damages up to $25,000 under Civil Code 1714.1.</p>
-
-                <!-- Defenses -->
-                <h2 id="defenses">Legal Defenses</h2>
-                <p>Vandalism charges are defensible. The prosecution must prove that you acted maliciously and intentionally — and that burden is not always easy to meet. Here are the defenses our attorneys most commonly raise:</p>
-
-                <div class="defense-item">
-                    <h3>1. Lack of Malicious Intent</h3>
-                    <p>Vandalism requires proof that the defendant acted <strong>maliciously</strong> — with the intent to do a wrongful act or to annoy or injure another person. If the damage was caused by <strong>negligence</strong>, carelessness, or an honest mistake, the prosecution cannot satisfy this element. For example, accidentally backing into a fence or unintentionally breaking a window while moving furniture is not vandalism, regardless of the cost of the damage.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>2. Consent of the Property Owner</h3>
-                    <p>If you had <strong>permission</strong> from the property owner to modify, paint, or alter the property, then the conduct does not constitute vandalism. This defense arises frequently in cases involving murals, artwork, or renovations where the scope of the authorized work is disputed. We present evidence of the owner's consent — whether verbal, written, or implied — to defeat the charge.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>3. Mistaken Identity</h3>
-                    <p>Vandalism often occurs at night, in poorly lit areas, or when no witnesses are present. Identifications based on vague descriptions, assumptions, or personal grudges are inherently unreliable. We investigate alibi evidence, surveillance footage, cell phone location data, and witness credibility to establish that you were not the person who committed the act.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>4. Value Dispute</h3>
-                    <p>The classification of vandalism as a misdemeanor or felony depends entirely on the <strong>dollar value of the damage</strong>. Property owners and prosecutors sometimes overstate the cost of repairs to push the charge into felony territory. We retain independent appraisers and contractors to provide accurate damage valuations, potentially reducing a felony charge to a misdemeanor — or reducing the amount of restitution owed.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>5. Accidental Damage</h3>
-                    <p>Damage that occurs by accident — without any intent to harm property — is not a crime. If you tripped and fell into a display, if a ball broke a window during a game, or if weather conditions contributed to property damage, these are civil matters at most, not criminal offenses. We present evidence demonstrating that the damage resulted from an accident rather than a deliberate act.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>6. Insufficient Evidence</h3>
-                    <p>The prosecution bears the burden of proving every element of vandalism beyond a reasonable doubt. If there are no witnesses, no surveillance footage, no fingerprints, and no confession, the case may rest on speculation and circumstantial evidence alone. We challenge the quality and reliability of the evidence and argue that the prosecution has failed to meet its burden.</p>
-                </div>
-
-                <!-- FAQ -->
-                <h2 id="faq">Frequently Asked Questions</h2>
-                <div class="faq-section">
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Can graffiti lead to felony charges in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes. If the damage caused by graffiti is valued at $400 or more, the offense can be charged as a felony under Penal Code 594. Additionally, PC 594.1 specifically addresses graffiti-related vandalism and can carry enhanced penalties, including mandatory community service and driver's license suspension for minors.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Will I have to pay restitution for vandalism?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>In most cases, yes. California courts routinely order defendants convicted of vandalism to pay restitution to cover the cost of repairing or replacing the damaged property. Restitution is separate from any criminal fines and can be substantial depending on the extent of the damage.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What happens if a juvenile is charged with vandalism?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Juvenile vandalism cases are handled in juvenile court under Welfare and Institutions Code 602. The court focuses on rehabilitation rather than punishment. Consequences may include probation, community service, counseling, and restitution. Parents may also be held civilly liable for up to $25,000 in damages caused by their minor child.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Can a vandalism conviction be expunged in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes. Both misdemeanor and felony vandalism convictions may be eligible for expungement under Penal Code 1203.4 once you have completed probation and met all conditions of your sentence. A felony conviction may also be reduced to a misdemeanor under PC 17(b) before expungement if the offense was a wobbler.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Can I face civil liability in addition to criminal charges for vandalism?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes. The property owner can file a separate civil lawsuit seeking damages for the cost of repair or replacement, loss of use, and potentially punitive damages. Civil liability exists independently of the criminal case, meaning you could face financial consequences even if the criminal charges are reduced or dismissed.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Related Offenses -->
-                <h2 id="related">Related Offenses</h2>
+                    </div></div>
+<h2 id="the-law">The Legal Questions</h2>
+<p>Penal Code section 594 addresses malicious damage, destruction, or qualifying defacement of property belonging to another. Joint ownership does not necessarily exclude the offense; damage to property in which another person has an interest can matter.</p>
+<p>The amount of damage affects applicable classification rules, but a repair estimate is not automatically conclusive. The statutory subdivision, aggregation where applicable, and current sentencing rules require review before discussing exposure.</p>
+<h2 id="defenses">What a Defense Review Examines</h2>
+<div class="defense-item"><h3>Cause and mental state</h3>
+<p>Review the sequence, tools or materials involved, communications, recordings, and whether the alleged act was accidental or intentional under the governing standard.</p>
+</div><div class="defense-item"><h3>Ownership and damage amount</h3>
+<p>Compare ownership records, preexisting condition, photographs, competing repair estimates, and the work actually needed.</p>
+</div>
+<h2 id="prepare">Records That Help Explain the Matter</h2>
+<p>Preserve photographs before repairs, estimates, invoices, ownership documents, messages, and recordings. Identify any preexisting damage and the date of each alleged incident.</p>
+<h2 id="examples">A Hypothetical California Matter</h2>
+<div class="example-card"><div class="example-label">Napa County - Hypothetical</div><p>After a Napa property dispute, one co-owner is accused of damaging a shared fixture. Counsel would review ownership interests, intent, the before-and-after condition, and the claimed repair amount; joint ownership does not automatically eliminate the allegation.</p>
+</div><p>This fictional example illustrates questions for review. It is not a firm case or a predicted outcome. The county identifies the setting, not a special legal rule or an additional office.</p>
+<h2 id="penalties">Potential Consequences and Next Decisions</h2>
+<p>Damage amount, the charged provision, prior history, and related offenses affect potential consequences. Restitution and civil repair demands require separate review and should not be treated as proof of criminal intent.</p>
+<h2 id="faq">Frequently Asked Questions</h2>
+<div class="faq-section"><div class="faq-item"><button class="faq-question" id="question-1" aria-controls="answer-1" aria-expanded="false">Can jointly owned property be involved?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="answer-1" role="region" aria-labelledby="question-1"><p>Yes. Another person’s ownership interest can be relevant even when the accused also has an interest.</p>
+</div></div><div class="faq-item"><button class="faq-question" id="question-2" aria-controls="answer-2" aria-expanded="false">Is accidental damage automatically vandalism?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="answer-2" role="region" aria-labelledby="question-2"><p>No. The prosecution must establish the applicable malicious-conduct requirement.</p>
+</div></div><div class="faq-item"><button class="faq-question" id="question-3" aria-controls="answer-3" aria-expanded="false">Is one estimate enough to settle the damage amount?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="answer-3" role="region" aria-labelledby="question-3"><p>The estimate should be evaluated against the condition, necessary work, and other valuation evidence.</p>
+</div></div></div>
+<h2 id="sources">Legal Resources</h2>
+<p>General information, not advice for a particular case. The cited jury instructions explain elements and selected defenses; they do not calculate a sentence or resolve disputed facts.</p>
+<ul class="plain-list"><li><a href="https://www.justia.com/criminal/docs/calcrim/2900/2900/">Judicial Council CALCRIM 2900 (2026 text reproduced by Justia)</a></li></ul>
+<h2 id="related">Related Offenses</h2>
                 <div class="related-offenses-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
                     <a href="../criminal-defense/theft-crimes" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
-                        <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Theft Crimes</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Petty theft, grand theft, and shoplifting defense under California Penal Code.</p>
+                        <h3 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Theft Crimes</h3>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Review of the alleged taking, consent, intent, valuation, and the specific theft theory.</p>
                     </a>
                     <a href="../criminal-defense/juvenile-crimes" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
-                        <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Juvenile Crimes</h4>
+                        <h3 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Juvenile Crimes</h3>
                         <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">WIC 602 — Juvenile delinquency defense and diversion programs.</p>
                     </a>
                     <a href="../criminal-defense/expungement" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
-                        <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Expungement</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">PC 1203.4 — Clear your vandalism conviction from your record.</p>
+                        <h3 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Expungement</h3>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Eligibility and limits of dismissal, sealing, reduction, and other record-related relief.</p>
                     </a>
                     <a href="../criminal-defense/assault-defense" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
-                        <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Assault &amp; Battery</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">PC 240 &amp; PC 242 — Assault and battery defense in California.</p>
+                        <h3 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Assault &amp; Battery</h3>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Assault and battery allegations, contact, intent, and fact-supported defenses.</p>
                     </a>
                 </div>
 
@@ -432,15 +247,7 @@
             <div class="page-toc-wrapper">
                 <nav class="page-toc">
                     <h4>On This Page</h4>
-                    <ul>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#the-law">What the Law Says</a></li>
-                        <li><a href="#examples">Examples</a></li>
-                        <li><a href="#penalties">Penalties</a></li>
-                        <li><a href="#defenses">Legal Defenses</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#related">Related Offenses</a></li>
-                    </ul>
+                    <ul><li><a href="#overview">Overview</a></li><li><a href="#the-law">Legal Questions</a></li><li><a href="#defenses">Case Review</a></li><li><a href="#prepare">Records to Prepare</a></li><li><a href="#examples">Hypothetical Example</a></li><li><a href="#penalties">What Is at Stake</a></li><li><a href="#faq">FAQ</a></li><li><a href="#sources">Legal Resources</a></li><li><a href="#related">Related Services</a></li></ul>
                 </nav>
             </div>
 
@@ -452,7 +259,7 @@
         <div class="content-wrapper">
             <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 400; margin-bottom: 20px;">Facing Vandalism Charges in California?</h2>
-            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Tell RV Litigation Group PC about the charges or investigation, the next hearing and any response deadline so we can assess the representation needed.</p>
+            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Contact RV Litigation Group PC to discuss the allegations, relevant papers, and any upcoming court date.</p>
             <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
             <div class="cta-or">or</div>
             <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>
@@ -501,7 +308,7 @@
             btn.addEventListener('click', function() {
                 var item = this.parentElement;
                 var isOpen = item.classList.contains('open');
-                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); i.querySelector('.faq-question').setAttribute('aria-expanded', 'false'); });
                 if (!isOpen) item.classList.add('open');
                 this.setAttribute('aria-expanded', !isOpen);
             });

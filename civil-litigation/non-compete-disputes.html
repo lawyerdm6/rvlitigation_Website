@@ -22,54 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-        {
-            "@type": "Question",
-            "name": "Are non-compete agreements enforceable in California?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. Under Business and Professions Code 16600, non-compete agreements are generally void and unenforceable in California. The only statutory exceptions are non-competes signed in connection with the sale of a business (Section 16601), dissolution of a partnership (Section 16602), or dissolution of an LLC (Section 16602.5)."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "What if I signed a non-compete in another state?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Under Section 16600.5 (effective 2024), non-compete agreements are void in California regardless of where they were signed. Even if you signed a non-compete in a state where such agreements are enforceable, California courts will not enforce it against you if you are working or seeking to work in California."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Can my employer enforce a non-solicitation agreement?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "It depends. California courts have generally held that broad customer non-solicitation agreements are a form of non-compete and are void under Section 16600. However, narrowly tailored non-solicitation provisions that protect genuine trade secrets — such as confidential customer information — may be enforceable to the extent they overlap with trade secret protections under CUTSA."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Can I be fired for refusing to sign a non-compete?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Terminating an employee for refusing to sign a non-compete agreement may constitute wrongful termination in violation of public policy, since Section 16600 represents a fundamental California public policy. Employees who are terminated under these circumstances may have claims for lost wages, emotional distress, and punitive damages."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "What are the exceptions to California's non-compete ban?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The statutory exceptions are narrow: (1) non-competes in connection with the sale of a business goodwill or ownership interest (B&P 16601), (2) non-competes upon dissolution of a partnership (B&P 16602), and (3) non-competes upon dissolution of an LLC (B&P 16602.5). Outside these exceptions, non-compete agreements are void."
-            }
-        }
-    ]
-}
-    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can a narrowly written employee noncompete be enforced?", "acceptedAnswer": {"@type": "Answer", "text": "Narrow wording alone does not make an ordinary employment noncompete valid in California. The actual provision, applicable law and any statutory exception require review before enforcement is threatened."}}, {"@type": "Question", "name": "Is a customer nonsolicitation clause always permitted?", "acceptedAnswer": {"@type": "Answer", "text": "No. Its practical effect and context matter, including whether it restrains lawful work. Confidentiality or trade-secret language should not be used to disguise a prohibited restraint."}}, {"@type": "Question", "name": "Does a business sale permit any restriction the parties want?", "acceptedAnswer": {"@type": "Answer", "text": "No. Statutory exceptions have conditions, and the restriction must fit the actual transaction and applicable law. The sale label alone is not enough."}}, {"@type": "Question", "name": "Can you advise an employee who received a noncompete demand?", "acceptedAnswer": {"@type": "Answer", "text": "No. This service is for businesses and employers. An employee seeking personal advice should obtain separate employee-side counsel."}}]}</script>
 
     <script type="application/ld+json">
 {
@@ -375,6 +328,30 @@
             .faq-icon { display: none; }
         }
     </style>
+<style id="business-content-refinement">
+.article-layout > * { min-width: 0; }
+.article-body a, .business-expansion a { color: var(--color-gold); text-underline-offset: 3px; }
+.article-body h2[id], .business-expansion h2[id] { scroll-margin-top: 110px; }
+.article-body ul { padding-left: 22px; color: #999; line-height: 1.85; }
+.article-body li { margin-bottom: 10px; }
+.article-body .example-card h3 { margin: 0 0 10px; }
+.business-sources { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); }
+.article-body .business-sources h2 { font-size: 1.4rem; margin-top: 0; }
+.article-body .business-sources p, .business-sources li { font-size: .84rem; line-height: 1.7; }
+.business-sources a { overflow-wrap: anywhere; }
+.business-expansion { max-width: 1000px; margin: 0 auto; }
+.business-expansion h2 { font-family: var(--font-serif); font-size: 2.3rem; font-weight: 400; margin: 0 0 22px; }
+.business-expansion h3 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; margin: 0 0 12px; }
+.business-expansion p, .business-expansion li { color: #999; line-height: 1.85; margin-bottom: 16px; }
+.business-expansion ul { padding-left: 22px; }
+.business-expansion .business-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin: 24px 0; }
+.business-expansion .business-card { padding: 25px; border: 1px solid rgba(255,255,255,.12); border-radius: 6px; }
+.business-expansion .example-label { font-size: .7rem; color: var(--color-gold); letter-spacing: 1.5px; margin-bottom: 10px; text-transform: uppercase; }
+.business-expansion .business-sources h2 { font-size: 1.5rem; }
+.page-header h1 { overflow-wrap: break-word; }
+@media(max-width:700px) { .business-expansion .business-grid { grid-template-columns: 1fr; } .business-expansion h2 { font-size: 1.8rem; } .business-expansion .business-card { padding: 20px; } }
+@media(prefers-reduced-motion:reduce) { .article-body .faq-answer, .article-body .faq-icon, .business-expansion * { transition: none; animation: none; } }
+</style>
 </head>
 <body>
     <header class="main-header">
@@ -410,232 +387,74 @@
         <div class="page-header-content">
             <p style="font-size: 0.8rem; letter-spacing: 3px; color: #c9a227; margin-bottom: 10px;">CALIFORNIA BUSINESS &amp; PROFESSIONS CODE 16600</p>
             <h1>Non-Compete Dispute Litigation</h1>
-            <p>Defending Employee Mobility and Navigating California's Ban on Non-Compete Agreements</p>
+            <p>Business Counsel for Restrictive Covenants, Confidentiality and California Employment Limits</p>
         </div>
     </section>
 
     <section class="content-section" style="padding-top: 40px; padding-bottom: 0;">
         <div class="content-wrapper">
-            <div class="penalty-glance">
-                <div class="penalty-glance-item">
-                    <div class="pg-label">General Rule</div>
-                    <div class="pg-value">Void in CA</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Exceptions</div>
-                    <div class="pg-value">Narrow</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Employee Mobility</div>
-                    <div class="pg-value">Protected</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Remedies</div>
-                    <div class="pg-value">Injunction + Damages</div>
-                </div>
-            </div>
+            <div class="penalty-glance"><div class="penalty-glance-item"><div class="pg-label">Review</div><div class="pg-value">Business restrictions</div></div><div class="penalty-glance-item"><div class="pg-label">Records</div><div class="pg-value">Terms &amp; context</div></div><div class="penalty-glance-item"><div class="pg-label">Next step</div><div class="pg-value">Review before enforcing</div></div></div>
         </div>
     </section>
 
     <section class="content-section">
         <div class="article-layout">
-            <div class="article-body">
-
-                <h2 id="overview">What Are Non-Compete Disputes?</h2>
-                <div class="two-column reverse" style="gap: 40px; margin-bottom: 30px;">
-                    <div class="column-content" style="padding: 0;">
-                        <p>Non-compete disputes arise when an employer attempts to restrict a former employee's ability to work for a competitor or start a competing business. California has one of the strongest employee mobility protections in the nation — Business and Professions Code section 16600 declares that <strong>every contract by which anyone is restrained from engaging in a lawful profession, trade, or business of any kind is to that extent void</strong>. This means that, with very narrow exceptions, non-compete agreements are unenforceable in California.</p>
-                        <p>RV Litigation Group PC is based in San Francisco and represents clients throughout California. We advise businesses on non-compete disputes, restrictive covenants and related confidentiality concerns, evaluating the agreements, potential exposure and response options.</p>
-                    </div>
-                    <div class="column-image">
+            <div class="article-body"><span id="at-stake" aria-hidden="true"></span><span id="the-law" aria-hidden="true"></span><h2 id="overview">What Are Non-Compete Disputes?</h2>
+<div class="two-column reverse" style="gap:40px;margin-bottom:30px"><div class="column-content" style="padding:0"><p>A business concerned about a departure or competitive activity must distinguish lawful protection of company information from an unlawful restraint on work. Sending an aggressive enforcement demand before reviewing the agreement can create exposure for the employer.</p>
+<p>RV Litigation Group PC advises California businesses on disputed restrictive covenants, confidentiality obligations and ownership-sale provisions. Employment-related work is employer-side only. The firm does not represent employees seeking to challenge their former employer.</p>
+</div><div class="column-image">
                         <picture><source srcset="/images/Photos/Civil Litigation.webp" type="image/webp"><img src="/images/Photos/Civil Litigation.png" alt="Gold knight on a chessboard" style="border-radius: 5px;"></picture>
-                    </div>
-                </div>
-
-                <p>Despite California's clear prohibition on non-competes, disputes in this area remain common — particularly in the technology sector, where employers based in other states may attempt to enforce non-compete agreements signed in jurisdictions where such agreements are valid. California courts have repeatedly rejected these efforts, holding that California's public policy in favor of employee mobility overrides contractual choice-of-law provisions.</p>
-
-                <p>In 2023, California further strengthened its prohibition by enacting AB 1076 and SB 699, which codified existing case law and imposed penalties on employers who attempt to enforce void non-compete agreements. At RV Litigation Group PC, we stay current on these developments and advocate aggressively for our clients' rights.</p>
-
-                <h2 id="the-law">What the Law Says</h2>
-
-                <h3>Business &amp; Professions Code 16600 — Restraint of Trade Void</h3>
-                <blockquote class="statute-block">
-                    ""Except as provided in this chapter, every contract by which anyone is restrained from engaging in a lawful profession, trade, or business of any kind is to that extent void.""
-                    <cite>— California Business &amp; Professions Code Section 16600</cite>
-                </blockquote>
-                <p>Section 16600 represents California's fundamental public policy in favor of open competition and employee mobility. The statute invalidates any contractual provision that restricts a person's right to engage in their chosen profession — regardless of how narrow or reasonable the restriction may be. Unlike many other states that apply a "reasonableness" test to evaluate non-competes, California applies a bright-line rule: non-compete agreements are void, period. The only statutory exceptions involve the sale of a business (Section 16601), dissolution of a partnership (Section 16602), and dissolution of an LLC (Section 16602.5).</p>
-
-                <h3>Business &amp; Professions Code 16600.5 — Post-Employment Non-Competes Void</h3>
-                <blockquote class="statute-block">
-                    ""(a) Any contract that is void under this chapter is unenforceable regardless of where and when the contract was signed. (b) An employer or former employer shall not attempt to enforce a contract that is void under this chapter regardless of whether the contract was signed and the employment was maintained outside of California.""
-                    <cite>— California Business &amp; Professions Code Section 16600.5 (eff. 2024)</cite>
-                </blockquote>
-                <p>Section 16600.5, enacted as part of SB 699, makes explicit what California courts had already held: non-compete agreements are void in California regardless of where they were signed. This statute targets the common practice of out-of-state employers attempting to enforce non-competes against employees who relocate to California. It also provides that any attempt to enforce a void non-compete is independently actionable, meaning the employee can seek damages and injunctive relief.</p>
-
-                <h2 id="examples">Illustrative Scenarios</h2>
-                <p>These scenarios illustrate how non-compete disputes commonly arise in the Bay Area:</p>
-
-                <div class="example-card">
-                    <div class="example-label">Example 1 — Tech Employee in Silicon Valley</div>
-                    <p>A software engineer at a Silicon Valley company signed a two-year non-compete agreement as a condition of employment. When the engineer accepts a position at a competing company, the former employer sends a cease-and-desist letter threatening litigation. Under <strong>B&amp;P 16600</strong>, the non-compete is <strong>void and unenforceable</strong> in California. The engineer's attorney responds with a letter citing Section 16600 and 16600.5, and the former employer backs down. If the former employer had filed suit, the engineer could seek attorney fees and damages for wrongful enforcement.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 2 — Out-of-State Agreement in San Jose</div>
-                    <p>An executive relocates from Texas to San Jose to join a Bay Area tech company. Her former Texas employer attempts to enforce a non-compete agreement governed by Texas law, where such agreements are enforceable if reasonable. The executive's attorney files a declaratory judgment action in Santa Clara County, arguing that <strong>California law applies and the non-compete is void</strong> under Section 16600. California courts consistently hold that California's public policy overrides out-of-state choice-of-law provisions in non-compete agreements.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 3 — Business Sale Exception in San Francisco</div>
-                    <p>A San Francisco entrepreneur sells her marketing agency for $2 million and signs a non-compete agreement as part of the sale. Two years later, she opens a new marketing agency in the same market. The buyer sues to enforce the non-compete. Under <strong>B&amp;P 16601</strong>, non-compete agreements signed in connection with the sale of a business are <strong>enforceable</strong> in California if they are limited to the geographic area and scope of the business sold. This is one of the narrow exceptions to California's general ban.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 4 — Customer Non-Solicitation in Oakland</div>
-                    <p>A sales representative in Oakland leaves her employer and begins contacting her former clients at her new company. The former employer claims the representative violated a customer non-solicitation agreement. California courts have generally held that <strong>customer non-solicitation agreements are a form of non-compete</strong> and are therefore void under Section 16600, because they restrict the employee's ability to practice her profession. However, the former employer may have claims under trade secret law if the customer list qualifies as a trade secret.</p>
-                </div>
-
-                <h2 id="at-stake">What's at Stake</h2>
-                <p>Non-compete disputes carry significant consequences for both employers and employees. Understanding the legal landscape is critical to protecting your rights.</p>
-
-                <div class="table-scroll-wrapper">
-                <table class="penalties-table">
-                    <thead>
-                        <tr>
-                            <th>Scenario</th>
-                            <th>Legal Framework</th>
-                            <th>Likely Outcome</th>
-                            <th>Remedies</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Standard Non-Compete</strong></td>
-                            <td>B&amp;P 16600 — void in California</td>
-                            <td>Unenforceable; employee free to compete</td>
-                            <td>Employee: attorney fees, damages for wrongful enforcement</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Out-of-State Agreement</strong></td>
-                            <td>B&amp;P 16600.5 — void regardless of where signed</td>
-                            <td>California law applies; non-compete void</td>
-                            <td>Employee: declaratory relief, attorney fees, damages</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Business Sale Exception</strong></td>
-                            <td>B&amp;P 16601 — enforceable if reasonable</td>
-                            <td>Enforceable if limited to scope/geography of business sold</td>
-                            <td>Buyer: injunction, damages for breach</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Customer Non-Solicitation</strong></td>
-                            <td>B&amp;P 16600 — generally void as form of non-compete</td>
-                            <td>Usually unenforceable; but trade secret claims may apply</td>
-                            <td>Depends on whether customer list is a trade secret</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Non-Disclosure Agreement</strong></td>
-                            <td>Not a non-compete; generally enforceable</td>
-                            <td>Enforceable if limited to protecting trade secrets</td>
-                            <td>Injunction, damages for breach</td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div>
-
-                <p><strong>Employer penalties:</strong> Under the 2024 amendments, employers who attempt to enforce void non-compete agreements may face <strong>civil penalties</strong> and be required to pay the employee's <strong>attorney fees and costs</strong>. Additionally, an employer who terminates or threatens to terminate an employee for refusing to sign a non-compete may face claims for wrongful termination in violation of public policy. These consequences make it essential for employers to understand and comply with California's prohibition.</p>
-
-                <h2 id="how-we-help">How We Help</h2>
-                <p>At RV Litigation Group PC, we handle non-compete disputes for both employees and employers. Our approach is pragmatic, aggressive, and grounded in California's strong public policy favoring employee mobility.</p>
-
-                <div class="defense-item">
-                    <h3>1. Non-Compete Defense</h3>
-                    <p>We defend employees who receive cease-and-desist letters or face lawsuits from former employers seeking to enforce non-compete agreements. We respond to demand letters with detailed legal analysis demonstrating the agreement's invalidity under Section 16600. When litigation is filed, we move to dismiss or seek summary judgment on the grounds that the non-compete is void as a matter of law. We also pursue affirmative claims for attorney fees and damages for wrongful enforcement.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>2. Declaratory Judgment Actions</h3>
-                    <p>When an employee needs legal certainty before accepting a new position, we file declaratory judgment actions seeking a court determination that the non-compete agreement is void and unenforceable. This proactive approach allows the employee to move forward with confidence and puts the former employer on notice that any attempt at enforcement will be met with vigorous opposition.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>3. Trade Secret Carve-Out Analysis</h3>
-                    <p>While non-competes are void in California, employers may have legitimate claims under trade secret law. We analyze each situation to determine whether the employer's concerns relate to genuine trade secrets or are merely a pretext for restricting competition. When trade secret claims have merit, we help our clients navigate the boundaries between lawful competition and trade secret misappropriation.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>4. Business Sale Non-Compete Litigation</h3>
-                    <p>We handle disputes involving non-compete agreements signed in connection with business sales — the one major exception to California's ban. We advise sellers on the enforceability of proposed restrictions and represent buyers seeking to enforce valid business sale non-competes. We also challenge overbroad restrictions that exceed the scope of the business sold.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>5. Employer Compliance Counseling</h3>
-                    <p>We advise California employers on compliant alternatives to non-compete agreements, including well-drafted non-disclosure agreements, invention assignment agreements, and non-solicitation provisions that are limited to protecting genuine trade secrets. We help employers understand the line between lawful protection of proprietary information and unlawful restriction of employee mobility.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>6. Cross-Border Enforcement Issues</h3>
-                    <p>For employees and employers involved in multi-state disputes, we navigate the complex choice-of-law and jurisdictional issues that arise when non-compete agreements cross state lines. We advocate for the application of California law and leverage Sections 16600 and 16600.5 to invalidate out-of-state non-competes that restrict our clients' ability to work in California.</p>
-                </div>
-
-                <h2 id="faq">Frequently Asked Questions</h2>
-                <div class="faq-section">
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Are non-compete agreements enforceable in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>No. Under Business and Professions Code 16600, non-compete agreements are generally void and unenforceable in California. The only statutory exceptions are non-competes signed in connection with the sale of a business (Section 16601), dissolution of a partnership (Section 16602), or dissolution of an LLC (Section 16602.5).</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What if I signed a non-compete in another state?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Under Section 16600.5 (effective 2024), non-compete agreements are void in California regardless of where they were signed. Even if you signed a non-compete in a state where such agreements are enforceable, California courts will not enforce it against you if you are working or seeking to work in California.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Can my employer enforce a non-solicitation agreement?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>It depends. California courts have generally held that broad customer non-solicitation agreements are a form of non-compete and are void under Section 16600. However, narrowly tailored non-solicitation provisions that protect genuine trade secrets — such as confidential customer information — may be enforceable to the extent they overlap with trade secret protections under CUTSA.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Can I be fired for refusing to sign a non-compete?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Terminating an employee for refusing to sign a non-compete agreement may constitute wrongful termination in violation of public policy, since Section 16600 represents a fundamental California public policy. Employees who are terminated under these circumstances may have claims for lost wages, emotional distress, and punitive damages.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What are the exceptions to California's non-compete ban?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>The statutory exceptions are narrow: (1) non-competes in connection with the sale of a business goodwill or ownership interest (B&amp;P 16601), (2) non-competes upon dissolution of a partnership (B&amp;P 16602), and (3) non-competes upon dissolution of an LLC (B&amp;P 16602.5). Outside these exceptions, non-compete agreements are void.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 id="related">Related Practice Areas</h2>
+                    </div></div>
+<h2 id="law">The Legal Framework</h2>
+<div class="defense-item"><h3>California strongly limits employment restraints</h3><p>Business and Professions Code section 16600 broadly prohibits contracts restraining a lawful profession, trade or business unless a statutory exception applies. Sections 16600.1 and 16600.5 impose additional employment-related restrictions and consequences. A short duration or small geographic area does not, by itself, save an ordinary employment noncompete.</p>
+</div>
+<div class="defense-item"><h3>An ownership transaction requires its own analysis</h3><p>Statutory exceptions address specified sales of business interests or goodwill and certain partnership or LLC events. The actual transfer, continuing role, structure and scope of the proposed restriction matter. Labeling a payment a buyout, or giving an employee a small ownership interest, should not be treated as automatic permission for a noncompete.</p>
+</div>
+<div class="defense-item"><h3>Confidentiality cannot conceal a restraint</h3><p>A properly limited confidentiality obligation can serve a different purpose from a noncompete, but its label is not decisive. Overbroad definitions, customer restrictions, no-hire provisions or restrictions on ordinary knowledge can raise mobility and competition issues. Multistate contracts also require review of governing law, forum, jurisdiction and the worker’s circumstances; neither an out-of-state clause nor California residence answers every question alone.</p>
+</div>
+<h2 id="documents">Facts &amp; Records to Prepare</h2>
+<ul>
+<li>The full employment, confidentiality, equity or sale agreement and all amendments.</li>
+<li>The individual’s business role, work locations and the facts surrounding execution or departure.</li>
+<li>The specific information, relationship or goodwill the company seeks to protect.</li>
+<li>Any demand letter, hiring communication, ownership-transfer record and evidence of actual misuse.</li>
+</ul>
+<h2 id="how-we-help">How We Approach the Matter</h2>
+<div class="defense-item"><h3>Review before enforcing</h3><p>Counsel can identify provisions that need withdrawal, revision or a different response. An employer should not assume that an unenforceable term is harmless simply because it has not yet filed a lawsuit.</p>
+</div>
+<div class="defense-item"><h3>Focus on a lawful business interest</h3><p>If the concern is misuse of identifiable information, review secrecy measures and actual evidence under trade-secret and contract law. A departing person’s new employment alone is not proof of misuse. Any request for relief should address supported conduct rather than competition in the abstract.</p>
+</div>
+<div class="defense-item"><h3>Coordinate agreements and operations</h3><p>Updated templates, access controls, lawful return-of-property procedures and a clear offboarding process can reduce avoidable disputes. Changes require legal review of current law and the business’s actual practices, not simply replacing one restrictive label with another.</p>
+</div>
+<h2 id="examples">Fictional California Examples</h2>
+<p>These fictional examples illustrate questions counsel may evaluate. They are not firm cases or results. A county is a factual setting, not a statement about venue, local rules or a firm office.</p>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>Orange County — acquisition paperwork</h3><p>A buyer proposes a restriction on a selling owner who will remain in a management role. Counsel would analyze the ownership and goodwill transfer separately from employment obligations and evaluate whether any statutory exception supports the proposed terms.</p>
+</div>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>Alameda County — a hiring demand</h3><p>A business hiring a new manager receives a former employer’s cease-and-desist letter. Company counsel would evaluate the identified restrictions, alleged information misuse and relevant locations while establishing that personal representation of the employee is outside the engagement.</p>
+</div>
+<h2 id="faq">Frequently Asked Questions</h2>
+<div class="faq-section">
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-0">Can a narrowly written employee noncompete be enforced?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-0"><p>Narrow wording alone does not make an ordinary employment noncompete valid in California. The actual provision, applicable law and any statutory exception require review before enforcement is threatened.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-1">Is a customer nonsolicitation clause always permitted?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-1"><p>No. Its practical effect and context matter, including whether it restrains lawful work. Confidentiality or trade-secret language should not be used to disguise a prohibited restraint.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-2">Does a business sale permit any restriction the parties want?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-2"><p>No. Statutory exceptions have conditions, and the restriction must fit the actual transaction and applicable law. The sale label alone is not enough.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-3">Can you advise an employee who received a noncompete demand?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-3"><p>No. This service is for businesses and employers. An employee seeking personal advice should obtain separate employee-side counsel.</p>
+</div></div>
+</div>
+<aside class="business-sources" aria-label="Sources and legal information"><h2 id="legal-sources">Sources &amp; Legal Information</h2>
+<p>This page provides general California legal information, not advice for a particular matter. Legal rules, deadlines and available remedies depend on the facts and applicable law. Contacting the firm does not create an attorney-client relationship.</p>
+<ul><li><a href="https://oag.ca.gov/node/593373" target="_blank" rel="noopener noreferrer">California Attorney General: noncompete and no-poach restrictions</a></li><li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=16600." target="_blank" rel="noopener noreferrer">Business and Professions Code § 16600: restraints of trade</a></li><li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=16601." target="_blank" rel="noopener noreferrer">Business and Professions Code § 16601: business-sale exception</a></li><li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=16602." target="_blank" rel="noopener noreferrer">Business and Professions Code § 16602: partnership exception</a></li><li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=16602.5." target="_blank" rel="noopener noreferrer">Business and Professions Code § 16602.5: LLC exception</a></li></ul></aside>
+<h2 id="related">Related Practice Areas</h2>
                 <div class="related-offenses-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
                     <a href="/civil-litigation/trade-secret-litigation" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Trade Secret Litigation</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">CC 3426-3426.11 (CUTSA) — Misappropriation, injunctive relief, and exemplary damages.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Misappropriation, injunctive relief, and exemplary damages.</p>
                     </a>
                     <a href="/business-litigation/" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Business Litigation</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">B&amp;P 17200, Corp Code 1800 — Unfair competition, trade secrets, and corporate disputes.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Unfair competition, trade secrets, and corporate disputes.</p>
                     </a>
                 </div>
 
@@ -644,15 +463,7 @@
             <div class="page-toc-wrapper">
                 <nav class="page-toc">
                     <h4>On This Page</h4>
-                    <ul>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#the-law">The Law</a></li>
-                        <li><a href="#examples">Examples</a></li>
-                        <li><a href="#at-stake">What's at Stake</a></li>
-                        <li><a href="#how-we-help">How We Help</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#related">Related Areas</a></li>
-                    </ul>
+                    <ul><li><a href="#overview">Overview</a></li><li><a href="#law">Legal Framework</a></li><li><a href="#documents">Facts & Records</a></li><li><a href="#how-we-help">Response Options</a></li><li><a href="#examples">Fictional Examples</a></li><li><a href="#faq">Questions</a></li><li><a href="#legal-sources">Sources</a></li><li><a href="#related">Related Practice Areas</a></li></ul>
                 </nav>
             </div>
 
@@ -663,7 +474,7 @@
         <div class="content-wrapper">
             <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 400; margin-bottom: 20px;">Facing a Non-Compete Dispute in California?</h2>
-            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">California law strongly protects your right to work. Contact RV Litigation Group PC for a consultation about your non-compete situation.</p>
+            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Share the key documents, your role and any notice, hearing or transaction deadline so the firm can assess the appropriate scope of representation.</p>
             <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
             <div class="cta-or">or</div>
             <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>
@@ -710,7 +521,7 @@
             btn.addEventListener('click', function() {
                 var item = this.parentElement;
                 var isOpen = item.classList.contains('open');
-                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); var question = i.querySelector('.faq-question'); if (question) question.setAttribute('aria-expanded', 'false'); });
                 if (!isOpen) item.classList.add('open');
                 this.setAttribute('aria-expanded', !isOpen);
             });
