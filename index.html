@@ -217,6 +217,7 @@
     <link rel="manifest" href="/images/Favicon/site.webmanifest">
     <title>California Business, Tax &amp; White-Collar Lawyers | RV Litigation Group PC</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home-case-review.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -282,22 +283,83 @@
         </div>
     </section>
 
+    <!-- Homepage case review: Phase 1 -->
+    <section id="home-case-review" class="home-case-review" aria-labelledby="home-case-title">
+        <div class="home-case-shell">
+            <div class="home-case-introduction">
+                <h2 id="home-case-title">Facing a dispute,<br>charges, or <em>a lawsuit?</em></h2>
+                <p class="home-case-intro">Whether a conflict is developing or a case is already underway, start with the situation you face. Our team will review your inquiry and discuss whether we can help.</p>
+            </div>
+            <p class="home-case-choose-label">Where do you need help?</p>
+            <div class="home-case-choices" aria-label="Choose the situation that fits your matter">
+                <a class="home-case-choice" href="/business-litigation/" data-case-matter="business">
+                    <span class="home-case-choice-top"><img src="images/Icons/business-litigation.png" alt="" width="41" height="41"><span class="home-case-number">01 / BUSINESS</span></span>
+                    <span class="home-case-choice-title">My business faces a dispute.</span>
+                    <span class="home-case-description">A demand letter, threatened lawsuit, contract conflict, or active business litigation.</span>
+                    <span class="home-case-action">Discuss a business dispute <span aria-hidden="true">&rarr;</span></span>
+                </a>
+                <a class="home-case-choice" href="/criminal-defense/" data-case-matter="criminal">
+                    <span class="home-case-choice-top"><img src="images/Icons/handcuffs_icon.png" alt="" width="41" height="41"><span class="home-case-number">02 / CRIMINAL DEFENSE</span></span>
+                    <span class="home-case-choice-title">I&rsquo;m facing criminal charges.</span>
+                    <span class="home-case-description">Criminal allegations, an investigation, or an upcoming court appearance.</span>
+                    <span class="home-case-action">Discuss criminal defense <span aria-hidden="true">&rarr;</span></span>
+                </a>
+                <a class="home-case-choice" href="/private-civil-matters/civil-lawsuit-defense" data-case-matter="lawsuit">
+                    <span class="home-case-choice-top"><img src="images/Icons/Private_CIvil_icon.png" alt="" width="41" height="41"><span class="home-case-number">03 / LAWSUIT DEFENSE</span></span>
+                    <span class="home-case-choice-title">I&rsquo;ve been sued.</span>
+                    <span class="home-case-description">A lawsuit naming you as an individual, professional, or property owner.</span>
+                    <span class="home-case-action">Discuss lawsuit defense <span aria-hidden="true">&rarr;</span></span>
+                </a>
+            </div>
+            <p class="home-case-qualification">Seeking representation? Business litigation is handled on a retainer basis; private lawsuit defense is billed hourly with a retainer. Fees for criminal defense are discussed after matter review. We do not accept contingency-fee or civil-rights matters.</p>
+            <section id="home-case-panel" class="home-case-panel" aria-label="Your selected matter" aria-live="polite" hidden>
+                <div>
+                    <p class="home-case-eyebrow" id="home-case-panel-eyebrow"></p>
+                    <h3 id="home-case-panel-title"></h3>
+                    <p class="home-case-panel-copy" id="home-case-panel-copy"></p>
+                    <a class="home-case-practice-link" id="home-case-practice-link" href="/business-litigation/">Explore this practice &rarr;</a>
+                </div>
+                <div class="home-case-panel-right">
+                    <p class="home-case-prepare-label">Include in your inquiry</p>
+                    <ul class="home-case-prepare-list" id="home-case-prepare-list"></ul>
+                    <a class="home-case-inquire" href="#home-contact-form">Request a case review <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </section>
+            <section class="home-case-regions" aria-labelledby="home-case-regions-title">
+                <div class="home-case-region-header">
+                    <h3 id="home-case-regions-title">Focused on matters in these communities.</h3>
+                    <span class="home-case-office">BASED IN SAN FRANCISCO</span>
+                </div>
+                <ul class="home-case-region-list" aria-label="Primary areas of focus">
+                    <li>Bay Area</li><li>Los Angeles</li><li>San Diego</li><li>Orange County</li>
+                </ul>
+                <details class="home-case-counties">
+                    <summary>View primary counties of focus</summary>
+                    <p>Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Sonoma, Monterey, Los Angeles, San Diego, and Orange counties.</p>
+                </details>
+                <p class="home-case-region-note">RV Litigation Group PC represents businesses and individuals throughout California. These communities are areas of particular focus; they do not limit our statewide practice.</p>
+            </section>
+        </div>
+    </section>
+
     <!-- Contact Form Section -->
-    <section class="contact-section">
+    <section id="home-contact" class="contact-section" aria-labelledby="home-contact-title">
         <div class="contact-container">
             <div class="contact-image">
                 <picture><source srcset="images/Photos/David_Ruezga_1.webp" type="image/webp"><img src="images/Photos/David_Ruezga_1.png" alt="David Ruezga - Attorney"></picture>
             </div>
-            <div class="contact-form-wrapper">
+            <div id="home-contact-form" class="contact-form-wrapper">
                 <p class="form-tagline">HIRE A TEAM WHO LIKES TO WIN</p>
-                <h2 class="form-title">WHAT CAN WE HELP YOU WITH?</h2>
+                <h2 id="home-contact-title" class="form-title">TELL US WHAT YOU'RE FACING</h2>
+                <p id="home-contact-helper" class="home-contact-helper">Include the type of matter, location, and any upcoming deadline.</p>
                 <form class="contact-form" action="https://formsubmit.co/David@RVLitigation.com" method="POST">
                     <input type="hidden" name="_next" value="https://rvlitigation.com/thank-you.html">
                     <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="matter_type" id="home-case-matter-type" value="">
                     <input type="text" name="name" placeholder="NAME" required>
                     <input type="email" name="email" placeholder="EMAIL" required>
                     <input type="tel" name="phone" placeholder="PHONE" required>
-                    <textarea name="message" placeholder="BRIEF SUMMARY, YOUR ROLE &amp; ANY DEADLINE" rows="4" required></textarea>
+                    <textarea name="message" placeholder="BRIEF SUMMARY, YOUR ROLE &amp; ANY DEADLINE" aria-describedby="home-contact-helper" rows="4" required></textarea>
                     <button type="submit" class="btn-submit">SUBMIT</button>
                 </form>
             </div>
@@ -507,7 +569,7 @@
                 </div>
                 <div style="margin-bottom: 25px;">
                     <h4 style="margin-bottom: 8px;">Do you handle civil rights, police misconduct, or Section 1983 cases?</h4>
-                    <p style="color: #ccc;">No. RV Litigation Group PC does not handle civil rights, police misconduct, prisoner-rights, Section 1983, or constitutional-rights claims.</p>
+                    <p style="color: #ccc;">No. RV Litigation Group PC does not handle civil-rights, prisoner-rights, Section 1983, or constitutional-rights claims.</p>
                 </div>
                 <div>
                     <h4 style="margin-bottom: 8px;">What happens after I submit an inquiry?</h4>
@@ -566,6 +628,7 @@
     </a>
 
     <script src="js/main.js"></script>
+    <script src="js/home-case-review.js" defer></script>
     <script>
         (function() {
             var track = document.querySelector('.review-track');
