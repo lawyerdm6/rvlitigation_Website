@@ -424,6 +424,22 @@ ul {
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* Let wrapped hero copy grow while reserving room for the animated scroll cue. */
+@media (max-width: 1024px) {
+    .hero-image {
+        height: auto;
+        min-height: 50vw;
+        padding-bottom: 0;
+    }
+
+    .hero-overlay {
+        position: relative;
+        height: auto;
+        min-height: inherit;
+        padding: 72px 20px 140px;
+    }
+}
+
 /* ============================================
    Contact Form Section
    ============================================ */
@@ -1387,7 +1403,9 @@ ul {
 
     .hero-image {
         padding-bottom: 0;
-        height: 100vh;
+        height: auto;
+        min-height: 100vh;
+        min-height: 100svh;
     }
 
     .hero-image video {
