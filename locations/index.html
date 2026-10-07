@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="San Francisco-based lawyers serving California businesses, owners and individuals in business litigation, transactions, tax law and defense matters.">
+    <meta name="description" content="California legal representation from our San Francisco office, with focus areas in the Bay Area, Monterey, Los Angeles, San Diego and Orange counties.">
     <meta name="author" content="RV Litigation Group PC">
     <meta name="robots" content="index, follow">
 
@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rvlitigation.com/locations/">
     <meta property="og:title" content="California Legal Service Areas | RV Litigation Group PC">
-    <meta property="og:description" content="San Francisco-based lawyers serving California businesses, owners and individuals in business litigation, transactions, tax law and defense matters.">
+    <meta property="og:description" content="California legal representation from our San Francisco office, with focus areas in the Bay Area, Monterey, Los Angeles, San Diego and Orange counties.">
     <meta property="og:image" content="https://rvlitigation.com/images/Logos/RV_logo_center.png">
 
     <script type="application/ld+json">
@@ -25,7 +25,7 @@
             "@id": "https://rvlitigation.com/locations/#webpage",
             "url": "https://rvlitigation.com/locations/",
             "name": "California Legal Service Areas | RV Litigation Group PC",
-            "description": "San Francisco-based lawyers serving California businesses, owners and individuals in business litigation, transactions, tax law and defense matters.",
+            "description": "California legal representation from our San Francisco office, with focus areas in the Bay Area, Monterey, Los Angeles, San Diego and Orange counties.",
             "about": {
                 "@id": "https://rvlitigation.com/#firm"
             }
@@ -66,7 +66,7 @@
     <style>
         .locations-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
             gap: 20px;
             margin-top: 30px;
         }
@@ -79,7 +79,8 @@
             text-decoration: none;
             transition: border-color 0.3s, transform 0.3s;
         }
-        .location-card:hover {
+        a.location-card:hover,
+        a.location-card:focus-visible {
             border-color: #c9a84c;
             transform: translateY(-3px);
         }
@@ -109,6 +110,46 @@
             border: none;
             border-top: 1px solid rgba(255,255,255,0.08);
             margin: 50px 0 40px;
+        }
+        .location-intro {
+            color: #aaa;
+            max-width: 850px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .priority-region {
+            margin-top: 35px;
+        }
+        .priority-region > h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        .priority-region .locations-grid {
+            margin-top: 18px;
+        }
+        .priority-county h4 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .priority-county p {
+            color: #aaa;
+        }
+        .location-note {
+            border-left: 2px solid #c9a84c;
+            padding: 15px 22px;
+            margin-top: 30px;
+            background: rgba(255,255,255,0.03);
+        }
+        .location-note p {
+            margin: 0;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .location-card { transition: none; }
+            a.location-card:hover { transform: none; }
         }
     </style>
 </head>
@@ -152,9 +193,57 @@
         <div class="content-wrapper">
             <div class="section-header">
                 <p class="section-tagline">OUR SERVICE AREA</p>
-                <h2>Based in San Francisco. Serving California.</h2>
+                <h2>Based in San Francisco. Serving all of California.</h2>
             </div>
-            <p style="color: #999; max-width: 800px; line-height: 1.8; margin-bottom: 10px;">RV Litigation Group PC represents businesses, owners, executives and individuals throughout California in <a href="/business-litigation/">business litigation</a>, <a href="/business-transactions/">business transactions</a>, <a href="/tax-law/">tax law</a> and <a href="/white-collar-defense/">white-collar defense</a>. General criminal defense and selected private matters remain part of our practice. Our office is at 28 Geary St, Suite 650, San Francisco, CA 94108. The local guides below provide court resources for Bay Area and Central Coast matters. We also assist clients elsewhere in California.</p>
+            <p class="location-intro">RV Litigation Group PC serves businesses, owners, executives and individuals throughout California. Our primary areas of focus are the Bay Area, Los Angeles County, San Diego County and Orange County. These priorities help describe where we focus our practice; they do not limit our statewide service area.</p>
+            <p class="location-intro">Whether you are anticipating a business dispute, facing criminal charges or responding to a civil lawsuit, the starting point is the matter itself: what happened, where the case belongs and what needs attention now.</p>
+
+            <div class="section-header" style="margin-top: 50px;" id="primary-counties">
+                <p class="section-tagline">PRIMARY COUNTIES OF FOCUS</p>
+                <h2>Focused on matters in these communities.</h2>
+            </div>
+            <p class="location-intro">The cities below are examples of communities within our priority counties. They are service areas, not additional office locations.</p>
+
+            <section class="priority-region" aria-labelledby="bay-area-counties">
+                <h3 id="bay-area-counties">Bay Area</h3>
+                <div class="locations-grid">
+                    <div class="location-card priority-county"><h4>Alameda County</h4><p>Oakland, Berkeley and Fremont</p></div>
+                    <div class="location-card priority-county"><h4>Contra Costa County</h4><p>Walnut Creek, Concord and Richmond</p></div>
+                    <div class="location-card priority-county"><h4>Marin County</h4><p>San Rafael and Novato</p></div>
+                    <div class="location-card priority-county"><h4>Napa County</h4><p>Napa and American Canyon</p></div>
+                    <div class="location-card priority-county"><h4>San Francisco</h4><p>City and County of San Francisco</p></div>
+                    <div class="location-card priority-county"><h4>San Mateo County</h4><p>San Mateo, Redwood City and South San Francisco</p></div>
+                    <div class="location-card priority-county"><h4>Santa Clara County</h4><p>San Jose, Palo Alto and Sunnyvale</p></div>
+                    <div class="location-card priority-county"><h4>Sonoma County</h4><p>Santa Rosa, Petaluma and Sonoma</p></div>
+                </div>
+            </section>
+
+            <section class="priority-region" aria-labelledby="central-coast-counties">
+                <h3 id="central-coast-counties">Central Coast</h3>
+                <div class="locations-grid">
+                    <div class="location-card priority-county"><h4>Monterey County</h4><p>Monterey, Salinas and Seaside</p></div>
+                </div>
+            </section>
+
+            <section class="priority-region" aria-labelledby="southern-california-counties">
+                <h3 id="southern-california-counties">Southern California</h3>
+                <div class="locations-grid">
+                    <div class="location-card priority-county"><h4>Los Angeles County</h4><p>Los Angeles, Long Beach and Pasadena</p></div>
+                    <div class="location-card priority-county"><h4>San Diego County</h4><p>San Diego, Chula Vista and Oceanside</p></div>
+                    <div class="location-card priority-county"><h4>Orange County</h4><p>Irvine, Santa Ana and Anaheim</p></div>
+                </div>
+            </section>
+
+            <div class="location-note">
+                <p class="location-intro"><strong>One San Francisco office. A statewide practice.</strong> Our office is at 28 Geary St, Suite 650, San Francisco, CA 94108. The appropriate court, filing requirements and appearance arrangements depend on the particular case. A city listed here does not establish where a lawsuit must be filed.</p>
+            </div>
+
+            <hr class="section-divider">
+            <div class="section-header">
+                <p class="section-tagline">START WITH YOUR MATTER</p>
+                <h2>Find the right practice area.</h2>
+            </div>
+            <p class="location-intro">Explore <a href="/business-litigation/">business litigation</a> for commercial and ownership disputes, <a href="/criminal-defense/">criminal defense</a> for criminal allegations, and <a href="/private-civil-matters/civil-lawsuit-defense">individual lawsuit defense</a> if you have been sued personally. Our practice also includes <a href="/business-transactions/">business transactions</a>, <a href="/tax-law/">tax law</a>, <a href="/white-collar-defense/">white-collar defense</a> and <a href="/civil-litigation/">corporate and commercial litigation</a>.</p>
 
             <div class="section-header" style="margin-top: 50px;">
                 <p class="section-tagline">CITIES</p>
