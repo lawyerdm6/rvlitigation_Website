@@ -23,54 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- JSON-LD FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What are the elements of a breach of contract claim in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "To prove breach of contract in California, you must establish four elements: (1) a valid contract existed between the parties, (2) you performed your obligations or were excused from performing, (3) the other party failed to perform their obligations under the contract, and (4) you suffered damages as a result of the breach."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Are oral contracts enforceable in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, oral contracts are generally enforceable in California. However, certain types of agreements must be in writing under the statute of frauds (Civil Code 1624), including contracts for the sale of real property, agreements that cannot be performed within one year, and contracts for goods over $500. The statute of limitations for oral contracts is two years (CCP 339), compared to four years for written contracts (CCP 337)."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the statute of limitations for a contract dispute in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "In California, the statute of limitations for breach of a written contract is four years from the date of the breach (CCP 337). For oral contracts, it is two years (CCP 339). These deadlines are strict — if you file after the limitations period has expired, your claim will almost certainly be dismissed."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can I recover attorney fees in a contract dispute?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "In California, attorney fees are generally recoverable in a contract dispute only if the contract itself contains an attorney fees provision. Under Civil Code 1717, if the contract provides that the prevailing party is entitled to attorney fees, both sides can seek fees regardless of which party the clause was originally intended to benefit. Without such a provision, each party typically bears its own legal costs."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is specific performance and when is it available?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Specific performance is a court order requiring a party to fulfill their obligations under a contract. It is available in California when monetary damages would be inadequate to compensate the non-breaching party — most commonly in real estate transactions, where each property is considered unique. Courts will not grant specific performance if the contract terms are uncertain or if enforcement would be unjust."
-                }
-            }
-        ]
-    }
-    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does an unsigned agreement mean there is no case?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. Conduct and communications can establish some agreements, but writing requirements, assent, authority and the particular transaction must be evaluated. Keep all versions and performance records."}}, {"@type": "Question", "name": "Can I stop performing because the other side breached?", "acceptedAnswer": {"@type": "Answer", "text": "That depends on the terms, the nature of the breach and whether the obligations are dependent. Counsel should review termination and cure requirements before the business suspends work or payment."}}, {"@type": "Question", "name": "Will the other side pay our attorney fees?", "acceptedAnswer": {"@type": "Answer", "text": "Only if a contract, statute or other applicable rule authorizes a fee award and its requirements are met. A fee provision can also create exposure if the business does not prevail."}}, {"@type": "Question", "name": "How long do we have to act?", "acceptedAnswer": {"@type": "Answer", "text": "The answer depends on the claim, governing law, accrual facts and any special contractual or procedural requirements. A served lawsuit or arbitration demand creates a separate response deadline. Send both the agreement and the dated notices for review."}}]}</script>
 
     <!-- JSON-LD LegalService Schema -->
     <script type="application/ld+json">
@@ -512,6 +465,30 @@
             .faq-icon { display: none; }
         }
     </style>
+<style id="business-content-refinement">
+.article-layout > * { min-width: 0; }
+.article-body a, .business-expansion a { color: var(--color-gold); text-underline-offset: 3px; }
+.article-body h2[id], .business-expansion h2[id] { scroll-margin-top: 110px; }
+.article-body ul { padding-left: 22px; color: #999; line-height: 1.85; }
+.article-body li { margin-bottom: 10px; }
+.article-body .example-card h3 { margin: 0 0 10px; }
+.business-sources { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); }
+.article-body .business-sources h2 { font-size: 1.4rem; margin-top: 0; }
+.article-body .business-sources p, .business-sources li { font-size: .84rem; line-height: 1.7; }
+.business-sources a { overflow-wrap: anywhere; }
+.business-expansion { max-width: 1000px; margin: 0 auto; }
+.business-expansion h2 { font-family: var(--font-serif); font-size: 2.3rem; font-weight: 400; margin: 0 0 22px; }
+.business-expansion h3 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; margin: 0 0 12px; }
+.business-expansion p, .business-expansion li { color: #999; line-height: 1.85; margin-bottom: 16px; }
+.business-expansion ul { padding-left: 22px; }
+.business-expansion .business-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin: 24px 0; }
+.business-expansion .business-card { padding: 25px; border: 1px solid rgba(255,255,255,.12); border-radius: 6px; }
+.business-expansion .example-label { font-size: .7rem; color: var(--color-gold); letter-spacing: 1.5px; margin-bottom: 10px; text-transform: uppercase; }
+.business-expansion .business-sources h2 { font-size: 1.5rem; }
+.page-header h1 { overflow-wrap: break-word; }
+@media(max-width:700px) { .business-expansion .business-grid { grid-template-columns: 1fr; } .business-expansion h2 { font-size: 1.8rem; } .business-expansion .business-card { padding: 20px; } }
+@media(prefers-reduced-motion:reduce) { .article-body .faq-answer, .article-body .faq-icon, .business-expansion * { transition: none; animation: none; } }
+</style>
 </head>
 <body>
     <!-- Header / Navigation -->
@@ -557,7 +534,7 @@
     <!-- Page Header -->
     <section class="page-header" style="margin-top: 0; padding-top: 60px;">
         <div class="page-header-content">
-            <p style="font-size: 0.8rem; letter-spacing: 3px; color: #c9a227; margin-bottom: 10px;">CALIFORNIA CIVIL CODE 1549–1701 &amp; CCP 337–339</p>
+            <p style="font-size: 0.8rem; letter-spacing: 3px; color: #c9a227; margin-bottom: 10px;">BUSINESS CONTRACT LAW</p>
             <h1>Contract Dispute Litigation</h1>
             <p>Understanding Breach of Contract Claims, Damages, and How We Protect Your Interests</p>
         </div>
@@ -566,24 +543,7 @@
     <!-- Case Snapshot -->
     <section class="content-section" style="padding-top: 40px; padding-bottom: 0;">
         <div class="content-wrapper">
-            <div class="penalty-glance">
-                <div class="penalty-glance-item">
-                    <div class="pg-label">SOL (Written)</div>
-                    <div class="pg-value">4 Years</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">SOL (Oral)</div>
-                    <div class="pg-value">2 Years</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Damages</div>
-                    <div class="pg-value">Compensatory+</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Attorney Fees</div>
-                    <div class="pg-value">If in Contract</div>
-                </div>
-            </div>
+            <div class="penalty-glance"><div class="penalty-glance-item"><div class="pg-label">Review</div><div class="pg-value">Agreed obligations</div></div><div class="penalty-glance-item"><div class="pg-label">Records</div><div class="pg-value">Performance &amp; loss</div></div><div class="penalty-glance-item"><div class="pg-label">Next step</div><div class="pg-value">Evaluate response</div></div></div>
         </div>
     </section>
 
@@ -592,227 +552,70 @@
         <div class="article-layout">
 
             <!-- Article Body -->
-            <div class="article-body">
-
-                <!-- Intro -->
-                <h2 id="overview">What Is a Contract Dispute?</h2>
-                <div class="two-column reverse" style="gap: 40px; margin-bottom: 30px;">
-                    <div class="column-content" style="padding: 0;">
-                        <p>A contract dispute arises when one or more parties to a binding agreement disagree about the meaning, performance, or enforcement of that agreement. In California, contracts form the backbone of virtually every business and personal transaction — from commercial leases and vendor agreements to employment contracts and construction deals. When a party fails to uphold its end of the bargain, the consequences can be financially devastating.</p>
-                        <p>RV Litigation Group PC is based in San Francisco and represents clients throughout California. We represent plaintiffs and defendants in business contract litigation involving breach of contract claims, payment disputes and contested performance. For a new agreement or a negotiated revision, see <a href="/business-transactions/business-contracts">business contract drafting and review</a>. Companies managing recurring disputes can also explore <a href="/civil-litigation/outside-litigation-counsel">outside litigation counsel</a>.</p>
-                    </div>
-                    <div class="column-image">
+            <div class="article-body"><span id="at-stake" aria-hidden="true"></span><span id="the-law" aria-hidden="true"></span><h2 id="overview">What Is a Contract Dispute?</h2>
+<div class="two-column reverse" style="gap:40px;margin-bottom:30px"><div class="column-content" style="padding:0"><p>A missed payment, rejected delivery or abrupt termination can put a business relationship at risk. The first task is to identify the promise actually made, the evidence of performance and the practical consequences of the alleged breach. A demand for a large amount is not the same as a supported claim for that amount.</p>
+<p>RV Litigation Group PC represents California businesses in contract disputes, including claims brought by the business and claims against it. We assess the agreement, immediate obligations and response options before recommending negotiation, arbitration or litigation.</p>
+</div><div class="column-image">
                         <picture><source srcset="/images/Photos/Civil Litigation.webp" type="image/webp"><img src="/images/Photos/Civil Litigation.png" alt="Gold knight on a chessboard" style="border-radius: 5px;"></picture>
-                    </div>
-                </div>
-
-                <p>A breach of contract claim does not always require a written document. Oral agreements, implied contracts, and contracts formed through the conduct of the parties can all be enforceable under California law. Whether you are pursuing a claim for unpaid invoices, disputing a partnership agreement, or fighting an allegation that you breached a service contract, the legal framework is rooted in California Civil Code sections 1549 through 1701.</p>
-
-                <p>Understanding the type of contract at issue, the nature of the breach, and the remedies available is critical to building a strong case. The attorneys at RV Litigation Group PC analyze every contract dispute from multiple angles — examining the language of the agreement, the parties' course of dealing, industry custom, and the applicable statutory and case law — to develop a strategy that maximizes your recovery or minimizes your exposure.</p>
-
-                <!-- Statute Text -->
-                <h2 id="the-law">What the Law Says</h2>
-
-                <h3>Civil Code 1549 — Definition of a Contract</h3>
-                <blockquote class="statute-block">
-                    "A contract is an agreement to do or not to do a certain thing."
-                    <cite>— California Civil Code Section 1549</cite>
-                </blockquote>
-                <p>This deceptively simple definition is the foundation of all contract law in California. A valid contract requires mutual consent (an offer and acceptance), consideration (something of value exchanged between the parties), parties who are legally capable of contracting, and a lawful purpose. If any of these elements is missing, the contract may be void or voidable, which can be a powerful defense — or a significant obstacle — depending on which side of the dispute you are on.</p>
-
-                <h3>Civil Code 1624 — Statute of Frauds</h3>
-                <blockquote class="statute-block">
-                    "The following contracts are invalid, unless they, or some note or memorandum thereof, are in writing and subscribed by the party to be charged or by the party's agent: (1) An agreement that by its terms is not to be performed within a year from the making thereof... (3) An agreement for the sale of real property, or of an interest therein..."
-                    <cite>— California Civil Code Section 1624</cite>
-                </blockquote>
-                <p>The statute of frauds requires certain categories of contracts to be in writing to be enforceable. These include agreements that cannot be performed within one year, contracts for the sale of real property, agreements to guarantee another person's debt, and certain contracts for the sale of goods over $500 under the California Commercial Code. If a contract falls within the statute of frauds and was never reduced to writing, the opposing party may move to dismiss the claim — though exceptions exist, including partial performance and equitable estoppel.</p>
-
-                <h3>CCP 337 &amp; 339 — Statutes of Limitations</h3>
-                <p>The clock on a breach of contract claim starts running on the date of the breach. For <strong>written contracts</strong>, Code of Civil Procedure section 337 provides a <strong>four-year statute of limitations</strong>. For <strong>oral contracts</strong>, CCP 339 provides only <strong>two years</strong>. Missing these deadlines can permanently bar your claim, regardless of its merits. In some cases, the "discovery rule" may delay the start of the limitations period if the breach was not immediately apparent, but this exception is narrowly applied.</p>
-
-                <!-- Examples -->
-                <h2 id="examples">Illustrative Scenarios</h2>
-                <p>These scenarios illustrate how contract disputes commonly arise in the Bay Area:</p>
-
-                <div class="example-card">
-                    <div class="example-label">Example 1 — Vendor Non-Performance in San Jose</div>
-                    <p>A San Jose technology company contracts with a software vendor to deliver a custom CRM platform by a specified deadline. The vendor misses the deadline by three months and delivers a product that lacks several agreed-upon features. The tech company suffers lost revenue and must hire a second developer to finish the work. This is a classic <strong>breach of written contract</strong> claim, and the company may recover compensatory damages including the cost to complete the project, lost profits, and potentially attorney fees if the contract contains a fee-shifting provision.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 2 — Oral Agreement in Walnut Creek</div>
-                    <p>Two friends in Walnut Creek agree verbally that one will invest $50,000 in the other's restaurant in exchange for 25% of the profits. After the restaurant becomes profitable, the owner refuses to share any earnings. Despite the lack of a written agreement, the investor may have a viable <strong>breach of oral contract</strong> claim — provided the agreement can be proven through text messages, emails, witness testimony, or the parties' conduct. The two-year statute of limitations under CCP 339 applies.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 3 — Contractor Dispute in Redwood City</div>
-                    <p>A homeowner in Redwood City hires a general contractor to remodel a kitchen for $85,000 under a detailed written contract. Midway through the project, the contractor demands an additional $30,000 for work that was clearly within the original scope. When the homeowner refuses, the contractor walks off the job. The homeowner can pursue a claim for <strong>breach of contract</strong> and potentially seek <strong>specific performance</strong> or <strong>damages</strong> sufficient to hire a replacement contractor to finish the work.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 4 — Non-Compete Clause in San Francisco</div>
-                    <p>A sales executive in San Francisco leaves her employer and joins a competitor. The former employer claims she violated a non-compete clause in her employment agreement. However, under California Business and Professions Code section 16600, <strong>non-compete agreements are generally void and unenforceable</strong> in California. The executive's attorney moves to dismiss the claim, and the executive may have grounds for a counterclaim if the former employer's lawsuit constitutes an unfair business practice.</p>
-                </div>
-
-                <!-- What's at Stake -->
-                <h2 id="at-stake">What's at Stake</h2>
-                <p>The financial exposure in a contract dispute depends on the type of claim, the terms of the agreement, and the damages that resulted from the breach. California law provides several categories of relief.</p>
-
-                <div class="table-scroll-wrapper">
-                <table class="penalties-table">
-                    <thead>
-                        <tr>
-                            <th>Claim Type</th>
-                            <th>Elements</th>
-                            <th>Potential Recovery</th>
-                            <th>Timeline</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Breach of Written Contract</strong></td>
-                            <td>Valid contract, performance, breach, damages</td>
-                            <td>Compensatory damages, consequential damages, attorney fees (if contractual)</td>
-                            <td>4-year SOL (CCP 337)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Breach of Oral Contract</strong></td>
-                            <td>Agreement proved by evidence, performance, breach, damages</td>
-                            <td>Compensatory damages, restitution</td>
-                            <td>2-year SOL (CCP 339)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Breach of Implied Covenant</strong></td>
-                            <td>Contract exists, implied duty of good faith, breach of that duty, damages</td>
-                            <td>Compensatory damages, potential tort damages in insurance context</td>
-                            <td>4-year SOL (written) / 2-year SOL (oral)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Specific Performance</strong></td>
-                            <td>Valid contract, inadequacy of monetary damages, plaintiff ready and able to perform</td>
-                            <td>Court order compelling performance of the contract</td>
-                            <td>4-year SOL (CCP 337)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Rescission</strong></td>
-                            <td>Fraud, mistake, undue influence, or failure of consideration</td>
-                            <td>Contract voided, restitution of benefits conferred</td>
-                            <td>Varies by underlying ground</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Quantum Meruit</strong></td>
-                            <td>Services rendered, defendant accepted services, reasonable expectation of payment</td>
-                            <td>Reasonable value of services provided</td>
-                            <td>2-year SOL (CCP 339)</td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div><!-- /table-scroll-wrapper -->
-
-                <p><strong>Additional considerations:</strong> In California, <strong>punitive damages are generally not available</strong> in a pure breach of contract action. However, if the breach also involves fraud, tortious conduct, or a violation of the implied covenant of good faith and fair dealing in the insurance context, punitive damages may be on the table. Liquidated damages clauses — provisions that set a predetermined amount of damages in the event of breach — are enforceable if the amount was reasonable at the time the contract was formed and actual damages would be difficult to calculate.</p>
-
-                <!-- How We Help -->
-                <h2 id="how-we-help">How We Help</h2>
-                <p>At RV Litigation Group PC, we handle contract disputes from initial review through trial and post-judgment collection. Our approach is strategic, efficient, and tailored to each client's business objectives. Here is how we work:</p>
-
-                <div class="defense-item">
-                    <h3>1. Contract Review &amp; Analysis</h3>
-                    <p>Before any legal action is taken, we conduct a thorough review of the contract at issue, including all amendments, addenda, and related correspondence. We identify the key obligations, conditions precedent, termination provisions, indemnification clauses, and dispute resolution mechanisms. This analysis forms the foundation of our litigation strategy and allows us to give you an honest assessment of the strengths and weaknesses of your position.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>2. Pre-Litigation Demand</h3>
-                    <p>In many contract disputes, a well-crafted demand letter can resolve the matter without the expense and delay of a lawsuit. We draft demand letters that clearly articulate the breach, quantify the damages, cite the applicable law, and set a reasonable deadline for resolution. A strong demand letter puts the opposing party on notice and demonstrates that you are prepared to litigate if necessary — which often brings the other side to the negotiating table.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>3. Discovery &amp; Depositions</h3>
-                    <p>When litigation is unavoidable, we use California's discovery tools aggressively and strategically. We propound interrogatories, requests for production of documents, and requests for admission to uncover the facts that support your case. We take depositions of key witnesses to lock in testimony and expose inconsistencies. Discovery is where many cases are won or lost, and we approach it with the thoroughness the stakes demand.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>4. Mediation &amp; Arbitration</h3>
-                    <p>Many contracts include mandatory mediation or arbitration clauses, and even without such provisions, alternative dispute resolution can be a cost-effective path to a favorable outcome. We represent clients in both mediation and binding arbitration proceedings before organizations such as JAMS and the American Arbitration Association. We prepare for ADR with the same rigor as trial preparation, because a well-prepared mediation brief and presentation can result in a settlement that avoids years of litigation.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>5. Trial Advocacy</h3>
-                    <p>When settlement is not possible or not in your best interest, we take the case to trial. Our attorneys have tried contract disputes in Santa Clara County Superior Court, San Francisco Superior Court, Contra Costa County Superior Court, and federal courts throughout Northern California. We present clear, compelling arguments to judges and juries, supported by documentary evidence, expert testimony, and thorough legal briefing.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>6. Damages Calculation</h3>
-                    <p>Accurately quantifying damages is critical in any contract dispute. We work with forensic accountants and financial experts to calculate compensatory damages, lost profits, consequential damages, and the cost of cover or completion. Whether we are presenting a damages model to support your affirmative claim or challenging the opposing party's inflated damages figures, we ensure the numbers are grounded in evidence and defensible under California law.</p>
-                </div>
-
-                <!-- FAQ -->
-                <h2 id="faq">Frequently Asked Questions</h2>
-                <div class="faq-section">
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What are the elements of a breach of contract claim in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>To prove breach of contract in California, you must establish four elements: (1) a valid contract existed between the parties, (2) you performed your obligations or were excused from performing, (3) the other party failed to perform their obligations under the contract, and (4) you suffered damages as a result of the breach.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Are oral contracts enforceable in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes, oral contracts are generally enforceable in California. However, certain types of agreements must be in writing under the statute of frauds (Civil Code 1624), including contracts for the sale of real property, agreements that cannot be performed within one year, and contracts for goods over $500. The statute of limitations for oral contracts is two years (CCP 339), compared to four years for written contracts (CCP 337).</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What is the statute of limitations for a contract dispute in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>In California, the statute of limitations for breach of a written contract is four years from the date of the breach (CCP 337). For oral contracts, it is two years (CCP 339). These deadlines are strict — if you file after the limitations period has expired, your claim will almost certainly be dismissed.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Can I recover attorney fees in a contract dispute?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>In California, attorney fees are generally recoverable in a contract dispute only if the contract itself contains an attorney fees provision. Under Civil Code 1717, if the contract provides that the prevailing party is entitled to attorney fees, both sides can seek fees regardless of which party the clause was originally intended to benefit. Without such a provision, each party typically bears its own legal costs.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What is specific performance and when is it available?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Specific performance is a court order requiring a party to fulfill their obligations under a contract. It is available in California when monetary damages would be inadequate to compensate the non-breaching party — most commonly in real estate transactions, where each property is considered unique. Courts will not grant specific performance if the contract terms are uncertain or if enforcement would be unjust.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Related Practice Areas -->
-                <h2 id="related">Related Practice Areas</h2>
+                    </div></div>
+<h2 id="law">The Legal Framework</h2>
+<div class="defense-item"><h3>What a breach claim requires</h3><p>California’s contract instructions focus on an enforceable agreement, the claimant’s performance or excuse, any conditions that had to occur, a breach and harm caused by that breach. The exact terms matter: late performance, incomplete work and a disputed invoice do not automatically establish the same claim. A defense may concern what was promised, whether a condition occurred, an agreed change, waiver or an earlier material breach.</p>
+</div>
+<div class="defense-item"><h3>The whole agreement matters</h3><p>Signed contracts, proposals, purchase orders, online terms and later amendments may point in different directions. Oral agreements can be enforceable, but certain transactions require a writing and other legal limits may apply. We examine who had authority to agree, which document controls, and whether a modification was effective rather than assuming the latest email settles the question.</p>
+</div>
+<div class="defense-item"><h3>Remedies must match the loss</h3><p>Contract damages generally address proven loss caused by the breach. Lost profits require support; avoided expenses and reasonable mitigation matter. Specific performance, rescission or declaratory relief may fit some disputes but require their own legal basis. Punitive damages are not available for an ordinary contract breach alone. Attorney fees depend on an applicable agreement or statute, not simply on winning the case.</p>
+</div>
+<h2 id="documents">Facts &amp; Records to Prepare</h2>
+<ul>
+<li>The complete signed agreement, incorporated terms, amendments and competing draft versions.</li>
+<li>Invoices, payment records, acceptance or rejection notices, delivery logs and change requests.</li>
+<li>A dated account of the disputed performance, including documents that support the other side’s position.</li>
+<li>Records supporting claimed losses, replacement costs and steps taken to limit disruption.</li>
+</ul>
+<h2 id="how-we-help">How We Approach the Matter</h2>
+<div class="defense-item"><h3>Before a demand or termination</h3><p>Review notice and cure requirements, continuing performance obligations, insurance and any mediation or arbitration clause. Stopping work or withholding payment without analyzing those provisions can create a second dispute. A focused demand can identify the terms and evidence in issue without overstating the remedy.</p>
+</div>
+<div class="defense-item"><h3>If proceedings have begun</h3><p>Provide the summons, complaint or arbitration demand and information about delivery promptly. Response dates differ from the deadline for filing a claim. Counsel can assess defenses, any related claims, the proper forum and whether early negotiation is useful. A settlement discussion does not by itself extend a filing or response deadline.</p>
+</div>
+<div class="defense-item"><h3>Choosing a workable resolution</h3><p>A commercial settlement may involve staged payments, corrected performance, a transition or a documented termination. If the dispute proceeds, discovery should target the contested promises, performance and loss. The budget and strategy should account for the amount at stake, business disruption and ability to collect.</p>
+</div>
+<h2 id="examples">Fictional California Examples</h2>
+<p>These fictional examples illustrate questions counsel may evaluate. They are not firm cases or results. A county is a factual setting, not a statement about venue, local rules or a firm office.</p>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>Alameda County — disputed project changes</h3><p>A software vendor says a customer’s new requests expanded a fixed-price project. The customer says those features were part of the original promise. Counsel would compare the statement of work, change approvals, demonstrations and acceptance records before evaluating payment or completion demands.</p>
+</div>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>Orange County — supplier termination</h3><p>A distributor receives a termination notice after deliveries arrive late. The supplier points to changed order quantities and a cure provision. Review would focus on the sequence of notices, responsibility for the delays and the cost of an available replacement source.</p>
+</div>
+<h2 id="faq">Frequently Asked Questions</h2>
+<div class="faq-section">
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-0">Does an unsigned agreement mean there is no case?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-0"><p>Not necessarily. Conduct and communications can establish some agreements, but writing requirements, assent, authority and the particular transaction must be evaluated. Keep all versions and performance records.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-1">Can I stop performing because the other side breached?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-1"><p>That depends on the terms, the nature of the breach and whether the obligations are dependent. Counsel should review termination and cure requirements before the business suspends work or payment.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-2">Will the other side pay our attorney fees?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-2"><p>Only if a contract, statute or other applicable rule authorizes a fee award and its requirements are met. A fee provision can also create exposure if the business does not prevail.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-3">How long do we have to act?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-3"><p>The answer depends on the claim, governing law, accrual facts and any special contractual or procedural requirements. A served lawsuit or arbitration demand creates a separate response deadline. Send both the agreement and the dated notices for review.</p>
+</div></div>
+</div>
+<aside class="business-sources" aria-label="Sources and legal information"><h2 id="legal-sources">Sources &amp; Legal Information</h2>
+<p>This page provides general California legal information, not advice for a particular matter. Legal rules, deadlines and available remedies depend on the facts and applicable law. Contacting the firm does not create an attorney-client relationship.</p>
+<ul><li><a href="https://selfhelp.courts.ca.gov/civil-lawsuit/breach-contract" target="_blank" rel="noopener noreferrer">California Courts: breach of contract</a></li><li><a href="https://www.justia.com/trials-litigation/docs/caci/300/303/" target="_blank" rel="noopener noreferrer">Judicial Council CACI 303: contract elements</a></li></ul></aside>
+<h2 id="related">Related Practice Areas</h2>
                 <div class="related-offenses-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
                     <a href="/business-litigation/" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Business Litigation</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">B&amp;P 17200, Corp Code 1800 — Unfair competition, trade secrets, and corporate disputes.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Unfair competition, trade secrets, and corporate disputes.</p>
                     </a>
                     <a href="../civil-litigation/partnership-disputes" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Partnership Disputes</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Corp Code 16401–16504 — Breach of fiduciary duty, partnership dissolution, and buyout disputes.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Breach of fiduciary duty, partnership dissolution, and buyout disputes.</p>
                     </a>
                     <a href="../civil-litigation/real-estate-disputes" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Real Estate Disputes</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">CC 1102 — Seller disclosure violations, purchase agreement disputes, and title claims.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Seller disclosure violations, purchase agreement disputes, and title claims.</p>
                     </a>
                     <a href="../civil-litigation/construction-defects" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Construction Defects</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">CC 895–945.5 — Right to Repair Act claims, construction deficiency litigation.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Right to Repair Act claims, construction deficiency litigation.</p>
                     </a>
                 </div>
 
@@ -822,15 +625,7 @@
             <div class="page-toc-wrapper">
                 <nav class="page-toc">
                     <h4>On This Page</h4>
-                    <ul>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#the-law">The Law</a></li>
-                        <li><a href="#examples">Examples</a></li>
-                        <li><a href="#at-stake">What's at Stake</a></li>
-                        <li><a href="#how-we-help">How We Help</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#related">Related Areas</a></li>
-                    </ul>
+                    <ul><li><a href="#overview">Overview</a></li><li><a href="#law">Legal Framework</a></li><li><a href="#documents">Facts & Records</a></li><li><a href="#how-we-help">Response Options</a></li><li><a href="#examples">Fictional Examples</a></li><li><a href="#faq">Questions</a></li><li><a href="#legal-sources">Sources</a></li><li><a href="#related">Related Practice Areas</a></li></ul>
                 </nav>
             </div>
 
@@ -842,7 +637,7 @@
         <div class="content-wrapper">
             <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 400; margin-bottom: 20px;">Facing a Contract Dispute in California?</h2>
-            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">The sooner you speak with an attorney, the better your chances of a favorable outcome. Contact RV Litigation Group PC for a consultation today.</p>
+            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Share the key documents, your role and any notice, hearing or transaction deadline so the firm can assess the appropriate scope of representation.</p>
             <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
             <div class="cta-or">or</div>
             <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>
@@ -893,7 +688,7 @@
                 var item = this.parentElement;
                 var isOpen = item.classList.contains('open');
                 // Close all
-                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); var question = i.querySelector('.faq-question'); if (question) question.setAttribute('aria-expanded', 'false'); });
                 // Toggle current
                 if (!isOpen) item.classList.add('open');
                 this.setAttribute('aria-expanded', !isOpen);

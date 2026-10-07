@@ -24,54 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- JSON-LD FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is a fiduciary duty in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "A fiduciary duty is a legal obligation to act in the best interest of another party. In California, fiduciary relationships arise between corporate officers and shareholders, trustees and beneficiaries, partners in a partnership, agents and principals, and attorneys and clients. The fiduciary must act with loyalty, good faith, and full disclosure."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the elements of a breach of fiduciary duty claim?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "To prove breach of fiduciary duty in California, you must establish: (1) the existence of a fiduciary relationship, (2) the fiduciary breached their duty of care, loyalty, or good faith, (3) the breach caused damages, and (4) the amount of damages suffered. The burden of proof shifts to the fiduciary once a breach is shown in many contexts."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the statute of limitations for breach of fiduciary duty in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The statute of limitations for breach of fiduciary duty in California is generally four years under CCP 343. However, the discovery rule may toll the limitations period until the injured party knew or should have known of the breach."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Are punitive damages available in breach of fiduciary duty cases?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, punitive damages may be available in breach of fiduciary duty cases in California if the fiduciary acted with fraud, malice, or oppression as defined under Civil Code 3294. Courts view fiduciary breaches seriously, and the heightened trust inherent in these relationships can support punitive damage awards when the breach was intentional or reckless."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can a corporate officer be personally liable for breach of fiduciary duty?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, corporate officers and directors owe fiduciary duties directly to the corporation and its shareholders. Under California Corporations Code 309 and 16404, they can be held personally liable for self-dealing transactions, usurping corporate opportunities, failing to disclose conflicts of interest, and acting in bad faith. The business judgment rule provides some protection, but it does not shield officers who act in their own self-interest."
-                }
-            }
-        ]
-    }
-    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is every owner a fiduciary in the same way?", "acceptedAnswer": {"@type": "Answer", "text": "No. The entity type, management structure, role, agreement and applicable law determine the duties. Ownership percentage alone does not answer that question."}}, {"@type": "Question", "name": "Does a conflict of interest prove a breach?", "acceptedAnswer": {"@type": "Answer", "text": "Not by itself. The transaction, disclosure, approval process and applicable statutory rules must be examined. A conflict can be significant without automatically resolving liability."}}, {"@type": "Question", "name": "Can we recover the company’s loss in an owner’s personal lawsuit?", "acceptedAnswer": {"@type": "Answer", "text": "A loss to the entity may require a derivative proceeding. Personal and company claims should be distinguished before suit is filed."}}, {"@type": "Question", "name": "Are punitive damages automatic?", "acceptedAnswer": {"@type": "Answer", "text": "No. They require a separate legal and evidentiary basis, including the applicable heightened proof and any entity-liability requirements."}}]}</script>
 
     <!-- JSON-LD LegalService Schema -->
     <script type="application/ld+json">
@@ -513,6 +466,30 @@
             .faq-icon { display: none; }
         }
     </style>
+<style id="business-content-refinement">
+.article-layout > * { min-width: 0; }
+.article-body a, .business-expansion a { color: var(--color-gold); text-underline-offset: 3px; }
+.article-body h2[id], .business-expansion h2[id] { scroll-margin-top: 110px; }
+.article-body ul { padding-left: 22px; color: #999; line-height: 1.85; }
+.article-body li { margin-bottom: 10px; }
+.article-body .example-card h3 { margin: 0 0 10px; }
+.business-sources { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); }
+.article-body .business-sources h2 { font-size: 1.4rem; margin-top: 0; }
+.article-body .business-sources p, .business-sources li { font-size: .84rem; line-height: 1.7; }
+.business-sources a { overflow-wrap: anywhere; }
+.business-expansion { max-width: 1000px; margin: 0 auto; }
+.business-expansion h2 { font-family: var(--font-serif); font-size: 2.3rem; font-weight: 400; margin: 0 0 22px; }
+.business-expansion h3 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; margin: 0 0 12px; }
+.business-expansion p, .business-expansion li { color: #999; line-height: 1.85; margin-bottom: 16px; }
+.business-expansion ul { padding-left: 22px; }
+.business-expansion .business-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin: 24px 0; }
+.business-expansion .business-card { padding: 25px; border: 1px solid rgba(255,255,255,.12); border-radius: 6px; }
+.business-expansion .example-label { font-size: .7rem; color: var(--color-gold); letter-spacing: 1.5px; margin-bottom: 10px; text-transform: uppercase; }
+.business-expansion .business-sources h2 { font-size: 1.5rem; }
+.page-header h1 { overflow-wrap: break-word; }
+@media(max-width:700px) { .business-expansion .business-grid { grid-template-columns: 1fr; } .business-expansion h2 { font-size: 1.8rem; } .business-expansion .business-card { padding: 20px; } }
+@media(prefers-reduced-motion:reduce) { .article-body .faq-answer, .article-body .faq-icon, .business-expansion * { transition: none; animation: none; } }
+</style>
 </head>
 <body>
     <!-- Header / Navigation -->
@@ -567,24 +544,7 @@
     <!-- Case Snapshot -->
     <section class="content-section" style="padding-top: 40px; padding-bottom: 0;">
         <div class="content-wrapper">
-            <div class="penalty-glance">
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Statute of Limitations</div>
-                    <div class="pg-value">4 Years</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Burden of Proof</div>
-                    <div class="pg-value">Shifts to Fiduciary</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Damages</div>
-                    <div class="pg-value">Compensatory+</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Punitive Damages</div>
-                    <div class="pg-value">Available</div>
-                </div>
-            </div>
+            <div class="penalty-glance"><div class="penalty-glance-item"><div class="pg-label">Review</div><div class="pg-value">Role &amp; duties</div></div><div class="penalty-glance-item"><div class="pg-label">Records</div><div class="pg-value">Approvals &amp; transactions</div></div><div class="penalty-glance-item"><div class="pg-label">Next step</div><div class="pg-value">Identify the claimant</div></div></div>
         </div>
     </section>
 
@@ -593,200 +553,62 @@
         <div class="article-layout">
 
             <!-- Article Body -->
-            <div class="article-body">
-
-                <!-- Intro -->
-                <h2 id="overview">What Is a Breach of Fiduciary Duty?</h2>
-                <div class="two-column reverse" style="gap: 40px; margin-bottom: 30px;">
-                    <div class="column-content" style="padding: 0;">
-                        <p>A breach of fiduciary duty occurs when a person or entity entrusted with the obligation to act in another's best interest instead acts in their own self-interest, fails to disclose material information, or otherwise violates the trust placed in them. In California, fiduciary relationships are among the most heavily regulated areas of civil law because the potential for harm is substantial when those in positions of trust abuse their authority.</p>
-                        <p>RV Litigation Group PC is based in San Francisco and represents clients throughout California. We represent businesses and owners in fiduciary duty disputes involving company officers, directors, business partners and agents.</p>
-                    </div>
-                    <div class="column-image">
+            <div class="article-body"><span id="at-stake" aria-hidden="true"></span><span id="the-law" aria-hidden="true"></span><h2 id="overview">What Is a Breach of Fiduciary Duty?</h2>
+<div class="two-column reverse" style="gap:40px;margin-bottom:30px"><div class="column-content" style="padding:0"><p>Company money, opportunities and decision-making authority can become the center of a fiduciary dispute. The starting point is the person’s role and the duty attached to it, followed by the specific transaction, alleged injury and available evidence.</p>
+<p>RV Litigation Group PC represents California businesses and owners in disputes involving company directors, officers, partners, managers and other business fiduciaries. We evaluate both asserted breaches and defenses without treating every poor business result as disloyalty.</p>
+</div><div class="column-image">
                         <picture><source srcset="/images/Photos/Civil Litigation.webp" type="image/webp"><img src="/images/Photos/Civil Litigation.png" alt="Gold knight on a chessboard" style="border-radius: 5px;"></picture>
-                    </div>
-                </div>
-
-                <p>Fiduciary duties arise in a wide range of relationships. Corporate officers and directors owe duties to their shareholders. Partners owe duties to their co-partners. Agents owe duties to their principals. The specific obligations vary by context, but the core requirement is the same: the fiduciary must prioritize the interests of the person or entity they serve above their own.</p>
-
-                <p>When a fiduciary breaches these obligations, the consequences can be devastating. Self-dealing transactions, undisclosed conflicts of interest, mismanagement of assets, and outright embezzlement are among the most common forms of fiduciary breach. The attorneys at RV Litigation Group PC analyze each case from every angle, tracing financial transactions, reviewing corporate records, and deposing key witnesses to build the strongest possible case.</p>
-
-                <!-- Statute Text -->
-                <h2 id="the-law">What the Law Says</h2>
-
-                <h3>Corporations Code 16404 — Partner's Fiduciary Duties</h3>
-                <blockquote class="statute-block">
-                    "The only fiduciary duties a partner owes to the partnership and the other partners are the duty of loyalty and the duty of care... (b) A partner's duty of loyalty to the partnership and the other partners includes... (1) To account to the partnership and hold as trustee for it any property, profit, or benefit derived by the partner in the conduct and winding up of the partnership business... (2) To refrain from dealing with the partnership in the conduct or winding up of the partnership business as or on behalf of a party having an interest adverse to the partnership... (3) To refrain from competing with the partnership..."
-                    <cite>— California Corporations Code Section 16404</cite>
-                </blockquote>
-                <p>This statute codifies the fiduciary duties owed by partners in a California partnership. The duty of loyalty requires partners to account for any profits or benefits derived from partnership business, to avoid adverse dealings, and to refrain from competing with the partnership. The duty of care requires partners to act with the care that a reasonably prudent person in a like position would exercise under similar circumstances. Violations of these duties can result in significant personal liability, including disgorgement of profits and compensatory damages.</p>
-
-                <h3>Corporations Code 309 — Director's Standard of Care</h3>
-                <blockquote class="statute-block">
-                    "A director shall perform the duties of a director, including duties as a member of any committee of the board upon which the director may serve, in good faith, in a manner such director believes to be in the best interests of the corporation and its shareholders and with such care, including reasonable inquiry, as an ordinarily prudent person in a like position would use under similar circumstances."
-                    <cite>— California Corporations Code Section 309</cite>
-                </blockquote>
-                <p>Corporate directors and officers in California owe dual fiduciary duties of care and loyalty to the corporation and its shareholders. The business judgment rule provides a presumption that directors acted on an informed basis, in good faith, and in the honest belief that the action taken was in the best interests of the company. However, this presumption can be rebutted by showing self-dealing, conflicts of interest, gross negligence, or bad faith.</p>
-
-                <!-- Examples -->
-                <h2 id="examples">Illustrative Scenarios</h2>
-                <p>These scenarios illustrate how breach of fiduciary duty claims commonly arise in the Bay Area:</p>
-
-                <div class="example-card">
-                    <div class="example-label">Example 1 — Corporate Officer Self-Dealing in San Jose</div>
-                    <p>The CEO of a San Jose technology startup secretly funnels lucrative contracts to a side company he personally owns, paying above-market rates for services the startup could obtain more cheaply elsewhere. The startup's board discovers the arrangement during an audit and files a claim for <strong>breach of fiduciary duty of loyalty</strong>. The CEO may be required to disgorge all profits earned through the self-dealing transactions, pay compensatory damages for the overpayments, and face <strong>punitive damages</strong> for his intentional misconduct.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 3 — Partnership Breach in Oakland</div>
-                    <p>Two partners operate a successful restaurant group in Oakland. One partner secretly opens a competing restaurant under a separate LLC, diverting suppliers, staff, and customer lists from the partnership. This constitutes a <strong>breach of the duty of loyalty under Corporations Code 16404</strong>, including both the non-compete duty and the duty to account. The injured partner can seek an accounting of all profits from the competing business, compensatory damages, and potentially dissolution of the partnership.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 4 — Real Estate Agent in Santa Clara County</div>
-                    <p>A real estate agent representing a seller in Santa Clara County fails to disclose that the highest offer on the property came from the agent's own relative. The seller accepts a lower offer instead, unaware of the conflict. When the seller discovers the undisclosed relationship, they have a viable claim for <strong>breach of fiduciary duty</strong> against the agent, including potential recovery of the difference in sale price, disgorgement of the agent's commission, and punitive damages for the concealment.</p>
-                </div>
-
-                <!-- What's at Stake -->
-                <h2 id="at-stake">What's at Stake</h2>
-                <p>Fiduciary breach claims carry significant financial consequences. Because fiduciary relationships involve heightened obligations of trust and loyalty, California law provides robust remedies to injured parties.</p>
-
-                <div class="table-scroll-wrapper">
-                <table class="penalties-table">
-                    <thead>
-                        <tr>
-                            <th>Claim Type</th>
-                            <th>Key Elements</th>
-                            <th>Potential Recovery</th>
-                            <th>Timeline</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Corporate Officer/Director Breach</strong></td>
-                            <td>Fiduciary relationship, breach of duty of loyalty or care, damages</td>
-                            <td>Compensatory damages, disgorgement, punitive damages, removal</td>
-                            <td>4-year SOL (CCP 343)</td>
-                        </tr>
-
-                        <tr>
-                            <td><strong>Partnership Breach</strong></td>
-                            <td>Partnership exists, partner breached duty of loyalty/care, damages</td>
-                            <td>Accounting, disgorgement of profits, compensatory damages, dissolution</td>
-                            <td>4-year SOL (CCP 343)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Agent/Principal Breach</strong></td>
-                            <td>Agency relationship, breach of fiduciary duty, damages</td>
-                            <td>Compensatory damages, disgorgement of fees/commissions, punitive damages</td>
-                            <td>4-year SOL (CCP 343)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Constructive Fraud</strong></td>
-                            <td>Fiduciary relationship, breach of duty, gain by fiduciary or loss by principal</td>
-                            <td>Rescission, restitution, compensatory and punitive damages</td>
-                            <td>3-year SOL (CCP 338(d))</td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div><!-- /table-scroll-wrapper -->
-
-                <p><strong>Burden of proof considerations:</strong> In many fiduciary breach cases, once the plaintiff establishes the existence of a fiduciary relationship and that the fiduciary engaged in a self-interested transaction, <strong>the burden shifts to the fiduciary</strong> to prove the transaction was fair, fully disclosed, and in the best interest of the beneficiary. This burden-shifting is one of the most powerful tools available to plaintiffs in fiduciary litigation. Additionally, under Civil Code 3294, <strong>punitive damages</strong> are available when the fiduciary's conduct constitutes fraud, malice, or oppression.</p>
-
-                <!-- How We Help -->
-                <h2 id="how-we-help">How We Help</h2>
-                <p>At RV Litigation Group PC, we handle fiduciary duty cases from initial investigation through trial and post-judgment enforcement. Our approach is methodical, aggressive, and tailored to the specific fiduciary relationship at issue.</p>
-
-                <div class="defense-item">
-                    <h3>1. Forensic Investigation</h3>
-                    <p>Fiduciary breach cases are won or lost on the facts. We begin every engagement with a thorough investigation of the fiduciary's conduct, including analysis of financial records, corporate minutes, business accountings, bank statements, and communications. We work with forensic accountants to trace funds, identify self-dealing transactions, and quantify losses. This investigation forms the evidentiary foundation of the case and often reveals misconduct that goes far beyond what the client initially suspected.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>2. Demand &amp; Pre-Litigation Strategy</h3>
-                    <p>Before filing suit, we often send a detailed demand letter that lays out the evidence of breach, quantifies the damages, and demands specific relief. For corporate breaches, we may send a shareholder demand letter under Corporations Code 800 as a prerequisite to derivative litigation. A well-crafted demand can resolve the matter quickly — or lay the groundwork for a strong litigation position.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>3. Injunctive Relief &amp; Asset Preservation</h3>
-                    <p>When there is a risk that the fiduciary will dissipate assets or destroy evidence, we move quickly to obtain temporary restraining orders and preliminary injunctions. We file ex parte applications to freeze accounts, prevent asset transfers, and preserve documents. Time is critical in these situations, and our attorneys are experienced in the procedural requirements for obtaining emergency relief in Santa Clara County, San Francisco, and throughout Northern California.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>4. Discovery &amp; Depositions</h3>
-                    <p>We use California's discovery tools aggressively to build the factual record. We propound interrogatories and document requests targeting the fiduciary's financial transactions, communications, and decision-making processes. We subpoena records from banks, brokerages, and third parties. We take depositions of the fiduciary, their associates, and any witnesses to the challenged transactions. The goal is to construct a complete picture of the fiduciary's conduct and lock in testimony before trial.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>5. Trial &amp; Accounting</h3>
-                    <p>Many fiduciary breach cases involve a request for a full accounting — a detailed report of all financial transactions conducted by the fiduciary during the relevant period. We prepare comprehensive accounting demands and, when necessary, retain forensic accountants to prepare independent accountings for presentation at trial. Our attorneys have tried fiduciary duty cases in Santa Clara County Superior Court, San Francisco Superior Court, Alameda County Superior Court, and other Bay Area courts.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>6. Damages &amp; Disgorgement</h3>
-                    <p>We pursue every available remedy, including compensatory damages for the losses caused by the breach, disgorgement of profits the fiduciary earned through their misconduct, punitive damages where the fiduciary acted with fraud or malice, and attorney fees where authorized by statute or the governing instrument. Our goal is to make our clients whole and ensure the fiduciary is held fully accountable.</p>
-                </div>
-
-                <!-- FAQ -->
-                <h2 id="faq">Frequently Asked Questions</h2>
-                <div class="faq-section">
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What is a fiduciary duty in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>A fiduciary duty is a legal obligation to act in the best interest of another party. In California, fiduciary relationships arise between corporate officers and shareholders, trustees and beneficiaries, partners in a partnership, agents and principals, and attorneys and clients. The fiduciary must act with loyalty, good faith, and full disclosure.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What are the elements of a breach of fiduciary duty claim?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>To prove breach of fiduciary duty in California, you must establish: (1) the existence of a fiduciary relationship, (2) the fiduciary breached their duty of care, loyalty, or good faith, (3) the breach caused damages, and (4) the amount of damages suffered. The burden of proof shifts to the fiduciary once a breach is shown in many contexts.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What is the statute of limitations for breach of fiduciary duty in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>The statute of limitations for breach of fiduciary duty in California is generally four years under CCP 343. However, the discovery rule may toll the limitations period until the injured party knew or should have known of the breach.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Are punitive damages available in breach of fiduciary duty cases?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes, punitive damages may be available in breach of fiduciary duty cases in California if the fiduciary acted with fraud, malice, or oppression as defined under Civil Code 3294. Courts view fiduciary breaches seriously, and the heightened trust inherent in these relationships can support punitive damage awards when the breach was intentional or reckless.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Can a corporate officer be personally liable for breach of fiduciary duty?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes, corporate officers and directors owe fiduciary duties directly to the corporation and its shareholders. Under California Corporations Code 309 and 16404, they can be held personally liable for self-dealing transactions, usurping corporate opportunities, failing to disclose conflicts of interest, and acting in bad faith. The business judgment rule provides some protection, but it does not shield officers who act in their own self-interest.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Related Practice Areas -->
-                <h2 id="related">Related Practice Areas</h2>
+                    </div></div>
+<h2 id="law">The Legal Framework</h2>
+<div class="defense-item"><h3>Identify the duty before alleging its breach</h3><p>Corporate directors, partners and LLC managers are governed by different rules. Corporations Code section 309 addresses corporate director conduct. Partnership duties are addressed in section 16404, and LLC duties in section 17704.09. An LLC’s management structure matters: a member of a manager-managed LLC does not owe every management duty merely by holding an interest.</p>
+</div>
+<div class="defense-item"><h3>A bad outcome is not itself misconduct</h3><p>For partners, section 16404’s duty of care addresses grossly negligent or reckless conduct, intentional misconduct or knowing violations of law; it is not an ordinary-negligence rule. LLC statutes also specify the applicable care standard. Loyalty issues may concern diverted opportunities, undisclosed conflicts or misuse of assets. Authorization, disclosure and statutory limits on modifying duties require review of the actual documents and facts.</p>
+</div>
+<div class="defense-item"><h3>Separate company injury from owner injury</h3><p>A claim concerning lost company assets may belong to the entity and require a derivative action. A direct claim requires analysis of the claimant’s own rights and injury. Damages, accounting, restitution or equitable relief must have a supported basis. Punitive damages require the additional statutory showing; a fiduciary label does not establish them or automatically shift every burden of proof.</p>
+</div>
+<h2 id="documents">Facts &amp; Records to Prepare</h2>
+<ul>
+<li>The entity documents and records identifying each person’s role during the disputed period.</li>
+<li>Approvals, disclosures, meeting minutes and communications about the challenged transaction.</li>
+<li>Bank records, ledgers, contracts and evidence showing where the money or opportunity went.</li>
+<li>Records supporting the alleged loss and any demand made on the company or decision-makers.</li>
+</ul>
+<h2 id="how-we-help">How We Approach the Matter</h2>
+<div class="defense-item"><h3>Trace the transaction</h3><p>Counsel can reconstruct the authorization, disclosure and financial sequence, then identify what is missing. Separate an unsupported suspicion from an evidentiary gap that a targeted records demand or discovery can address.</p>
+</div>
+<div class="defense-item"><h3>Match the procedure to the claimant</h3><p>The entity, an owner and a director may have different standing, access rights and conflicts. We evaluate the proper plaintiff or responding party, necessary preliminary steps and any need for separate counsel.</p>
+</div>
+<div class="defense-item"><h3>Evaluate relief and a business resolution</h3><p>A negotiated accounting, repayment arrangement or ownership exit may be considered alongside litigation. An urgent application requires evidence of threatened harm. The strategy should account for ongoing operations and the practical cost of obtaining and enforcing relief.</p>
+</div>
+<h2 id="examples">Fictional California Examples</h2>
+<p>These fictional examples illustrate questions counsel may evaluate. They are not firm cases or results. A county is a factual setting, not a statement about venue, local rules or a firm office.</p>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>Napa County — an affiliated supplier</h3><p>An owner questions invoices paid to a manager’s other company. Review would focus on disclosure, approvals, pricing, work performed and whether any loss belongs to the entity or the owner personally.</p>
+</div>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>Los Angeles County — a disputed opportunity</h3><p>A company alleges that a director moved a potential customer project to another venture. Counsel would examine the director’s role, how the opportunity arose, company resources used and any informed authorization.</p>
+</div>
+<h2 id="faq">Frequently Asked Questions</h2>
+<div class="faq-section">
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-0">Is every owner a fiduciary in the same way?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-0"><p>No. The entity type, management structure, role, agreement and applicable law determine the duties. Ownership percentage alone does not answer that question.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-1">Does a conflict of interest prove a breach?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-1"><p>Not by itself. The transaction, disclosure, approval process and applicable statutory rules must be examined. A conflict can be significant without automatically resolving liability.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-2">Can we recover the company’s loss in an owner’s personal lawsuit?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-2"><p>A loss to the entity may require a derivative proceeding. Personal and company claims should be distinguished before suit is filed.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-3">Are punitive damages automatic?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-3"><p>No. They require a separate legal and evidentiary basis, including the applicable heightened proof and any entity-liability requirements.</p>
+</div></div>
+</div>
+<aside class="business-sources" aria-label="Sources and legal information"><h2 id="legal-sources">Sources &amp; Legal Information</h2>
+<p>This page provides general California legal information, not advice for a particular matter. Legal rules, deadlines and available remedies depend on the facts and applicable law. Contacting the firm does not create an attorney-client relationship.</p>
+<ul><li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&amp;sectionNum=17704.09." target="_blank" rel="noopener noreferrer">Corporations Code § 17704.09: LLC duties</a></li><li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&amp;sectionNum=16404." target="_blank" rel="noopener noreferrer">Corporations Code § 16404: partnership duties</a></li><li><a href="https://www.justia.com/trials-litigation/docs/caci/4100/4100/" target="_blank" rel="noopener noreferrer">Judicial Council CACI 4100: fiduciary duty</a></li></ul></aside>
+<h2 id="related">Related Practice Areas</h2>
                 <div class="related-offenses-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
                     <a href="/civil-litigation/partnership-disputes" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Partnership Disputes</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Corp Code 16401-16504 — Breach of fiduciary duty, partnership dissolution, and buyout disputes.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Breach of fiduciary duty, partnership dissolution, and buyout disputes.</p>
                     </a>
                     <a href="/business-litigation/" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Business Litigation</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">B&amp;P 17200, Corp Code 1800 — Unfair competition, trade secrets, and corporate disputes.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Unfair competition, trade secrets, and corporate disputes.</p>
                     </a>
                 </div>
 
@@ -796,15 +618,7 @@
             <div class="page-toc-wrapper">
                 <nav class="page-toc">
                     <h4>On This Page</h4>
-                    <ul>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#the-law">The Law</a></li>
-                        <li><a href="#examples">Examples</a></li>
-                        <li><a href="#at-stake">What's at Stake</a></li>
-                        <li><a href="#how-we-help">How We Help</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#related">Related Areas</a></li>
-                    </ul>
+                    <ul><li><a href="#overview">Overview</a></li><li><a href="#law">Legal Framework</a></li><li><a href="#documents">Facts & Records</a></li><li><a href="#how-we-help">Response Options</a></li><li><a href="#examples">Fictional Examples</a></li><li><a href="#faq">Questions</a></li><li><a href="#legal-sources">Sources</a></li><li><a href="#related">Related Practice Areas</a></li></ul>
                 </nav>
             </div>
 
@@ -816,7 +630,7 @@
         <div class="content-wrapper">
             <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 400; margin-bottom: 20px;">Suspect a Breach of Fiduciary Duty?</h2>
-            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Time is critical in fiduciary breach cases. Assets can be dissipated and evidence destroyed. Contact RV Litigation Group PC today to protect your rights.</p>
+            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Share the key documents, your role and any notice, hearing or transaction deadline so the firm can assess the appropriate scope of representation.</p>
             <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
             <div class="cta-or">or</div>
             <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>
@@ -867,7 +681,7 @@
                 var item = this.parentElement;
                 var isOpen = item.classList.contains('open');
                 // Close all
-                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); var question = i.querySelector('.faq-question'); if (question) question.setAttribute('aria-expanded', 'false'); });
                 // Toggle current
                 if (!isOpen) item.classList.add('open');
                 this.setAttribute('aria-expanded', !isOpen);

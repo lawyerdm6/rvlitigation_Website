@@ -23,54 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- JSON-LD FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What are the elements of a fraud claim in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "To prove fraud in California, a plaintiff must establish: (1) a false representation of a material fact, (2) knowledge of falsity (or reckless disregard for the truth), (3) intent to induce reliance, (4) justifiable reliance by the plaintiff, and (5) resulting damages. Fraud can also be based on concealment of a material fact when there is a duty to disclose."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the statute of limitations for fraud in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Under California Code of Civil Procedure 338(d), the statute of limitations for fraud is three years. Critically, the clock does not start running until the aggrieved party discovers, or through reasonable diligence should have discovered, the facts constituting the fraud — which can extend the deadline well beyond three years from the fraudulent act itself."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can I recover punitive damages in a fraud case?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. Under Civil Code 3294, punitive damages are available whenever a defendant is found liable for fraud, since fraud inherently involves intentional deceit. Punitive damages are intended to punish the wrongdoer and deter similar conduct, and in egregious cases can significantly exceed the plaintiff's actual losses."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the difference between fraud and breach of contract?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Breach of contract involves a failure to perform a contractual promise. Fraud involves an intentional misrepresentation or concealment that induces a party to enter into a transaction in the first place. The same facts can sometimes support both claims, but fraud requires proof of intentional deceit and opens the door to punitive damages that are not available for a simple breach of contract."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can a business be held liable for fraud committed by an employee?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, in many circumstances. Under the doctrine of respondeat superior and California agency law, a business can be held liable for fraud committed by an employee or agent acting within the scope of their employment, particularly where the business ratified the conduct, benefited from it, or failed to exercise reasonable oversight."
-                }
-            }
-        ]
-    }
-    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does every broken promise support fraud?", "acceptedAnswer": {"@type": "Answer", "text": "No. A promise made without an intent to perform requires different proof from a later failure to perform. The evidence at the time of the promise is important."}}, {"@type": "Question", "name": "Can silence be fraud?", "acceptedAnswer": {"@type": "Answer", "text": "Sometimes, but a concealment claim requires an applicable duty to disclose and the other elements. The relationship, partial disclosures and knowledge of the parties matter."}}, {"@type": "Question", "name": "Will the claim include punitive damages?", "acceptedAnswer": {"@type": "Answer", "text": "Only if the facts and law support the additional requirements. They are not automatic because a pleading uses the word fraud."}}, {"@type": "Question", "name": "What should I do with incomplete or unfavorable records?", "acceptedAnswer": {"@type": "Answer", "text": "Preserve them in their original form and provide the complete context to counsel. Deleting or selectively reconstructing communications can create additional problems."}}]}</script>
 
     <!-- JSON-LD LegalService Schema -->
     <script type="application/ld+json">
@@ -509,6 +462,30 @@
             .faq-icon { display: none; }
         }
     </style>
+<style id="business-content-refinement">
+.article-layout > * { min-width: 0; }
+.article-body a, .business-expansion a { color: var(--color-gold); text-underline-offset: 3px; }
+.article-body h2[id], .business-expansion h2[id] { scroll-margin-top: 110px; }
+.article-body ul { padding-left: 22px; color: #999; line-height: 1.85; }
+.article-body li { margin-bottom: 10px; }
+.article-body .example-card h3 { margin: 0 0 10px; }
+.business-sources { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); }
+.article-body .business-sources h2 { font-size: 1.4rem; margin-top: 0; }
+.article-body .business-sources p, .business-sources li { font-size: .84rem; line-height: 1.7; }
+.business-sources a { overflow-wrap: anywhere; }
+.business-expansion { max-width: 1000px; margin: 0 auto; }
+.business-expansion h2 { font-family: var(--font-serif); font-size: 2.3rem; font-weight: 400; margin: 0 0 22px; }
+.business-expansion h3 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; margin: 0 0 12px; }
+.business-expansion p, .business-expansion li { color: #999; line-height: 1.85; margin-bottom: 16px; }
+.business-expansion ul { padding-left: 22px; }
+.business-expansion .business-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin: 24px 0; }
+.business-expansion .business-card { padding: 25px; border: 1px solid rgba(255,255,255,.12); border-radius: 6px; }
+.business-expansion .example-label { font-size: .7rem; color: var(--color-gold); letter-spacing: 1.5px; margin-bottom: 10px; text-transform: uppercase; }
+.business-expansion .business-sources h2 { font-size: 1.5rem; }
+.page-header h1 { overflow-wrap: break-word; }
+@media(max-width:700px) { .business-expansion .business-grid { grid-template-columns: 1fr; } .business-expansion h2 { font-size: 1.8rem; } .business-expansion .business-card { padding: 20px; } }
+@media(prefers-reduced-motion:reduce) { .article-body .faq-answer, .article-body .faq-icon, .business-expansion * { transition: none; animation: none; } }
+</style>
 </head>
 <body>
     <!-- Header / Navigation -->
@@ -563,24 +540,7 @@
     <!-- Case Snapshot -->
     <section class="content-section" style="padding-top: 40px; padding-bottom: 0;">
         <div class="content-wrapper">
-            <div class="penalty-glance">
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Statute of Limitations</div>
-                    <div class="pg-value">3 Years</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Discovery Rule</div>
-                    <div class="pg-value">Applies</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Damages</div>
-                    <div class="pg-value">Compensatory+</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Punitive Damages</div>
-                    <div class="pg-value">Available</div>
-                </div>
-            </div>
+            <div class="penalty-glance"><div class="penalty-glance-item"><div class="pg-label">Review</div><div class="pg-value">Statement &amp; reliance</div></div><div class="penalty-glance-item"><div class="pg-label">Records</div><div class="pg-value">Contemporaneous proof</div></div><div class="penalty-glance-item"><div class="pg-label">Next step</div><div class="pg-value">Assess claim &amp; defense</div></div></div>
         </div>
     </section>
 
@@ -589,213 +549,58 @@
         <div class="article-layout">
 
             <!-- Article Body -->
-            <div class="article-body">
-
-                <!-- Intro -->
-                <h2 id="overview">What Is Fraud Under California Law?</h2>
-                <div class="two-column reverse" style="gap: 40px; margin-bottom: 30px;">
-                    <div class="column-content" style="padding: 0;">
-                        <p>Fraud occurs when a person or business makes a knowing misrepresentation, or conceals a material fact they had a duty to disclose, in order to induce another party to act to their detriment. Fraud claims are distinct from ordinary breach of contract claims because they involve intentional deceit — and California law provides significantly broader remedies, including punitive damages, when fraud is proven.</p>
-                        <p>RV Litigation Group PC is based in San Francisco and represents clients throughout California. We represent businesses and individuals in fraud claims involving misrepresentation, concealment and deceit, evaluating the evidence and the available options.</p>
-                    </div>
-                    <div class="column-image">
+            <div class="article-body"><span id="at-stake" aria-hidden="true"></span><span id="the-law" aria-hidden="true"></span><h2 id="overview">What Is Fraud Under California Law?</h2>
+<div class="two-column reverse" style="gap:40px;margin-bottom:30px"><div class="column-content" style="padding:0"><p>A failed deal can involve a broken promise, a mistaken statement or intentional deception. Those are different claims. A useful fraud assessment identifies the exact representation, who made it, what the recipient knew and what decision the statement actually caused.</p>
+<p>RV Litigation Group PC represents businesses and individuals in California fraud disputes involving commercial agreements, investments, transactions and alleged concealment. We assess claims and defenses through the contemporaneous record rather than the seriousness of the accusation alone.</p>
+</div><div class="column-image">
                         <picture><source srcset="/images/Photos/Civil Litigation.webp" type="image/webp"><img src="/images/Photos/Civil Litigation.png" alt="Gold knight on a chessboard" style="border-radius: 5px;"></picture>
-                    </div>
-                </div>
-
-                <p>California law recognizes several distinct theories of fraud, including intentional misrepresentation, negligent misrepresentation, fraudulent concealment, false promise, and constructive fraud arising from a fiduciary relationship. Each theory has its own elements, but all share a common thread: a false statement or material omission that another party justifiably relied on to their detriment.</p>
-
-                <p>Fraud claims commonly arise in business transactions — the sale of a business with concealed liabilities, investment solicitations built on false financial projections, real estate transactions where known defects go undisclosed, and contracts induced by misrepresented facts. Because fraud claims permit recovery of punitive damages that are unavailable in a simple contract dispute, correctly identifying and pleading a fraud theory can dramatically change the value of a case.</p>
-
-                <!-- Statute Text -->
-                <h2 id="the-law">What the Law Says</h2>
-
-                <h3>Civil Code 1709 — Deceit Defined</h3>
-                <blockquote class="statute-block">
-                    "One who willfully deceives another with intent to induce him to alter his position to his injury or risk, is liable for any damage which he thereby suffers."
-                    <cite>— California Civil Code Section 1709</cite>
-                </blockquote>
-                <p>This statute establishes the basic liability for deceit under California law. Combined with Civil Code 1710, which defines the specific forms of deceit (false assertion of fact, suppression of a known fact, and false promise made without intent to perform), Section 1709 forms the statutory backbone of California fraud claims.</p>
-
-                <h3>Civil Code 1572 — Actual Fraud</h3>
-                <blockquote class="statute-block">
-                    "Actual fraud... consists in any of the following acts, committed by a party to the contract, or with his connivance, with intent to deceive another party thereto, or to induce him to enter into the contract..."
-                    <cite>— California Civil Code Section 1572</cite>
-                </blockquote>
-                <p>Section 1572 addresses fraud in the context of contract formation, allowing a defrauded party to rescind the contract, in addition to seeking damages. This is particularly relevant in business acquisitions and real estate transactions, where a party induced into a deal by fraud may seek to unwind the transaction entirely rather than simply recovering money damages.</p>
-
-                <h3>Civil Code 3294 — Punitive Damages</h3>
-                <blockquote class="statute-block">
-                    "In an action for the breach of an obligation not arising from contract, where it is proven by clear and convincing evidence that the defendant has been guilty of oppression, fraud, or malice, the plaintiff, in addition to the actual damages, may recover damages for the sake of example and by way of punishing the defendant."
-                    <cite>— California Civil Code Section 3294</cite>
-                </blockquote>
-                <p>Because fraud requires proof of intentional deceit, a successful fraud claim automatically satisfies the standard for punitive damages under Section 3294. This is one of the most significant advantages of pursuing a fraud theory over a simple breach of contract claim, and it is why correctly identifying fraudulent conduct early in a case is critical to maximizing recovery.</p>
-
-                <!-- Examples -->
-                <h2 id="examples">Illustrative Scenarios</h2>
-                <p>These scenarios illustrate how fraud claims commonly arise throughout California:</p>
-
-                <div class="example-card">
-                    <div class="example-label">Example 1 — Business Sale Concealment in San Diego</div>
-                    <p>A buyer acquires a San Diego restaurant business after the seller represents that all equipment is owned free and clear and that there are no pending health code violations. After closing, the buyer discovers undisclosed equipment liens and an open health department enforcement action the seller was aware of and deliberately withheld. This constitutes <strong>fraudulent concealment</strong>, entitling the buyer to rescission of the purchase agreement or damages, plus punitive damages for the seller's intentional concealment.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 2 — Investment Fraud in Los Angeles</div>
-                    <p>A Los Angeles startup solicits a $500,000 investment based on financial projections the founders know are fabricated, including revenue figures that were never actually achieved. When the company fails and the investor learns the projections were knowingly false, they have a claim for <strong>intentional misrepresentation</strong>, seeking recovery of the full investment plus punitive damages for the founders' knowing deception.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 3 — Real Estate Nondisclosure in Sacramento</div>
-                    <p>A Sacramento property seller fails to disclose known foundation damage identified in a prior inspection report, instead presenting the buyer with an older, clean inspection report. After closing, the buyer discovers the damage and the concealed prior report. This is <strong>fraudulent concealment</strong> under Civil Code 1710 and California's disclosure statutes, supporting a claim for repair costs, diminished property value, and punitive damages.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 4 — Vendor Fraud in the Bay Area</div>
-                    <p>A Bay Area company pays a vendor in advance for custom manufacturing equipment based on representations that the equipment was already in production. In reality, the vendor never intended to deliver and was using new customer deposits to pay off prior customers. This is a <strong>false promise</strong> — fraud based on a promise made without intent to perform — supporting recovery of the deposit, consequential damages, and punitive damages.</p>
-                </div>
-
-                <!-- What's at Stake -->
-                <h2 id="at-stake">What's at Stake</h2>
-                <p>Fraud claims carry significant financial consequences for defendants and significant recovery potential for plaintiffs, because California law treats intentional deceit far more seriously than ordinary contractual breaches.</p>
-
-                <div class="table-scroll-wrapper">
-                <table class="penalties-table">
-                    <thead>
-                        <tr>
-                            <th>Claim Type</th>
-                            <th>Key Elements</th>
-                            <th>Potential Recovery</th>
-                            <th>Timeline</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Intentional Misrepresentation</strong></td>
-                            <td>False statement of fact, knowledge of falsity, intent to induce reliance, justifiable reliance, damages</td>
-                            <td>Compensatory damages, punitive damages, rescission</td>
-                            <td>3-year SOL (CCP 338(d)), discovery rule applies</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Fraudulent Concealment</strong></td>
-                            <td>Duty to disclose, concealment of material fact, intent to defraud, justifiable reliance, damages</td>
-                            <td>Compensatory damages, punitive damages, rescission</td>
-                            <td>3-year SOL (CCP 338(d)), discovery rule applies</td>
-                        </tr>
-                        <tr>
-                            <td><strong>False Promise</strong></td>
-                            <td>Promise made without intent to perform, intent to induce reliance, justifiable reliance, damages</td>
-                            <td>Compensatory damages, punitive damages</td>
-                            <td>3-year SOL (CCP 338(d))</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Negligent Misrepresentation</strong></td>
-                            <td>False statement of fact, no reasonable ground for belief in its truth, intent to induce reliance, justifiable reliance, damages</td>
-                            <td>Compensatory damages (punitive damages generally unavailable)</td>
-                            <td>3-year SOL (CCP 338(d))</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Fraud in Contract Formation</strong></td>
-                            <td>Fraudulent inducement to enter a contract</td>
-                            <td>Rescission of contract, restitution, plus tort damages</td>
-                            <td>3-year SOL (CCP 338(d))</td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div><!-- /table-scroll-wrapper -->
-
-                <p><strong>Pleading standard:</strong> Fraud claims in California must be pled with specificity — generic allegations are not enough. A plaintiff must identify who made the misrepresentation, what was said or concealed, when and where it occurred, and how it was communicated. Because of this heightened standard, working with experienced counsel from the outset is essential to surviving early motions and preserving the claim.</p>
-
-                <!-- How We Help -->
-                <h2 id="how-we-help">How We Help</h2>
-                <p>At RV Litigation Group PC, we handle fraud claims from initial investigation through trial. Our approach is thorough, aggressive, and focused on building the strongest possible evidentiary record for what is often a document- and communication-intensive type of case.</p>
-
-                <div class="defense-item">
-                    <h3>1. Case Investigation &amp; Theory Development</h3>
-                    <p>We begin by identifying the precise fraud theory that fits the facts — intentional misrepresentation, concealment, false promise, or fraud in contract formation — and gathering the documentary evidence, communications, and financial records needed to meet California's heightened pleading standard.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>2. Pleading &amp; Pre-Litigation Strategy</h3>
-                    <p>Fraud claims must be pled with specificity or risk dismissal. We draft detailed complaints that identify the who, what, when, where, and how of the fraudulent conduct, and where appropriate, send demand letters that lay out the evidence and quantify damages before filing suit.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>3. Discovery &amp; Forensic Analysis</h3>
-                    <p>We use California's discovery tools aggressively — document requests, interrogatories, and depositions — to uncover internal communications, financial records, and other evidence of knowledge and intent. We work with forensic accountants and other experts when tracing funds or valuing losses requires specialized analysis.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>4. Rescission &amp; Emergency Relief</h3>
-                    <p>Where a transaction was fraudulently induced, we evaluate whether rescission is available and, where assets are at risk of dissipation, pursue emergency relief such as temporary restraining orders and preliminary injunctions to preserve recoverable assets.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>5. Trial Advocacy</h3>
-                    <p>Fraud cases often turn on credibility and the jury's assessment of intent. Our attorneys are experienced trial litigators who know how to present complex financial and documentary evidence clearly and persuasively before judges and juries throughout California.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>6. Damages &amp; Punitive Damages</h3>
-                    <p>We pursue every available remedy, including compensatory damages for actual losses, rescission where a transaction was fraudulently induced, and punitive damages to punish and deter the defendant's intentional misconduct.</p>
-                </div>
-
-                <!-- FAQ -->
-                <h2 id="faq">Frequently Asked Questions</h2>
-                <div class="faq-section">
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What are the elements of a fraud claim in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>To prove fraud in California, a plaintiff must establish: (1) a false representation of a material fact, (2) knowledge of falsity (or reckless disregard for the truth), (3) intent to induce reliance, (4) justifiable reliance by the plaintiff, and (5) resulting damages. Fraud can also be based on concealment of a material fact when there is a duty to disclose.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What is the statute of limitations for fraud in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Under California Code of Civil Procedure 338(d), the statute of limitations for fraud is three years. Critically, the clock does not start running until the aggrieved party discovers, or through reasonable diligence should have discovered, the facts constituting the fraud — which can extend the deadline well beyond three years from the fraudulent act itself.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Can I recover punitive damages in a fraud case?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes. Under Civil Code 3294, punitive damages are available whenever a defendant is found liable for fraud, since fraud inherently involves intentional deceit. Punitive damages are intended to punish the wrongdoer and deter similar conduct, and in egregious cases can significantly exceed the plaintiff's actual losses.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What is the difference between fraud and breach of contract?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Breach of contract involves a failure to perform a contractual promise. Fraud involves an intentional misrepresentation or concealment that induces a party to enter into a transaction in the first place. The same facts can sometimes support both claims, but fraud requires proof of intentional deceit and opens the door to punitive damages that are not available for a simple breach of contract.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Can a business be held liable for fraud committed by an employee?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes, in many circumstances. Under the doctrine of respondeat superior and California agency law, a business can be held liable for fraud committed by an employee or agent acting within the scope of their employment, particularly where the business ratified the conduct, benefited from it, or failed to exercise reasonable oversight.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Related Practice Areas -->
-                <h2 id="related">Related Practice Areas</h2>
+                    </div></div>
+<h2 id="law">The Legal Framework</h2>
+<div class="defense-item"><h3>Misrepresentation requires more than an incorrect statement</h3><p>Intentional misrepresentation generally requires a false factual statement, knowledge of falsity or recklessness, intent to induce reliance, reasonable reliance and resulting harm. A prediction or opinion may present a different issue. Negligent misrepresentation has a different state-of-mind requirement and should not be described as intentional fraud.</p>
+</div>
+<div class="defense-item"><h3>Concealment and false promises require distinct proof</h3><p>A nondisclosure claim requires a basis for a duty to disclose, along with the other applicable elements. A promise that is later unfulfilled does not alone prove it was made without an intent to perform. The timing of communications, internal knowledge and steps taken toward performance can be important to either side.</p>
+</div>
+<div class="defense-item"><h3>Pleading and remedies need precision</h3><p>Fraud allegations ordinarily require particularity about the challenged conduct. Contract provisions, the relationship and independent-duty questions may affect whether a tort claim is available. Rescission, compensatory damages and punitive damages have different requirements. A fraud verdict does not automatically establish every prerequisite for punitive damages, particularly against a corporate defendant.</p>
+</div>
+<h2 id="documents">Facts &amp; Records to Prepare</h2>
+<ul>
+<li>The exact statement or omission, identifying the speaker, recipient, date and medium.</li>
+<li>Purchase agreements, disclosure schedules, presentations, emails and diligence requests.</li>
+<li>Information available when the decision was made, including warnings and contradictory materials.</li>
+<li>Payment records, evidence of reliance, the claimed loss and when the alleged problem was discovered.</li>
+</ul>
+<h2 id="how-we-help">How We Approach the Matter</h2>
+<div class="defense-item"><h3>Reconstruct knowledge and reliance</h3><p>We compare the statement with what was known at the time and what the client did in response. The review should distinguish an inaccurate assertion from hindsight about a deal that later performed poorly.</p>
+</div>
+<div class="defense-item"><h3>Assess the available response</h3><p>For a recipient of a demand, preserve the full context and avoid unsupported public accusations. For a potential claimant, review timeliness, the available remedy and whether a demand, negotiated unwinding or suit fits the evidence.</p>
+</div>
+<div class="defense-item"><h3>Prepare the proof of loss</h3><p>Fraud damages are not simply the largest amount mentioned in negotiations. Transaction value, causation, alternative explanations and the governing measure of damages need support. Expert analysis may be appropriate where accounting or valuation is contested.</p>
+</div>
+<h2 id="examples">Fictional California Examples</h2>
+<p>These fictional examples illustrate questions counsel may evaluate. They are not firm cases or results. A county is a factual setting, not a statement about venue, local rules or a firm office.</p>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>Alameda County — disputed sales figures</h3><p>A buyer alleges that a seller overstated recurring revenue. Counsel would compare the actual presentation, underlying records, disclosures and the buyer’s decision-making before assessing whether the issue supports fraud, contract claims or defenses.</p>
+</div>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>Orange County — an undisclosed obligation</h3><p>A business receives a claim that it concealed a significant vendor obligation during a sale. Review would address the duty to disclose, the documents provided, the buyer’s knowledge and the effect of the alleged omission on the transaction.</p>
+</div>
+<h2 id="faq">Frequently Asked Questions</h2>
+<div class="faq-section">
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-0">Does every broken promise support fraud?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-0"><p>No. A promise made without an intent to perform requires different proof from a later failure to perform. The evidence at the time of the promise is important.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-1">Can silence be fraud?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-1"><p>Sometimes, but a concealment claim requires an applicable duty to disclose and the other elements. The relationship, partial disclosures and knowledge of the parties matter.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-2">Will the claim include punitive damages?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-2"><p>Only if the facts and law support the additional requirements. They are not automatic because a pleading uses the word fraud.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-3">What should I do with incomplete or unfavorable records?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-3"><p>Preserve them in their original form and provide the complete context to counsel. Deleting or selectively reconstructing communications can create additional problems.</p>
+</div></div>
+</div>
+<aside class="business-sources" aria-label="Sources and legal information"><h2 id="legal-sources">Sources &amp; Legal Information</h2>
+<p>This page provides general California legal information, not advice for a particular matter. Legal rules, deadlines and available remedies depend on the facts and applicable law. Contacting the firm does not create an attorney-client relationship.</p>
+<ul><li><a href="https://www.justia.com/trials-litigation/docs/caci/1900/1900/" target="_blank" rel="noopener noreferrer">Judicial Council CACI 1900: intentional misrepresentation</a></li><li><a href="https://www.justia.com/trials-litigation/docs/caci/1900/1901/" target="_blank" rel="noopener noreferrer">Judicial Council CACI 1901: concealment</a></li><li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=3294." target="_blank" rel="noopener noreferrer">Civil Code § 3294: exemplary damages</a></li></ul></aside>
+<h2 id="related">Related Practice Areas</h2>
                 <div class="related-offenses-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
                     <a href="/business-litigation/" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Business Litigation</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">B&amp;P 17200, Corp Code 1800 — Unfair competition, trade secrets, and corporate disputes.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Unfair competition, trade secrets, and corporate disputes.</p>
                     </a>
                     <a href="/civil-litigation/contract-disputes" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Contract Disputes</h4>
@@ -803,7 +608,7 @@
                     </a>
                     <a href="/civil-litigation/breach-of-fiduciary-duty" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Breach of Fiduciary Duty</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Corp Code 16404, Prob Code 16000+ — Claims against trustees, officers, and agents who violated their duty of loyalty or care.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Business fiduciary disputes involving owners, directors, officers, partners and managers.</p>
                     </a>
                 </div>
 
@@ -813,15 +618,7 @@
             <div class="page-toc-wrapper">
                 <nav class="page-toc">
                     <h4>On This Page</h4>
-                    <ul>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#the-law">The Law</a></li>
-                        <li><a href="#examples">Examples</a></li>
-                        <li><a href="#at-stake">What's at Stake</a></li>
-                        <li><a href="#how-we-help">How We Help</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#related">Related Areas</a></li>
-                    </ul>
+                    <ul><li><a href="#overview">Overview</a></li><li><a href="#law">Legal Framework</a></li><li><a href="#documents">Facts & Records</a></li><li><a href="#how-we-help">Response Options</a></li><li><a href="#examples">Fictional Examples</a></li><li><a href="#faq">Questions</a></li><li><a href="#legal-sources">Sources</a></li><li><a href="#related">Related Practice Areas</a></li></ul>
                 </nav>
             </div>
 
@@ -833,7 +630,7 @@
         <div class="content-wrapper">
             <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 400; margin-bottom: 20px;">Think You've Been Defrauded?</h2>
-            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Fraud claims move on strict deadlines, and early evidence preservation matters. Contact RV Litigation Group PC today to protect your rights.</p>
+            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Share the key documents, your role and any notice, hearing or transaction deadline so the firm can assess the appropriate scope of representation.</p>
             <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
             <div class="cta-or">or</div>
             <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>
@@ -884,7 +681,7 @@
                 var item = this.parentElement;
                 var isOpen = item.classList.contains('open');
                 // Close all
-                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); var question = i.querySelector('.faq-question'); if (question) question.setAttribute('aria-expanded', 'false'); });
                 // Toggle current
                 if (!isOpen) item.classList.add('open');
                 this.setAttribute('aria-expanded', !isOpen);

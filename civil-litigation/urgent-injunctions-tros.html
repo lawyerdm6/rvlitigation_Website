@@ -23,54 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- JSON-LD FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is the difference between a TRO and a preliminary injunction?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "A temporary restraining order (TRO) is emergency relief that can be granted within days, or sometimes hours, often without the other side present, to preserve the status quo until a full hearing can be held. A preliminary injunction follows a noticed motion and a hearing where both sides can be heard, and it remains in effect while the underlying case proceeds. A TRO is typically a bridge to a preliminary injunction hearing, not a final resolution."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How fast can a TRO actually be obtained in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "In a true emergency, an ex parte application for a TRO can be filed and heard within the same day or the next court day, provided the moving papers demonstrate irreparable harm and satisfy the court's notice requirements under California Rules of Court 3.1200-3.1207. Preparation matters enormously — courts scrutinize ex parte applications closely, and a poorly supported application can be denied outright."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What do I need to show to get a preliminary injunction?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Under Code of Civil Procedure 526 and the California Supreme Court's decision in IT Corp. v. County of Imperial, courts weigh two factors: the likelihood the moving party will prevail on the merits, and the interim harm the party is likely to suffer if the injunction is denied compared to the harm the opposing party is likely to suffer if it is granted. Courts also frequently require the moving party to post a bond under Code of Civil Procedure 529 to protect the enjoined party if the injunction later turns out to have been wrongly issued."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can I get emergency relief in a commercial lease or possession dispute?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, in certain circumstances. Commercial landlords and tenants can seek emergency relief related to lockouts, utility shutoffs, or improper self-help eviction, and unlawful detainer actions themselves move on an expedited statutory timeline under Code of Civil Procedure 1161 et seq. Whether emergency injunctive relief is available depends on the specific facts and the harm at issue."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What happens after an emergency TRO is granted?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "A TRO is typically set to expire within a short period — often 15 to 22 days under Code of Civil Procedure 527 — and the court will set a hearing date for a preliminary injunction before the TRO expires. Both sides submit briefing and evidence, and the court decides whether to extend relief through a preliminary injunction while the underlying lawsuit proceeds."
-                }
-            }
-        ]
-    }
-    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can you guarantee an order before an event happens?", "acceptedAnswer": {"@type": "Answer", "text": "No. Availability depends on the evidence, applicable standards, notice, filing requirements and the court. Provide the complete timeline promptly so the options can be assessed."}}, {"@type": "Question", "name": "Does an emergency application require notice?", "acceptedAnswer": {"@type": "Answer", "text": "Usually. California state rules prescribe notice for ex parte applications and limited exceptions. Federal and local procedures must be checked for the actual proceeding."}}, {"@type": "Question", "name": "Is a receiver the same as an injunction?", "acceptedAnswer": {"@type": "Answer", "text": "No. A receiver can take responsibility for specified property or operations under a court order. Receivership requires its own legal basis, scope and cost analysis."}}, {"@type": "Question", "name": "What if we have already received a TRO?", "acceptedAnswer": {"@type": "Answer", "text": "Provide the signed order and hearing papers promptly. The business must understand and comply with the operative order while counsel evaluates the next hearing or a lawful request to modify it."}}]}</script>
 
     <!-- JSON-LD LegalService Schema -->
     <script type="application/ld+json">
@@ -212,6 +165,30 @@
             .faq-icon { display: none; }
         }
     </style>
+<style id="business-content-refinement">
+.article-layout > * { min-width: 0; }
+.article-body a, .business-expansion a { color: var(--color-gold); text-underline-offset: 3px; }
+.article-body h2[id], .business-expansion h2[id] { scroll-margin-top: 110px; }
+.article-body ul { padding-left: 22px; color: #999; line-height: 1.85; }
+.article-body li { margin-bottom: 10px; }
+.article-body .example-card h3 { margin: 0 0 10px; }
+.business-sources { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); }
+.article-body .business-sources h2 { font-size: 1.4rem; margin-top: 0; }
+.article-body .business-sources p, .business-sources li { font-size: .84rem; line-height: 1.7; }
+.business-sources a { overflow-wrap: anywhere; }
+.business-expansion { max-width: 1000px; margin: 0 auto; }
+.business-expansion h2 { font-family: var(--font-serif); font-size: 2.3rem; font-weight: 400; margin: 0 0 22px; }
+.business-expansion h3 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; margin: 0 0 12px; }
+.business-expansion p, .business-expansion li { color: #999; line-height: 1.85; margin-bottom: 16px; }
+.business-expansion ul { padding-left: 22px; }
+.business-expansion .business-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin: 24px 0; }
+.business-expansion .business-card { padding: 25px; border: 1px solid rgba(255,255,255,.12); border-radius: 6px; }
+.business-expansion .example-label { font-size: .7rem; color: var(--color-gold); letter-spacing: 1.5px; margin-bottom: 10px; text-transform: uppercase; }
+.business-expansion .business-sources h2 { font-size: 1.5rem; }
+.page-header h1 { overflow-wrap: break-word; }
+@media(max-width:700px) { .business-expansion .business-grid { grid-template-columns: 1fr; } .business-expansion h2 { font-size: 1.8rem; } .business-expansion .business-card { padding: 20px; } }
+@media(prefers-reduced-motion:reduce) { .article-body .faq-answer, .article-body .faq-icon, .business-expansion * { transition: none; animation: none; } }
+</style>
 </head>
 <body>
     <!-- Header / Navigation -->
@@ -277,206 +254,58 @@
         <div class="article-layout">
 
             <!-- Article Body -->
-            <div class="article-body">
-
-                <!-- Intro -->
-                <h2 id="overview">When Emergency Relief Is Available</h2>
-                <div class="two-column reverse" style="gap: 40px; margin-bottom: 30px;">
-                    <div class="column-content" style="padding: 0;">
-                        <p>Not every business dispute is an emergency, and California courts reserve emergency relief for situations where waiting for a normal hearing date would cause irreparable harm. When that threshold is met, however, the tools available — temporary restraining orders, preliminary injunctions, and receivership — can be decisive.</p>
-                        <p>RV Litigation Group PC is based in San Francisco and represents clients throughout California. We advise clients in urgent business disputes involving TROs, injunctions and receivership requests, evaluating the threatened harm, evidence and pending deadlines.</p>
-                    </div>
-                    <div class="column-image">
+            <div class="article-body"><span id="at-stake" aria-hidden="true"></span><span id="services" aria-hidden="true"></span><span id="the-law" aria-hidden="true"></span><h2 id="overview">When Emergency Relief Is Available</h2>
+<div class="two-column reverse" style="gap:40px;margin-bottom:30px"><div class="column-content" style="padding:0"><p>Some business disputes involve a threatened transfer, disclosure or operational change that may occur before an ordinary motion can be heard. Emergency review starts with a concrete timeline: what is about to happen, why later money damages may be inadequate, and what evidence supports the request?</p>
+<p>RV Litigation Group PC evaluates urgent business disputes for California companies and owners, including requests for temporary restraining orders, preliminary injunctions and, where appropriate, receivership relief. We also assess the response when a business is served with an emergency application.</p>
+</div><div class="column-image">
                         <picture><source srcset="/images/Photos/Civil Litigation.webp" type="image/webp"><img src="/images/Photos/Civil Litigation.png" alt="Gold knight on a chessboard" style="border-radius: 5px;"></picture>
-                    </div>
-                </div>
-
-                <!-- What We Handle -->
-                <h2 id="services">What We Handle</h2>
-                <p>We represent clients in a focused set of true business emergencies, including:</p>
-                <ul class="plain-list">
-                    <li>Temporary restraining orders</li>
-                    <li>Preliminary injunctions</li>
-                    <li>Emergency business-control disputes</li>
-                    <li>Misuse or transfer of company assets</li>
-                    <li>Trade-secret emergencies</li>
-                    <li>Lawsuit-response deadlines</li>
-                    <li>Discovery emergencies</li>
-                    <li>Receivership requests</li>
-                    <li>Commercial lease and possession emergencies</li>
-                    <li>Motions, hearings, and arbitration deadlines</li>
-                </ul>
-
-                <!-- The Law -->
-                <h2 id="the-law">What the Law Says</h2>
-
-                <h3>Code of Civil Procedure 527 — Injunctions</h3>
-                <blockquote class="statute-block">
-                    "An injunction may be granted... when it appears by the complaint that the plaintiff is entitled to the relief demanded... or when it appears... that the commission or continuance of some act during the litigation would produce waste, or great or irreparable injury..."
-                    <cite>— California Code of Civil Procedure Section 527</cite>
-                </blockquote>
-                <p>Injunctive relief comes in stages. A temporary restraining order is the fastest form of relief, often sought on an ex parte basis — meaning with little or no advance notice to the other side — when immediate, irreparable harm is at stake. Under California Rules of Court 3.1200-3.1207, the moving party must still make reasonable efforts to notify the opposing party unless a genuine emergency justifies proceeding without notice. A TRO is typically short-lived and serves as a bridge to a preliminary injunction hearing, where both sides submit full briefing and evidence.</p>
-
-                <h3>Code of Civil Procedure 526 — Preliminary Injunction Standard</h3>
-                <p>To obtain a preliminary injunction, California courts weigh two interrelated factors under the framework set out in <em>IT Corp. v. County of Imperial</em>: the likelihood that the moving party will ultimately prevail on the merits, and the relative balance of harms — comparing the harm to the moving party if the injunction is denied against the harm to the opposing party if it is granted. Courts frequently require the moving party to post a bond under Code of Civil Procedure 529 to protect the enjoined party if the injunction later proves to have been wrongly issued.</p>
-
-                <h3>Code of Civil Procedure 564 — Receivership</h3>
-                <p>In situations where a business's assets are being mismanaged, dissipated, or are otherwise at serious risk, a court may appoint a receiver to take control of and preserve the property or business pending resolution of the underlying dispute. Receivership is an extraordinary remedy, generally reserved for cases where there is no adequate alternative to protect the assets at issue.</p>
-
-                <!-- Examples -->
-                <h2 id="examples">Illustrative Scenarios</h2>
-                <p>These scenarios illustrate the kinds of emergencies that warrant urgent court intervention:</p>
-
-                <div class="example-card">
-                    <div class="example-label">Example 1 — Trade Secret Emergency in Palo Alto</div>
-                    <p>A Palo Alto software company discovers that a departing co-founder has copied the company's entire source code repository and client database onto a personal device the night before resigning. Counsel prepares and files an ex parte application for a TRO within 48 hours, obtaining an order barring the former co-founder from accessing, using, or disclosing the company's proprietary information while the underlying trade secret litigation proceeds.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 2 — Business-Control Dispute in San Jose</div>
-                    <p>Two co-owners of a San Jose company are locked in a dispute, and one owner changes the locks, cuts off the other owner's system access, and begins moving company funds to a new account. Counsel seeks emergency injunctive relief to restore access and freeze the disputed funds while the ownership dispute is litigated.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 3 — Commercial Lease Emergency in Oakland</div>
-                    <p>An Oakland landlord shuts off utilities and changes the locks on a commercial tenant's space without following the legally required unlawful detainer process. Counsel moves for emergency relief to restore the tenant's possession and utilities while the underlying lease dispute is resolved through proper legal channels.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 4 — Asset Dissipation in San Francisco</div>
-                    <p>A minority shareholder in a San Francisco company learns that the majority owner is preparing to transfer the company's most valuable assets to a separate entity he controls. Counsel seeks a TRO and, ultimately, appointment of a receiver under Code of Civil Procedure 564 to preserve the company's assets while the shareholder's claims are litigated.</p>
-                </div>
-
-                <!-- What's at Stake -->
-                <h2 id="at-stake">What's at Stake</h2>
-                <p>Emergency relief operates on a compressed timeline with high stakes for both sides. Here is an overview of the relief available and its typical duration.</p>
-
-                <div class="table-scroll-wrapper">
-                <table class="penalties-table">
-                    <thead>
-                        <tr>
-                            <th>Type of Relief</th>
-                            <th>Governing Law</th>
-                            <th>Typical Timeline</th>
-                            <th>Duration</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Ex Parte TRO</strong></td>
-                            <td>CCP 527; CRC 3.1200-3.1207</td>
-                            <td>Same day to 1-2 court days</td>
-                            <td>Typically 15-22 days (CCP 527)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Preliminary Injunction</strong></td>
-                            <td>CCP 526; IT Corp. v. County of Imperial</td>
-                            <td>Noticed motion; hearing set by court</td>
-                            <td>Duration of underlying case</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Receivership</strong></td>
-                            <td>CCP 564</td>
-                            <td>Noticed motion or ex parte in urgent cases</td>
-                            <td>Until court terminates receivership</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Unlawful Detainer</strong></td>
-                            <td>CCP 1161 et seq.</td>
-                            <td>Expedited statutory timeline</td>
-                            <td>Resolved through summary proceeding</td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div><!-- /table-scroll-wrapper -->
-
-                <p><strong>A note on bonds:</strong> Courts issuing a TRO or preliminary injunction will typically require the moving party to post an injunction bond under Code of Civil Procedure 529, sized to cover the potential harm to the enjoined party if the injunction turns out to have been wrongly granted. We help clients evaluate and prepare for this requirement as part of the overall strategy.</p>
-
-                <!-- How We Help -->
-                <h2 id="how-we-help">How We Help</h2>
-                <p>Emergency litigation requires speed without sacrificing the quality of the legal work. Here is our approach.</p>
-
-                <div class="defense-item">
-                    <h3>1. Rapid Case Assessment</h3>
-                    <p>The first step is determining, honestly and quickly, whether your situation actually meets the legal threshold for emergency relief. Not every urgent-feeling situation qualifies, and pursuing relief the court is unlikely to grant can waste critical time and resources.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>2. Ex Parte and TRO Applications</h3>
-                    <p>When emergency relief is warranted, we prepare thorough, well-supported ex parte applications — including declarations, evidence, and legal briefing — designed to meet the court's exacting standards for granting relief without full notice to the other side.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>3. Preliminary Injunction Litigation</h3>
-                    <p>Following a TRO, we prepare for the preliminary injunction hearing with full briefing on the merits and the balance of harms, and we present live testimony and argument when necessary to secure relief that lasts through the resolution of your case.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>4. Receivership and Asset Preservation</h3>
-                    <p>In cases involving mismanagement or dissipation of business assets, we pursue receivership and other asset-preservation remedies designed to protect what is at stake while the underlying dispute is resolved.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>5. Defending Against Emergency Applications</h3>
-                    <p>We also represent parties on the receiving end of a TRO or injunction application, moving quickly to oppose relief that is not properly supported and to protect our clients' operations and interests.</p>
-                </div>
-
-                <!-- FAQ -->
-                <h2 id="faq">Frequently Asked Questions</h2>
-                <div class="faq-section">
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What is the difference between a TRO and a preliminary injunction?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>A temporary restraining order (TRO) is emergency relief that can be granted within days, or sometimes hours, often without the other side present, to preserve the status quo until a full hearing can be held. A preliminary injunction follows a noticed motion and a hearing where both sides can be heard, and it remains in effect while the underlying case proceeds. A TRO is typically a bridge to a preliminary injunction hearing, not a final resolution.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            How fast can a TRO actually be obtained in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>In a true emergency, an ex parte application for a TRO can be filed and heard within the same day or the next court day, provided the moving papers demonstrate irreparable harm and satisfy the court's notice requirements under California Rules of Court 3.1200-3.1207. Preparation matters enormously — courts scrutinize ex parte applications closely, and a poorly supported application can be denied outright.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What do I need to show to get a preliminary injunction?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Under Code of Civil Procedure 526 and the California Supreme Court's decision in IT Corp. v. County of Imperial, courts weigh two factors: the likelihood the moving party will prevail on the merits, and the interim harm the party is likely to suffer if the injunction is denied compared to the harm the opposing party is likely to suffer if it is granted. Courts also frequently require the moving party to post a bond under Code of Civil Procedure 529 to protect the enjoined party if the injunction later turns out to have been wrongly issued.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Can I get emergency relief in a commercial lease or possession dispute?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes, in certain circumstances. Commercial landlords and tenants can seek emergency relief related to lockouts, utility shutoffs, or improper self-help eviction, and unlawful detainer actions themselves move on an expedited statutory timeline under Code of Civil Procedure 1161 et seq. Whether emergency injunctive relief is available depends on the specific facts and the harm at issue.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What happens after an emergency TRO is granted?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>A TRO is typically set to expire within a short period — often 15 to 22 days under Code of Civil Procedure 527 — and the court will set a hearing date for a preliminary injunction before the TRO expires. Both sides submit briefing and evidence, and the court decides whether to extend relief through a preliminary injunction while the underlying lawsuit proceeds.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Related Practice Areas -->
-                <h2 id="related">Related Practice Areas</h2>
+                    </div></div>
+<h2 id="law">The Legal Framework</h2>
+<div class="defense-item"><h3>An emergency request needs admissible facts</h3><p>In California state court, preliminary injunction analysis generally considers likelihood of success and the relative interim harms. Ex parte relief also requires a proper showing for immediate action. Federal courts apply their own standards and rules. A business emergency in ordinary language is not automatically a legal basis to obtain an order.</p>
+</div>
+<div class="defense-item"><h3>Notice and court procedure still matter</h3><p>Ex parte does not ordinarily mean a secret hearing. California Rule of Court 3.1203 generally requires notice by 10 a.m. the court day before the appearance, subject to stated exceptions and a showing of exceptional circumstances for shorter notice. The application, declarations, proposed order and applicable local procedures must be reviewed together.</p>
+</div>
+<div class="defense-item"><h3>Relief has costs and limits</h3><p>A proposed order should identify conduct precisely and be no broader than the legal basis supports. Security or an undertaking can be required, and an applicant may face liability if relief is wrongfully issued. A receiver displaces some control over property or operations and requires a separate statutory basis; it is not an automatic solution to a management disagreement.</p>
+</div>
+<h2 id="documents">Facts &amp; Records to Prepare</h2>
+<ul>
+<li>The proposed transaction, disclosure or other event, with the date and basis for believing it is imminent.</li>
+<li>The complete agreements, ownership records or existing orders establishing the asserted rights.</li>
+<li>Witnesses with firsthand knowledge, dated communications and unaltered supporting records.</li>
+<li>A practical description of the requested restriction, alternatives and likely effects on both sides.</li>
+</ul>
+<h2 id="how-we-help">How We Approach the Matter</h2>
+<div class="defense-item"><h3>Identify the narrow decision</h3><p>We examine whether there is time for notice, an agreement preserving the status quo or an ordinary motion. Delays in seeking relief and the availability of another remedy can affect the request. The client should identify both the feared harm and what business functions must continue.</p>
+</div>
+<div class="defense-item"><h3>Prepare or oppose the application</h3><p>The work may include declarations, exhibits, legal briefing and a proposed order. For a responding business, critical issues include notice, evidentiary gaps, the claimed urgency, the scope of relief and security. Do not assume an informal objection substitutes for a filed response.</p>
+</div>
+<div class="defense-item"><h3>Plan beyond the first hearing</h3><p>A temporary order may lead to another hearing, discovery and continuing litigation. Compliance obligations should be understood immediately; an objection does not permit ignoring an existing order. Counsel can evaluate modification, further opposition or negotiated terms as the record develops.</p>
+</div>
+<h2 id="examples">Fictional California Examples</h2>
+<p>These fictional examples illustrate questions counsel may evaluate. They are not firm cases or results. A county is a factual setting, not a statement about venue, local rules or a firm office.</p>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>San Francisco County — proposed asset transfer</h3><p>An owner learns that equipment central to operations may be transferred to an affiliate before a scheduled meeting. Counsel would review authority, the timing and evidence of threatened loss, then evaluate whether a narrow restriction or negotiated standstill is available.</p>
+</div>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>Los Angeles County — disputed information use</h3><p>A business receives an application seeking to block a product launch based on alleged confidential information. Review would focus on service and hearing details, development records, the claimed secret and whether the proposed order reaches unrelated work.</p>
+</div>
+<h2 id="faq">Frequently Asked Questions</h2>
+<div class="faq-section">
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-0">Can you guarantee an order before an event happens?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-0"><p>No. Availability depends on the evidence, applicable standards, notice, filing requirements and the court. Provide the complete timeline promptly so the options can be assessed.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-1">Does an emergency application require notice?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-1"><p>Usually. California state rules prescribe notice for ex parte applications and limited exceptions. Federal and local procedures must be checked for the actual proceeding.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-2">Is a receiver the same as an injunction?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-2"><p>No. A receiver can take responsibility for specified property or operations under a court order. Receivership requires its own legal basis, scope and cost analysis.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-3">What if we have already received a TRO?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-3"><p>Provide the signed order and hearing papers promptly. The business must understand and comply with the operative order while counsel evaluates the next hearing or a lawful request to modify it.</p>
+</div></div>
+</div>
+<aside class="business-sources" aria-label="Sources and legal information"><h2 id="legal-sources">Sources &amp; Legal Information</h2>
+<p>This page provides general California legal information, not advice for a particular matter. Legal rules, deadlines and available remedies depend on the facts and applicable law. Contacting the firm does not create an attorney-client relationship.</p>
+<ul><li><a href="https://courts.ca.gov/cms/rules/index/three/rule3_1203" target="_blank" rel="noopener noreferrer">California Rule of Court 3.1203: ex parte notice</a></li><li><a href="https://www.uscourts.gov/forms-rules/current-rules-practice-procedure/federal-rules-civil-procedure" target="_blank" rel="noopener noreferrer">U.S. Courts: Federal Rules of Civil Procedure</a></li></ul></aside>
+<h2 id="related">Related Practice Areas</h2>
                 <div class="related-offenses-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
                     <a href="/business-litigation/" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Business Litigation</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">B&amp;P 17200 | CC 3426 — Corporate disputes, unfair competition, and trade secret protection.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Corporate disputes, unfair competition, and trade secret protection.</p>
                     </a>
                     <a href="/civil-litigation/commercial-lease-disputes" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Commercial Lease Disputes</h4>
@@ -494,16 +323,7 @@
             <div class="page-toc-wrapper">
                 <nav class="page-toc">
                     <h4>On This Page</h4>
-                    <ul>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#services">What We Handle</a></li>
-                        <li><a href="#the-law">The Law</a></li>
-                        <li><a href="#examples">Examples</a></li>
-                        <li><a href="#at-stake">What's at Stake</a></li>
-                        <li><a href="#how-we-help">How We Help</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#related">Related Areas</a></li>
-                    </ul>
+                    <ul><li><a href="#overview">Overview</a></li><li><a href="#law">Legal Framework</a></li><li><a href="#documents">Facts & Records</a></li><li><a href="#how-we-help">Response Options</a></li><li><a href="#examples">Fictional Examples</a></li><li><a href="#faq">Questions</a></li><li><a href="#legal-sources">Sources</a></li><li><a href="#related">Related Practice Areas</a></li></ul>
                 </nav>
             </div>
 
@@ -515,7 +335,7 @@
         <div class="content-wrapper">
             <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 400; margin-bottom: 20px;">Facing a Business Emergency?</h2>
-            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">If your situation truly cannot wait, contact RV Litigation Group PC now to discuss emergency relief.</p>
+            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Share the key documents, your role and any notice, hearing or transaction deadline so the firm can assess the appropriate scope of representation.</p>
             <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
             <div class="cta-or">or</div>
             <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>
@@ -565,7 +385,7 @@
             btn.addEventListener('click', function() {
                 var item = this.parentElement;
                 var isOpen = item.classList.contains('open');
-                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); var question = i.querySelector('.faq-question'); if (question) question.setAttribute('aria-expanded', 'false'); });
                 if (!isOpen) item.classList.add('open');
                 this.setAttribute('aria-expanded', !isOpen);
             });

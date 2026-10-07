@@ -23,54 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- JSON-LD FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What fiduciary duties do partners owe each other in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Under California Corporations Code 16404, partners owe each other a duty of loyalty and a duty of care. The duty of loyalty requires partners to account for profits derived from the partnership, refrain from self-dealing, and avoid competing with the partnership. The duty of care requires partners to act with the care a reasonably prudent person would exercise under similar circumstances. These duties cannot be eliminated by agreement, though they can be modified within limits."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can a partner force the dissolution of a partnership in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. Under Corporations Code 16801, a partner in a partnership at will can dissolve the partnership at any time by giving notice. For partnerships with a definite term, a court may order judicial dissolution under Corp Code 16801(5) if a partner's conduct makes it not reasonably practicable to carry on the business, or if the business can only be carried on at a loss. A partner can also petition for dissolution if another partner has breached fiduciary duties."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What happens if there is no written partnership agreement?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "If there is no written partnership agreement, California's Revised Uniform Partnership Act (Corp Code 16000+) provides default rules. Under these rules, all partners share equally in profits and losses regardless of their capital contributions, all partners have equal management rights, and major decisions require unanimous consent. These default rules often lead to disputes, which is why a well-drafted partnership agreement is essential."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are my options if my business partner and I are deadlocked?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "If partners are deadlocked and cannot agree on fundamental business decisions, options include mediation, buyout negotiation, judicial dissolution, or appointment of a receiver. A court may order dissolution if the deadlock prevents the partnership from operating effectively. In some cases, one partner may buy out the other's interest through a negotiated agreement or court-ordered buyout."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What rights does a minority partner have in California?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Minority partners in California have significant legal protections. They have the right to access partnership books and records, receive an accounting of partnership affairs, share in profits, participate in management decisions, and bring derivative actions on behalf of the partnership. If majority partners engage in oppressive conduct or breach fiduciary duties, the minority partner can seek judicial remedies including dissolution, damages, or a court-ordered buyout."
-                }
-            }
-        ]
-    }
-    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can a minority owner obtain company records?", "acceptedAnswer": {"@type": "Answer", "text": "Potentially. The available rights and request procedure depend on the entity, the person’s status, the records sought and applicable law. A minority interest does not by itself eliminate inspection rights."}}, {"@type": "Question", "name": "Can I sue personally for money taken from the company?", "acceptedAnswer": {"@type": "Answer", "text": "The injury may belong to the entity, requiring a derivative claim and additional procedural steps. A separate personal injury may support a direct claim. The distinction needs review before filing."}}, {"@type": "Question", "name": "Does every ownership dispute end in dissolution?", "acceptedAnswer": {"@type": "Answer", "text": "No. Records access, revised governance, mediation or a negotiated buyout may resolve the problem. Judicial dissolution requires a statutory basis and can raise separate buyout procedures."}}, {"@type": "Question", "name": "May one lawyer represent all owners in the dispute?", "acceptedAnswer": {"@type": "Answer", "text": "Do not assume that. The business and its owners may have conflicting interests. The engagement must identify the client and address conflicts and any need for separate counsel."}}]}</script>
 
     <!-- JSON-LD LegalService Schema -->
     <script type="application/ld+json">
@@ -512,6 +465,30 @@
             .faq-icon { display: none; }
         }
     </style>
+<style id="business-content-refinement">
+.article-layout > * { min-width: 0; }
+.article-body a, .business-expansion a { color: var(--color-gold); text-underline-offset: 3px; }
+.article-body h2[id], .business-expansion h2[id] { scroll-margin-top: 110px; }
+.article-body ul { padding-left: 22px; color: #999; line-height: 1.85; }
+.article-body li { margin-bottom: 10px; }
+.article-body .example-card h3 { margin: 0 0 10px; }
+.business-sources { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); }
+.article-body .business-sources h2 { font-size: 1.4rem; margin-top: 0; }
+.article-body .business-sources p, .business-sources li { font-size: .84rem; line-height: 1.7; }
+.business-sources a { overflow-wrap: anywhere; }
+.business-expansion { max-width: 1000px; margin: 0 auto; }
+.business-expansion h2 { font-family: var(--font-serif); font-size: 2.3rem; font-weight: 400; margin: 0 0 22px; }
+.business-expansion h3 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; margin: 0 0 12px; }
+.business-expansion p, .business-expansion li { color: #999; line-height: 1.85; margin-bottom: 16px; }
+.business-expansion ul { padding-left: 22px; }
+.business-expansion .business-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin: 24px 0; }
+.business-expansion .business-card { padding: 25px; border: 1px solid rgba(255,255,255,.12); border-radius: 6px; }
+.business-expansion .example-label { font-size: .7rem; color: var(--color-gold); letter-spacing: 1.5px; margin-bottom: 10px; text-transform: uppercase; }
+.business-expansion .business-sources h2 { font-size: 1.5rem; }
+.page-header h1 { overflow-wrap: break-word; }
+@media(max-width:700px) { .business-expansion .business-grid { grid-template-columns: 1fr; } .business-expansion h2 { font-size: 1.8rem; } .business-expansion .business-card { padding: 20px; } }
+@media(prefers-reduced-motion:reduce) { .article-body .faq-answer, .article-body .faq-icon, .business-expansion * { transition: none; animation: none; } }
+</style>
 </head>
 <body>
     <!-- Header / Navigation -->
@@ -557,7 +534,7 @@
     <!-- Page Header -->
     <section class="page-header" style="margin-top: 0; padding-top: 60px;">
         <div class="page-header-content">
-            <p style="font-size: 0.8rem; letter-spacing: 3px; color: #c9a227; margin-bottom: 10px;">CALIFORNIA CORPORATIONS CODE 16000+ &amp; 17704</p>
+            <p style="font-size: 0.8rem; letter-spacing: 3px; color: #c9a227; margin-bottom: 10px;">BUSINESS OWNERSHIP &amp; GOVERNANCE DISPUTES</p>
             <h1>Partnership Dispute Litigation</h1>
             <p>Strategic Advocacy in Fiduciary Breaches, Dissolution, and Business Deadlocks</p>
         </div>
@@ -566,24 +543,7 @@
     <!-- Case Snapshot -->
     <section class="content-section" style="padding-top: 40px; padding-bottom: 0;">
         <div class="content-wrapper">
-            <div class="penalty-glance">
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Dissolution</div>
-                    <div class="pg-value">Corp 16801</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Fiduciary Duty</div>
-                    <div class="pg-value">Corp 16404</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Accounting</div>
-                    <div class="pg-value">Corp 16405</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">LLC Disputes</div>
-                    <div class="pg-value">Corp 17704</div>
-                </div>
-            </div>
+            <div class="penalty-glance"><div class="penalty-glance-item"><div class="pg-label">Review</div><div class="pg-value">Entity &amp; authority</div></div><div class="penalty-glance-item"><div class="pg-label">Records</div><div class="pg-value">Ownership &amp; finances</div></div><div class="penalty-glance-item"><div class="pg-label">Next step</div><div class="pg-value">Assess exit options</div></div></div>
         </div>
     </section>
 
@@ -592,207 +552,54 @@
         <div class="article-layout">
 
             <!-- Article Body -->
-            <div class="article-body">
-
-                <!-- Intro -->
-                <h2 id="overview">What Are Partnership Disputes?</h2>
-                <div class="two-column reverse" style="gap: 40px; margin-bottom: 30px;">
-                    <div class="column-content" style="padding: 0;">
-                        <p>A <strong>partnership dispute</strong> arises when business partners or LLC members disagree about the management, finances, or direction of their business. These disputes can range from disagreements over profit distributions and decision-making authority to serious allegations of self-dealing, embezzlement, and breach of fiduciary duty. Left unresolved, partnership conflicts can paralyze business operations, destroy enterprise value, and permanently damage professional relationships.</p>
-                        <p>RV Litigation Group PC is based in San Francisco and represents clients throughout California. We advise business owners facing partnership disputes, ownership conflicts, management deadlocks, buyout negotiations and business dissolution. Where an ownership conflict may be resolved by agreement, explore <a href="/business-transactions/business-buyouts-owner-exits">business buyouts and owner exits</a>. For governance documents, see <a href="/business-transactions/ownership-operating-agreements">ownership and operating agreements</a>.</p>
-                    </div>
-                    <div class="column-image">
+            <div class="article-body"><span id="at-stake" aria-hidden="true"></span><span id="the-law" aria-hidden="true"></span><h2 id="overview">What Are Partnership Disputes?</h2>
+<div class="two-column reverse" style="gap:40px;margin-bottom:30px"><div class="column-content" style="padding:0"><p>A disagreement over money, control or an owner’s departure can leave a functioning business unable to make essential decisions. Before changing account access, withholding distributions or announcing a dissolution, owners need to understand who has authority and whose rights are affected.</p>
+<p>RV Litigation Group PC advises California businesses and owners in partnership, shareholder and LLC disputes. Representation begins by identifying the client: advice to the company does not automatically include each owner personally.</p>
+</div><div class="column-image">
                         <picture><source srcset="/images/Photos/Civil Litigation.webp" type="image/webp"><img src="/images/Photos/Civil Litigation.png" alt="Gold knight on a chessboard" style="border-radius: 5px;"></picture>
-                    </div>
-                </div>
-
-                <!-- Statute Text -->
-                <h2 id="the-law">What the Law Says</h2>
-
-                <h3>Corporations Code 16404 — Fiduciary Duties of Partners</h3>
-                <blockquote class="statute-block">
-                    "The only fiduciary duties a partner owes to the partnership and the other partners are the duty of loyalty and the duty of care... (b) A partner's duty of loyalty to the partnership and the other partners includes: (1) To account to the partnership and hold as trustee for it any property, profit, or benefit derived by the partner... (2) To refrain from dealing with the partnership... as or on behalf of a party having an interest adverse to the partnership; (3) To refrain from competing with the partnership..."
-                    <cite>— California Corporations Code Section 16404</cite>
-                </blockquote>
-                <p>Section 16404 codifies the fiduciary duties that every partner owes to the partnership and fellow partners. The <strong>duty of loyalty</strong> is the most frequently litigated obligation — it prohibits partners from secretly profiting at the partnership's expense, diverting business opportunities, engaging in self-dealing transactions, or competing with the partnership business. The <strong>duty of care</strong> requires partners to act with the diligence and prudence a reasonable person would exercise in similar circumstances. A partner who breaches these duties may be liable for all profits gained through the breach, plus any damages suffered by the partnership.</p>
-
-                <h3>Corporations Code 16801 — Dissolution and Dissociation</h3>
-                <blockquote class="statute-block">
-                    "A partnership is dissolved, and its business shall be wound up... (5) On application by a partner, a judicial determination that: (i) The economic purpose of the partnership is likely to be unreasonably frustrated. (ii) Another partner has engaged in conduct relating to the partnership business which makes it not reasonably practicable to carry on the business in partnership with that partner. (iii) It is not otherwise reasonably practicable to carry on the partnership business in conformity with the partnership agreement."
-                    <cite>— California Corporations Code Section 16801</cite>
-                </blockquote>
-                <p>When a partnership relationship breaks down irreparably, California law provides several paths to dissolution. A partner in an <strong>at-will partnership</strong> can dissolve the partnership simply by giving notice. For partnerships with a fixed term, dissolution requires either the agreement of all partners or a <strong>judicial order</strong>. Courts will grant judicial dissolution when a partner's misconduct makes it impractical to continue, when the partnership's economic purpose has been frustrated, or when continuing the business would be unconscionable. Upon dissolution, the partnership enters a "winding up" phase during which its assets are liquidated and distributed according to statutory priority.</p>
-
-                <h3>Corporations Code 17704.10 — LLC Member Disputes</h3>
-                <p>LLC disputes follow a similar framework under the <strong>California Revised Uniform Limited Liability Company Act</strong>. Corporations Code 17704.10 provides that LLC members owe fiduciary duties analogous to those of partners — including duties of loyalty and care. The statute also allows for judicial dissolution of an LLC when it is "not reasonably practicable to carry on the company's activities in conformity with the articles of organization and any operating agreement." LLC disputes often involve questions of member authority, profit allocation, and the enforceability of operating agreement provisions.</p>
-
-                <!-- Examples -->
-                <h2 id="examples">Illustrative Scenarios</h2>
-                <p>These scenarios illustrate how partnership disputes commonly arise in the Bay Area:</p>
-
-                <div class="example-card">
-                    <div class="example-label">Example 1 — Self-Dealing Partner</div>
-                    <p>Two partners operate a successful technology consulting firm in <strong>San Jose</strong>. One partner secretly forms a competing company and begins diverting clients and contracts to the new entity, all while drawing a salary from the original partnership. When the other partner discovers the scheme, the diverting partner has already redirected over $500,000 in revenue. This constitutes a clear <strong>breach of the duty of loyalty</strong> under Corp Code 16404, and the injured partner can recover all profits the disloyal partner earned through the breach.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 2 — Deadlocked Restaurant Partners</div>
-                    <p>Three equal partners own a restaurant group in <strong>Palo Alto</strong>. Two partners want to expand to a second location, while the third opposes the expansion and refuses to approve the lease. With unanimous consent required under their partnership agreement, the business is effectively paralyzed — unable to expand, unable to refinance, and unable to make critical operational decisions. This type of <strong>deadlock</strong> may justify <strong>judicial dissolution</strong> under Corp Code 16801(5) if the economic purpose of the partnership has been frustrated.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 3 — Unequal Profit Distribution</div>
-                    <p>Two partners run a real estate investment partnership in <strong>San Francisco</strong>. The managing partner controls the partnership's bank accounts and has been paying himself a disproportionate share of rental income for years, claiming the extra payments are "management fees" that were never authorized in the partnership agreement. The other partner discovers discrepancies totaling $300,000 when reviewing tax returns. This situation calls for an <strong>accounting action</strong> under Corp Code 16405 to compel a full disclosure of all partnership transactions and recover improperly distributed funds.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 4 — LLC Member Squeeze-Out</div>
-                    <p>A minority member holding 25% of an LLC in <strong>Pleasanton</strong> is systematically excluded from management decisions, denied access to financial records, and stopped receiving profit distributions — all while the majority members continue to draw salaries and distributions for themselves. This <strong>freeze-out</strong> or <strong>squeeze-out</strong> conduct may constitute a breach of fiduciary duties under Corp Code 17704.10 and grounds for judicial dissolution or a court-ordered buyout of the minority member's interest at fair value.</p>
-                </div>
-
-                <!-- What's at Stake -->
-                <h2 id="at-stake">What's at Stake</h2>
-                <p>Partnership disputes can involve substantial financial exposure and the very survival of the business. Here are the claims and remedies most commonly at issue:</p>
-
-                <div class="table-scroll-wrapper">
-                <table class="penalties-table">
-                    <thead>
-                        <tr>
-                            <th>Claim Type</th>
-                            <th>Legal Basis</th>
-                            <th>Potential Remedies</th>
-                            <th>Statute of Limitations</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Breach of Fiduciary Duty</strong></td>
-                            <td>Corp Code 16404</td>
-                            <td>Disgorgement of profits + compensatory damages</td>
-                            <td>4 years</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Partnership Dissolution</strong></td>
-                            <td>Corp Code 16801</td>
-                            <td>Judicial winding up + asset distribution</td>
-                            <td>No SOL (equitable)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Accounting Action</strong></td>
-                            <td>Corp Code 16405</td>
-                            <td>Full disclosure + recovery of misappropriated funds</td>
-                            <td>4 years</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Profit Distribution Disputes</strong></td>
-                            <td>Corp Code 16401</td>
-                            <td>Court-ordered distributions + interest</td>
-                            <td>4 years (contract)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Expulsion of Partner</strong></td>
-                            <td>Corp Code 16601</td>
-                            <td>Buyout at fair value + damages</td>
-                            <td>Varies</td>
-                        </tr>
-                        <tr>
-                            <td><strong>LLC Member Disputes</strong></td>
-                            <td>Corp Code 17704.10</td>
-                            <td>Dissolution, buyout, injunctive relief + damages</td>
-                            <td>4 years</td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div><!-- /table-scroll-wrapper -->
-
-                <p><strong>Beyond monetary damages:</strong> Courts in partnership disputes have broad equitable powers. A judge may appoint a <strong>receiver</strong> to take control of partnership assets, issue <strong>injunctions</strong> to prevent a partner from dissipating assets or competing with the partnership, order a <strong>forensic accounting</strong> to trace misappropriated funds, or impose a <strong>constructive trust</strong> on property acquired through a breach of fiduciary duty. These remedies can be as important as — or more important than — a money judgment.</p>
-
-                <!-- How We Help -->
-                <h2 id="how-we-help">How We Help</h2>
-                <p>Partnership disputes require lawyers who understand both the legal framework and the business realities at stake. Here is how RV Litigation Group PC approaches these cases:</p>
-
-                <div class="defense-item">
-                    <h3>1. Fiduciary Duty Claims</h3>
-                    <p>We investigate and prosecute claims against partners and LLC members who have breached their fiduciary duties. This includes gathering financial records, identifying unauthorized transactions, tracing diverted funds, and building a case for disgorgement of profits and compensatory damages. We also defend partners who have been wrongfully accused of fiduciary breaches, presenting evidence that their conduct was authorized, disclosed, or consistent with the partnership agreement.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>2. Judicial Dissolution</h3>
-                    <p>When the partnership relationship has broken down beyond repair, we petition the court for judicial dissolution under Corp Code 16801. We demonstrate that continuing the partnership is not reasonably practicable — whether due to a partner's misconduct, irreconcilable deadlock, or frustration of the partnership's economic purpose. We guide clients through the winding-up process, ensuring that assets are valued fairly and distributed according to law.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>3. Forensic Accounting</h3>
-                    <p>Many partnership disputes hinge on the numbers. We work with experienced forensic accountants to analyze partnership financial records, trace the flow of funds, identify hidden income and undisclosed transactions, and quantify damages. Forensic accounting is essential when a partner has been managing the books and the other partners suspect misappropriation or self-dealing.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>4. Buyout Negotiation</h3>
-                    <p>Not every partnership dispute needs to end in litigation. When the partners agree that separation is necessary but disagree on the terms, we negotiate buyout agreements that protect our client's financial interests. We work with business valuation experts to determine the fair market value of the departing partner's interest, negotiate payment terms, and draft comprehensive settlement agreements that address non-compete obligations, proprietary information, and transition issues.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>5. Receivership</h3>
-                    <p>In urgent situations where partnership assets are at risk of being dissipated, destroyed, or mismanaged, we seek the appointment of a <strong>receiver</strong> — a neutral third party appointed by the court to take control of the partnership's assets and operations. Receivership is an extraordinary remedy, but it can be essential when a partner is looting the business, refusing to cooperate, or engaging in conduct that threatens the value of the enterprise.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>6. Mediation &amp; Trial</h3>
-                    <p>We pursue resolution through the most effective channel available. Many partnership disputes are well-suited to mediation, where a neutral third party helps the partners reach a negotiated resolution. When mediation fails or when the circumstances demand immediate court intervention, we are prepared to take the case to trial. Our attorneys have experience presenting complex partnership disputes to judges and juries in <strong>Santa Clara County Superior Court</strong>, <strong>Alameda County Superior Court</strong>, and throughout the Bay Area.</p>
-                </div>
-
-                <!-- FAQ -->
-                <h2 id="faq">Frequently Asked Questions</h2>
-                <div class="faq-section">
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What fiduciary duties do partners owe each other in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Under California Corporations Code 16404, partners owe each other a duty of loyalty and a duty of care. The duty of loyalty requires partners to account for profits derived from the partnership, refrain from self-dealing, and avoid competing with the partnership. The duty of care requires partners to act with the care a reasonably prudent person would exercise under similar circumstances. These duties cannot be eliminated by agreement, though they can be modified within limits.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Can a partner force the dissolution of a partnership in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes. Under Corporations Code 16801, a partner in a partnership at will can dissolve the partnership at any time by giving notice. For partnerships with a definite term, a court may order judicial dissolution under Corp Code 16801(5) if a partner's conduct makes it not reasonably practicable to carry on the business, or if the business can only be carried on at a loss. A partner can also petition for dissolution if another partner has breached fiduciary duties.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What happens if there is no written partnership agreement?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>If there is no written partnership agreement, California's Revised Uniform Partnership Act (Corp Code 16000+) provides default rules. Under these rules, all partners share equally in profits and losses regardless of their capital contributions, all partners have equal management rights, and major decisions require unanimous consent. These default rules often lead to disputes, which is why a well-drafted partnership agreement is essential.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What are my options if my business partner and I are deadlocked?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>If partners are deadlocked and cannot agree on fundamental business decisions, options include mediation, buyout negotiation, judicial dissolution, or appointment of a receiver. A court may order dissolution if the deadlock prevents the partnership from operating effectively. In some cases, one partner may buy out the other's interest through a negotiated agreement or court-ordered buyout.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What rights does a minority partner have in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Minority partners in California have significant legal protections. They have the right to access partnership books and records, receive an accounting of partnership affairs, share in profits, participate in management decisions, and bring derivative actions on behalf of the partnership. If majority partners engage in oppressive conduct or breach fiduciary duties, the minority partner can seek judicial remedies including dissolution, damages, or a court-ordered buyout.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Related Practice Areas -->
-                <h2 id="related">Related Practice Areas</h2>
+                    </div></div>
+<h2 id="law">The Legal Framework</h2>
+<div class="defense-item"><h3>Start with the entity and governing documents</h3><p>A corporation, LLC and general partnership do not share one set of ownership rules. Articles, bylaws, operating or partnership agreements, amendments and ownership records establish different voting, management and transfer rights. The entity’s state of formation also matters. A percentage interest alone may not establish the power to remove a manager or approve a sale.</p>
+</div>
+<div class="defense-item"><h3>Information rights are distinct from control rights</h3><p>California corporate shareholder inspection rules distinguish shareholder-list rights under section 1600 from books and minutes under section 1601. LLC records rights appear in Corporations Code section 17704.10; partnership information rights are addressed in section 16403. Request procedures, purpose, status and available records differ. A records demand should identify the correct entity and legal basis.</p>
+</div>
+<div class="defense-item"><h3>Duties, injury and possible exits</h3><p>Fiduciary duties depend on the role and entity. LLC duty provisions are in section 17704.09, not the records statute; manager-managed and member-managed structures differ. An alleged diversion of company money may injure the entity and require a derivative analysis, rather than a personal damages claim by every owner. Negotiated buyouts, contractual remedies and statutory dissolution have different prerequisites. Deadlock does not automatically entitle someone to their preferred price or an immediate sale.</p>
+</div>
+<h2 id="documents">Facts &amp; Records to Prepare</h2>
+<ul>
+<li>Formation documents, all ownership agreements, amendments, capitalization records and transfer documents.</li>
+<li>Meeting minutes, written consents, voting notices, bank statements, ledgers and distribution records lawfully available to the client.</li>
+<li>The disputed transaction, compensation or expense records and correspondence requesting information.</li>
+<li>Any buy-sell provision, valuation report, financing commitment and notice of a proposed removal or transfer.</li>
+</ul>
+<h2 id="how-we-help">How We Approach the Matter</h2>
+<div class="defense-item"><h3>Stabilize decision-making</h3><p>Identify imminent payments, approval dates and asset transfers. Counsel can evaluate a standstill, limited interim governance agreement or a properly supported request for court relief. Unilateral self-help may exceed an owner’s authority and complicate the dispute.</p>
+</div>
+<div class="defense-item"><h3>Build the financial and governance record</h3><p>A targeted information request and transaction chronology help separate accounting disagreements from alleged misuse. Where valuation matters, legal rights and financial assumptions should be considered together. Confidential company information must remain protected during disclosure.</p>
+</div>
+<div class="defense-item"><h3>Compare continuation, buyout and dissolution</h3><p>An exit agreement needs payment terms, releases, management changes and treatment of owner loans. A dissolution proceeding can involve statutory purchase alternatives and substantial cost. We explain the procedural route and consequences before treating dissolution as bargaining language.</p>
+</div>
+<h2 id="examples">Fictional California Examples</h2>
+<p>These fictional examples illustrate questions counsel may evaluate. They are not firm cases or results. A county is a factual setting, not a statement about venue, local rules or a firm office.</p>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>San Mateo County — unequal access to records</h3><p>An LLC member receives distributions but no supporting financial statements. The manager says the operating agreement permits limited disclosure. Counsel would review management structure, the records requested and statutory access rights before deciding how to frame or respond to a demand.</p>
+</div>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>Los Angeles County — a proposed owner buyout</h3><p>Two owners disagree about a related-party transaction and one proposes a discounted buyout. Review would separate the company’s potential claim from each owner’s rights and examine approval records, valuation terms and the proposed releases.</p>
+</div>
+<h2 id="faq">Frequently Asked Questions</h2>
+<div class="faq-section">
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-0">Can a minority owner obtain company records?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-0"><p>Potentially. The available rights and request procedure depend on the entity, the person’s status, the records sought and applicable law. A minority interest does not by itself eliminate inspection rights.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-1">Can I sue personally for money taken from the company?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-1"><p>The injury may belong to the entity, requiring a derivative claim and additional procedural steps. A separate personal injury may support a direct claim. The distinction needs review before filing.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-2">Does every ownership dispute end in dissolution?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-2"><p>No. Records access, revised governance, mediation or a negotiated buyout may resolve the problem. Judicial dissolution requires a statutory basis and can raise separate buyout procedures.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-3">May one lawyer represent all owners in the dispute?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-3"><p>Do not assume that. The business and its owners may have conflicting interests. The engagement must identify the client and address conflicts and any need for separate counsel.</p>
+</div></div>
+</div>
+<aside class="business-sources" aria-label="Sources and legal information"><h2 id="legal-sources">Sources &amp; Legal Information</h2>
+<p>This page provides general California legal information, not advice for a particular matter. Legal rules, deadlines and available remedies depend on the facts and applicable law. Contacting the firm does not create an attorney-client relationship.</p>
+<ul><li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&amp;sectionNum=1601." target="_blank" rel="noopener noreferrer">Corporations Code § 1601: corporate records</a></li><li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&amp;sectionNum=17704.10." target="_blank" rel="noopener noreferrer">Corporations Code § 17704.10: LLC information rights</a></li><li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&amp;sectionNum=16403." target="_blank" rel="noopener noreferrer">Corporations Code § 16403: partnership information</a></li><li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&amp;sectionNum=17704.09." target="_blank" rel="noopener noreferrer">Corporations Code § 17704.09: LLC duties</a></li></ul></aside>
+<h2 id="related">Related Practice Areas</h2>
                 <div class="related-offenses-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
                     <a href="/business-litigation/" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Business Litigation</h4>
@@ -800,11 +607,11 @@
                     </a>
                     <a href="../civil-litigation/contract-disputes" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Contract Disputes</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Partnership agreements are contracts — breach of contract claims frequently arise alongside fiduciary duty disputes.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">breach of contract claims frequently arise alongside fiduciary duty disputes.</p>
                     </a>
                     <a href="../civil-litigation/real-estate-disputes" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Real Estate Disputes</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Partnerships frequently hold real property — dissolution often requires partition or sale of jointly owned real estate.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">dissolution often requires partition or sale of jointly owned real estate.</p>
                     </a>
                 </div>
 
@@ -814,15 +621,7 @@
             <div class="page-toc-wrapper">
                 <nav class="page-toc">
                     <h4>On This Page</h4>
-                    <ul>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#the-law">What the Law Says</a></li>
-                        <li><a href="#examples">Examples</a></li>
-                        <li><a href="#at-stake">What's at Stake</a></li>
-                        <li><a href="#how-we-help">How We Help</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#related">Related Practice Areas</a></li>
-                    </ul>
+                    <ul><li><a href="#overview">Overview</a></li><li><a href="#law">Legal Framework</a></li><li><a href="#documents">Facts & Records</a></li><li><a href="#how-we-help">Response Options</a></li><li><a href="#examples">Fictional Examples</a></li><li><a href="#faq">Questions</a></li><li><a href="#legal-sources">Sources</a></li><li><a href="#related">Related Practice Areas</a></li></ul>
                 </nav>
             </div>
 
@@ -834,7 +633,7 @@
         <div class="content-wrapper">
             <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 400; margin-bottom: 20px;">Facing a Partnership or LLC Dispute?</h2>
-            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">The sooner you speak with a business litigation attorney, the better your chances of protecting your interests. Contact RV Litigation Group PC for a consultation today.</p>
+            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Share the key documents, your role and any notice, hearing or transaction deadline so the firm can assess the appropriate scope of representation.</p>
             <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
             <div class="cta-or">or</div>
             <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>
@@ -885,7 +684,7 @@
                 var item = this.parentElement;
                 var isOpen = item.classList.contains('open');
                 // Close all
-                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); var question = i.querySelector('.faq-question'); if (question) question.setAttribute('aria-expanded', 'false'); });
                 // Toggle current
                 if (!isOpen) item.classList.add('open');
                 this.setAttribute('aria-expanded', !isOpen);

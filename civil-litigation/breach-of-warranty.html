@@ -22,54 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-                {
-                        "@type": "Question",
-                        "name": "What is the difference between an express and implied warranty?",
-                        "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "An express warranty is a specific promise or affirmation made by the seller about the product \u2014 such as a statement that the product will last a certain number of years or perform in a specific way. An implied warranty arises automatically by operation of law \u2014 the implied warranty of merchantability means the product is fit for its ordinary purpose, and the implied warranty of fitness means the product is suitable for the buyer's particular purpose."
-                        }
-                },
-                {
-                        "@type": "Question",
-                        "name": "What is the Song-Beverly Consumer Warranty Act?",
-                        "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "The Song-Beverly Act (Civil Code 1790-1795.8) is California's consumer warranty law, often called the Lemon Law. It requires manufacturers to repair, replace, or refund defective consumer goods. If the manufacturer willfully fails to comply, the consumer can recover a civil penalty of up to twice the actual damages plus mandatory attorney fees."
-                        }
-                },
-                {
-                        "@type": "Question",
-                        "name": "How many repair attempts before I can get a refund?",
-                        "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "There is no fixed number, but California courts have generally held that two to four repair attempts for the same defect is sufficient to trigger the manufacturer's obligation to replace or refund the product under the Song-Beverly Act. The key factor is whether the manufacturer has had a reasonable opportunity to repair the defect."
-                        }
-                },
-                {
-                        "@type": "Question",
-                        "name": "Can a manufacturer disclaim implied warranties in California?",
-                        "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "For consumer goods sold at retail, implied warranties cannot be disclaimed under the Song-Beverly Act. For commercial transactions between businesses, implied warranties can be disclaimed or limited if the disclaimer is conspicuous and uses specific language required by Commercial Code 2316."
-                        }
-                },
-                {
-                        "@type": "Question",
-                        "name": "What is the statute of limitations for warranty claims?",
-                        "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Under the California Commercial Code, the statute of limitations for breach of warranty is four years from the date of tender of delivery (Commercial Code 2725). Under the Song-Beverly Act, the limitations period is generally four years from the date of the breach. The Magnuson-Moss Act follows state law limitations periods."
-                        }
-                }
-        ]
-}
-    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is a warranty always a document labeled warranty?", "acceptedAnswer": {"@type": "Answer", "text": "No. In a goods transaction, factual promises, descriptions or samples may create express warranties if the legal requirements are met. General sales opinion may be treated differently."}}, {"@type": "Question", "name": "Does every defective product qualify for a refund?", "acceptedAnswer": {"@type": "Answer", "text": "No. The product, transaction, warranty, repair history and governing statute determine the available remedy. A defect alone does not establish every condition for refund or replacement."}}, {"@type": "Question", "name": "Can a business seller limit warranty remedies?", "acceptedAnswer": {"@type": "Answer", "text": "Sometimes, but wording and applicable law matter, including limits on disclaimers and circumstances in which an exclusive remedy fails. A limitation should not be assumed enforceable from its presence in a form."}}, {"@type": "Question", "name": "How many repair visits are required?", "acceptedAnswer": {"@type": "Answer", "text": "There is no universal number for every product and claim. The nature of the problem, repair opportunities and applicable statutory or contractual requirements must be reviewed."}}]}</script>
 
     <script type="application/ld+json">
 {
@@ -375,6 +328,30 @@
             .faq-icon { display: none; }
         }
     </style>
+<style id="business-content-refinement">
+.article-layout > * { min-width: 0; }
+.article-body a, .business-expansion a { color: var(--color-gold); text-underline-offset: 3px; }
+.article-body h2[id], .business-expansion h2[id] { scroll-margin-top: 110px; }
+.article-body ul { padding-left: 22px; color: #999; line-height: 1.85; }
+.article-body li { margin-bottom: 10px; }
+.article-body .example-card h3 { margin: 0 0 10px; }
+.business-sources { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); }
+.article-body .business-sources h2 { font-size: 1.4rem; margin-top: 0; }
+.article-body .business-sources p, .business-sources li { font-size: .84rem; line-height: 1.7; }
+.business-sources a { overflow-wrap: anywhere; }
+.business-expansion { max-width: 1000px; margin: 0 auto; }
+.business-expansion h2 { font-family: var(--font-serif); font-size: 2.3rem; font-weight: 400; margin: 0 0 22px; }
+.business-expansion h3 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; margin: 0 0 12px; }
+.business-expansion p, .business-expansion li { color: #999; line-height: 1.85; margin-bottom: 16px; }
+.business-expansion ul { padding-left: 22px; }
+.business-expansion .business-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin: 24px 0; }
+.business-expansion .business-card { padding: 25px; border: 1px solid rgba(255,255,255,.12); border-radius: 6px; }
+.business-expansion .example-label { font-size: .7rem; color: var(--color-gold); letter-spacing: 1.5px; margin-bottom: 10px; text-transform: uppercase; }
+.business-expansion .business-sources h2 { font-size: 1.5rem; }
+.page-header h1 { overflow-wrap: break-word; }
+@media(max-width:700px) { .business-expansion .business-grid { grid-template-columns: 1fr; } .business-expansion h2 { font-size: 1.8rem; } .business-expansion .business-card { padding: 20px; } }
+@media(prefers-reduced-motion:reduce) { .article-body .faq-answer, .article-body .faq-icon, .business-expansion * { transition: none; animation: none; } }
+</style>
 </head>
 <body>
     <header class="main-header">
@@ -416,233 +393,68 @@
 
     <section class="content-section" style="padding-top: 40px; padding-bottom: 0;">
         <div class="content-wrapper">
-            <div class="penalty-glance">
-                <div class="penalty-glance-item">
-                    <div class="pg-label">SOL (Commercial)</div>
-                    <div class="pg-value">4 Years</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Song-Beverly Penalty</div>
-                    <div class="pg-value">Up to 2x Damages</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Attorney Fees</div>
-                    <div class="pg-value">Available</div>
-                </div>
-                <div class="penalty-glance-item">
-                    <div class="pg-label">Scope</div>
-                    <div class="pg-value">Consumer &amp; Commercial</div>
-                </div>
-            </div>
+            <div class="penalty-glance"><div class="penalty-glance-item"><div class="pg-label">Review</div><div class="pg-value">Product &amp; promise</div></div><div class="penalty-glance-item"><div class="pg-label">Records</div><div class="pg-value">Notice &amp; repair history</div></div><div class="penalty-glance-item"><div class="pg-label">Next step</div><div class="pg-value">Assess available relief</div></div></div>
         </div>
     </section>
 
     <section class="content-section">
         <div class="article-layout">
-            <div class="article-body">
-
-                <h2 id="overview">What Is Breach of Warranty?</h2>
-                <div class="two-column reverse" style="gap: 40px; margin-bottom: 30px;">
-                    <div class="column-content" style="padding: 0;">
-                        <p>A breach of warranty claim arises when a product or service fails to meet the standards promised by the seller, manufacturer, or service provider. In California, warranty protections are robust — the state provides both statutory warranties under the Uniform Commercial Code and enhanced consumer protections under the Song-Beverly Consumer Warranty Act (California's "Lemon Law"). When a product is defective, does not conform to its description, or fails to perform as promised, the buyer has powerful legal remedies.</p>
-                        <p>RV Litigation Group PC is based in San Francisco and represents clients throughout California. We handle disputed express and implied warranties, reviewing the agreement, product issues, available remedies and litigation options.</p>
-                    </div>
-                    <div class="column-image">
+            <div class="article-body"><span id="at-stake" aria-hidden="true"></span><span id="the-law" aria-hidden="true"></span><h2 id="overview">What Is Breach of Warranty?</h2>
+<div class="two-column reverse" style="gap:40px;margin-bottom:30px"><div class="column-content" style="padding:0"><p>A failed product can disrupt operations or leave a buyer paying for something that does not perform as promised. Warranty analysis begins with the actual promise, the goods involved, their use and the buyer’s relationship to the seller or manufacturer.</p>
+<p>RV Litigation Group PC advises California clients in disputed express and implied warranty matters. We evaluate both asserted breaches and defenses, including the agreement, defect evidence, notice, repair history and available remedies.</p>
+</div><div class="column-image">
                         <picture><source srcset="/images/Photos/Civil Litigation.webp" type="image/webp"><img src="/images/Photos/Civil Litigation.png" alt="Gold knight on a chessboard" style="border-radius: 5px;"></picture>
-                    </div>
-                </div>
-
-                <p>Warranty claims in California arise from several distinct legal sources. The California Commercial Code (sections 2313-2316) provides for <strong>express warranties</strong> (promises made by the seller about the product) and <strong>implied warranties</strong> (the implied warranty of merchantability and the implied warranty of fitness for a particular purpose). The Song-Beverly Consumer Warranty Act (Civil Code 1790-1795.8) provides enhanced protections for consumers, including a <strong>civil penalty of up to twice the amount of damages</strong> for willful violations and mandatory <strong>attorney fees</strong> for prevailing consumers. The federal Magnuson-Moss Warranty Act provides additional remedies for consumer products.</p>
-
-                <p>At RV Litigation Group PC, we analyze every warranty claim under all applicable legal frameworks to identify the strongest claims and maximize our clients' recovery. We handle everything from individual defective product cases to complex commercial warranty disputes involving millions of dollars in defective goods.</p>
-
-                <h2 id="the-law">What the Law Says</h2>
-
-                <h3>Commercial Code 2313 — Express Warranties</h3>
-                <blockquote class="statute-block">
-                    "Express warranties by the seller are created as follows: (a) Any affirmation of fact or promise made by the seller to the buyer which relates to the goods and becomes part of the basis of the bargain creates an express warranty that the goods shall conform to the affirmation or promise. (b) Any description of the goods which is made part of the basis of the bargain creates an express warranty that the goods shall conform to the description."
-                    <cite>— California Commercial Code Section 2313</cite>
-                </blockquote>
-                <p>Express warranties are created by the seller's affirmations, promises, descriptions, or samples. Importantly, the seller does not need to use the words "warranty" or "guarantee" — any statement of fact about the product that becomes part of the basis of the bargain creates an express warranty. This includes statements in advertising, product packaging, sales presentations, and contractual specifications. If the product fails to conform to any express warranty, the buyer has a claim for breach of warranty.</p>
-
-                <h3>Civil Code 1791.1 — Song-Beverly Implied Warranty</h3>
-                <blockquote class="statute-block">
-                    "Unless disclaimed in the manner prescribed by this chapter, every sale of consumer goods that are sold at retail in this state shall be accompanied by the manufacturer's and the retail seller's implied warranty that the goods are merchantable."
-                    <cite>— California Civil Code Section 1791.1</cite>
-                </blockquote>
-                <p>The Song-Beverly Act provides that <strong>every sale of consumer goods</strong> at retail in California carries an implied warranty of merchantability. This warranty cannot be disclaimed in consumer transactions — unlike under the Commercial Code, where implied warranties can sometimes be excluded. Under the Song-Beverly Act, if a consumer product is defective, the manufacturer must <strong>repair, replace, or refund</strong> the purchase price. If the manufacturer fails to do so after a reasonable number of attempts, the consumer can bring a claim for damages plus a <strong>civil penalty of up to twice the amount of damages</strong> for willful violations.</p>
-
-                <h3>Civil Code 1794 — Song-Beverly Damages &amp; Attorney Fees</h3>
-                <blockquote class="statute-block">
-                    "If the buyer establishes that the failure to comply was willful, the judgment may include... a civil penalty which shall not exceed two times the amount of actual damages... the buyer shall be allowed by the court to recover as part of the judgment a sum equal to the aggregate amount of costs and expenses, including attorney's fees based on actual time expended, determined by the court to have been reasonably incurred."
-                    <cite>— California Civil Code Section 1794</cite>
-                </blockquote>
-                <p>Section 1794 provides the teeth of the Song-Beverly Act. A consumer who prevails on a Song-Beverly claim is entitled to <strong>actual damages, a civil penalty of up to 2x the actual damages</strong> (if the manufacturer's failure was willful), and <strong>reasonable attorney fees</strong>. The attorney fees provision is critical — it makes it economically feasible for consumers to bring warranty claims even when the individual damages might not otherwise justify the cost of litigation. The willfulness penalty is commonly awarded when the manufacturer has knowledge of a widespread defect but fails to remedy it.</p>
-
-                <h2 id="examples">Illustrative Scenarios</h2>
-                <p>These scenarios illustrate how breach of warranty commonly arise in the Bay Area:</p>
-
-                <div class="example-card">
-                    <div class="example-label">Example 1 — Lemon Law Claim in San Jose</div>
-                    <p>A San Jose consumer purchases a new vehicle for $55,000. Within the first year, the vehicle exhibits a persistent transmission defect that the dealer cannot repair despite four attempts. The consumer files a <strong>Song-Beverly Act claim</strong> seeking a refund of the purchase price plus incidental damages. Because the manufacturer was aware of the transmission defect in this model but continued selling the vehicles without disclosure, the court awards a <strong>2x civil penalty</strong> — bringing the total recovery to approximately $165,000 plus attorney fees.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 2 — Commercial Goods in Oakland</div>
-                    <p>An Oakland manufacturer purchases $500,000 worth of industrial components from a supplier, relying on the supplier's specifications and quality certifications. The components fail to meet the specified tolerances, causing production delays and $300,000 in lost revenue. The manufacturer brings a <strong>breach of express warranty claim under Commercial Code 2313</strong>, seeking the cost of replacement components, lost profits, and incidental damages.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 3 — Appliance Defect in San Francisco</div>
-                    <p>A San Francisco consumer purchases a high-end refrigerator that develops a compressor failure within six months of purchase. The manufacturer sends a repair technician three times, but the problem persists. The consumer requests a replacement, but the manufacturer offers only continued repairs. The consumer files a <strong>Song-Beverly claim</strong> for replacement or refund, plus the 2x willfulness penalty and attorney fees, arguing the manufacturer has had a reasonable number of repair attempts.</p>
-                </div>
-
-                <div class="example-card">
-                    <div class="example-label">Example 4 — Construction Materials in Silicon Valley</div>
-                    <p>A Silicon Valley contractor purchases roofing materials with a 30-year warranty from a distributor. After installation on a commercial building, the materials fail within two years, causing water damage to the building's interior. The building owner sues the contractor, and the contractor cross-complains against the distributor for <strong>breach of express warranty</strong> (the 30-year warranty) and <strong>breach of implied warranty of merchantability</strong> (the materials were not fit for their ordinary purpose).</p>
-                </div>
-
-                <h2 id="at-stake">What's at Stake</h2>
-                <p>Warranty claims can result in significant recoveries, particularly under the Song-Beverly Act, which provides for civil penalties and mandatory attorney fees in consumer cases.</p>
-
-                <div class="table-scroll-wrapper">
-                <table class="penalties-table">
-                    <thead>
-                        <tr>
-                            <th>Warranty Type</th>
-                            <th>Source</th>
-                            <th>Recoverable Damages</th>
-                            <th>Key Features</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Express Warranty</strong></td>
-                            <td>Commercial Code 2313</td>
-                            <td>Cost to repair/replace, consequential damages, lost profits</td>
-                            <td>4-year SOL; cannot disclaim in consumer sales</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Implied Merchantability</strong></td>
-                            <td>Commercial Code 2314, CC 1791.1</td>
-                            <td>Repair, replace, or refund; consequential damages</td>
-                            <td>Cannot disclaim in consumer sales under Song-Beverly</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Implied Fitness</strong></td>
-                            <td>Commercial Code 2315</td>
-                            <td>Difference in value, consequential damages</td>
-                            <td>Buyer must rely on seller's expertise</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Song-Beverly (Consumer)</strong></td>
-                            <td>CC 1790-1795.8</td>
-                            <td>Actual damages + up to 2x penalty + attorney fees</td>
-                            <td>Consumer goods only; willfulness penalty</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Magnuson-Moss (Federal)</strong></td>
-                            <td>15 USC 2301+</td>
-                            <td>Actual damages + attorney fees</td>
-                            <td>Consumer products with written warranties</td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div>
-
-                <p><strong>Manufacturer's duty to repair:</strong> Under the Song-Beverly Act, manufacturers must maintain sufficient service and repair facilities to carry out the terms of their warranties. When a consumer product is defective, the manufacturer must <strong>repair, replace, or refund</strong> the product. If the manufacturer cannot repair the defect after a <strong>reasonable number of attempts</strong>, the consumer is entitled to a replacement or refund. What constitutes a "reasonable number" depends on the nature of the defect, but California courts have generally held that two to four repair attempts is sufficient to trigger the replacement/refund obligation.</p>
-
-                <h2 id="how-we-help">How We Help</h2>
-                <p>At RV Litigation Group PC, we handle warranty claims from initial demand through trial and judgment collection. Our approach combines thorough product analysis with aggressive enforcement of warranty rights.</p>
-
-                <div class="defense-item">
-                    <h3>1. Warranty Analysis</h3>
-                    <p>We review all applicable warranties — express warranties, implied warranties, written manufacturer warranties, and extended service contracts — to identify every viable claim. We analyze the product specifications, the nature of the defect, the repair history, and the manufacturer's response to determine the strongest legal theory and the maximum available recovery.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>2. Demand &amp; Negotiation</h3>
-                    <p>We send detailed demand letters to manufacturers and sellers that identify the specific warranty violated, document the defect and repair history, and demand appropriate relief — repair, replacement, refund, or damages. Many warranty disputes resolve at the demand stage when the manufacturer recognizes that litigation will result in the 2x penalty and attorney fees under the Song-Beverly Act.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>3. Song-Beverly Act Claims</h3>
-                    <p>We prosecute Song-Beverly Consumer Warranty Act claims on behalf of California consumers. We document the defect, the repair attempts, and the manufacturer's failure to comply with its warranty obligations. We pursue the full range of Song-Beverly remedies, including a refund or replacement, the 2x civil penalty for willful violations, and attorney fees. Our focus is on building a record that supports the willfulness penalty.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>4. Commercial Warranty Litigation</h3>
-                    <p>For business-to-business warranty disputes, we litigate claims under the Commercial Code. We pursue damages for the cost of replacement goods, lost profits, incidental and consequential damages, and the benefit of the bargain. We also defend sellers and manufacturers against warranty claims, asserting defenses such as failure to give timely notice of breach, improper use, and contractual limitations on remedies.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>5. Expert Analysis</h3>
-                    <p>Many warranty cases require expert analysis to prove that the product is defective and to quantify damages. We work with engineers, product testing laboratories, and industry experts to evaluate defective products, identify the cause of failure, and present compelling expert testimony. Expert analysis is particularly important in cases involving complex products such as vehicles, electronics, and industrial equipment.</p>
-                </div>
-
-                <div class="defense-item">
-                    <h3>6. Magnuson-Moss Claims</h3>
-                    <p>For consumer products sold with written warranties, we pursue claims under the federal Magnuson-Moss Warranty Act in addition to state law claims. Magnuson-Moss provides for actual damages and attorney fees and can be filed in federal court when the amount in controversy meets the jurisdictional threshold. Combining state and federal warranty claims maximizes the available remedies.</p>
-                </div>
-
-                <h2 id="faq">Frequently Asked Questions</h2>
-                <div class="faq-section">
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What is the difference between an express and implied warranty?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>An express warranty is a specific promise or affirmation made by the seller about the product — such as a statement that the product will last a certain number of years or perform in a specific way. An implied warranty arises automatically by operation of law — the implied warranty of merchantability means the product is fit for its ordinary purpose, and the implied warranty of fitness means the product is suitable for the buyer's particular purpose.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What is the Song-Beverly Consumer Warranty Act?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>The Song-Beverly Act (Civil Code 1790-1795.8) is California's consumer warranty law, often called the Lemon Law. It requires manufacturers to repair, replace, or refund defective consumer goods. If the manufacturer willfully fails to comply, the consumer can recover a civil penalty of up to twice the actual damages plus mandatory attorney fees.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            How many repair attempts before I can get a refund?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>There is no fixed number, but California courts have generally held that two to four repair attempts for the same defect is sufficient to trigger the manufacturer's obligation to replace or refund the product under the Song-Beverly Act. The key factor is whether the manufacturer has had a reasonable opportunity to repair the defect.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Can a manufacturer disclaim implied warranties in California?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>For consumer goods sold at retail, implied warranties cannot be disclaimed under the Song-Beverly Act. For commercial transactions between businesses, implied warranties can be disclaimed or limited if the disclaimer is conspicuous and uses specific language required by Commercial Code 2316.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            What is the statute of limitations for warranty claims?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Under the California Commercial Code, the statute of limitations for breach of warranty is four years from the date of tender of delivery (Commercial Code 2725). Under the Song-Beverly Act, the limitations period is generally four years from the date of the breach. The Magnuson-Moss Act follows state law limitations periods.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 id="related">Related Practice Areas</h2>
+                    </div></div>
+<h2 id="law">The Legal Framework</h2>
+<div class="defense-item"><h3>Distinguish the source of the warranty</h3><p>Commercial Code section 2313 addresses express warranties in goods transactions. Statements of fact, descriptions or samples may matter even without the word warranty, while mere opinion or sales praise presents a different question. Merchantability and fitness for a particular purpose have different requirements under sections 2314 and 2315. A service agreement should not automatically be analyzed as a sale of goods.</p>
+</div>
+<div class="defense-item"><h3>Consumer and commercial rules are not identical</h3><p>The Song-Beverly Consumer Warranty Act may apply to qualifying consumer goods and transactions; Magnuson-Moss can raise additional federal issues. Coverage, disclaimers, repair duties and remedies depend on the particular statute and product. A commercial purchase does not automatically receive every consumer remedy, and a used product does not necessarily carry the same obligations as a new one.</p>
+</div>
+<div class="defense-item"><h3>Notice, remedy limits and proof matter</h3><p>For accepted goods, the Commercial Code can require notice of breach within a reasonable time. Disclaimers, exclusive repair remedies and consequential-damage limits require legal review rather than automatic enforcement. Repair attempts do not create a universal two-attempt or four-attempt refund rule. Enhanced statutory penalties and attorney fees are available only when the relevant requirements are satisfied.</p>
+</div>
+<h2 id="documents">Facts &amp; Records to Prepare</h2>
+<ul>
+<li>The sales agreement, warranty booklet, product description, specifications and representations relied on.</li>
+<li>Invoices identifying the seller, manufacturer, purchase date and intended use.</li>
+<li>Repair orders, complaint correspondence, photographs, testing and maintenance records.</li>
+<li>The goods or failed components where available, and records of replacement costs and claimed disruption.</li>
+</ul>
+<h2 id="how-we-help">How We Approach the Matter</h2>
+<div class="defense-item"><h3>Identify the nonconformity</h3><p>Counsel can compare the promised specification or applicable standard with the actual performance. Misuse, installation, maintenance, third-party alterations and other potential causes should be considered rather than assuming every failure was present at sale.</p>
+</div>
+<div class="defense-item"><h3>Review the repair and notice history</h3><p>Dates and the substance of reported problems can matter to both sides. A buyer should preserve the product and records while addressing necessary operations. A seller should preserve service and testing records and avoid dismissing complaints without review.</p>
+</div>
+<div class="defense-item"><h3>Evaluate a proportionate remedy</h3><p>Repair, replacement, refund, damages or another resolution may be appropriate depending on the legal framework. Lost revenue and other consequential losses need proof and may face contractual limits. Litigation strategy should account for product testing, expert costs and the value of the supported claim.</p>
+</div>
+<h2 id="examples">Fictional California Examples</h2>
+<p>These fictional examples illustrate questions counsel may evaluate. They are not firm cases or results. A county is a factual setting, not a statement about venue, local rules or a firm office.</p>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>Alameda County — industrial components</h3><p>A manufacturer alleges that delivered components fail agreed tolerances. Counsel would review specifications, acceptance testing, notice to the supplier and any remedy limitation before assessing replacement costs or disruption claims.</p>
+</div>
+<div class="example-card"><div class="example-label">Fictional example</div><h3>Orange County — repeated product repairs</h3><p>A buyer reports recurring problems after several service visits. Review would identify the applicable warranty and statutory coverage, the nature of each defect, repair opportunities and records rather than assume a fixed number of visits guarantees a refund.</p>
+</div>
+<h2 id="faq">Frequently Asked Questions</h2>
+<div class="faq-section">
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-0">Is a warranty always a document labeled warranty?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-0"><p>No. In a goods transaction, factual promises, descriptions or samples may create express warranties if the legal requirements are met. General sales opinion may be treated differently.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-1">Does every defective product qualify for a refund?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-1"><p>No. The product, transaction, warranty, repair history and governing statute determine the available remedy. A defect alone does not establish every condition for refund or replacement.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-2">Can a business seller limit warranty remedies?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-2"><p>Sometimes, but wording and applicable law matter, including limits on disclaimers and circumstances in which an exclusive remedy fails. A limitation should not be assumed enforceable from its presence in a form.</p>
+</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="business-faq-3">How many repair visits are required?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="business-faq-3"><p>There is no universal number for every product and claim. The nature of the problem, repair opportunities and applicable statutory or contractual requirements must be reviewed.</p>
+</div></div>
+</div>
+<aside class="business-sources" aria-label="Sources and legal information"><h2 id="legal-sources">Sources &amp; Legal Information</h2>
+<p>This page provides general California legal information, not advice for a particular matter. Legal rules, deadlines and available remedies depend on the facts and applicable law. Contacting the firm does not create an attorney-client relationship.</p>
+<ul><li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&amp;sectionNum=2313." target="_blank" rel="noopener noreferrer">Commercial Code § 2313: express warranties</a></li><li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&amp;sectionNum=2316." target="_blank" rel="noopener noreferrer">Commercial Code § 2316: warranty exclusions</a></li><li><a href="https://www.justia.com/trials-litigation/docs/caci/3200/3210/" target="_blank" rel="noopener noreferrer">Judicial Council CACI 3210: merchantability</a></li></ul></aside>
+<h2 id="related">Related Practice Areas</h2>
                 <div class="related-offenses-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
                     <a href="/civil-litigation/contract-disputes" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Contract Disputes</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">CC 1549-1701, CCP 337-339 — Breach of contract, specific performance, and damages claims.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Breach of contract, specific performance, and damages claims.</p>
                     </a>
                     <a href="/civil-litigation/construction-defects" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 25px; text-decoration: none; transition: all 0.3s;">
                         <h4 style="font-family: 'Cormorant Garamond', serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Construction Defects</h4>
-                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">CC 895-945.5 — Right to Repair Act claims, construction deficiency litigation.</p>
+                        <p style="color: #888; font-size: 0.85rem; line-height: 1.5; margin: 0;">Right to Repair Act claims, construction deficiency litigation.</p>
                     </a>
                 </div>
 
@@ -651,15 +463,7 @@
             <div class="page-toc-wrapper">
                 <nav class="page-toc">
                     <h4>On This Page</h4>
-                    <ul>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#the-law">The Law</a></li>
-                        <li><a href="#examples">Examples</a></li>
-                        <li><a href="#at-stake">What's at Stake</a></li>
-                        <li><a href="#how-we-help">How We Help</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#related">Related Areas</a></li>
-                    </ul>
+                    <ul><li><a href="#overview">Overview</a></li><li><a href="#law">Legal Framework</a></li><li><a href="#documents">Facts & Records</a></li><li><a href="#how-we-help">Response Options</a></li><li><a href="#examples">Fictional Examples</a></li><li><a href="#faq">Questions</a></li><li><a href="#legal-sources">Sources</a></li><li><a href="#related">Related Practice Areas</a></li></ul>
                 </nav>
             </div>
 
@@ -670,7 +474,7 @@
         <div class="content-wrapper">
             <picture><source srcset="/images/Photos/lady_liberty_drawn.webp" type="image/webp"><img src="/images/Photos/lady_liberty_drawn.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 400; margin-bottom: 20px;">Dealing with a Defective Product?</h2>
-            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">California's warranty laws provide powerful consumer protections, including double damages and attorney fees. Contact RV Litigation Group PC for a consultation.</p>
+            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Share the key documents, your role and any notice, hearing or transaction deadline so the firm can assess the appropriate scope of representation.</p>
             <a href="https://rvlitigation.com/contact" class="btn-inquire-footer">INQUIRE NOW</a>
             <div class="cta-or">or</div>
             <a href="tel:+14157977591" class="nav-phone cta-call-footer" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>CALL US</span></a>
@@ -717,7 +521,7 @@
             btn.addEventListener('click', function() {
                 var item = this.parentElement;
                 var isOpen = item.classList.contains('open');
-                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+                document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); var question = i.querySelector('.faq-question'); if (question) question.setAttribute('aria-expanded', 'false'); });
                 if (!isOpen) item.classList.add('open');
                 this.setAttribute('aria-expanded', !isOpen);
             });
