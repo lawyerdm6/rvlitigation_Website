@@ -15,53 +15,90 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 3000);
     }
 
-    // Mobile Menu Toggle
+    // Native disclosure buttons retain the existing navigation design.
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
-
     if (mobileMenuBtn && navLinks) {
-        mobileMenuBtn.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            // Animate hamburger to X
-            this.classList.toggle('active');
+        const mobileQuery = window.matchMedia('(max-width: 1286px)');
+        const dropdowns = Array.from(navLinks.querySelectorAll('.nav-dropdown'));
+        const setDropdown = (item, open) => {
+            item.classList.toggle('open', open);
+            item.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', String(open));
+        };
+        const closeMenu = (restoreFocus = false) => {
+            navLinks.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenuBtn.setAttribute('aria-label', 'Open menu');
+            dropdowns.forEach(item => setDropdown(item, false));
+            if (restoreFocus) mobileMenuBtn.focus();
+        };
+        mobileMenuBtn.addEventListener('click', () => {
+            const open = !navLinks.classList.contains('active');
+            navLinks.classList.toggle('active', open);
+            mobileMenuBtn.classList.toggle('active', open);
+            mobileMenuBtn.setAttribute('aria-expanded', String(open));
+            mobileMenuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+            if (open) navLinks.querySelector('a, button').focus();
+            else closeMenu();
         });
-
-        // Mobile dropdown toggle
-        var navDropdowns = navLinks.querySelectorAll('.nav-dropdown');
-        navDropdowns.forEach(function(navDropdown) {
-            var dropdownToggle = navDropdown.querySelector(':scope > a');
-            dropdownToggle.addEventListener('click', function(e) {
-                if (window.innerWidth <= 1286) {
-                    e.preventDefault();
-                    navDropdown.classList.toggle('open');
+        dropdowns.forEach(item => {
+            const toggle = item.querySelector('.nav-dropdown-toggle');
+            if (!toggle) return;
+            toggle.addEventListener('click', () => setDropdown(item, !item.classList.contains('open')));
+            toggle.addEventListener('keydown', event => {
+                if (event.key === 'ArrowDown') {
+                    event.preventDefault();
+                    setDropdown(item, true);
+                    item.querySelector('.dropdown-menu a').focus();
+                }
+            });
+            item.addEventListener('mouseenter', () => { if (!mobileQuery.matches) setDropdown(item, true); });
+            item.addEventListener('mouseleave', () => {
+                if (!mobileQuery.matches && !item.contains(document.activeElement)) setDropdown(item, false);
+            });
+            item.addEventListener('focusout', event => {
+                if (!item.contains(event.relatedTarget)) setDropdown(item, false);
+            });
+            item.addEventListener('keydown', event => {
+                if (event.key === 'Escape' && item.classList.contains('open')) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    setDropdown(item, false);
+                    toggle.focus();
                 }
             });
         });
-
-        // Close menu when clicking a link (but not the dropdown parent)
-        navLinks.querySelectorAll('a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                if (this.parentElement.classList.contains('nav-dropdown')) return;
-                navLinks.classList.remove('active');
-                mobileMenuBtn.classList.remove('active');
-                navDropdowns.forEach(function(d) { d.classList.remove('open'); });
-            });
+        navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => closeMenu()));
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && navLinks.classList.contains('active')) {
+                event.preventDefault();
+                closeMenu(true);
+            }
         });
+        document.addEventListener('focusin', event => {
+            if (mobileQuery.matches && navLinks.classList.contains('active') && !navLinks.contains(event.target) && event.target !== mobileMenuBtn) closeMenu();
+        });
+        mobileQuery.addEventListener('change', () => closeMenu());
     }
 
     // Smooth Scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
-            if (targetId !== '#') {
-                e.preventDefault();
-                const targetElement = document.querySelector(targetId);
+            if (targetId !== '#' && !e.defaultPrevented && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+                const targetElement = document.getElementById(decodeURIComponent(targetId.slice(1)));
                 if (targetElement) {
-                    const headerHeight = document.querySelector('.main-header').offsetHeight;
-                    const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                    e.preventDefault();
+                    if (!targetElement.hasAttribute('tabindex')) targetElement.setAttribute('tabindex', '-1');
+                    targetElement.focus({preventScroll: true});
+                    const fixedHeader = document.querySelector('.main-header');
+                    const headerHeight = fixedHeader ? fixedHeader.getBoundingClientRect().height : 0;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
+                    history.pushState(null, '', targetId);
                     window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
+                        top: Math.max(0, targetPosition),
+                        behavior: (window.matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.hasAttribute('data-motion-paused')) ? 'auto' : 'smooth'
                     });
                 }
             }
@@ -110,75 +147,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Form validation (Formspree handles submission)
-    const contactForm = document.querySelector('.contact-form');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            // Get form data
-            const formData = new FormData(this);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const phone = formData.get('phone');
-            const message = formData.get('message');
-
-            // Basic validation
-            if (!name || !email || !phone || !message) {
-                e.preventDefault();
-                alert('Please fill in all fields.');
-                return;
-            }
-
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                e.preventDefault();
-                alert('Please enter a valid email address.');
-                return;
-            }
-
-            // Form will submit to Formspree
-        });
-    }
-
-    // Contact links - click to copy on desktop, open app on mobile
-    const contactLinks = document.querySelectorAll('.contact-link');
-
-    contactLinks.forEach(function(link) {
-        // Create tooltip
-        const tooltip = document.createElement('span');
-        tooltip.className = 'tooltip';
-        tooltip.textContent = 'Click to copy';
-        link.appendChild(tooltip);
-
-        link.addEventListener('click', function(e) {
-            // Check if mobile device
-            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-            if (!isMobile) {
-                e.preventDefault();
-                const copyText = this.getAttribute('data-copy');
-
-                navigator.clipboard.writeText(copyText).then(function() {
-                    tooltip.textContent = 'Copied!';
-                    tooltip.classList.add('copied');
-
-                    setTimeout(function() {
-                        tooltip.textContent = 'Click to copy';
-                        tooltip.classList.remove('copied');
-                    }, 2000);
-                });
-            }
-            // On mobile, the default behavior (tel: or mailto:) will work
-        });
-    });
-
     // Floating CTA — acts as a call button on mobile, same as the CALL US button
     const floatingCta = document.querySelector('.floating-cta');
 
     if (floatingCta) {
         const fabText = floatingCta.querySelector('span');
-        const desktopHref = 'https://rvlitigation.com/contact';
+        const desktopHref = 'https://rvlitigation.com/contact-rv-litigation';
         const desktopLabel = 'CONTACT A LAWYER';
         const mobileHref = 'tel:+14157977591';
         const mobileLabel = 'CALL US';
@@ -210,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe elements for animation
-    document.querySelectorAll('.practice-card, .commitments-list li, .attorney-card, .value-item, .practice-detail-card').forEach(function(el) {
+    if (!(window.matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.hasAttribute('data-motion-paused'))) document.querySelectorAll('.practice-card, .commitments-list li, .attorney-card, .value-item, .practice-detail-card').forEach(function(el) {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';

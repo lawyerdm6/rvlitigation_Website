@@ -1,743 +1,743 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://rvlitigation.com/</loc>
-        <lastmod>2026-10-06</lastmod>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/professionals</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/our-legal-team</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/our-practice</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-law-practice-areas</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/about</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/about-rv-litigation-group</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/reviews</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/rv-litigation-client-reviews</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/contact</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/contact-rv-litigation</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://rvlitigation.com/privacy-policy</loc>
-        <lastmod>2025-12-13</lastmod>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <!-- Criminal Defense Hub -->
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <!-- Criminal Defense Sub-Pages -->
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/dui-defense</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/dui-defense</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/domestic-violence</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/domestic-violence</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/drug-crimes</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/drug-crimes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/theft-crimes</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/theft-crimes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/assault-defense</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/assault-defense</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/federal-crimes</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/federal-crimes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/vandalism</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/vandalism</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/weapons-charges</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/weapons-charges</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/juvenile-crimes</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/juvenile-crimes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/sex-crimes</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/sex-crimes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/hit-and-run</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/hit-and-run</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/restraining-orders</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/restraining-orders</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/probation-violations</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/probation-violations</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/expungement</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/expungement</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- New Criminal Defense Sub-Pages -->
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/murder-defense</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/murder-defense</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/manslaughter</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/manslaughter</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/robbery</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/robbery</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/carjacking</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/carjacking</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/burglary</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/burglary</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/kidnapping</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/kidnapping</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/arson</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/arson</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/criminal-threats</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/criminal-threats</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/stalking</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/stalking</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/identity-theft</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/identity-theft</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/forgery</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/forgery</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/grand-theft</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/grand-theft</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/shoplifting</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/shoplifting</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/conspiracy</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/conspiracy</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/resisting-arrest</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/resisting-arrest</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/disorderly-conduct</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/disorderly-conduct</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/trespassing</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/trespassing</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/dui-with-injury</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/dui-with-injury</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/reckless-driving</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/reckless-driving</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/evading-police</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/evading-police</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/driving-suspended-license</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/driving-suspended-license</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/drug-possession</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/drug-possession</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/drug-sales</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/drug-sales</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/methamphetamine</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/methamphetamine-charges</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/child-abuse</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/child-abuse</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/criminal-defense/perjury</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-criminal-defense/perjury</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- Corporate &amp; Commercial Law Hub -->
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-corporate-commercial-law/</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <!-- Retained Business Litigation Service Pages -->
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/contract-disputes</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/contract-disputes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/real-estate-disputes</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/real-estate-disputes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/construction-defects</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/commercial-construction-defect-disputes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/fraud-claims</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/business-fraud-claims</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/zoning-land-use</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/zoning-land-use</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/insurance-claims</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/business-insurance-coverage-disputes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/partnership-disputes</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/partnership-disputes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- New Retained Business Litigation Service Pages -->
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/breach-of-fiduciary-duty</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/breach-of-fiduciary-duty</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/mechanics-lien</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/mechanics-lien</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/unfair-business-practices</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/unfair-business-practices</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/trade-secret-litigation</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/trade-secret-litigation</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/non-compete-disputes</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/noncompete-agreement-disputes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/commercial-lease-disputes</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/commercial-lease-disputes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/quiet-title</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/quiet-title</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/partition-actions</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/partition-actions</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/breach-of-warranty</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/breach-of-warranty</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/employment-workplace-litigation</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/employer-defense-workplace-disputes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/urgent-injunctions-tros</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/urgent-injunctions-tros</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/civil-litigation/outside-litigation-counsel</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/outside-litigation-counsel</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- Private Matters Hub -->
     <url>
-        <loc>https://rvlitigation.com/private-civil-matters/</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-private-disputes/</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <!-- Private Matters Sub-Pages -->
     <url>
-        <loc>https://rvlitigation.com/private-civil-matters/civil-lawsuit-defense</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-private-disputes/lawsuit-defense</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/private-civil-matters/civil-harassment-claims</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-private-disputes/harassment-restraining-orders</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/private-civil-matters/easement-right-of-way-disputes</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-private-disputes/easement-right-of-way-disputes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/private-civil-matters/judgment-enforcement-debtor-exam</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-private-disputes/judgment-enforcement-debtor-exam</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/private-civil-matters/nuisance-claims</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-private-disputes/nuisance-claims</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/private-civil-matters/vehicle-property-damage-claims</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-private-disputes/vehicle-property-damage-claims</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/private-civil-matters/small-claims-appeals</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-private-disputes/small-claims-appeals</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- Blog -->
     <url>
-        <loc>https://rvlitigation.com/blog/</loc>
-        <lastmod>2026-03-15</lastmod>
+        <loc>https://rvlitigation.com/california-legal-guides/</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/blog/what-to-do-after-arrest</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-legal-guides/what-to-do-after-arrest-california</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/blog/california-three-strikes-law</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-legal-guides/california-three-strikes-law</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <!-- FAQ -->
     <url>
-        <loc>https://rvlitigation.com/faq/</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-legal-faqs/</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <!-- Resources -->
     <url>
-        <loc>https://rvlitigation.com/resources/</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-legal-resources/</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <!-- Location Pages Hub -->
     <url>
-        <loc>https://rvlitigation.com/locations/</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- Location Pages — Cities -->
     <url>
-        <loc>https://rvlitigation.com/locations/san-jose</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/san-jose-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/locations/san-francisco</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/san-francisco-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/locations/oakland</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/oakland-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/locations/gilroy</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/gilroy-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/locations/morgan-hill</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/morgan-hill-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/locations/santa-clara</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/santa-clara-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/locations/sunnyvale</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/sunnyvale-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/locations/fremont</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/fremont-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/locations/palo-alto</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/palo-alto-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/locations/redwood-city</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/redwood-city-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- Location Pages — Counties -->
     <url>
-        <loc>https://rvlitigation.com/locations/santa-clara-county</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/santa-clara-county-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/locations/alameda-county</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/alameda-county-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/locations/san-mateo-county</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/san-mateo-county-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/locations/san-francisco-county</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/san-francisco-county-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/locations/monterey-county</loc>
-        <lastmod>2026-10-05</lastmod>
+        <loc>https://rvlitigation.com/california-service-areas/monterey-county-litigation-attorney</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/business-litigation/</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-litigation/</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/business-transactions/business-contracts</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-transactions/business-contracts</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/business-transactions/business-purchases-sales</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-transactions/business-purchases-sales</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/business-transactions/</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-transactions/</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/business-transactions/ownership-operating-agreements</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-transactions/ownership-operating-agreements</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/tax-law/california-tax-disputes</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-tax-disputes/california-tax-disputes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/tax-law/criminal-tax-defense</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-tax-disputes/criminal-tax-defense</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/tax-law/</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-tax-disputes/</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/tax-law/irs-audits-appeals</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-tax-disputes/irs-audits-appeals</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/tax-law/tax-litigation-appeals</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-tax-disputes/tax-litigation-appeals</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/white-collar-defense/embezzlement</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-white-collar-defense/embezzlement</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/white-collar-defense/financial-fraud</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-white-collar-defense/financial-fraud</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/white-collar-defense/</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-white-collar-defense/</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/white-collar-defense/investigations-subpoenas</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-white-collar-defense/investigations-subpoenas</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Additional priority practice services -->
     <url>
-        <loc>https://rvlitigation.com/business-transactions/commercial-lease-agreements</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-transactions/commercial-lease-agreements</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/business-transactions/confidentiality-nondisclosure-agreements</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-transactions/confidentiality-nondisclosure-agreements</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/business-transactions/business-buyouts-owner-exits</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-business-transactions/business-buyouts-owner-exits</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/tax-law/tax-penalty-relief</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-tax-disputes/tax-penalty-relief</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/tax-law/tax-liens-levies-collection-appeals</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-tax-disputes/tax-liens-levies-collection-appeals</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/tax-law/payroll-tax-disputes</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-tax-disputes/payroll-tax-disputes</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/white-collar-defense/grand-jury-subpoenas-testimony</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-white-collar-defense/grand-jury-subpoenas-testimony</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/white-collar-defense/wire-mail-fraud-defense</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-white-collar-defense/wire-mail-fraud-defense</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rvlitigation.com/white-collar-defense/false-statements-obstruction</loc>
-        <lastmod>2026-10-06</lastmod>
+        <loc>https://rvlitigation.com/california-white-collar-defense/false-statements-obstruction</loc>
+        <lastmod>2026-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
   <url>
-    <loc>https://rvlitigation.com/case-review/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <loc>https://rvlitigation.com/request-case-review/</loc>
+    <lastmod>2026-10-08</lastmod>
   </url>
-</urlset>
+<url><loc>https://rvlitigation.com/accessibility</loc><lastmod>2026-10-08</lastmod></url></urlset>
