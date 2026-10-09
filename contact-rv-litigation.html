@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Contact our San Francisco-based team about a California business dispute, transaction, tax matter or defense. Call (415) 797-7591 or send a brief inquiry.">
+    <meta name="author" content="RV Litigation Group PC">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rvlitigation.com/contact-rv-litigation">
+    <meta property="og:title" content="Contact Our California Attorneys | RV Litigation Group PC">
+    <meta property="og:description" content="Contact our San Francisco-based team about a California business dispute, transaction, tax matter or defense. Call (415) 797-7591 or send a brief inquiry.">
+    <meta property="og:image" content="https://rvlitigation.com/images/logos/rv-litigation-group-stacked-logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rvlitigation.com/contact-rv-litigation">
 
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="shortcut icon" href="/favicon.ico">
-    <title>Thank You | RV Litigation Group PC</title>
+    <title>Contact Our California Attorneys | RV Litigation Group PC</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,14 +63,67 @@
     </header>
     <main id="main-content" tabindex="-1">
 
-    <!-- Thank You Section -->
-    <section class="content-section" style="margin-top: 70px; min-height: calc(100vh - 250px); display: flex; align-items: center; background: linear-gradient(180deg, #000 0%, #1a1a1a 100%);">
-        <div class="content-wrapper" style="text-align: center;">
-            <picture><source srcset="/images/photos/lady-justice-illustration.webp" type="image/webp"><img src="/images/photos/lady-justice-illustration.png" alt="Lady Justice" style="width: 150px; margin: 0 auto 40px; opacity: 0.8;"></picture>
-            <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 400; margin-bottom: 20px;">Thank You</h1>
-            <p style="color: #888; margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">Your message has been received. We appreciate you reaching out to RV Litigation Group PC.</p>
-            <p style="color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">A member of our team will review your inquiry and get back to you shortly.</p>
-            <a href="https://rvlitigation.com/" class="btn-inquire-footer">RETURN HOME</a>
+    <!-- Contact Section -->
+    <section class="contact-section" style="margin-top: 70px; min-height: calc(100vh - 70px); background: linear-gradient(180deg, #000 0%, #000 80%, #1a1a1a 100%);">
+        <div class="contact-container">
+            <div class="contact-image">
+                <picture><source srcset="/images/photos/david-ruezga-california-litigation-attorney.webp" type="image/webp"><img src="/images/photos/david-ruezga-california-litigation-attorney.png" alt="David Ruezga - Attorney"></picture>
+            </div>
+            <div class="contact-form-wrapper">
+                <p class="form-tagline">HIRE A TEAM WHO LIKES TO WIN</p>
+                <h1 class="form-title">WHAT CAN WE HELP YOU WITH?</h1>
+                <p style="color: var(--color-gray-light); font-size: 0.85rem; line-height: 1.6; margin-bottom: 20px;">Our San Francisco-based team serves clients <a href="/california-service-areas/">throughout California</a>. Tell us about your business, tax, defense, or private matter. See our <a href="/california-legal-faqs/">practice questions</a> for more about the services we handle. Our employment practice represents employers only. We do not accept contingency-fee matters or handle civil-rights cases.</p>
+                <form class="contact-form" action="https://formsubmit.co/David@RVLitigation.com" method="POST">
+                    <input type="hidden" name="_next" value="https://rvlitigation.com/thank-you">
+                    <input type="hidden" name="_captcha" value="false">
+                    <label class="field-label" for="contact-name">Name <span class="field-required">(required)</span></label>
+                    <input type="text" name="name" placeholder="NAME" required id="contact-name" autocomplete="name">
+                    <label class="field-label" for="contact-email">Email <span class="field-required">(required)</span></label>
+                    <input type="email" name="email" placeholder="EMAIL" required id="contact-email" autocomplete="email">
+                    <label class="field-label" for="contact-phone">Phone <span class="field-required">(required)</span></label>
+                    <input type="tel" name="phone" placeholder="PHONE" required id="contact-phone" autocomplete="tel">
+                    <label class="field-label" for="contact-matter-type">Type of matter <span class="field-required">(required)</span></label>
+                    <select name="matter_type" required id="contact-matter-type">
+                        <option value="" disabled selected>MATTER TYPE</option>
+                        <option value="Business litigation / contract dispute">Business litigation / contract dispute</option>
+                        <option value="Business transactions / agreements">Business transactions / agreements</option>
+                        <option value="Tax law / IRS or California tax dispute">Tax law / IRS or California tax dispute</option>
+                        <option value="White-collar investigation or defense">White-collar investigation or defense</option>
+                        <option value="Employer-side workplace dispute">Employer-side workplace dispute</option>
+                        <option value="Commercial lease / commercial property dispute">Commercial lease / commercial property dispute</option>
+                        <option value="Criminal defense">Criminal defense</option>
+                        <option value="Private matter / lawsuit defense">Private matter / lawsuit defense</option>
+                        <option value="Small claims advice or appeal">Small claims advice or appeal</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label class="field-label" for="contact-message">Brief summary <span class="field-required">(required)</span></label>
+                    <textarea name="message" placeholder="BRIEF SUMMARY, YOUR ROLE, COUNTY &amp; ANY DEADLINE" rows="4" required id="contact-message"></textarea>
+                    <button type="submit" class="btn-submit">SUBMIT</button>
+                </form>
+
+                <div style="margin-top: 50px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <div class="contact-info-item">
+                        <h3>EMAIL</h3>
+                        <p><a href="mailto:David@RVLitigation.com" class="contact-link" data-copy="David@RVLitigation.com">David@RVLitigation.com</a></p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>PHONE</h3>
+                        <p><a href="tel:+14157977591" class="contact-link" data-copy="(415) 797-7591">(415) 797-7591</a></p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>OFFICE</h3>
+                        <p>RV Litigation Group PC<br>
+                        28 Geary St, Suite 650<br>
+                        San Francisco, CA 94108</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>HOURS</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                        Saturday: By Appointment<br>
+                        Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
