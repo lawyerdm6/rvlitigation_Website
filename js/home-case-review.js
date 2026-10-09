@@ -8,7 +8,7 @@
             eyebrow: 'Business disputes & anticipated litigation',
             title: 'Address the dispute before it defines your business.',
             copy: 'Discuss threatened claims, demand letters, contract disputes, ownership conflicts, or an active business lawsuit. Our team reviews the issue and the stage of the dispute.',
-            url: '/business-litigation/',
+            url: '/california-business-litigation/',
             label: 'Explore business litigation →',
             formValue: 'Business litigation / contract dispute',
             items: ['Your role and the nature of the business dispute', 'Where the dispute is located and whether a case is filed', 'Any demand, response, or court deadline']
@@ -17,7 +17,7 @@
             eyebrow: 'Criminal defense',
             title: 'Discuss the allegations and your next court date.',
             copy: 'We review selected criminal defense matters, including investigations and pending charges. Tell us the type of allegation and where the matter is being handled.',
-            url: '/criminal-defense/',
+            url: '/california-criminal-defense/',
             label: 'Explore criminal defense →',
             formValue: 'Criminal defense',
             items: ['The charge or type of investigation', 'The county or court handling the matter', 'Your next court date or other known deadline']
@@ -26,7 +26,7 @@
             eyebrow: 'Lawsuit defense for individuals',
             title: 'You’ve been named in a lawsuit. Start with a case review.',
             copy: 'If you have been sued personally, tell us about the claims and when you received the court papers. Our team reviews the matter and whether it fits our lawsuit-defense practice.',
-            url: '/private-civil-matters/civil-lawsuit-defense',
+            url: '/california-private-disputes/lawsuit-defense',
             label: 'Explore lawsuit defense →',
             formValue: 'Private matter / lawsuit defense',
             items: ['The type of claim and your role in the lawsuit', 'The county or court where the case is filed', 'When you received the papers and any known deadline']
@@ -68,7 +68,7 @@
             }));
             if (matterField) matterField.value = selected.formValue;
             panel.hidden = false;
-            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const reducedMotion = (window.matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.hasAttribute('data-motion-paused'));
             panel.scrollIntoView({behavior: reducedMotion ? 'instant' : 'smooth', block: 'nearest'});
         });
         choice.addEventListener('keydown', event => {
@@ -92,7 +92,7 @@
         const header = document.querySelector('.main-header');
         const headerHeight = header ? header.getBoundingClientRect().height : 0;
         const top = formWrapper.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
-        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const reducedMotion = (window.matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.hasAttribute('data-motion-paused'));
         window.scrollTo({top: Math.max(0, top), behavior: reducedMotion ? 'instant' : 'smooth'});
     }, {capture: true});
 })();
